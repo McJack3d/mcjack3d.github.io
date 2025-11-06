@@ -3,34 +3,30 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Portfolio Template</title>
+    <title>Alexandre Bredillot — Portfolio</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="HTML Templates" name="keywords">
-    <meta content="HTML Templates" name="description">
+    <meta content="Alexandre Bredillot portfolio" name="description">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <!-- Favicon (small placeholder) -->
+    <link href="Images/close.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
+    <!-- Font Awesome (CDN) -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <!-- Main compiled stylesheet (existing theme) -->
+    <link href="Style%20Sheets/style.css" rel="stylesheet">
+    <link href="Style%20Sheets/portfolio-extra.css" rel="stylesheet">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
     <!-- Navbar Start -->
     <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
-        <a href="index.html" class="navbar-brand ml-lg-3">
-            <h1 class="m-0 display-5"><span class="text-primary">Victor</span>MAYAUD</h1>
+        <a href="#home" class="navbar-brand ml-lg-3">
+            <h1 class="m-0 display-5"><span class="text-primary">Alexandre</span> Bredillot</h1>
         </a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -39,392 +35,183 @@
             <div class="navbar-nav m-auto py-0">
                 <a href="#home" class="nav-item nav-link active">Home</a>
                 <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#qualification" class="nav-item nav-link">Quality</a>
-                <a href="#skill" class="nav-item nav-link">Skill</a>
-                <a href="#service" class="nav-item nav-link">Courses</a> <!-- Remove this line if you don't want to show Blog -->
-                <a href="#portfolio" class="nav-item nav-link">Academic works</a> <!-- Academic works -->
-                <a href="#certification" class="nav-item nav-link">Certification</a> <!-- Remove this line if you don't want to show Blog -->
+                <a href="#projects" class="nav-item nav-link">Projects</a>
+                <a href="#skills" class="nav-item nav-link">Skills</a>
                 <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
         </div>
     </nav>
     <!-- Navbar End -->
 
-
-    <!-- Header Start -->
-    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+    <!-- Hero Start -->
+    <header id="home" class="container-fluid d-flex align-items-center bg-primary text-white" style="min-height:85vh;">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
-                    <img class="img-fluid w-75 rounded-circle shadow-sm" src="img/profile.jpg" alt="">
+                <div class="col-lg-5 text-center mb-4 mb-lg-0">
+                    <div class="profile-avatar mx-auto mb-3">AB</div>
+                    <h2 class="h4 text-light mb-1">Alexandre Bredillot</h2>
+                    <p class="mb-0">Product-minded Software Engineer • Data Enthusiast • Open Source</p>
                 </div>
                 <div class="col-lg-7 text-center text-lg-left">
-                    <h3 class="text-white font-weight-normal mb-3">I'm</h3>
-                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Victor MAYAUD</h1>
-                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
-                    <div class="typed-text d-none">Data scientist, AI Engineer, Product Manager, Data engineer, Manager High-Tech</div>
-                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                        <a href="ressources/cv/cv.pdf" class="btn btn-outline-light mr-5" download="Victor_MAYAUD_CV.pdf">Download CV</a>
+                    <h3 class="text-white font-weight-normal mb-3">Hey — I'm Alexandre</h3>
+                    <h1 class="display-3 text-uppercase text-white mb-3">I build useful things with data & code</h1>
+                    <p class="lead text-light">I design and implement data-driven web applications and tools. My focus is on clean code, reliable systems, and delightful UX.</p>
+                    <div class="mt-4">
+                        <a class="btn btn-light mr-3" href="#projects">See my work</a>
+                        <a class="btn btn-outline-light" href="#contact">Get in touch</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Header End -->
-
+    </header>
+    <!-- Hero End -->
 
     <!-- About Start -->
-    <div class="container-fluid py-5" id="about">
+    <section id="about" class="container-fluid py-5">
         <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
-                <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
-            </div>
             <div class="row align-items-center">
-                <div class="col-lg-5 pb-4 pb-lg-0">
-                    <img class="img-fluid rounded w-100" src="img/about.jpg" alt="">
+                <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                    <div class="profile-avatar-lg mx-auto mb-3">AB</div>
+                    <h3 class="mb-1">Alexandre Bredillot</h3>
+                    <p class="text-muted mb-0">Software Engineer & Data Enthusiast</p>
                 </div>
-                <div class="col-lg-7">
-                    <h3 class="mb-4">Data Scientist & AI Engineer</h3>
-                    <p>I am a 22-year-old student in my second year at EURECOM, studying data science. I'm passionate about new technologies and sciences. Determination and hard work best define me.</p>
-                    <div class="row mb-3">
-                        <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Victor MAYAUD</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Birthday: <span class="text-secondary">23 May 2001</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">Dual Masters</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary">1 Year</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">+33 7 81 35 66 26</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">mayaud@eurecom.fr</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary">France, Lyon</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Freelance: <span class="text-secondary">Available</span></h6></div>
+                <div class="col-lg-8">
+                    <h3>About me</h3>
+                    <p>I build web applications and data tools that help teams make better decisions. I enjoy clean code, reproducible data pipelines, and simple product-focused design. I also contribute to open source and write short technical notes when I learn something useful.</p>
+                    <div class="row mt-3">
+                        <div class="col-md-6"><strong>Location</strong><div class="text-muted">Your City, Country</div></div>
+                        <div class="col-md-6"><strong>Email</strong><div class="text-muted">alexandre@example.com</div></div>
                     </div>
-                    <!-- <a href="" class="btn btn-outline-primary mr-4">Hire Me</a>
-                    <a href="" class="btn btn-outline-primary">Learn More</a>-->
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- About End -->
 
-
-    <!-- Qualification Start -->
-    <div class="container-fluid py-5" id="qualification">
+    <!-- Experience / Education -->
+    <section id="experience" class="container-fluid py-5 bg-light">
         <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Education & Expericence</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Experience</h4>
+                    <ul>
+                        <li>Software Engineer — Company / Project (Year–Present)</li>
+                        <li>Data tooling & automation — Open-source contributions</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h4>Education</h4>
+                    <ul>
+                        <li>MSc / BSc — University (Year)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Start -->
+    <section id="skills" class="container-fluid py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Technical Skills</h4>
+                    <ul>
+                        <li>Python, JavaScript, TypeScript</li>
+                        <li>React / Vue, Node.js, Flask</li>
+                        <li>SQL, PostgreSQL, Redis</li>
+                        <li>Docker, CI/CD, AWS / GCP basics</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h4>Other Skills</h4>
+                    <ul>
+                        <li>Product thinking, UX, Collaboration</li>
+                        <li>Testing, monitoring, observability</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Start -->
+    <section id="projects" class="container-fluid py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-4">
+                    <h2>Selected Projects</h2>
+                    <p class="text-muted">Small selection — links to repos or live demos are recommended.</p>
+                </div>
             </div>
             <div class="row">
-                <div class="col-lg-6">
-                    <h3 class="mb-4">My Education</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Preparatory Classes</h5>
-                            <p class="mb-2"><strong>Lycée Etienne Mimard | Claude Fauriel</strong> | <small>2019 - 2022</small></p>
-                            <p>This course was part of the French "Classes Préparatoires aux Grandes Écoles" (CPGE), specifically the PCSI (Physics, Chemistry, and Engineering Science) followed by PSI (Physics and Engineering), which are intensive programs designed to prepare students for competitive exams to enter engineering schools. This foundational program emphasized advanced scientific and mathematical concepts.</p>
-                        </div>
-                        <div class="position-relative mb-4">
-                          <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                          <h5 class="font-weight-bold mb-1">Master in Data Science</h5>
-                          <p class="mb-2"><strong>EURECOM</strong> | <small>2022 - 2024</small></p>
-                          <p>Pursued a Master’s degree focusing on Data Science, which involved rigorous training in statistical methods, machine learning, and data processing technologies. This program aimed to develop skills necessary to analyze, interpret, and create data-driven solutions.</p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Master In Managment</h5>
-                            <p class="mb-2"><strong>EDHEC Business School</strong> | <small>2024 - 2027</small></p>
-                            <p>Enrolled in a Master’s program centered on Management, which is designed to combine advanced business and management strategies with leadership skills, preparing students to take on executive roles in various industries.</p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Master In Management Studies</h5>
-                            <p class="mb-2"><strong>SKK Graduate School of Business</strong> | <small>2025</small></p>
-                            <p><!-- This part of the program will be conducted in South Korea, focusing on global management practices and the integration of innovative business solutions in a globalized market context.--></p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Diploma in Global Economic Transformation & Technology</h5>
-                            <p class="mb-2"><strong>Haas School of Business</strong> | <small>2026 - 2027</small></p>
-                            <p><!--The final phase of my academic journey will be in the United States, obtaining a Diploma that addresses the challenges of global economic shifts and technological advancements. The curriculum is designed to prepare students for leadership in the transforming global economy with a strong emphasis on innovative technologies.--></p>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Project One</h5>
+                            <p class="card-text">Short description of the project, tech used and outcome. Add a link to the repo or demo.</p>
+                            <a href="#" class="card-link">Learn more</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <h3 class="mb-4">My Experience</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Private Mathematics Tutor</h5>
-                            <p class="mb-2"><strong>Freelance</strong> | <small>2022 - 2023</small></p>
-                            <p>Engaged in one-on-one tutoring sessions, focusing on enhancing students’ mathematical skills across various levels, tailoring educational approaches to individual needs.</p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Internship in Software Development</h5>
-                            <p class="mb-2"><strong>Metal Design Concept</strong> | <small>July 2023 - October 2023 (4 months)</small></p>
-                            <p>Participated in the development of software capable of transforming images into precise models for the manufacturing of perforated decorative metal plates.</p>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Two</h5>
+                            <p class="card-text">Short description of the project, tech used and outcome. Add a link to the repo or demo.</p>
+                            <a href="#" class="card-link">Learn more</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Qualification End -->
+    </section>
 
-
-    <!-- Skill Start -->
-    <div class="container-fluid py-5" id="skill">
+    <!-- Certifications / Misc -->
+    <section id="certifications" class="container-fluid py-5 bg-light">
         <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
-                <h1 class="position-absolute text-uppercase text-primary">language skills</h1>
-            </div>
             <div class="row">
                 <div class="col-12">
-                    <!-- Centrer les compétences dans la colonne -->
-                    <div class="skill mb-4 text-center">
-                        <div class="justify-content-between">
-                            <h6 class="font-weight-bold">French | Fluently</h6>
-                        </div>
-                        <div class="progress" style="margin: auto; width: 50%">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4 text-center">
-                        <div class="justify-content-between">
-                            <h6 class="font-weight-bold">English | TOEIC (855)</h6>
-                            
-                        </div>
-                        <div class="progress" style="margin: auto; width: 50%">
-                            <div class="progress-bar bg-warning" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4 text-center">
-                        <div class="justify-content-between">
-                            <h6 class="font-weight-bold">Spanish | A2</h6>
-                            
-                        </div>
-                        <div class="progress" style="margin: auto; width: 50%">
-                            <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
+                    <h4>Certifications & Talks</h4>
+                    <p class="text-muted">List relevant certificates, talks or workshops here. Keep it short and link to PDFs if you want quick downloads.</p>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Skill End -->
+    </section>
 
 
-    <!-- Services Start -->
-    <div class="container-fluid pt-5" id="service">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Courses</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Academic Courses at Eurecom</h1>
-            </div>
-            <div class="row pb-3">
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">MALIS</h4>
-                    </div>
-                    <p>The "Machine Learning and Intelligent System" course, led by Maria A. Zuluaga, equips students with foundational Machine Learning techniques</p>
-                    <a class="border-bottom border-primary text-decoration-none" href="ressources/malis/repport-Project1-MAYAUD.pdf" download="Project1.pdf">Project 1 | </a>
-                    <a class="border-bottom border-primary text-decoration-none" href="ressources/malis/repport_projet2.pdf" download="Project2.pdf">Project 2 | </a>
-                    <a class="border-bottom border-primary text-decoration-none" href="ressources/malis/report_projet3.pdf" download="Project2.pdf">Project 3</a>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                  <div class="d-flex align-items-center justify-content-center mb-4">
-                      <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
-                      <h4 class="font-weight-bold m-0">DeepLearning</h4>
-                  </div>
-                  <p>
-                    The "Deep Learning" course, instructed by Pietro Michiardi, introduces a powerful approach within Machine Learning, particularly effective in areas like Computer Vision and Natural Language Processing</p>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                  <div class="d-flex align-items-center justify-content-center mb-4">
-                      <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
-                      <h4 class="font-weight-bold m-0">ImCod</h4>
-                  </div>
-                  <p>
-                    The "Image & Video Compression" course, taught by Jean-Luc Dugelay, focuses on critical compression techniques essential for efficient multimedia storage and transmission.</p>
-                  
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                  <div class="d-flex align-items-center justify-content-center mb-4">
-                      <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
-                      <h4 class="font-weight-bold m-0">ReLearn</h4>
-                  </div>
-                  <p>
-                    The "Basics on Reinforcement Learning" course, led by Fotios Stavrou, introduces the fundamental principles of Reinforcement Learning (RL), a notable technique in modern machine learning characterized by trial-and-error learning from feedback.</p>
-                    <a class="border-bottom border-primary text-decoration-none" href="ressources/relearn/relearn.pdf" download="Project1.pdf">Project 1</a>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                  <div class="d-flex align-items-center justify-content-center mb-4">
-                      <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
-                      <h4 class="font-weight-bold m-0">WebSem</h4>
-                  </div>
-                  <p>
-                    The "Semantic Web and Information Extraction Technologies" course, taught by Raphaël Troncy, explores the Semantic Web, an extension of the World Wide Web where web information and services are semantically defined.</p>
-                    <a class="border-bottom border-primary text-decoration-none" href="ressources/websem/MAYAUD_BOUCHY_cycling.pdf" download="Lab1.pdf">Lab 1</a>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">AML</h4>
-                    </div>
-                    <p>The "Algorithmic Machine Learning" course, instructed by Pietro Michiardi, focuses on providing a practical, algorithmic foundation for designing and using scalable machine learning algorithms, especially within the MapReduce programming model. </p>
-                    <a class="border-bottom border-primary text-decoration-none" href="ressources/aml/Group50_Challenge1.pdf" download="Project1.pdf">Project 1 | </a>
-                    <a class="border-bottom border-primary text-decoration-none" href="ressources/aml/Group50_Challenge2.pdf" download="Project2.pdf">Project 2 | </a>
-                    <a class="border-bottom border-primary text-decoration-none" href="ressources/aml/Challenge_3___Natural_Language_Processing (4).pdf" download="Project3.pdf">Project 3</a>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fab fa-2x fa-android service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">MOBSERV</h4>
-                    </div>
-                    <p>The "Mobile Application and Services" course, led by Navid Nikaein, explores the principal mobile platforms—Android, iOS, and PhoneGap/Web OS—and their ecosystems. </p>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">APPIOT</h4>
-                    </div>
-                    <p>The "IoT Application Protocols" course, taught by Roberto Morabito, focuses on the specialized application-level protocols designed for the Internet of Things (IoT), considering the limited battery and CPU capacities of IoT devices.</p>
-                    <a class="border-bottom border-primary text-decoration-none" href="ressources/appiot/report.pdf" download="Lab1.pdf">Lab 1 | </a>
-                    <a class="border-bottom border-primary text-decoration-none" href="ressources/appiot/report1.pdf" download="Lab2.pdf">Lab 2 | </a>
-                    <a class="border-bottom border-primary text-decoration-none" href="ressources/appiot/repport3.pdf" download="Lab3.pdf">Lab 3 </a>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-search service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">DBsys</h4>
-                    </div>
-                    <p>he "Database Management System Implementation" course, instructed by Paolo Papotti and Jean Flavien Bussotti, dives into the core aspects of database system implementation such as data storage, indexing, querying, query optimization, concurrency control, and transaction management. </p>
-                    <a class="border-bottom border-primary text-decoration-none" href="ressources/dbsys/Repport_lab1.pdf" download="Lab1.pdf">Lab 1 |  </a>
-                    <a class="border-bottom border-primary text-decoration-none" href="ressources/dbsys/lab2_report.pdf" download="Lab2.pdf">Lab 2 </a>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Clouds</h4>
-                    </div>
-                    <p>The "Distributed Systems and Cloud Computing" course, led by Raja Appuswamy offers a comprehensive exploration of current trends and topics in distributed systems and cloud computing. </p>
-                    
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">ImProc</h4>
-                    </div>
-                    <p>The "Digital Image Processing" course, taught by Jean-Luc Dugelay, focuses on equipping students with the fundamental skills necessary to utilize computer algorithms for processing digital images.  </p>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Services End -->
+    
 
 
-    <!-- Portfolio Start -->
-    <div class="container-fluid pt-5 pb-3" id="portfolio">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Research</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Project Research</h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-5 pb-4 pb-lg-0">
-                    <img class="img-fluid rounded w-100" src="img/SNN.png" alt="">
-                </div>
-                <div class="col-lg-7">
-                    <h3 class="mb-4">Beyond the Smile: Capturing Micro Expressions with Event-based Vision</h3>
-                    <p>
-                        The semester project titled "Beyond the Smile: Capturing Micro Expressions with Event-based Vision" explores the utilization of event-based vision systems to detect and analyze micro-expressions. Leveraging high temporal precision of event cameras, the project integrates these with advanced machine learning algorithms to enhance the accuracy and speed of micro-expression recognition. The findings suggest significant potential for applications in fields like psychology, security, and human-computer interaction, offering a deeper understanding of human emotions beyond traditional methods.
-                    </p>
-                    <a class="border-bottom border-primary text-decoration-none" href="ressources/semester project/semster_project (2).pdf" download="Report.pdf">Report Semester Project </a>
-
-                    <!-- <a href="" class="btn btn-outline-primary mr-4">Hire Me</a>
-                    <a href="" class="btn btn-outline-primary">Learn More</a>-->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio End -->
-
-    <!-- Portfolio Start -->
-    <div class="container-fluid pt-5 pb-3" id="certification">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Certification</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Certification</h1>
-            </div>
-            <div class="row align-items-center">
-                <!-- Coursera Logo and Certification -->
-                <div class="col-lg-5 pb-4 pb-lg-0">
-                    <img class="img-fluid rounded w-50" src="img/coursera.png" alt="">
-                </div>
-                <div class="col-lg-7">
-                    <h3 class="mb-4">Introduction to TensorFlow for AI</h3>
-                    <a class="border-bottom border-primary text-decoration-none" href="ressources/certification/Coursera.pdf" download="coursera.pdf">Certification_coursera</a>
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <!-- Harvard Logo and Certification -->
-                <div class="col-lg-5 pb-4 pb-lg-0">
-                    <img class="img-fluid rounded w-50" src="img/harvard.jpg" alt="">
-                </div>
-                <div class="col-lg-7">
-                    <h3 class="mb-4">Financial Accounting Online Course</h3>
-                    <a class="border-bottom border-primary text-decoration-none" href="ressources/certification/harvard.pdf" download="harvard.pdf">Certification_harvard</a>
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <!-- Harvard Logo and Certification -->
-                <div class="col-lg-5 pb-4 pb-lg-0">
-                    <img class="img-fluid rounded w-50" src="img/ibm_logo.jpg" alt="">
-                </div>
-                <div class="col-lg-7">
-                    <h3 class="mb-4">Getting Started with Artificial Intelligence</h3>
-                    <a class="border-bottom border-primary text-decoration-none" href="ressources/certification/ibm.pdf" download="ibm.pdf">Certification_ibm</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio End -->
+    
 
 
     <!-- Contact Start -->
-    <div class="container-fluid py-5" id="contact">
+    <section id="contact" class="container-fluid py-5">
         <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Contact Me</h1>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="row mb-3">
-                        <div class="col-sm-6 py-2"><h6>Phone : <span class="text-secondary">07 81 35 66 26</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Mail : <span class="text-secondary">mayaud@eurecom.fr</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Linkedin : <span class="text-secondary">
-                            <a href="https://www.linkedin.com/in/victor-mayaud-b75439218/">Victor MAYAUD</a>
-                        </span></h6></div>
-                    </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Contact</h3>
+                    <p>If you'd like to work together or ask about a project, email me at <a href="mailto:alexandre@example.com">alexandre@example.com</a> or connect on <a href="#">LinkedIn</a>.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Contact End -->
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
-        <div class="container text-center py-5">
-
-            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Github</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
-            </p>
+    <footer class="container-fluid bg-primary text-white mt-5 py-4">
+        <div class="container text-center">
+            <p class="m-0">&copy; 2025 Alexandre Bredillot — <a class="text-white" href="https://github.com/McJack3d">GitHub</a>. All rights reserved.</p>
         </div>
-    </div>
+    </footer>
     <!-- Footer End -->
 
     <!-- Scroll to Bottom -->
@@ -434,22 +221,22 @@
     <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <!-- JavaScript Libraries (local copies) -->
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
+    <script src="Scripts/typed.min.js"></script>
+    <script src="Scripts/easing.min.js"></script>
+    <script src="Scripts/waypoints.min.js"></script>
+    <script src="Scripts/owl.carousel.min.js"></script>
+    <script src="Scripts/isotope.pkgd.min.js"></script>
+    <script src="Scripts/lightbox.min.js"></script>
 
     <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
+    <script src="Scripts/jqBootstrapValidation.min.js"></script>
+    <script src="Scripts/contact.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="Scripts/main.js"></script>
 </body>
 
 </html>

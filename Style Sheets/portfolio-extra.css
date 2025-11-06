@@ -1,0 +1,38 @@
+/* Small extra styles specific to the Alexandre Bredillot portfolio */
+.profile-avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 64px;
+  color: #fff;
+  background: linear-gradient(135deg, #0BCEAF 0%, #078571 100%);
+  box-shadow: 0 6px 18px rgba(11,206,175,0.18);
+}
+
+.profile-avatar-lg {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  color: #fff;
+  background: linear-gradient(135deg, #0BCEAF 0%, #078571 100%);
+  box-shadow: 0 6px 18px rgba(11,206,175,0.12);
+}
+
+/* Small spacing tweaks */
+header#home { padding-top: 5rem; }
+.card-link { color: var(--primary); }
+.card-link:hover { text-decoration: underline; }
+
+@media (max-width: 767px) {
+  .profile-avatar { width: 140px; height: 140px; font-size: 48px; }
+  header#home { padding-top: 4rem; }
+}
+
+/* End of portfolio extras */
