@@ -1,242 +1,241 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8">
-    <title>Alexandre Bredillot — Portfolio</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Alexandre Bredillot portfolio" name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Alexandre Bredillot — Data Specialist & AI Strategist</title>
+    <meta name="description" content="Alexandre BREDILLOT — MSc Data Science & AI student. Data governance, financial data management, statistical analysis.">
+    <meta name="keywords" content="Alexandre Bredillot, Data Specialist, AI Strategist, Data Science, Data Governance">
 
-    <!-- Favicon (small placeholder) -->
-    <link href="Images/close.png" rel="icon">
+    <link rel="icon" href="Images/close.png">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Performance & Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome (CDN) -->
+    <!-- Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-    <!-- Main compiled stylesheet (existing theme) -->
+    <!-- Styles -->
     <link href="Style%20Sheets/style.css" rel="stylesheet">
     <link href="Style%20Sheets/portfolio-extra.css" rel="stylesheet">
-</head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="51">
-    <!-- Navbar Start -->
-    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
-        <a href="#home" class="navbar-brand ml-lg-3">
-            <h1 class="m-0 display-5"><span class="text-primary">Alexandre</span> Bredillot</h1>
-        </a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Alexandre BREDILLOT",
+      "email": "alexandrebredillot@gmail.com",
+      "telephone": "+33 6 20 35 21 73",
+      "jobTitle": "Data Specialist, AI Strategist",
+      "alumniOf": [
+        "EDHEC Business School",
+        "ESSCA School of Management"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/alexandre-bredillot",
+        "https://github.com/McJack3d"
+      ]
+    }
+    </script>
+
+  </head>
+  <body>
+
+    <!-- NAV -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow-sm" role="navigation" aria-label="Main navigation">
+      <div class="container px-4">
+        <a class="navbar-brand" href="#home"><span class="text-primary">Alexandre</span> BREDILLOT</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
-            <div class="navbar-nav m-auto py-0">
-                <a href="#home" class="nav-item nav-link active">Home</a>
-                <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#projects" class="nav-item nav-link">Projects</a>
-                <a href="#skills" class="nav-item nav-link">Skills</a>
-                <a href="#contact" class="nav-item nav-link">Contact</a>
-            </div>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
         </div>
+      </div>
     </nav>
-    <!-- Navbar End -->
 
-    <!-- Hero Start -->
-    <header id="home" class="container-fluid d-flex align-items-center bg-primary text-white" style="min-height:85vh;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5 text-center mb-4 mb-lg-0">
-                    <div class="profile-avatar mx-auto mb-3">AB</div>
-                    <h2 class="h4 text-light mb-1">Alexandre Bredillot</h2>
-                    <p class="mb-0">Product-minded Software Engineer • Data Enthusiast • Open Source</p>
-                </div>
-                <div class="col-lg-7 text-center text-lg-left">
-                    <h3 class="text-white font-weight-normal mb-3">Hey — I'm Alexandre</h3>
-                    <h1 class="display-3 text-uppercase text-white mb-3">I build useful things with data & code</h1>
-                    <p class="lead text-light">I design and implement data-driven web applications and tools. My focus is on clean code, reliable systems, and delightful UX.</p>
-                    <div class="mt-4">
-                        <a class="btn btn-light mr-3" href="#projects">See my work</a>
-                        <a class="btn btn-outline-light" href="#contact">Get in touch</a>
-                    </div>
-                </div>
+    <!-- HERO / CONTACT -->
+    <header id="home" class="d-flex align-items-center bg-primary text-white" style="min-height:72vh; padding-top:4.5rem;">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 text-center mb-4 mb-lg-0">
+            <div class="profile-avatar" role="img" aria-label="Profile initials A B">AB</div>
+            <h2 class="mt-3">Alexandre BREDILLOT</h2>
+            <p class="mb-1">Data Specialist • AI Strategist • Data Governance</p>
+            <p class="text-light small mb-0">MSc Data Science & AI student — finance & data governance background</p>
+            <div class="mt-3">
+              <a class="btn btn-light btn-sm mr-2" href="#contact">Contact</a>
+              <a class="btn btn-outline-light btn-sm" href="#experience">Experience</a>
             </div>
+          </div>
+
+          <div class="col-lg-7">
+            <h1 class="display-4">I turn financial and operational data into reliable insight and automation</h1>
+            <p class="lead text-light">Skilled in Python, SQL, Dataiku, QlikSense, BI tools, and statistical analysis. Professional experience in banking, asset management and business development.</p>
+
+            <div class="mt-4">
+              <strong class="d-block">Email</strong>
+              <a class="text-light" href="mailto:alexandrebredillot@gmail.com">alexandrebredillot@gmail.com</a>
+              <div class="mt-2"><strong>Phone</strong> <a class="text-light" href="tel:+33620352173">+33 6 20 35 21 73</a></div>
+              <div class="mt-2"><strong>LinkedIn</strong> <a class="text-light" href="https://www.linkedin.com/in/alexandre-bredillot" target="_blank" rel="noopener">linkedin.com/in/alexandre-bredillot</a></div>
+            </div>
+
+          </div>
         </div>
+      </div>
     </header>
-    <!-- Hero End -->
 
-    <!-- About Start -->
-    <section id="about" class="container-fluid py-5">
+    <main id="main" role="main">
+
+      <!-- ABOUT / SUMMARY -->
+      <section id="about" class="py-5">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-4 text-center mb-4 mb-lg-0">
-                    <div class="profile-avatar-lg mx-auto mb-3">AB</div>
-                    <h3 class="mb-1">Alexandre Bredillot</h3>
-                    <p class="text-muted mb-0">Software Engineer & Data Enthusiast</p>
-                </div>
-                <div class="col-lg-8">
-                    <h3>About me</h3>
-                    <p>I build web applications and data tools that help teams make better decisions. I enjoy clean code, reproducible data pipelines, and simple product-focused design. I also contribute to open source and write short technical notes when I learn something useful.</p>
-                    <div class="row mt-3">
-                        <div class="col-md-6"><strong>Location</strong><div class="text-muted">Your City, Country</div></div>
-                        <div class="col-md-6"><strong>Email</strong><div class="text-muted">alexandre@example.com</div></div>
-                    </div>
-                </div>
-            </div>
+          <h3>Professional Summary</h3>
+          <p>MSc Data Science & AI student with strong experience in data governance, financial data management and statistical analysis. Skilled in Python, SQL and BI tools, with professional experience in banking, asset management and business development. Motivated to contribute to innovative organisations by leveraging data to improve decision-making and operational efficiency.</p>
         </div>
-    </section>
-    <!-- About End -->
+      </section>
 
-    <!-- Experience / Education -->
-    <section id="experience" class="container-fluid py-5 bg-light">
+      <!-- EDUCATION -->
+      <section id="education" class="py-5 bg-light">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h4>Experience</h4>
-                    <ul>
-                        <li>Software Engineer — Company / Project (Year–Present)</li>
-                        <li>Data tooling & automation — Open-source contributions</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h4>Education</h4>
-                    <ul>
-                        <li>MSc / BSc — University (Year)</li>
-                    </ul>
-                </div>
+          <h3>Education</h3>
+          <div class="row">
+            <div class="col-md-6">
+              <h5>EDHEC Business School — MSc Data Science & Artificial Intelligence</h5>
+              <p class="mb-1 small text-muted">Since 2025 — Lille, France</p>
+              <p class="mb-3">Ranked #4 Business School in France. Focus on applied data science and AI for business.</p>
             </div>
+            <div class="col-md-6">
+              <h5>ESSCA School of Management — Bachelor in International Management</h5>
+              <p class="mb-1 small text-muted">2022 — 2025 — Paris, France</p>
+              <p class="mb-3">Studied international management with coursework in finance and analytics.</p>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Skills Start -->
-    <section id="skills" class="container-fluid py-5">
+      <!-- EXPERIENCE -->
+      <section id="experience" class="py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h4>Technical Skills</h4>
-                    <ul>
-                        <li>Python, JavaScript, TypeScript</li>
-                        <li>React / Vue, Node.js, Flask</li>
-                        <li>SQL, PostgreSQL, Redis</li>
-                        <li>Docker, CI/CD, AWS / GCP basics</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h4>Other Skills</h4>
-                    <ul>
-                        <li>Product thinking, UX, Collaboration</li>
-                        <li>Testing, monitoring, observability</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+          <h3>Professional Experience</h3>
 
-    <!-- Projects Start -->
-    <section id="projects" class="container-fluid py-5">
+          <div class="mb-4">
+            <h5>La Banque Postale — Data Analyst Intern (Payment Department)</h5>
+            <p class="small text-muted">January – July 2025 — Paris, France</p>
+            <ul>
+              <li>Developed automated reporting and dashboards (QlikSense, Dataiku, Python, SQL) for real-time monitoring of payment flows.</li>
+              <li>Implemented anomaly detection and process improvements for SEPA/DSP2/IP flows, reducing delays and operational costs.</li>
+              <li>Managed data quality: validation rules and automated error detection to ensure reliability of financial data.</li>
+              <li>Performed XML mapping and integration to improve traceability and usability of structured files.</li>
+              <li>Manager: Hervé Harvoire (herve.harvoire@labanquepostale.fr)</li>
+            </ul>
+          </div>
+
+          <div class="mb-4">
+            <h5>Sienna Investment Managers — Account Payables Trainee (Finance Team)</h5>
+            <p class="small text-muted">January – July 2024 — Luxembourg</p>
+            <ul>
+              <li>Managed daily treasury operations, reconciliations and liquidity reporting.</li>
+              <li>Automated invoicing processes and monitored accounts payable/receivable flows.</li>
+              <li>Supported regulatory compliance (VAT, tax filings) and month-end close tasks.</li>
+            </ul>
+          </div>
+
+          <div class="mb-4">
+            <h5>French Army Reserve — 2nd Dragoon Regiment (Reserve Soldier)</h5>
+            <p class="small text-muted">Since December 2022 — Fontevraud L’Abbaye, France</p>
+            <p>Cavalry regiment trained for NRBC operations (Nuclear, Radiological, Biological and Chemical threats).</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="py-5 bg-light">
         <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-4">
-                    <h2>Selected Projects</h2>
-                    <p class="text-muted">Small selection — links to repos or live demos are recommended.</p>
-                </div>
+          <h3>Skills</h3>
+          <div class="row">
+            <div class="col-md-6">
+              <h5>Technical</h5>
+              <ul>
+                <li>Python (pandas, NumPy, scikit-learn, matplotlib, seaborn)</li>
+                <li>SQL / PostgreSQL / database querying</li>
+                <li>Data platforms: Dataiku, QlikSense</li>
+                <li>BI: Tableau, Power BI</li>
+                <li>Docker, basics of Java, HTML/CSS</li>
+                <li>Excel: financial modelling & VBA automation</li>
+              </ul>
             </div>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Project One</h5>
-                            <p class="card-text">Short description of the project, tech used and outcome. Add a link to the repo or demo.</p>
-                            <a href="#" class="card-link">Learn more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Project Two</h5>
-                            <p class="card-text">Short description of the project, tech used and outcome. Add a link to the repo or demo.</p>
-                            <a href="#" class="card-link">Learn more</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-6">
+              <h5>Other</h5>
+              <ul>
+                <li>Data governance & data quality</li>
+                <li>Statistical analysis & modelling</li>
+                <li>Product thinking, testing, observability</li>
+                <li>Collaboration, mentoring and cross-functional communication</li>
+              </ul>
             </div>
-        </div>
-    </section>
+          </div>
 
-    <!-- Certifications / Misc -->
-    <section id="certifications" class="container-fluid py-5 bg-light">
+          <h5 class="mt-4">Languages</h5>
+          <ul>
+            <li>French — native</li>
+            <li>English — advanced (C1). TOEIC: 970, TOEFL iBT: 95</li>
+            <li>Spanish — B2</li>
+            <li>Russian — A2</li>
+          </ul>
+
+          <h5 class="mt-3">Interests</h5>
+          <p>Finance & investing, sports (calisthenics / running), motorsports, gaming.</p>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h4>Certifications & Talks</h4>
-                    <p class="text-muted">List relevant certificates, talks or workshops here. Keep it short and link to PDFs if you want quick downloads.</p>
-                </div>
+          <h3>Contact</h3>
+          <div class="row">
+            <div class="col-md-6">
+              <p class="mb-1"><strong>Email:</strong> <a href="mailto:alexandrebredillot@gmail.com">alexandrebredillot@gmail.com</a></p>
+              <p class="mb-1"><strong>Phone:</strong> <a href="tel:+33620352173">+33 6 20 35 21 73</a></p>
+              <p class="mb-1"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/alexandre-bredillot" target="_blank" rel="noopener">linkedin.com/in/alexandre-bredillot</a></p>
+              <p class="mb-1"><strong>GitHub:</strong> <a href="https://github.com/McJack3d" target="_blank" rel="noopener">github.com/McJack3d</a></p>
             </div>
-        </div>
-    </section>
-
-
-    
-
-
-    
-
-
-    <!-- Contact Start -->
-    <section id="contact" class="container-fluid py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>Contact</h3>
-                    <p>If you'd like to work together or ask about a project, email me at <a href="mailto:alexandre@example.com">alexandre@example.com</a> or connect on <a href="#">LinkedIn</a>.</p>
-                </div>
-                <div class="col-md-6">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#about">About</a></li>
-                    </ul>
-                </div>
+            <div class="col-md-6">
+              <p>If you want a downloadable CV, upload a PDF to Images/CV_Alexandre_Bredillot.pdf and I will add a download button.</p>
             </div>
+          </div>
         </div>
-    </section>
-    <!-- Contact End -->
+      </section>
 
+    </main>
 
-    <!-- Footer Start -->
-    <footer class="container-fluid bg-primary text-white mt-5 py-4">
-        <div class="container text-center">
-            <p class="m-0">&copy; 2025 Alexandre Bredillot — <a class="text-white" href="https://github.com/McJack3d">GitHub</a>. All rights reserved.</p>
-        </div>
+    <!-- FOOTER -->
+    <footer class="py-4 bg-primary text-white">
+      <div class="container text-center small">&copy; 2025 Alexandre BREDILLOT — All rights reserved.</div>
     </footer>
-    <!-- Footer End -->
 
-    <!-- Scroll to Bottom -->
-    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-
-    <!-- JavaScript Libraries (local copies) -->
+    <!-- Scripts -->
     <script src="Scripts/jquery-3.4.1.min.js"></script>
     <script src="Scripts/bootstrap.bundle.min.js"></script>
-    <script src="Scripts/typed.min.js"></script>
-    <script src="Scripts/easing.min.js"></script>
-    <script src="Scripts/waypoints.min.js"></script>
-    <script src="Scripts/owl.carousel.min.js"></script>
-    <script src="Scripts/isotope.pkgd.min.js"></script>
-    <script src="Scripts/lightbox.min.js"></script>
+    <script>
+      // Smooth scrolling for anchor links
+      (function($){
+        $(document).on('click','a.nav-link[href^="#"]', function(e){
+          e.preventDefault();
+          var target = $(this.hash);
+          if(target.length){ $('html,body').animate({scrollTop: target.offset().top - 70}, 400); }
+        });
+      })(jQuery);
+    </script>
 
-    <!-- Contact Javascript File -->
-    <script src="Scripts/jqBootstrapValidation.min.js"></script>
-    <script src="Scripts/contact.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="Scripts/main.js"></script>
-</body>
-
+  </body>
 </html>
