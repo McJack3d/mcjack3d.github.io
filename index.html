@@ -13,14 +13,16 @@
     <meta property="og:url" content="https://mcjack3d.github.io/">
     <meta property="og:title" content="Alexandre Bredillot — Data Specialist & AI Strategist">
     <meta property="og:description" content="MSc Data Science & AI student with expertise in data governance, financial data management, and statistical analysis.">
-    <meta property="og:image" content="https://mcjack3d.github.io/Images/close.png">
+    <!-- Note: Replace with your own social preview image (1200x630px recommended) -->
+    <!-- <meta property="og:image" content="https://mcjack3d.github.io/Images/social-preview.jpg"> -->
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://mcjack3d.github.io/">
     <meta property="twitter:title" content="Alexandre Bredillot — Data Specialist & AI Strategist">
     <meta property="twitter:description" content="MSc Data Science & AI student with expertise in data governance, financial data management, and statistical analysis.">
-    <meta property="twitter:image" content="https://mcjack3d.github.io/Images/close.png">
+    <!-- Note: Replace with your own social preview image (1200x630px recommended) -->
+    <!-- <meta property="twitter:image" content="https://mcjack3d.github.io/Images/social-preview.jpg"> -->
 
     <link rel="icon" href="Images/close.png">
 
@@ -363,21 +365,10 @@
           return false;
         });
 
-        // Check if CV file exists and handle button
+        // CV download button - open directly, browser handles 404
         $('#cv-download').click(function(e) {
-          e.preventDefault();
-          var cvUrl = $(this).attr('href');
-          // Try to fetch the file
-          $.ajax({
-            url: cvUrl,
-            type: 'HEAD',
-            success: function() {
-              window.open(cvUrl, '_blank');
-            },
-            error: function() {
-              alert('CV not found! Please upload your CV to Images/CV_Alexandre_Bredillot.pdf\n\nFor help, check the SETUP_GUIDE.md file.');
-            }
-          });
+          // Let the browser handle the download normally
+          // If file doesn't exist, browser will show 404
         });
       })(jQuery);
     </script>
