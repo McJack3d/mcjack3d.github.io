@@ -58,7 +58,7 @@
   <body>
 
 <!-- NAV -->
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark shadow-sm" role="navigation" aria-label="Main navigation">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow-sm" role="navigation" aria-label="Main navigation">
   <div class="container px-4">
     <a class="navbar-brand" href="#home"><span class="text-primary">Alexandre</span> BREDILLOT</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -78,21 +78,35 @@
 </nav>
 
 <!-- HERO / CONTACT (VERTICAL LAYOUT) -->
-<header id="home" class="d-flex flex-column justify-content-center align-items-center text-center bg-primary text-white" style="min-height: 100vh; padding-top: 5rem;">
+<header id="home" class="d-flex flex-column justify-content-center align-items-center text-center bg-primary text-white" style="min-height: 90vh; padding-top: 5rem;">
   <div class="container">
 
     <!-- TITLE & TAGLINE -->
     <h1 class="display-4 mb-2">Alexandre BREDILLOT</h1>
-    <p class="lead mb-1">Data Specialist • AI Strategist </p>
-    <p class="text-light mb-1">MSc Data Science & AI student — finance & data background</p>
+    <p class="lead mb-1">Data Specialist • AI Strategist • Data Governance</p>
+    <p class="text-light small mb-4">MSc Data Science & AI student — finance & data background</p>
 
     <!-- SHORT INTRO -->
-    <p class="mb-1" style="max-width: 700px; margin: 0 auto;">
+    <p class="mb-4" style="max-width: 700px; margin: 0 auto;">
       I turn financial and operational data into reliable insight and automation.
       Skilled in Python, SQL, Dataiku, QlikSense, BI tools (Tableau & Power BI), and statistical analysis.
       Professional experience in banking, asset management, and business development.
     </p>
+
+    <!-- CONTACT BUTTONS -->
+ <div class="mb-4 d-flex justify-content-center flex-wrap gap-2">
+  <a class="btn btn-primary btn-sm" href="#contact">Contact</a>
+  <a class="btn btn-outline-primary btn-sm" href="#experience">Experience</a>
+  <a class="btn btn-outline-primary btn-sm" href="#skills">Skills</a>
+  <a class="btn btn-outline-primary btn-sm" href="#projects">Projects</a>
 </div>
+
+    <!-- CONTACT INFO -->
+    <div class="text-light small">
+      <div><strong>Email:</strong> <a class="text-light" href="mailto:alexandrebredillot@gmail.com">alexandrebredillot@gmail.com</a></div>
+      <div><strong>Phone:</strong> <a class="text-light" href="tel:+33620352173">+33 6 20 35 21 73</a></div>
+      <div><strong>LinkedIn:</strong> <a class="text-light" href="https://www.linkedin.com/in/alexandre-bredillot" target="_blank" rel="noopener">linkedin.com/in/alexandre-bredillot</a></div>
+    </div>
 
   </div>
 </header>
@@ -131,14 +145,14 @@
         <div class="container">
           <h3 class="section-title">Professional Experience</h3>
 
-          <div class="mb-4">
-            <h5>La Banque Postale — Data Analyst Intern (Data Team, Payment Department)</h5>
-            <p class="small text-muted">January – July 2025 — Paris, France</p>
-            <ul>
-              <li>Developed tools: automated reporting and dashboards (QlikSense, Dataiku, Python, SQL) for real-time monitoring of payment flows.</li>
-              <li>Process optimization: anomaly detection, improvement of SEPA/DSP2/IP flows, reducing delays and operational costs.</li>
-              <li>Data quality management: implemented validation rules and automated error detection to ensure reliability of financial data.</li>
-              <li>XML mapping & integration: structured files to enhance traceability and usability of data.</li>
+            <div class="mt-3">
+              <a class="btn btn-light btn-sm mr-2" href="#contact" aria-label="Contact"><i class="fas fa-envelope" aria-hidden="true"></i> Contact</a>
+              <a class="btn btn-outline-light btn-sm" href="#experience" aria-label="Experience"><i class="fas fa-briefcase" aria-hidden="true"></i> Experience</a>
+              <a class="btn btn-outline-light btn-sm" href="#skills" aria-label="Skills"><i class="fas fa-tools" aria-hidden="true"></i> Skills</a>
+              <a class="btn btn-outline-light btn-sm" href="#projects" aria-label="Projects"><i class="fas fa-folder-open" aria-hidden="true"></i> Projects</a>
+            </div>
+              <li>Managed data quality: validation rules and automated error detection to ensure reliability of financial data.</li>
+              <li>Performed XML mapping and integration to improve traceability and usability of structured files.</li>
             </ul>
           </div>
 
@@ -146,16 +160,16 @@
             <h5>Sienna Investment Managers — Account Payables Trainee (Finance Team)</h5>
             <p class="small text-muted">January – July 2024 — Luxembourg</p>
             <ul>
-              <li>Managed daily treasury operations, bank reconciliations, and liquidity reporting.</li>
-              <li>Automated invoicing processes and monitored accounts payable/receivable.</li>
-              <li>Assisted in regulatory compliance (VAT, tax filings).</li>
+              <li>Managed daily treasury operations, reconciliations and liquidity reporting.</li>
+              <li>Automated invoicing processes and monitored accounts payable/receivable flows.</li>
+              <li>Supported regulatory compliance (VAT, tax filings) and month-end close tasks.</li>
             </ul>
           </div>
 
           <div class="mb-4">
-            <h5>French Army Reserve — 2nd Dragoon Regiment, 6th Squadron (Reserve Soldier)</h5>
-            <p class="small text-muted">Since December 2022 — Fontevraud L'Abbaye, France</p>
-            <p>Cavalry regiment of the Ground Army specialized in NRBC: Equipped and trained to counter and fight against/in Nuclear, Radiological, Biological, and Chemical threats.</p>
+            <h5>French Army Reserve — 2nd Dragoon Regiment (Reserve Soldier)</h5>
+            <p class="small text-muted">Since December 2022 — Fontevraud L’Abbaye, France</p>
+            <p>Cavalry regiment trained for NRBC operations (Nuclear, Radiological, Biological and Chemical threats).</p>
           </div>
 
         </div>
