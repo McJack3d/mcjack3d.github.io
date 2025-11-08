@@ -167,3 +167,45 @@ footer a:hover {
 }
 
 /* End of portfolio extras */
+
+/* Centering helpers for small groups that use mb-4 / mt-3 wrappers */
+/* Keep button groups centered in hero and other places */
+.mb-4.d-flex,
+.mb-4.d-flex.flex-wrap,
+.mb-4.justify-content-center,
+.mt-3.d-flex,
+.mt-3.d-flex.flex-wrap,
+.mt-3.justify-content-center {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+/* Fallback: center inline children when not using flex utilities */
+header .mb-4, header .mt-3, footer .mb-4 { text-align: center; }
+
+/* Ensure rows keep spacing but don't break centering */
+.row > .mb-4 { margin-bottom: 1.5rem !important; }
+
+/* Specific header button group layout */
+header .mt-3 .btn { min-width: 110px; }
+
+/* Small responsive tweak: stack header CTAs on very small screens */
+@media (max-width: 420px) {
+  header .mt-3 { gap: 0.4rem; }
+  header .mt-3 .btn { min-width: 100%; }
+}
+
+/* Keep experience blocks left-aligned to match the rest of the content */
+#experience .mb-4 {
+  text-align: left;
+}
+
+#experience .mb-4 ul {
+  display: block;
+  text-align: left;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
