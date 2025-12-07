@@ -344,8 +344,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         });
       })(jQuery);
 
-      // Particles.js initialization
-      particlesJS('particles-js', {
+      // Particles.js initialization - wait for DOM to be ready
+      $(document).ready(function() {
+        particlesJS('particles-js', {
         "particles": {
           "number": {
             "value": 80,
@@ -449,6 +450,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           }
         },
         "retina_detect": true
+      });
       });
     </script>
 
