@@ -1875,7 +1875,7 @@ pre code {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #495057;
+  color: #2A1FFF;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
@@ -1904,7 +1904,7 @@ pre code {
   background-color: #fff;
   border-color: #62f7df;
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(11, 206, 175, 0.25);
+  box-shadow: 0 0 0 0.2rem #2A1FFF;
 }
 
 .form-control::placeholder {
@@ -2505,7 +2505,7 @@ h6,
 
 .navbar-light .navbar-nav .nav-link {
   padding: 25px 10px;
-  color: #343a40;
+  color: #2A1FFF;
   font-weight: 500;
   outline: none;
 }
@@ -2742,6 +2742,27 @@ header#home .container {
 
 .scroll-to-top i {
   color: #ffffff;
+}
+
+/* Scroll-to-top: center icon + enforce purple */
+#scrollToTop.scroll-to-top {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: #2A1FFF;
+  border-color: #2A1FFF;
+  color: #fff;
+}
+
+#scrollToTop.scroll-to-top:hover,
+#scrollToTop.scroll-to-top:focus {
+  background-color: #2A1FFF;
+  border-color: #2A1FFF;
+  color: #fff;
 }
 
 /* Section title styling */
@@ -3032,7 +3053,7 @@ a.btn:focus,
 .btn-outline-primary:hover,
 .btn-outline-primary:focus {
   color: #fff;
-  background-color: #0b5ed7;
+  background-color: #2A1FFF;
   border-color: #0b5ed7;
 }
 
@@ -3044,5 +3065,20 @@ a.btn:focus,
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
   text-decoration: none !important;
-  color: #0b5ed7 !important;
+  color: #2A1FFF !important;
+}
+
+/* Larger "View GitHub Projects" CTA */
+a.btn-project,
+.project-card .btn.btn-project {
+  padding: 14px 36px;
+  font-size: 1.1rem;
+}
+
+/* Make scroll-to-top hover match other buttons */
+.scroll-to-top:hover,
+.scroll-to-top:focus {
+  background-color: #2A1FFF;
+  border-color: #2A1FFF;
+  color: #ffffff;
 }
