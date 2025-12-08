@@ -2913,3 +2913,108 @@ header#home .container {
   background-color: #343a40 !important;
 }
 
+/* Footer styling improvements */
+footer.py-4 {
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
+
+footer a {
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+/* Improve link styling in footer */
+footer .text-white {
+  color: #ffffff !important;
+}
+
+footer .text-white:hover {
+  color: #2A1FFF !important;
+}
+
+/* Section spacing improvements */
+section {
+  scroll-margin-top: 70px;
+}
+
+/* Improve hero section text readability */
+header#home {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Card styling improvements */
+.card {
+  border: 1px solid #dee2e6;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border-color: #000000;
+}
+
+/* Badge improvements */
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.6em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+}
+
+/* Responsive text utilities */
+@media (max-width: 767.98px) {
+  .display-4 {
+    font-size: 2.5rem;
+  }
+  
+  header#home {
+    min-height: 100vh;
+    padding-top: 4rem;
+  }
+  
+  .lead {
+    font-size: 1.1rem;
+  }
+}
+
+/* Smooth scrolling for all anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Link hover effects */
+a {
+  transition: color 0.3s ease;
+}
+
+/* Contact section improvements */
+#contact a {
+  color: #000000;
+  font-weight: 500;
+}
+
+#contact a:hover {
+  color: #2A1FFF;
+  text-decoration: none;
+}
+
+#contact i {
+  margin-right: 0.5rem;
+  color: #000000;
+}
+
+/* Small text utility */
+.small {
+  font-size: 80%;
+  font-weight: 400;
+}
+
