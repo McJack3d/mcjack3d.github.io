@@ -209,3 +209,11 @@ header .mt-3 .btn { min-width: 110px; }
   margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
+
+/* Remove underline on all project buttons */
+#projects .project-card .card-body a.btn,
+#projects .project-card .card-body a.btn:hover,
+#projects .project-card .card-body a.btn:focus,
+#projects .project-card .card-body a.btn:active {
+  text-decoration: none !important;
+}

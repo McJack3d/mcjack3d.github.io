@@ -2249,15 +2249,6 @@ textarea.form-control {
   border-color: #dc3545;
 }
 
-.was-validated .custom-file-input:invalid ~ .custom-file-label, .custom-file-input.is-invalid ~ .custom-file-label {
-  border-color: #dc3545;
-}
-
-.was-validated .custom-file-input:invalid:focus ~ .custom-file-label, .custom-file-input.is-invalid:focus ~ .custom-file-label {
-  border-color: #dc3545;
-  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
-}
-
 .navbar.bg-dark {
     background-color: #000000 !important; /* Pure black */
 }
@@ -2655,6 +2646,8 @@ h6,
   transition: .5s;
 }
 
+
+
 .portfolio-item:hover .portfolio-btn {
   opacity: 1;
   width: calc(100% - 60px);
@@ -3013,3 +3006,43 @@ a {
   font-weight: 400;
 }
 
+/* Buttons: no underline on hover + consistent hover colors */
+a.btn,
+.btn {
+  text-decoration: none !important;
+}
+
+a.btn:hover,
+.btn:hover,
+a.btn:focus,
+.btn:focus {
+  text-decoration: none !important;
+  color: #fff;
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+/* Outline primary: unify hover */
+.btn-outline-primary {
+  color: #0b5ed7;
+  border-color: #0b5ed7;
+  background: transparent;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  color: #fff;
+  background-color: #0b5ed7;
+  border-color: #0b5ed7;
+}
+
+/* Navbar links: no underline + consistent hover color */
+.navbar .nav-link {
+  text-decoration: none !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  text-decoration: none !important;
+  color: #0b5ed7 !important;
+}
