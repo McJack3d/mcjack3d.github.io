@@ -2387,8 +2387,13 @@ textarea.form-control {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 1px solid #dee2e6;
   border-radius: 0.25rem;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border-color: #000000;
 }
 
 .card-body {
@@ -2945,16 +2950,6 @@ section {
 /* Improve hero section text readability */
 header#home {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-/* Card styling improvements */
-.card {
-  border: 1px solid #dee2e6;
-  transition: all 0.3s ease;
-}
-
-.card:hover {
-  border-color: #000000;
 }
 
 /* Badge improvements */
