@@ -289,12 +289,6 @@ For specific component usage, please reach out first.
 - 💻 **GitHub**: [@mcjack3d](https://github.com/mcjack3d)
 - 📱 **Phone**: +33 6 20 35 21 73
 
-### Professional Inquiries
-
-For collaboration, internship opportunities, or project discussions:
-- **Manager Reference**: Mr. Hervé Harvoire, Payment Hub Manager at La Banque Postale  
-  Email: [herve.harvoire@labanquepostale.fr](mailto:herve.harvoire@labanquepostale.fr)
-
 ---
 
 ### 🎯 Areas of Interest
