@@ -4,21 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
-    <title>Alexandre Bredillot — Data Specialist & AI Strategist</title>
+    <title>Alexandre Bredillot — Data and AI specialist</title>
     <meta name="description" content="Alexandre BREDILLOT — MSc Data Science & AI student. Data governance, financial data management, statistical analysis.">
-    <meta name="keywords" content="Alexandre Bredillot, Data Specialist, AI Strategist, Data Science, Data Governance">
+    <meta name="keywords" content="Alexandre Bredillot, Data and AI specialist, Data Science, Data Governance">
     <meta name="author" content="Alexandre BREDILLOT">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mcjack3d.github.io/">
-    <meta property="og:title" content="Alexandre Bredillot — Data Specialist & AI Strategist">
+    <meta property="og:title" content="Alexandre Bredillot — Data and AI specialist">
     <meta property="og:description" content="MSc Data Science & AI student with expertise in data governance, financial data management, and statistical analysis.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://mcjack3d.github.io/">
-    <meta property="twitter:title" content="Alexandre Bredillot — Data Specialist & AI Strategist">
+    <meta property="twitter:title" content="Alexandre Bredillot — Data and AI specialist">
     <meta property="twitter:description" content="MSc Data Science & AI student with expertise in data governance, financial data management, and statistical analysis.">
 
     <link rel="icon" href="Images/close.png">
@@ -42,7 +42,7 @@
       "name": "Alexandre BREDILLOT",
       "email": "alexandrebredillot@gmail.com",
       "telephone": "+33 6 20 35 21 73",
-      "jobTitle": "Data Specialist, AI Strategist",
+      "jobTitle": "Data and AI specialist",
       "alumniOf": [
         "EDHEC Business School",
         "ESSCA School of Management"
@@ -78,12 +78,13 @@
 </nav>
 
 <!-- HERO / CONTACT (VERTICAL LAYOUT) -->
-<header id="home" class="d-flex flex-column justify-content-center align-items-center text-center bg-primary text-white" style="min-height: 100vh; padding-top: 5rem;">
+<header id="home" class="d-flex flex-column justify-content-center align-items-center text-center bg-primary text-white" style="min-height: 100vh; padding-top: 5rem; position: relative; overflow: hidden;">
+  <div id="particles-js"></div>
   <div class="container">
 
     <!-- TITLE & TAGLINE -->
     <h1 class="display-4 mb-2">Alexandre BREDILLOT</h1>
-    <p class="lead mb-1">Data Specialist • AI Strategist </p>
+    <p class="lead mb-1">Data and AI specialist</p>
     <p class="text-light mb-1">MSc Data Science & AI student — finance & data background</p>
 
     <!-- SHORT INTRO -->
@@ -290,7 +291,12 @@
     <!-- Scripts -->
     <script src="Scripts/jquery-3.4.1.min.js"></script>
     <script src="Scripts/bootstrap.bundle.min.js"></script>
+    <script src="Scripts/particles.js"></script>
     <script>
+      particlesJS.load('particles-js', 'Scripts/particlesjs-config.json', function() {
+        console.log('particles config loaded');
+      });
+
       // Smooth scrolling for anchor links
       (function($){
         $(document).on('click','a.nav-link[href^="#"], a.btn[href^="#"]', function(e){
