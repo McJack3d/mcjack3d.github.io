@@ -93,8 +93,6 @@
       Professional experience in banking, asset management, and business development.
     </p>
 </div>
-
-  </div>
 </header>
 
     <main id="main" role="main">
@@ -126,7 +124,7 @@
               <p class="mb-1 small text-muted">2022 — 2025 — Paris, France</p>
               <p class="mb-3">Studied international management with coursework in finance and analytics.</p>
 
-              <p class="mb-1"><strong>Business, strategy & project delivery:</strong> project management, strategy, organizational behaviour, cross-cultural management, business simulation.</p>
+              <p class="mb-1"><strong>Business, strategy & project delivery:</strong> project management, strategy, organisational behaviour, cross-cultural management, business simulation.</p>
               <p class="mb-1"><strong>Marketing, negotiation & communication:</strong> marketing project, negotiation, market research, multimedia communication (campaigns & stakeholder comms).</p>
               <p class="mb-0"><strong>Finance, economics & governance:</strong> finance for managers, economics, political economy, international trade, intro to law & international relations.</p>
             </div>
@@ -233,26 +231,27 @@
       <!-- PROJECTS -->
       <section id="projects" class="py-5 bg-light">
         <div class="container">
-          <h3 class="mb-4">Projects & Portfolio</h3>
+          <h3 class="section-title">Projects & Portfolio</h3>
           <div class="row">
             <div class="col-md-6 mb-4">
               <div class="card shadow-sm h-100 project-card">
                 <div class="card-body">
-                  <h5 class="card-title">🎯 Multi-Source Sentiment & Short-Term Price Dynamics (Small-Cap Nuclear & Energy Transition)</h5>
-                  <p class="card-text">Research proposal investigating whether sentiment signals extracted from professional news and social media can explain or predict short-term returns (T+1…T+5) and volatility for an “information-sensitive” universe of small-cap nuclear and energy-transition equities. The pipeline covers data collection (OHLCV + benchmarks/commodities + text), sentiment scoring (FinBERT for news; VADER / finance-oriented NLP baselines for social), daily aggregation and fusion, and modeling with rolling validation (AR/GARCH baselines, Random Forest/XGBoost, LSTM) with interpretability via SHAP and tests for asymmetry/negativity bias.</p>
+                  <h5 class="card-title">📈 Sentiment Analysis & Short-Term Return Predictability in Small-Cap Nuclear Equities — MSc Thesis (EDHEC, 2026)</h5>
+                  <p class="card-text">Does FinBERT-derived news sentiment improve short-term return prediction for small-cap nuclear equities? This MSc thesis builds a fully reproducible five-phase pipeline — feasibility audit, data engineering (3,992 ticker-days, 25,885 news articles covering SMR, LEU, NNE), FinBERT sentiment scoring, LSTM training with chronological hold-out, and SHAP explainability. Key finding: sentiment augmentation yields a statistically significant average MAE improvement of <strong>+5.18%</strong> at the 5-day horizon; no aggregate benefit at the 1-day horizon. Hypothesis testing via Diebold-Mariano tests.</p>
                   <div class="mt-3">
                     <span class="badge badge-primary mr-1">Python</span>
-                    <span class="badge badge-primary mr-1">NLP / Sentiment</span>
-                    <span class="badge badge-primary">Time series</span>
+                    <span class="badge badge-primary mr-1">FinBERT / NLP</span>
+                    <span class="badge badge-primary mr-1">LSTM</span>
+                    <span class="badge badge-primary mr-1">SHAP</span>
+                    <span class="badge badge-primary">Financial ML</span>
                   </div>
                   <div class="mt-3">
-                    <!-- View Project -->
-                    <a href="#" class="btn btn-sm btn-primary" target="_blank" rel="noopener">
-                      <i class="fas fa-download text-white" aria-hidden="true"></i> View Project
+                    <!-- Download Thesis -->
+                    <a href="Images/Bredillot_Thesis_EDHEC_v3.docx" class="btn btn-sm btn-primary" download rel="noopener">
+                      <i class="fas fa-file-alt text-white" aria-hidden="true"></i> Download Thesis
                     </a>
-
                     <!-- Source Code -->
-                    <a href="#" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener">
+                    <a href="https://github.com/McJack3d/FIN_PP/tree/main/THES_SA" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener">
                       <i class="fas fa-code" aria-hidden="true"></i> Source Code
                     </a>
                   </div>
