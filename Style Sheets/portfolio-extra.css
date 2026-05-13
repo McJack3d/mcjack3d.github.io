@@ -499,6 +499,16 @@ header .mt-3 .btn { min-width: 110px; }
   border-color: #2A1FFF;
 }
 
+/* Certification issuer heading */
+.cert-issuer-name {
+  font-weight: 700;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #2A1FFF;
+  margin-bottom: 0.5rem;
+}
+
 /* Language & Certification lists */
 .language-list, .cert-list {
   list-style: none;
