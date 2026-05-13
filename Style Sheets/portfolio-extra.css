@@ -235,6 +235,44 @@ header .mt-3 .btn { min-width: 110px; }
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.travel-card-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+}
+.travel-card-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+.travel-card-link:hover .travel-card {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15) !important;
+}
+.travel-card-link:hover .travel-read-more {
+  color: #2A1FFF;
+  transform: translateX(4px);
+}
+.travel-card-link:hover .travel-card-emoji {
+  transform: scale(1.1);
+}
+.travel-read-more {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #000;
+  letter-spacing: 0.02em;
+  transition: all 0.25s ease;
+}
+.travel-read-more i {
+  margin-left: 4px;
+  font-size: 0.75rem;
+}
+.travel-card-emoji {
+  transition: transform 0.3s ease;
+}
+
 .travel-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15) !important;
@@ -306,3 +344,260 @@ header .mt-3 .btn { min-width: 110px; }
   .travel-card-emoji { font-size: 3rem; }
   #travel-cta .btn { min-width: 100%; margin-left: 0 !important; margin-top: 0.5rem; }
 }
+
+/* =========================
+   Hero profile photo
+   ========================= */
+.hero-photo {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+  border: 3px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.hero-photo:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.45);
+}
+#home .btn-light { color: #000; }
+#home .btn-light:hover { background: #f1f1f1; color: #000; }
+#home .btn-outline-light:hover { background: #fff; color: #000; }
+@media (max-width: 767px) {
+  .hero-photo { max-width: 240px; }
+}
+
+/* =========================
+   Timeline (Experience)
+   ========================= */
+.timeline {
+  position: relative;
+  padding-left: 2.25rem;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0.6rem;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  width: 2px;
+  background: linear-gradient(180deg, #000 0%, #2A1FFF 100%);
+  border-radius: 2px;
+}
+.timeline-item {
+  position: relative;
+  padding: 0 0 2rem 0.5rem;
+}
+.timeline-item:last-child { padding-bottom: 0; }
+.timeline-marker {
+  position: absolute;
+  left: -1.95rem;
+  top: 0.4rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid #2A1FFF;
+  box-shadow: 0 0 0 4px rgba(42, 31, 255, 0.10);
+  transition: transform 0.25s ease;
+}
+.timeline-item:hover .timeline-marker {
+  transform: scale(1.15);
+  background: #2A1FFF;
+}
+.timeline-content {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  padding: 1.1rem 1.25rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+.timeline-item:hover .timeline-content {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transform: translateX(2px);
+}
+.timeline-date {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #2A1FFF;
+  margin-bottom: 0.4rem;
+}
+.timeline-title {
+  font-weight: 700;
+  margin-bottom: 0.15rem;
+}
+.timeline-role {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 0.7rem;
+}
+.timeline-content ul {
+  margin-bottom: 0.5rem;
+  padding-left: 1.2rem;
+}
+.timeline-content ul li { margin-bottom: 0.25rem; }
+@media (max-width: 575px) {
+  .timeline { padding-left: 1.75rem; }
+  .timeline-marker { left: -1.45rem; }
+}
+
+/* =========================
+   Skills chips
+   ========================= */
+.skills-group { margin-bottom: 1.75rem; }
+.skills-group-title {
+  font-weight: 700;
+  margin-bottom: 0.85rem;
+  color: #222;
+}
+.skills-group-title i {
+  color: #2A1FFF;
+  margin-right: 0.5rem;
+}
+.skill-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.skill-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 0.85rem;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  transition: all 0.2s ease;
+  cursor: default;
+}
+.skill-chip:hover {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.skill-chip-secondary {
+  background: #f5f5f5;
+  color: #555;
+}
+.skill-chip-soft {
+  background: rgba(42, 31, 255, 0.08);
+  border-color: rgba(42, 31, 255, 0.15);
+  color: #2A1FFF;
+}
+.skill-chip-soft:hover {
+  background: #2A1FFF;
+  color: #fff;
+  border-color: #2A1FFF;
+}
+
+/* Language & Certification lists */
+.language-list, .cert-list {
+  list-style: none;
+  padding-left: 0;
+}
+.language-list li, .cert-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+.language-list li:last-child, .cert-list li:last-child {
+  border-bottom: none;
+}
+.lang-flag {
+  display: inline-block;
+  font-size: 1.25rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+/* =========================
+   Travel post pages
+   ========================= */
+.post-hero {
+  position: relative;
+  min-height: 55vh;
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+.post-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.18);
+}
+.post-hero > .container { position: relative; z-index: 1; }
+.post-breadcrumb {
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+.post-breadcrumb a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.post-breadcrumb a:hover { border-bottom-color: #fff; }
+.post-breadcrumb i { margin: 0 0.4rem; font-size: 0.7rem; opacity: 0.7; }
+.post-emoji {
+  font-size: 4.5rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
+}
+.post-hero h1 { color: #fff; font-weight: 700; }
+.post-hero .lead { opacity: 0.92; }
+
+.post-content {
+  max-width: 760px;
+  margin: 0 auto;
+}
+.post-content h3 {
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+.post-content h3:first-of-type { margin-top: 0; }
+.post-placeholder {
+  background: #fafafa;
+  border-left: 4px solid #2A1FFF;
+  padding: 1rem 1.25rem;
+  border-radius: 4px;
+  color: #555;
+  font-style: italic;
+}
+.post-gallery-placeholder {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+.post-gallery-placeholder > div {
+  aspect-ratio: 4 / 3;
+  background: linear-gradient(135deg, #ececec 0%, #d6d6d6 100%);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 0.85rem;
+}
+
+/* Section title centered helper */
+.section-title-center { text-align: center; }
