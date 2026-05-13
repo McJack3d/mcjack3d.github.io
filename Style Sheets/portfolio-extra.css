@@ -217,3 +217,92 @@ header .mt-3 .btn { min-width: 110px; }
 #projects .project-card .card-body a.btn:active {
   text-decoration: none !important;
 }
+
+/* =========================
+   Travel blog styles
+   ========================= */
+
+#travel-hero .travel-hero-icon {
+  font-size: 4rem;
+  color: #fff;
+  opacity: 0.9;
+}
+
+.travel-card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.travel-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.travel-card-cover {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.travel-card-cover::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.travel-card-emoji {
+  font-size: 4rem;
+  line-height: 1;
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.25));
+}
+
+.travel-card .card-title {
+  font-weight: 700;
+}
+
+.travel-meta .badge {
+  font-weight: 500;
+}
+
+.travel-meta .badge i {
+  margin-right: 4px;
+}
+
+.destinations-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.destinations-list li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.destinations-list li:last-child {
+  border-bottom: none;
+}
+
+.destinations-list li i {
+  width: 1.25rem;
+  margin-right: 0.5rem;
+  color: #2A1FFF;
+}
+
+#travel-cta .btn {
+  min-width: 180px;
+}
+
+@media (max-width: 575px) {
+  #travel-hero { min-height: 50vh; }
+  #travel-hero .travel-hero-icon { font-size: 3rem; }
+  .travel-card-cover { height: 130px; }
+  .travel-card-emoji { font-size: 3rem; }
+  #travel-cta .btn { min-width: 100%; margin-left: 0 !important; margin-top: 0.5rem; }
+}
