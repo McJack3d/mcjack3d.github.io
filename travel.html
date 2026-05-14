@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="Style%20Sheets/style.css" rel="stylesheet">
     <link href="Style%20Sheets/portfolio-extra.css" rel="stylesheet">
+    <script src="https://unpkg.com/globe.gl/dist/globe.gl.min.js"></script>
   </head>
   <body>
 
@@ -86,129 +87,25 @@
     </div>
   </section>
 
-  <!-- STORIES -->
-  <section id="stories" class="py-5 bg-light">
-    <div class="container">
-      <h3 class="section-title">Latest Stories</h3>
-
-      <div class="row">
-
-        <!-- China -->
-        <div class="col-md-6 col-lg-4 mb-4">
-          <a href="travel/china.html" class="travel-card-link">
-          <article class="card shadow-sm h-100 travel-card">
-            <div class="travel-card-cover" style="background: linear-gradient(135deg, #c0392b 0%, #7b0d0d 100%);">
-              <span class="travel-card-emoji">🏯</span>
-            </div>
-            <div class="card-body d-flex flex-column">
-              <div class="travel-meta mb-2">
-                <span class="badge badge-primary"><i class="fas fa-map-marker-alt"></i> China</span>
-                <span class="text-muted small ml-2"><i class="far fa-calendar-alt"></i> 2024–2025</span>
-              </div>
-              <h5 class="card-title">China — a country at full speed</h5>
-              <p class="card-text">
-                Full writeup with photos coming soon. From Beijing's hutongs and the Great Wall
-                to Chengdu's tea houses and the electric scale of Shanghai — a trip that challenged
-                every assumption.
-              </p>
-              <div class="mt-auto">
-                <span class="badge badge-light mr-1">Culture</span>
-                <span class="badge badge-light mr-1">Megacity</span>
-                <span class="badge badge-light">Food</span>
-              </div>
-              <span class="travel-read-more">Read story <i class="fas fa-arrow-right"></i></span>
-            </div>
-          </article>
-          </a>
+  <!-- GLOBE + STORIES -->
+  <section id="stories" class="travel-globe-section">
+    <div class="travel-globe-layout">
+      <div class="travel-globe-side">
+        <div id="globeViz"></div>
+        <p class="globe-caption">
+          <i class="fas fa-mouse-pointer"></i>&nbsp; Drag to spin &nbsp;·&nbsp; Click a destination to fly there
+        </p>
+      </div>
+      <div class="travel-list-side">
+        <div class="travel-list-inner">
+          <div class="travel-list-top">
+            <h2 class="travel-list-title">Trips</h2>
+            <span class="travel-list-badge">10 destinations</span>
+          </div>
+          <div id="trip-list" class="trip-scroll">
+            <!-- populated by JS -->
+          </div>
         </div>
-
-        <!-- Amsterdam -->
-        <div class="col-md-6 col-lg-4 mb-4">
-          <a href="travel/amsterdam.html" class="travel-card-link">
-          <article class="card shadow-sm h-100 travel-card">
-            <div class="travel-card-cover" style="background: linear-gradient(135deg, #e67e22 0%, #1a6fa8 100%);">
-              <span class="travel-card-emoji">🚲</span>
-            </div>
-            <div class="card-body d-flex flex-column">
-              <div class="travel-meta mb-2">
-                <span class="badge badge-primary"><i class="fas fa-map-marker-alt"></i> Amsterdam, Netherlands</span>
-                <span class="text-muted small ml-2"><i class="far fa-calendar-alt"></i> 2024–2025</span>
-              </div>
-              <h5 class="card-title">Amsterdam — canals, bikes and unhurried afternoons</h5>
-              <p class="card-text">
-                Full writeup coming soon. A compact city that rewards walking and cycling,
-                with world-class museums tucked between narrow canal houses and the best
-                coffee shops you'll find on any street corner.
-              </p>
-              <div class="mt-auto">
-                <span class="badge badge-light mr-1">City</span>
-                <span class="badge badge-light mr-1">Architecture</span>
-                <span class="badge badge-light">Museums</span>
-              </div>
-              <span class="travel-read-more">Read story <i class="fas fa-arrow-right"></i></span>
-            </div>
-          </article>
-          </a>
-        </div>
-
-        <!-- Morocco -->
-        <div class="col-md-6 col-lg-4 mb-4">
-          <a href="travel/morocco.html" class="travel-card-link">
-          <article class="card shadow-sm h-100 travel-card">
-            <div class="travel-card-cover" style="background: linear-gradient(135deg, #e67e22 0%, #8e0f0f 100%);">
-              <span class="travel-card-emoji">🕌</span>
-            </div>
-            <div class="card-body d-flex flex-column">
-              <div class="travel-meta mb-2">
-                <span class="badge badge-primary"><i class="fas fa-map-marker-alt"></i> Morocco</span>
-                <span class="text-muted small ml-2"><i class="far fa-calendar-alt"></i> 2024–2025</span>
-              </div>
-              <h5 class="card-title">Morocco — contrast and colour</h5>
-              <p class="card-text">
-                Full writeup with photos coming soon. From the medinas of Marrakech and Fès
-                to the silence of the Sahara — a country of striking contrasts and extraordinary
-                hospitality.
-              </p>
-              <div class="mt-auto">
-                <span class="badge badge-light mr-1">Culture</span>
-                <span class="badge badge-light mr-1">Desert</span>
-                <span class="badge badge-light">Food</span>
-              </div>
-              <span class="travel-read-more">Read story <i class="fas fa-arrow-right"></i></span>
-            </div>
-          </article>
-          </a>
-        </div>
-
-        <!-- Vietnam -->
-        <div class="col-md-6 col-lg-4 mb-4">
-          <a href="travel/vietnam.html" class="travel-card-link">
-          <article class="card shadow-sm h-100 travel-card">
-            <div class="travel-card-cover" style="background: linear-gradient(135deg, #27ae60 0%, #1a5e38 100%);">
-              <span class="travel-card-emoji">🛵</span>
-            </div>
-            <div class="card-body d-flex flex-column">
-              <div class="travel-meta mb-2">
-                <span class="badge badge-primary"><i class="fas fa-map-marker-alt"></i> Vietnam</span>
-                <span class="text-muted small ml-2"><i class="far fa-calendar-alt"></i> 2024–2025</span>
-              </div>
-              <h5 class="card-title">Vietnam — south to north</h5>
-              <p class="card-text">
-                Full writeup coming soon. Street food in Hội An, the ancient quarter of Hanoi,
-                Ha Long Bay at dawn — and landscapes, rice terraces and coastlines, that stay
-                with you long after you leave.
-              </p>
-              <div class="mt-auto">
-                <span class="badge badge-light mr-1">Street Food</span>
-                <span class="badge badge-light mr-1">Landscapes</span>
-                <span class="badge badge-light">History</span>
-              </div>
-              <span class="travel-read-more">Read story <i class="fas fa-arrow-right"></i></span>
-            </div>
-          </article>
-          </a>
-        </div>
-
       </div>
     </div>
   </section>
@@ -318,6 +215,187 @@
       return false;
     });
   })(jQuery);
+</script>
+
+<script>
+(function () {
+  if (typeof Globe === 'undefined') return;
+
+  var TRIPS = [
+    { id: 'vietnam',   label: 'Vietnam',   emoji: '🛵', title: 'Vietnam — south to north',             date: 'May–Jun 2025', lat: 21.0285, lng: 105.8542, color: '#27ae60', gradFrom: '#27ae60', gradTo: '#1a5e38', href: 'travel/vietnam.html',   sub: 'Hanoi · Hội An · Ha Long Bay' },
+    { id: 'italy',     label: 'Italy',     emoji: '🍕', title: 'Italy — ruins, heat, espresso',         date: 'Apr–May 2025', lat: 41.9028, lng: 12.4964,  color: '#e74c3c', gradFrom: '#e74c3c', gradTo: '#922b21', href: null,                    sub: 'Rome · Naples' },
+    { id: 'moldova',   label: 'Moldova',   emoji: '🍷', title: 'Moldova — the hidden cellar',           date: 'Mar 2025',     lat: 47.0105, lng: 28.8638,  color: '#8e44ad', gradFrom: '#8e44ad', gradTo: '#6c3483', href: null,                    sub: 'Chișinău · Milestii Mici' },
+    { id: 'brussels',  label: 'Brussels',  emoji: '🏛️', title: 'Brussels — EU bubble, waffle reality', date: 'Mar 2025',     lat: 50.8503, lng: 4.3517,   color: '#f39c12', gradFrom: '#f39c12', gradTo: '#d35400', href: null,                    sub: 'Belgium · Grand Place' },
+    { id: 'morocco',   label: 'Morocco',   emoji: '🕌', title: 'Morocco — contrast and colour',         date: 'Jan 2025',     lat: 31.6295, lng: -7.9811,  color: '#e67e22', gradFrom: '#e67e22', gradTo: '#8e0f0f', href: 'travel/morocco.html',  sub: 'Marrakech · Fès · Sahara' },
+    { id: 'amsterdam', label: 'Amsterdam', emoji: '🚲', title: 'Amsterdam — canals, bikes & afternoons',date: 'Nov 2024',     lat: 52.3676, lng: 4.9041,   color: '#1a6fa8', gradFrom: '#e67e22', gradTo: '#1a6fa8', href: 'travel/amsterdam.html',sub: 'Netherlands · 3 days' },
+    { id: 'dublin',    label: 'Dublin',    emoji: '🍺', title: 'Dublin — pubs, craic and cliffs',        date: 'Oct 2024',     lat: 53.3498, lng: -6.2603,  color: '#1abc9c', gradFrom: '#1abc9c', gradTo: '#148f77', href: null,                    sub: 'Ireland · city & coast' },
+    { id: 'armenia',   label: 'Armenia',   emoji: '⛪', title: 'Armenia — ancient, wild, overlooked',   date: 'Oct 2024',     lat: 40.1792, lng: 44.4991,  color: '#e74c3c', gradFrom: '#c0392b', gradTo: '#641e16', href: null,                    sub: 'Yerevan · Geghard · Tatev' },
+    { id: 'china',     label: 'China',     emoji: '🏯', title: 'China — a country at full speed',        date: 'Aug 2024',     lat: 39.9042, lng: 116.4074, color: '#c0392b', gradFrom: '#c0392b', gradTo: '#7b0d0d', href: 'travel/china.html',    sub: 'Beijing · Shanghai · Chengdu' },
+    { id: 'menorca',   label: 'Menorca',   emoji: '🏖️', title: 'Menorca — the quieter Balearic',        date: 'May 2024',     lat: 39.9497, lng: 4.0882,   color: '#0097a7', gradFrom: '#00bcd4', gradTo: '#006064', href: null,                    sub: 'Spain · island escape' }
+  ];
+
+  /* ---- Build scrolling list ---- */
+  var listEl = document.getElementById('trip-list');
+  if (listEl) {
+    TRIPS.forEach(function (trip) {
+      var item = document.createElement('div');
+      item.className = 'trip-item ' + (trip.href ? 'has-page' : 'soon');
+      item.innerHTML =
+        '<div class="trip-thumb" style="background:linear-gradient(135deg,' + trip.gradFrom + ',' + trip.gradTo + ')">' + trip.emoji + '</div>' +
+        '<div class="trip-info">' +
+          '<div class="trip-date-label">' + trip.date + '</div>' +
+          '<div class="trip-name">' + trip.title + '</div>' +
+          '<div class="trip-sub">' + trip.sub + '</div>' +
+        '</div>' +
+        (trip.href
+          ? '<div class="trip-caret"><i class="fas fa-chevron-right"></i></div>'
+          : '<span class="trip-soon-tag">Soon</span>');
+      if (trip.href) {
+        item.addEventListener('click', function () { handleTripClick(trip); });
+      }
+      listEl.appendChild(item);
+    });
+  }
+
+  /* ---- Init globe ---- */
+  var container = document.getElementById('globeViz');
+  if (!container) return;
+
+  var globe = Globe()(container);
+  globe
+    .globeImageUrl('https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg')
+    .bumpImageUrl('https://unpkg.com/three-globe/example/img/earth-topology.png')
+    .backgroundImageUrl('https://unpkg.com/three-globe/example/img/night-sky.png')
+    .backgroundColor('rgba(0,0,0,0)')
+    .atmosphereColor('#5ab3f0')
+    .atmosphereAltitude(0.28)
+    .arcsData([])
+    .arcColor('color')
+    .arcAltitudeAutoScale(0.45)
+    .arcStroke(0.7)
+    .arcDashLength(0.001)
+    .arcDashGap(0.999)
+    .arcDashAnimateTime(0)
+    .pointsData(TRIPS.map(function (t) { return { lat: t.lat, lng: t.lng, color: t.color }; }))
+    .pointColor('color')
+    .pointAltitude(0.01)
+    .pointRadius(0.4)
+    .htmlElementsData([])
+    .htmlElement(function (d) {
+      var el = document.createElement('div');
+      el.style.pointerEvents = 'none';
+      el.style.userSelect = 'none';
+      el.innerHTML = d.html;
+      return el;
+    });
+
+  globe.controls().autoRotate = true;
+  globe.controls().autoRotateSpeed = 0.35;
+  globe.controls().enableDamping = true;
+  globe.controls().dampingFactor = 0.08;
+  globe.pointOfView({ lat: 30, lng: 25, altitude: 2.2 });
+
+  /* ---- Helpers ---- */
+  function easeInOutCubic(t) {
+    return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+  }
+
+  function greatCirclePt(lat1, lng1, lat2, lng2, t) {
+    var r = Math.PI / 180;
+    var p1 = lat1 * r, p2 = lat2 * r, l1 = lng1 * r, l2 = lng2 * r;
+    var d = 2 * Math.asin(Math.sqrt(
+      Math.pow(Math.sin((p2 - p1) / 2), 2) +
+      Math.cos(p1) * Math.cos(p2) * Math.pow(Math.sin((l2 - l1) / 2), 2)
+    ));
+    if (d < 0.001) return [lat2, lng2];
+    var A = Math.sin((1 - t) * d) / Math.sin(d);
+    var B = Math.sin(t * d) / Math.sin(d);
+    var x = A * Math.cos(p1) * Math.cos(l1) + B * Math.cos(p2) * Math.cos(l2);
+    var y = A * Math.cos(p1) * Math.sin(l1) + B * Math.cos(p2) * Math.sin(l2);
+    var z = A * Math.sin(p1) + B * Math.sin(p2);
+    return [Math.atan2(z, Math.sqrt(x * x + y * y)) / r, Math.atan2(y, x) / r];
+  }
+
+  function bearing(lat1, lng1, lat2, lng2) {
+    var r = Math.PI / 180;
+    var dL = (lng2 - lng1) * r;
+    var yy = Math.sin(dL) * Math.cos(lat2 * r);
+    var xx = Math.cos(lat1 * r) * Math.sin(lat2 * r) - Math.sin(lat1 * r) * Math.cos(lat2 * r) * Math.cos(dL);
+    return ((Math.atan2(yy, xx) / r) + 360) % 360;
+  }
+
+  function getUserLoc() {
+    return new Promise(function (resolve) {
+      if (!navigator.geolocation) return resolve({ lat: 48.8566, lng: 2.3522 });
+      navigator.geolocation.getCurrentPosition(
+        function (p) { resolve({ lat: p.coords.latitude, lng: p.coords.longitude }); },
+        function () { resolve({ lat: 48.8566, lng: 2.3522 }); },
+        { timeout: 4000 }
+      );
+    });
+  }
+
+  /* ---- Flight animation ---- */
+  var animRaf = null;
+
+  function handleTripClick(trip) {
+    if (animRaf) { cancelAnimationFrame(animRaf); animRaf = null; }
+    getUserLoc().then(function (origin) {
+      globe.controls().autoRotate = false;
+
+      var arc = { startLat: origin.lat, startLng: origin.lng, endLat: trip.lat, endLng: trip.lng, color: ['rgba(255,255,255,0.9)', trip.color] };
+      globe.arcsData([arc]).arcDashLength(0.001).arcDashGap(0.999);
+
+      globe.pointOfView({
+        lat: (origin.lat + trip.lat) / 2,
+        lng: (origin.lng + trip.lng) / 2,
+        altitude: 2.6
+      }, 1100);
+
+      var DURATION = 3000;
+      var t0 = Date.now();
+
+      function step() {
+        var raw = Math.min((Date.now() - t0) / DURATION, 1);
+        var e = easeInOutCubic(raw);
+
+        globe.arcDashLength(Math.max(e, 0.001)).arcDashGap(Math.max(1 - e, 0));
+
+        var pos = greatCirclePt(origin.lat, origin.lng, trip.lat, trip.lng, e);
+        var nxt = greatCirclePt(origin.lat, origin.lng, trip.lat, trip.lng, Math.min(e + 0.025, 1));
+        var hdg = bearing(pos[0], pos[1], nxt[0], nxt[1]);
+
+        globe.htmlElementsData([{
+          lat: pos[0], lng: pos[1],
+          html: '<span style="font-size:20px;line-height:1;display:inline-block;transform:rotate(' + (hdg - 90) + 'deg);filter:drop-shadow(0 2px 8px rgba(0,0,0,.9))">✈️</span>'
+        }]);
+
+        if (raw < 1) {
+          animRaf = requestAnimationFrame(step);
+        } else {
+          if (trip.href) {
+            setTimeout(function () { window.location.href = trip.href; }, 600);
+          } else {
+            setTimeout(function () {
+              globe.arcsData([]).htmlElementsData([]);
+              globe.controls().autoRotate = true;
+            }, 2000);
+          }
+        }
+      }
+      animRaf = requestAnimationFrame(step);
+    });
+  }
+
+  /* ---- Resize ---- */
+  function onResize() {
+    if (container.offsetWidth > 0) {
+      globe.width(container.offsetWidth).height(container.offsetHeight);
+    }
+  }
+  window.addEventListener('resize', onResize);
+  setTimeout(onResize, 100);
+})();
 </script>
 
   </body>
