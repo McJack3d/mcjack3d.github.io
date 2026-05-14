@@ -100,8 +100,29 @@ ogDescription: "Travel stories, photographs and notes from the road."
 </script>
 
 <script>
-{# Trips data inlined from _src/_data/trips.js at build time. #}
-window.__TRIPS__ = {{ trips | dump | safe }};
+{# Trips derived at build time from front matter of each _src/travel/*.md file.
+   Order = newest first (sorted by date in .eleventy.js).
+   Construction stubs and published posts are both included. #}
+window.__TRIPS__ = [
+{%- for post in collections.trips -%}
+  {%- set d = post.data %}
+  {
+    "id":        {{ d.slug | dump | safe }},
+    "continent": {{ d.continent | dump | safe }},
+    "label":     {{ d.label | dump | safe }},
+    "emoji":     {{ d.emoji | dump | safe }},
+    "title":     {{ (d.heroTitleEn or d.label) | dump | safe }},
+    "date":      {{ d.dateLabel | dump | safe }},
+    "lat":       {{ d.lat }},
+    "lng":       {{ d.lng }},
+    "color":     {{ d.color | dump | safe }},
+    "gradFrom":  {{ d.gradFrom | dump | safe }},
+    "gradTo":    {{ d.gradTo | dump | safe }},
+    "href":      {{ ("travel/" + d.slug + ".html") | dump | safe }},
+    "sub":       {{ d.sub | dump | safe }}
+  }{% if not loop.last %},{% endif %}
+{%- endfor %}
+];
 </script>
 
 <script>
