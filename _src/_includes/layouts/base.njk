@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="{{ pathPrefix }}logo-website-file-globe-icon-svg-wikimedia-commons-21.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="{{ themeColor or '#000000' }}">
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ description }}">
+    <meta name="author" content="{{ site.name }}">
+    <meta property="og:type" content="{{ ogType or 'website' }}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ ogDescription or description }}">
+    <link rel="icon" href="{{ pathPrefix }}Images/close.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="{{ pathPrefix }}Style%20Sheets/style.css" rel="stylesheet">
+    <link href="{{ pathPrefix }}Style%20Sheets/portfolio-extra.css" rel="stylesheet">
+    {% block head %}{% endblock %}
+  </head>
+  <body>
+
+{% include "partials/nav.njk" %}
+
+{% block body %}{% endblock %}
+
+{% include "partials/footer.njk" %}
+
+<script src="{{ pathPrefix }}Scripts/jquery-3.4.1.min.js"></script>
+<script src="{{ pathPrefix }}Scripts/bootstrap.bundle.min.js"></script>
+<script src="{{ pathPrefix }}Scripts/i18n.js"></script>
+<script>
+  (function($){
+    $(window).scroll(function(){if($(this).scrollTop()>300){$('#scrollToTop').fadeIn();}else{$('#scrollToTop').fadeOut();}});
+    $('#scrollToTop').click(function(){$('html,body').animate({scrollTop:0},500);return false;});
+  })(jQuery);
+</script>
+{% block scripts %}{% endblock %}
+
+  </body>
+</html>
