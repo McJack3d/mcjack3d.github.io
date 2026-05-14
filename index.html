@@ -63,14 +63,21 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse ml-auto" id="nav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="travel.html">Travel</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      <ul class="navbar-nav ml-auto align-items-center">
+        <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav.about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education" data-i18n="nav.education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience" data-i18n="nav.experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills" data-i18n="nav.skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects" data-i18n="nav.projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="travel.html" data-i18n="nav.travel">Travel</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav.contact">Contact</a></li>
+        <li class="nav-item ml-2 d-flex align-items-center">
+          <div class="lang-toggle">
+            <button class="lang-opt active" data-lang="en" onclick="setLang('en')">EN</button>
+            <span class="lang-sep">|</span>
+            <button class="lang-opt" data-lang="fr" onclick="setLang('fr')">FR</button>
+          </div>
+        </li>
       </ul>
     </div>
   </div>
@@ -86,16 +93,16 @@
       </div>
       <div class="col-md-7 text-center">
         <h1 class="display-4 mb-2" style="color:#fff;">Alexandre BREDILLOT</h1>
-        <p class="lead mb-2">Data and AI specialist</p>
-        <p class="text-light mb-3">MSc Data Science & AI student — finance & data background</p>
-        <p class="mb-3" style="max-width: 600px;">
+        <p class="lead mb-2" data-i18n="hero.role">Data and AI specialist</p>
+        <p class="text-light mb-3" data-i18n="hero.subtitle">MSc Data Science & AI student — finance & data background</p>
+        <p class="mb-3" style="max-width: 600px;" data-i18n="hero.desc">
           I turn financial and operational data into reliable insight and automation.
           Skilled in Python, SQL, Dataiku, QlikSense, BI tools (Tableau & Power BI), and statistical analysis.
           Professional experience in banking, asset management, and business development.
         </p>
         <div class="mt-3">
-          <a href="#projects" class="btn btn-light"><i class="fas fa-folder-open"></i> See projects</a>
-          <a href="#contact" class="btn btn-outline-light"><i class="fas fa-envelope"></i> Get in touch</a>
+          <a href="#projects" class="btn btn-light"><i class="fas fa-folder-open"></i> <span data-i18n="hero.btn_projects">See projects</span></a>
+          <a href="#contact" class="btn btn-outline-light"><i class="fas fa-envelope"></i> <span data-i18n="hero.btn_contact">Get in touch</span></a>
         </div>
       </div>
     </div>
@@ -107,33 +114,33 @@
       <!-- ABOUT / SUMMARY -->
       <section id="about" class="py-5">
         <div class="container">
-          <h3 class="section-title">Professional Summary</h3>
-          <p>MSc Data Science & AI student with experience in data governance, financial data management and statistical analysis. Skilled in Python, SQL and BI tools, with professional experience in banking, asset management and business development. Motivated to contribute to innovative organisations by leveraging data to improve decision-making and operational efficiency.</p>
+          <h3 class="section-title" data-i18n="about.title">Professional Summary</h3>
+          <p data-i18n="about.body">MSc Data Science & AI student with experience in data governance, financial data management and statistical analysis. Skilled in Python, SQL and BI tools, with professional experience in banking, asset management and business development. Motivated to contribute to innovative organisations by leveraging data to improve decision-making and operational efficiency.</p>
         </div>
       </section>
 
       <!-- EDUCATION -->
       <section id="education" class="py-5 bg-light">
         <div class="container">
-          <h3 class="section-title">Education</h3>
+          <h3 class="section-title" data-i18n="edu.title">Education</h3>
           <div class="row">
             <div class="col-md-6">
               <h5>EDHEC Business School — MSc Data Science & Artificial Intelligence</h5>
-              <p class="mb-1 small text-muted">Since 2025 — Lille, France</p>
-              <p class="mb-3">Ranked #4 Business School in France. Focus on applied data science and AI for business.</p>
+              <p class="mb-1 small text-muted" data-i18n="edu.edhec.period">Since 2025 — Lille, France</p>
+              <p class="mb-3" data-i18n="edu.edhec.desc">Ranked #4 Business School in France. Focus on applied data science and AI for business.</p>
 
-              <p class="mb-1"><strong>Core:</strong> Python for data analysis; statistical modeling & inference; data mining & machine learning (clustering/PCA, classification, ensembles), model validation & interpretability.</p>
-              <p class="mb-1"><strong>Advanced:</strong> Deep learning (Keras), NLP (topic modeling, embeddings, sentiment + intro to LLMs), time series forecasting (ARIMA/SARIMA + ML), scalable data management & analytics engineering (SQL/cloud pipelines, production considerations).</p>
-              <p class="mb-0"><strong>Applied analytics:</strong> Web analytics stack (GA4/GTM, BigQuery SQL, Looker Studio) and business projects translating data into decision-ready dashboards and recommendations.</p>
+              <p class="mb-1" data-i18n-html="edu.edhec.core"><strong>Core:</strong> Python for data analysis; statistical modeling & inference; data mining & machine learning (clustering/PCA, classification, ensembles), model validation & interpretability.</p>
+              <p class="mb-1" data-i18n-html="edu.edhec.advanced"><strong>Advanced:</strong> Deep learning (Keras), NLP (topic modeling, embeddings, sentiment + intro to LLMs), time series forecasting (ARIMA/SARIMA + ML), scalable data management & analytics engineering (SQL/cloud pipelines, production considerations).</p>
+              <p class="mb-0" data-i18n-html="edu.edhec.applied"><strong>Applied analytics:</strong> Web analytics stack (GA4/GTM, BigQuery SQL, Looker Studio) and business projects translating data into decision-ready dashboards and recommendations.</p>
             </div>
             <div class="col-md-6">
               <h5>ESSCA School of Management — Bachelor in International Management</h5>
-              <p class="mb-1 small text-muted">2022 — 2025 — Paris, France</p>
-              <p class="mb-3">Studied international management with coursework in finance and analytics.</p>
+              <p class="mb-1 small text-muted" data-i18n="edu.essca.period">2022 — 2025 — Paris, France</p>
+              <p class="mb-3" data-i18n="edu.essca.desc">Studied international management with coursework in finance and analytics.</p>
 
-              <p class="mb-1"><strong>Business, strategy & project delivery:</strong> project management, strategy, organisational behaviour, cross-cultural management, business simulation.</p>
-              <p class="mb-1"><strong>Marketing, negotiation & communication:</strong> marketing project, negotiation, market research, multimedia communication (campaigns & stakeholder comms).</p>
-              <p class="mb-0"><strong>Finance, economics & governance:</strong> finance for managers, economics, political economy, international trade, intro to law & international relations.</p>
+              <p class="mb-1" data-i18n-html="edu.essca.business"><strong>Business, strategy & project delivery:</strong> project management, strategy, organisational behaviour, cross-cultural management, business simulation.</p>
+              <p class="mb-1" data-i18n-html="edu.essca.marketing"><strong>Marketing, negotiation & communication:</strong> marketing project, negotiation, market research, multimedia communication (campaigns & stakeholder comms).</p>
+              <p class="mb-0" data-i18n-html="edu.essca.finance"><strong>Finance, economics & governance:</strong> finance for managers, economics, political economy, international trade, intro to law & international relations.</p>
             </div>
           </div>
         </div>
@@ -142,20 +149,20 @@
       <!-- EXPERIENCE -->
       <section id="experience" class="py-5">
         <div class="container">
-          <h3 class="section-title">Professional Experience</h3>
+          <h3 class="section-title" data-i18n="exp.title">Professional Experience</h3>
 
           <div class="timeline">
 
             <div class="timeline-item">
               <div class="timeline-marker"></div>
               <div class="timeline-content">
-                <span class="timeline-date">Since December 2022 · Fontevraud L'Abbaye, France</span>
+                <span class="timeline-date" data-i18n="exp.army.period">Since December 2022 · Fontevraud L'Abbaye, France</span>
                 <h5 class="timeline-title">French Army Reserve — 2nd Dragoon Regiment, 6th Squadron</h5>
-                <p class="timeline-role">Reserve Soldier</p>
+                <p class="timeline-role" data-i18n="exp.army.role">Reserve Soldier</p>
                 <ul>
-                  <li>Reserve soldier in the 6th squadron of a cavalry regiment specialized in NRBC.</li>
-                  <li>Trained and equipped to operate in and respond to Nuclear, Radiological, Biological, and Chemical (NRBC) threat environments.</li>
-                  <li>Experience in high-discipline operational settings, teamwork, and readiness for time-constrained missions.</li>
+                  <li data-i18n="exp.army.li1">Reserve soldier in the 6th squadron of a cavalry regiment specialized in NRBC.</li>
+                  <li data-i18n="exp.army.li2">Trained and equipped to operate in and respond to Nuclear, Radiological, Biological, and Chemical (NRBC) threat environments.</li>
+                  <li data-i18n="exp.army.li3">Experience in high-discipline operational settings, teamwork, and readiness for time-constrained missions.</li>
                 </ul>
               </div>
             </div>
@@ -163,49 +170,49 @@
             <div class="timeline-item">
               <div class="timeline-marker"></div>
               <div class="timeline-content">
-                <span class="timeline-date">January – July 2025 · Paris, France</span>
+                <span class="timeline-date" data-i18n="exp.lbp.period">January – July 2025 · Paris, France</span>
                 <h5 class="timeline-title">La Banque Postale — Data Team, Payment Department</h5>
-                <p class="timeline-role">Data Analyst Intern</p>
+                <p class="timeline-role" data-i18n="exp.lbp.role">Data Analyst Intern</p>
                 <ul>
-                  <li><strong>Data flow governance:</strong> supervised and optimized payment flow processes with focus on SEPA/DSP2/IP compliance.</li>
-                  <li><strong>Business needs analysis & implementation:</strong> partnered with stakeholders to understand needs, analyze processes, and deliver tailored reporting automation and KPI tracking improvements.</li>
-                  <li><strong>Automation & reporting:</strong> built dashboards and monitoring tools (QlikSense, Dataiku, SQL, Python) and automated recurring reporting to reduce manual workload and improve real-time visibility.</li>
-                  <li><strong>XML file mapping:</strong> mapped and structured XML files to improve traceability, usability, and downstream integration.</li>
-                  <li><strong>Data flow optimization:</strong> identified anomalies, improved processes, and supported operational reliability for payment workflows.</li>
-                  <li><strong>Data quality management:</strong> implemented validation rules and automated error-detection mechanisms to increase accuracy and consistency of financial data.</li>
-                  <li><strong>Process improvement:</strong> identified bottlenecks in data workflows and delivered optimizations improving processing time and operational efficiency.</li>
+                  <li data-i18n-html="exp.lbp.li1"><strong>Data flow governance:</strong> supervised and optimized payment flow processes with focus on SEPA/DSP2/IP compliance.</li>
+                  <li data-i18n-html="exp.lbp.li2"><strong>Business needs analysis & implementation:</strong> partnered with stakeholders to understand needs, analyze processes, and deliver tailored reporting automation and KPI tracking improvements.</li>
+                  <li data-i18n-html="exp.lbp.li3"><strong>Automation & reporting:</strong> built dashboards and monitoring tools (QlikSense, Dataiku, SQL, Python) and automated recurring reporting to reduce manual workload and improve real-time visibility.</li>
+                  <li data-i18n-html="exp.lbp.li4"><strong>XML file mapping:</strong> mapped and structured XML files to improve traceability, usability, and downstream integration.</li>
+                  <li data-i18n-html="exp.lbp.li5"><strong>Data flow optimization:</strong> identified anomalies, improved processes, and supported operational reliability for payment workflows.</li>
+                  <li data-i18n-html="exp.lbp.li6"><strong>Data quality management:</strong> implemented validation rules and automated error-detection mechanisms to increase accuracy and consistency of financial data.</li>
+                  <li data-i18n-html="exp.lbp.li7"><strong>Process improvement:</strong> identified bottlenecks in data workflows and delivered optimizations improving processing time and operational efficiency.</li>
                 </ul>
-                <p class="small text-muted mb-0">Manager: Mr. Hervé Harvoire, Payment Hub Manager</p>
+                <p class="small text-muted mb-0" data-i18n="exp.lbp.manager">Manager: Mr. Hervé Harvoire, Payment Hub Manager</p>
               </div>
             </div>
 
             <div class="timeline-item">
               <div class="timeline-marker"></div>
               <div class="timeline-content">
-                <span class="timeline-date">January – July 2024 · Luxembourg</span>
+                <span class="timeline-date" data-i18n="exp.sienna.period">January – July 2024 · Luxembourg</span>
                 <h5 class="timeline-title">Sienna Investment Managers — Finance Team</h5>
-                <p class="timeline-role">Account Payables Trainee</p>
+                <p class="timeline-role" data-i18n="exp.sienna.role">Account Payables Trainee</p>
                 <ul>
-                  <li><strong>Treasury management & reporting:</strong> executed daily treasury tasks, reconciled bank statements, and produced liquidity/cash reports; contributed to cash projections and month/year-end processes.</li>
-                  <li><strong>Management reporting & analysis:</strong> supported reporting and performed financial analysis to help monitor portfolios and operational performance.</li>
-                  <li><strong>Accounting & invoicing:</strong> processed and verified supplier invoices; managed sales invoices and maintained accounts payable/receivable; resolved discrepancies with vendors.</li>
-                  <li><strong>Regulatory compliance:</strong> supported VAT and Income Tax preparation and ensured adherence to internal policies and accounting standards.</li>
-                  <li><strong>Documentation & payments:</strong> maintained audit-ready records and supported payment processing (checks, ACH, wire transfers); reconciled employee expense reports.</li>
+                  <li data-i18n-html="exp.sienna.li1"><strong>Treasury management & reporting:</strong> executed daily treasury tasks, reconciled bank statements, and produced liquidity/cash reports; contributed to cash projections and month/year-end processes.</li>
+                  <li data-i18n-html="exp.sienna.li2"><strong>Management reporting & analysis:</strong> supported reporting and performed financial analysis to help monitor portfolios and operational performance.</li>
+                  <li data-i18n-html="exp.sienna.li3"><strong>Accounting & invoicing:</strong> processed and verified supplier invoices; managed sales invoices and maintained accounts payable/receivable; resolved discrepancies with vendors.</li>
+                  <li data-i18n-html="exp.sienna.li4"><strong>Regulatory compliance:</strong> supported VAT and Income Tax preparation and ensured adherence to internal policies and accounting standards.</li>
+                  <li data-i18n-html="exp.sienna.li5"><strong>Documentation & payments:</strong> maintained audit-ready records and supported payment processing (checks, ACH, wire transfers); reconciled employee expense reports.</li>
                 </ul>
-                <p class="small text-muted mb-0">Manager: Ms. Aija Livca, Account Payable Manager</p>
+                <p class="small text-muted mb-0" data-i18n="exp.sienna.manager">Manager: Ms. Aija Livca, Account Payable Manager</p>
               </div>
             </div>
 
             <div class="timeline-item">
               <div class="timeline-marker"></div>
               <div class="timeline-content">
-                <span class="timeline-date">April – July 2023 · Issy-les-Moulineaux, France</span>
+                <span class="timeline-date" data-i18n="exp.easy.period">April – July 2023 · Issy-les-Moulineaux, France</span>
                 <h5 class="timeline-title">EasyBourse — Business Development Team</h5>
-                <p class="timeline-role">Support to the Business Development Manager</p>
+                <p class="timeline-role" data-i18n="exp.easy.role">Support to the Business Development Manager</p>
                 <ul>
-                  <li>Conducted market and sales performance analysis to identify trends and opportunities.</li>
-                  <li>Coordinated incentive programs, email campaigns, and digital advertising to support client engagement.</li>
-                  <li>Supported commercial activity by preparing quotations and assisting with business offers.</li>
+                  <li data-i18n="exp.easy.li1">Conducted market and sales performance analysis to identify trends and opportunities.</li>
+                  <li data-i18n="exp.easy.li2">Coordinated incentive programs, email campaigns, and digital advertising to support client engagement.</li>
+                  <li data-i18n="exp.easy.li3">Supported commercial activity by preparing quotations and assisting with business offers.</li>
                 </ul>
               </div>
             </div>
@@ -217,10 +224,10 @@
       <!-- SKILLS -->
       <section id="skills" class="py-5 bg-light">
         <div class="container">
-          <h3 class="section-title">Skills</h3>
+          <h3 class="section-title" data-i18n="skills.title">Skills</h3>
 
           <div class="skills-group">
-            <h5 class="skills-group-title"><i class="fas fa-code"></i> Programming & Data</h5>
+            <h5 class="skills-group-title"><i class="fas fa-code"></i> <span data-i18n="skills.programming">Programming & Data</span></h5>
             <div class="skill-chips">
               <span class="skill-chip">Python</span>
               <span class="skill-chip">pandas</span>
@@ -240,7 +247,7 @@
           </div>
 
           <div class="skills-group">
-            <h5 class="skills-group-title"><i class="fas fa-chart-line"></i> Analytics & BI Platforms</h5>
+            <h5 class="skills-group-title"><i class="fas fa-chart-line"></i> <span data-i18n="skills.analytics">Analytics & BI Platforms</span></h5>
             <div class="skill-chips">
               <span class="skill-chip">Dataiku</span>
               <span class="skill-chip">QlikSense</span>
@@ -254,7 +261,7 @@
           </div>
 
           <div class="skills-group">
-            <h5 class="skills-group-title"><i class="fas fa-brain"></i> Methods & Soft Skills</h5>
+            <h5 class="skills-group-title"><i class="fas fa-brain"></i> <span data-i18n="skills.methods">Methods & Soft Skills</span></h5>
             <div class="skill-chips">
               <span class="skill-chip">Data governance</span>
               <span class="skill-chip">Data quality</span>
@@ -270,18 +277,18 @@
 
           <div class="row mt-4">
             <div class="col-md-6">
-              <h5 class="skills-group-title"><i class="fas fa-language"></i> Languages</h5>
+              <h5 class="skills-group-title"><i class="fas fa-language"></i> <span data-i18n="skills.languages">Languages</span></h5>
               <ul class="language-list">
-                <li><span class="lang-flag">🇫🇷</span> <strong>French</strong> — Native</li>
-                <li><span class="lang-flag">🇬🇧</span> <strong>English</strong> — Advanced (C1) · <span class="text-muted small">TOEIC 970 · TOEFL iBT 95</span></li>
-                <li><span class="lang-flag">🇪🇸</span> <strong>Spanish</strong> — Intermediate (B2)</li>
-                <li><span class="lang-flag">🇷🇺</span> <strong>Russian</strong> — Elementary (A2)</li>
+                <li><span class="lang-flag">🇫🇷</span> <strong>French</strong> — <span data-i18n="skills.lang.fr">Native</span></li>
+                <li><span class="lang-flag">🇬🇧</span> <strong>English</strong> — <span data-i18n="skills.lang.en_level">Advanced (C1)</span> · <span class="text-muted small">TOEIC 970 · TOEFL iBT 95</span></li>
+                <li><span class="lang-flag">🇪🇸</span> <strong>Spanish</strong> — <span data-i18n="skills.lang.es">Intermediate (B2)</span></li>
+                <li><span class="lang-flag">🇷🇺</span> <strong>Russian</strong> — <span data-i18n="skills.lang.ru">Elementary (A2)</span></li>
               </ul>
             </div>
           </div>
 
           <div class="mt-4">
-            <h5 class="skills-group-title"><i class="fas fa-certificate"></i> Certifications</h5>
+            <h5 class="skills-group-title"><i class="fas fa-certificate"></i> <span data-i18n="skills.certs">Certifications</span></h5>
             <div class="row">
               <div class="col-md-3 mb-3">
                 <p class="cert-issuer-name">SAFe by Scaled Agile</p>
@@ -327,14 +334,14 @@
             </div>
           </div>
 
-          <h5 class="skills-group-title mt-4"><i class="fas fa-heart"></i> Interests</h5>
+          <h5 class="skills-group-title mt-4"><i class="fas fa-heart"></i> <span data-i18n="skills.interests">Interests</span></h5>
           <div class="skill-chips">
-            <span class="skill-chip skill-chip-soft">Finance & investing</span>
-            <span class="skill-chip skill-chip-soft">Calisthenics</span>
-            <span class="skill-chip skill-chip-soft">Running</span>
-            <span class="skill-chip skill-chip-soft">Travelling</span>
-            <span class="skill-chip skill-chip-soft">Motorsports</span>
-            <span class="skill-chip skill-chip-soft">Video games</span>
+            <span class="skill-chip skill-chip-soft" data-i18n="skills.interest.finance">Finance & investing</span>
+            <span class="skill-chip skill-chip-soft" data-i18n="skills.interest.calisthenics">Calisthenics</span>
+            <span class="skill-chip skill-chip-soft" data-i18n="skills.interest.running">Running</span>
+            <span class="skill-chip skill-chip-soft" data-i18n="skills.interest.travel">Travelling</span>
+            <span class="skill-chip skill-chip-soft" data-i18n="skills.interest.motorsport">Motorsports</span>
+            <span class="skill-chip skill-chip-soft" data-i18n="skills.interest.games">Video games</span>
           </div>
         </div>
       </section>
@@ -342,13 +349,13 @@
       <!-- PROJECTS -->
       <section id="projects" class="py-5 bg-light">
         <div class="container">
-          <h3 class="section-title">Projects & Portfolio</h3>
+          <h3 class="section-title" data-i18n="projects.title">Projects & Portfolio</h3>
           <div class="row">
             <div class="col-md-6 mb-4">
               <div class="card shadow-sm h-100 project-card">
                 <div class="card-body">
                   <h5 class="card-title">📈 Sentiment Analysis & Short-Term Return Predictability in Small-Cap Nuclear Equities — MSc Thesis (EDHEC, 2026)</h5>
-                  <p class="card-text">Does FinBERT-derived news sentiment improve short-term return prediction for small-cap nuclear equities? This MSc thesis builds a fully reproducible five-phase pipeline — feasibility audit, data engineering (3,992 ticker-days, 25,885 news articles covering SMR, LEU, NNE), FinBERT sentiment scoring, LSTM training with chronological hold-out, and SHAP explainability. Key finding: sentiment augmentation yields a statistically significant average MAE improvement of <strong>+5.18%</strong> at the 5-day horizon; no aggregate benefit at the 1-day horizon. Hypothesis testing via Diebold-Mariano tests.</p>
+                  <p class="card-text" data-i18n-html="projects.thesis.desc">Does FinBERT-derived news sentiment improve short-term return prediction for small-cap nuclear equities? This MSc thesis builds a fully reproducible five-phase pipeline — feasibility audit, data engineering (3,992 ticker-days, 25,885 news articles covering SMR, LEU, NNE), FinBERT sentiment scoring, LSTM training with chronological hold-out, and SHAP explainability. Key finding: sentiment augmentation yields a statistically significant average MAE improvement of <strong>+5.18%</strong> at the 5-day horizon; no aggregate benefit at the 1-day horizon. Hypothesis testing via Diebold-Mariano tests.</p>
                   <div class="mt-3">
                     <span class="badge badge-primary mr-1">Python</span>
                     <span class="badge badge-primary mr-1">FinBERT / NLP</span>
@@ -357,13 +364,11 @@
                     <span class="badge badge-primary">Financial ML</span>
                   </div>
                   <div class="mt-3">
-                    <!-- Download Thesis -->
                     <a href="Images/Bredillot_Thesis_EDHEC_v3.pdf" class="btn btn-sm btn-primary" target="_blank" rel="noopener">
-                      <i class="fas fa-file-pdf text-white" aria-hidden="true"></i> Download Thesis (PDF)
+                      <i class="fas fa-file-pdf text-white" aria-hidden="true"></i> <span data-i18n="projects.thesis.btn_dl">Download Thesis (PDF)</span>
                     </a>
-                    <!-- Source Code -->
                     <a href="https://github.com/McJack3d/FIN_PP/tree/main/THES_SA" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener">
-                      <i class="fas fa-code" aria-hidden="true"></i> Source Code
+                      <i class="fas fa-code" aria-hidden="true"></i> <span data-i18n="projects.thesis.btn_code">Source Code</span>
                     </a>
                   </div>
                 </div>
@@ -372,22 +377,19 @@
             <div class="col-md-6 mb-4">
               <div class="card shadow-sm h-100 project-card">
                 <div class="card-body">
-                  <h5 class="card-title">📊 Project 2 - under construction 🏗️</h5>
-                  <p class="card-text">Another placeholder for a project. Currently being developed.</p>
+                  <h5 class="card-title" data-i18n="projects.p2.title">📊 Project 2 - under construction 🏗️</h5>
+                  <p class="card-text" data-i18n="projects.p2.desc">Another placeholder for a project. Currently being developed.</p>
                   <div class="mt-3">
                     <span class="badge badge-primary mr-1"></span>
                     <span class="badge badge-primary mr-1"></span>
                     <span class="badge badge-primary"></span>
                   </div>
                   <div class="mt-3">
-                    <!-- View Project -->
                     <a href="#" class="btn btn-sm btn-primary" target="_blank" rel="noopener">
-                      <i class="fas fa-download text-white" aria-hidden="true"></i> View Project
+                      <i class="fas fa-download text-white" aria-hidden="true"></i> <span data-i18n="projects.p2.btn_view">View Project</span>
                     </a>
-
-                    <!-- Source Code -->
                     <a href="#" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener">
-                      <i class="fas fa-code" aria-hidden="true"></i> Source Code
+                      <i class="fas fa-code" aria-hidden="true"></i> <span data-i18n="projects.p2.btn_code">Source Code</span>
                     </a>
                   </div>
                 </div>
@@ -395,9 +397,8 @@
             </div>
           </div>
           <div class="mt-4 text-center">
-            <!-- View Projects on GitHub (bottom) -->
             <a href="https://github.com/McJack3d" class="btn btn-primary btn-lg btn-project" target="_blank" rel="noopener">
-              <i class="fab fa-github" aria-hidden="true"></i> View Projects on GitHub
+              <i class="fab fa-github" aria-hidden="true"></i> <span data-i18n="projects.github">View Projects on GitHub</span>
             </a>
           </div>
         </div>
@@ -406,34 +407,34 @@
       <!-- CONTACT -->
       <section id="contact" class="py-5">
         <div class="container">
-          <h3 class="section-title">Contact</h3>
+          <h3 class="section-title" data-i18n="contact.title">Contact</h3>
           <div class="row">
               <div class="col-md-6">
-              <p class="mb-1"><strong>Email:</strong>
+              <p class="mb-1"><strong data-i18n="contact.email">Email:</strong>
                 <a href="mailto:alexandrebredillot@gmail.com" class="text-dark" style="display:inline-flex;align-items:center;gap:6px;">
                   <i class="fas fa-envelope" aria-hidden="true"></i><span>alexandrebredillot@gmail.com</span>
                 </a>
               </p>
-              <p class="mb-1"><strong>Phone:</strong>
+              <p class="mb-1"><strong data-i18n="contact.phone">Phone:</strong>
                 <a href="tel:+33620352173" class="text-dark" style="display:inline-flex;align-items:center;gap:6px;">
                   <i class="fas fa-phone" aria-hidden="true"></i><span>+33 6 20 35 21 73</span>
                 </a>
               </p>
-              <p class="mb-1"><strong>LinkedIn:</strong>
+              <p class="mb-1"><strong data-i18n="contact.linkedin">LinkedIn:</strong>
                 <a href="https://www.linkedin.com/in/alexandre-bredillot" target="_blank" rel="noopener" class="text-dark" style="display:inline-flex;align-items:center;gap:6px;">
                   <i class="fab fa-linkedin" aria-hidden="true"></i><span>linkedin.com/in/alexandre-bredillot</span>
                 </a>
               </p>
-              <p class="mb-1"><strong>GitHub:</strong>
+              <p class="mb-1"><strong data-i18n="contact.github_label">GitHub:</strong>
                 <a href="https://github.com/McJack3d" target="_blank" rel="noopener" class="text-dark" style="display:inline-flex;align-items:center;gap:6px;">
                   <i class="fab fa-github" aria-hidden="true"></i><span>github.com/McJack3d</span>
                 </a>
               </p>
             </div>
             <div class="col-md-6">
-              <p class="mb-3">Open to opportunities in data science, AI strategy, and data governance roles. Feel free to reach out!</p>
+              <p class="mb-3" data-i18n="contact.open">Open to opportunities in data science, AI strategy, and data governance roles. Feel free to reach out!</p>
               <a href="Images/CV_Alexandre_Bredillot.pdf" class="btn btn-sm btn-primary text-white" target="_blank" rel="noopener" id="cv-download">
-                <i class="fas fa-download text-white" aria-hidden="true"></i> Download CV
+                <i class="fas fa-download text-white" aria-hidden="true"></i> <span data-i18n="contact.cv">Download CV</span>
               </a>
             </div>
           </div>
@@ -456,7 +457,7 @@
             <i class="fas fa-envelope fa-lg" style="color:#fff;"></i>
           </a>
         </div>
-        <p class="small mb-0">&copy; 2025 Alexandre BREDILLOT — All rights reserved.</p>
+        <p class="small mb-0">&copy; 2025 Alexandre BREDILLOT — <span data-i18n="footer.rights">All rights reserved.</span></p>
       </div>
     </footer>
 
@@ -469,6 +470,7 @@
     <script src="Scripts/jquery-3.4.1.min.js"></script>
     <script src="Scripts/bootstrap.bundle.min.js"></script>
     <script src="Scripts/particles.js"></script>
+    <script src="Scripts/i18n.js"></script>
     <script>
       particlesJS.load('particles-js', 'Scripts/particlesjs-config.json', function() {
         console.log('particles config loaded');

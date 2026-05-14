@@ -1048,3 +1048,45 @@ header .mt-3 .btn { min-width: 110px; }
   .dest-card-emoji { font-size: 2.6rem; }
   .continent-grid { grid-template-columns: 1fr; }
 }
+
+/* =========================
+   Language toggle
+   ========================= */
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 4px;
+  padding: 1px 3px;
+}
+.lang-opt {
+  background: transparent;
+  border: none;
+  color: rgba(255,255,255,0.5);
+  cursor: pointer;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.4;
+  transition: color 0.15s;
+}
+.lang-opt:hover {
+  color: rgba(255,255,255,0.85);
+}
+.lang-opt.active {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.lang-sep {
+  color: rgba(255,255,255,0.25);
+  font-size: 0.65rem;
+  line-height: 1;
+  user-select: none;
+}
+@media (max-width: 991px) {
+  .lang-toggle { margin-top: 0.4rem; margin-bottom: 0.2rem; }
+}

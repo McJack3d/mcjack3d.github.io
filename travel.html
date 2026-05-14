@@ -43,14 +43,21 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse ml-auto" id="nav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="index.html#education">Education</a></li>
-        <li class="nav-item"><a class="nav-link" href="index.html#experience">Experience</a></li>
-        <li class="nav-item"><a class="nav-link" href="index.html#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="index.html#projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link active" href="travel.html">Travel</a></li>
-        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+      <ul class="navbar-nav ml-auto align-items-center">
+        <li class="nav-item"><a class="nav-link" href="index.html#about" data-i18n="nav.about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#education" data-i18n="nav.education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#experience" data-i18n="nav.experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#skills" data-i18n="nav.skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#projects" data-i18n="nav.projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link active" href="travel.html" data-i18n="nav.travel">Travel</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
+        <li class="nav-item ml-2 d-flex align-items-center">
+          <div class="lang-toggle">
+            <button class="lang-opt active" data-lang="en" onclick="setLang('en')">EN</button>
+            <span class="lang-sep">|</span>
+            <button class="lang-opt" data-lang="fr" onclick="setLang('fr')">FR</button>
+          </div>
+        </li>
       </ul>
     </div>
   </div>
@@ -60,15 +67,15 @@
 <header id="travel-hero" class="d-flex flex-column justify-content-center align-items-center text-center bg-primary text-white" style="min-height: 60vh; padding-top: 6rem; position: relative; overflow: hidden;">
   <div class="container">
     <div class="travel-hero-icon mb-3"><i class="fas fa-globe-europe"></i></div>
-    <h1 class="display-4 mb-2" style="color:#fff;">Travel Blog</h1>
-    <p class="lead mb-1">Notes, photographs and impressions from the road</p>
-    <p class="text-light mb-3" style="max-width: 700px; margin: 0 auto;">
+    <h1 class="display-4 mb-2" style="color:#fff;" data-i18n="travel.hero.title">Travel Blog</h1>
+    <p class="lead mb-1" data-i18n="travel.hero.subtitle">Notes, photographs and impressions from the road</p>
+    <p class="text-light mb-3" style="max-width: 700px; margin: 0 auto;" data-i18n="travel.hero.desc">
       A personal log of places that have shaped my perspective — cities, mountains, and quiet streets,
       told through short stories and field notes.
     </p>
     <div class="mt-3">
-      <a href="#destinations" class="btn btn-light btn-lg"><i class="fas fa-book-open"></i> Browse Trips</a>
-      <a href="#globe-section" class="btn btn-outline-light btn-lg"><i class="fas fa-globe"></i> Open Globe</a>
+      <a href="#destinations" class="btn btn-light btn-lg"><i class="fas fa-book-open"></i> <span data-i18n="travel.hero.btn_browse">Browse Trips</span></a>
+      <a href="#globe-section" class="btn btn-outline-light btn-lg"><i class="fas fa-globe"></i> <span data-i18n="travel.hero.btn_globe">Open Globe</span></a>
     </div>
   </div>
 </header>
@@ -78,8 +85,8 @@
   <!-- INTRO -->
   <section id="intro" class="py-5">
     <div class="container">
-      <h3 class="section-title">About this blog</h3>
-      <p>
+      <h3 class="section-title" data-i18n="travel.intro.title">About this blog</h3>
+      <p data-i18n="travel.intro.body">
         Beyond data and finance, travelling has always been the most reliable way I know to learn faster.
         This page collects short pieces from recent trips — what I saw, what surprised me, and the little
         practical things worth remembering. Posts are added gradually whenever a destination is worth writing about.
@@ -90,21 +97,21 @@
   <!-- DESTINATIONS -->
   <section id="destinations" class="py-5">
     <div class="container">
-      <h3 class="section-title">Destinations</h3>
-      <p class="mb-4 text-muted">Click any trip to fly there on the globe below.</p>
+      <h3 class="section-title" data-i18n="travel.dest.title">Destinations</h3>
+      <p class="mb-4 text-muted" data-i18n="travel.dest.subtitle">Click any trip to fly there on the globe below.</p>
 
-      <h5 class="dest-subhead">Recent trips</h5>
+      <h5 class="dest-subhead" data-i18n="travel.dest.recent">Recent trips</h5>
       <div class="row" id="dest-recent">
         <!-- populated by JS: 4 most recent -->
       </div>
 
-      <h5 class="dest-subhead mt-5">More trips by continent</h5>
+      <h5 class="dest-subhead mt-5" data-i18n="travel.dest.by_continent">More trips by continent</h5>
       <div id="dest-continents" class="continent-list">
         <!-- populated by JS: continent accordions -->
       </div>
 
       <div class="wishlist-block mt-5">
-        <h6 class="wishlist-title"><i class="fas fa-compass"></i> Wishlist</h6>
+        <h6 class="wishlist-title"><i class="fas fa-compass"></i> <span data-i18n="travel.dest.wishlist">Wishlist</span></h6>
         <div class="wishlist-chips">
           <span class="wishlist-chip">Japan</span>
           <span class="wishlist-chip">Iceland</span>
@@ -119,7 +126,7 @@
   <section id="globe-section" class="globe-fullscreen-section">
     <div id="globeViz"></div>
     <div class="globe-hud">
-      <span id="globe-hud-status">Drag to spin · Click a destination above to take off</span>
+      <span id="globe-hud-status" data-i18n="travel.globe.idle">Drag to spin · Click a destination above to take off</span>
     </div>
     <div id="globe-fade-overlay" class="globe-fade-overlay"></div>
   </section>
@@ -127,13 +134,13 @@
   <!-- CTA -->
   <section id="travel-cta" class="py-5 bg-light">
     <div class="container text-center">
-      <h3 class="section-title mb-3">Want to talk travel?</h3>
-      <p class="mb-4">Recommendations, route ideas, or just sharing photos — happy to chat.</p>
+      <h3 class="section-title mb-3" data-i18n="travel.cta.title">Want to talk travel?</h3>
+      <p class="mb-4" data-i18n="travel.cta.body">Recommendations, route ideas, or just sharing photos — happy to chat.</p>
       <a href="mailto:alexandrebredillot@gmail.com" class="btn btn-primary btn-lg">
-        <i class="fas fa-envelope"></i> Send a message
+        <i class="fas fa-envelope"></i> <span data-i18n="travel.cta.btn_email">Send a message</span>
       </a>
       <a href="index.html" class="btn btn-outline-primary btn-lg ml-2">
-        <i class="fas fa-arrow-left"></i> Back to portfolio
+        <i class="fas fa-arrow-left"></i> <span data-i18n="travel.cta.btn_back">Back to portfolio</span>
       </a>
     </div>
   </section>
@@ -154,7 +161,7 @@
         <i class="fas fa-envelope fa-lg" style="color:#fff;"></i>
       </a>
     </div>
-    <p class="small mb-0">&copy; 2025 Alexandre BREDILLOT — All rights reserved.</p>
+    <p class="small mb-0">&copy; 2025 Alexandre BREDILLOT — <span data-i18n="footer.rights">All rights reserved.</span></p>
   </div>
 </footer>
 
@@ -166,6 +173,7 @@
 <!-- Scripts -->
 <script src="Scripts/jquery-3.4.1.min.js"></script>
 <script src="Scripts/bootstrap.bundle.min.js"></script>
+<script src="Scripts/i18n.js"></script>
 <script>
   (function($){
     $(document).on('click','a.nav-link[href^="#"], a.btn[href^="#"]', function(e){
@@ -203,8 +211,8 @@
     { id: 'moldova',   continent: 'europe', label: 'Moldova',   emoji: '🍷', title: 'Moldova — the hidden cellar',           date: 'Mar 2025',     lat: 47.0105, lng: 28.8638,  color: '#8e44ad', gradFrom: '#8e44ad', gradTo: '#6c3483', href: null,                    sub: 'Chișinău · Milestii Mici' },
     { id: 'brussels',  continent: 'europe', label: 'Brussels',  emoji: '🏛️', title: 'Brussels — EU bubble, waffle reality', date: 'Mar 2025',     lat: 50.8503, lng: 4.3517,   color: '#f39c12', gradFrom: '#f39c12', gradTo: '#d35400', href: null,                    sub: 'Belgium · Grand Place' },
     { id: 'morocco',   continent: 'africa', label: 'Morocco',   emoji: '🕌', title: 'Morocco — contrast and colour',         date: 'Jan 2025',     lat: 31.6295, lng: -7.9811,  color: '#e67e22', gradFrom: '#e67e22', gradTo: '#8e0f0f', href: 'travel/morocco.html',  sub: 'Marrakech · Fès · Sahara' },
-    { id: 'amsterdam', continent: 'europe', label: 'Amsterdam', emoji: '🚲', title: 'Amsterdam — canals & afternoons',       date: 'Nov 2024',     lat: 52.3676, lng: 4.9041,   color: '#1a6fa8', gradFrom: '#e67e22', gradTo: '#1a6fa8', href: 'travel/amsterdam.html',sub: 'Netherlands · 3 days' },
-    { id: 'dublin',    continent: 'europe', label: 'Dublin',    emoji: '🍺', title: 'Dublin — pubs, craic and cliffs',        date: 'Oct 2024',     lat: 53.3498, lng: -6.2603,  color: '#1abc9c', gradFrom: '#1abc9c', gradTo: '#148f77', href: null,                    sub: 'Ireland · city & coast' },
+    { id: 'amsterdam', continent: 'europe', label: 'Amsterdam', emoji: '🚲', title: 'Amsterdam — canals & afternoons',       date: 'Nov 2024',     lat: 52.3676, lng: 4.9041,   color: '#1a6fa8', gradFrom: '#e67e22', gradTo: '#1a6fa8', href: 'travel/amsterdam.html', sub: 'Netherlands · 3 days' },
+    { id: 'dublin',    continent: 'europe', label: 'Dublin',    emoji: '🍺', title: 'Dublin — pubs, craic and cliffs',        date: 'Oct 2024',     lat: 53.3498, lng: -6.2603,  color: '#1abc9c', gradFrom: '#1abc9c', gradTo: '#148f77', href: null,                    sub: 'Ireland · city &amp; coast' },
     { id: 'armenia',   continent: 'asia',   label: 'Armenia',   emoji: '⛪', title: 'Armenia — ancient and wild',            date: 'Oct 2024',     lat: 40.1792, lng: 44.4991,  color: '#e74c3c', gradFrom: '#c0392b', gradTo: '#641e16', href: null,                    sub: 'Yerevan · Geghard · Tatev' },
     { id: 'china',     continent: 'asia',   label: 'China',     emoji: '🏯', title: 'China — a country at full speed',        date: 'Aug 2024',     lat: 39.9042, lng: 116.4074, color: '#c0392b', gradFrom: '#c0392b', gradTo: '#7b0d0d', href: 'travel/china.html',    sub: 'Beijing · Shanghai · Chengdu' },
     { id: 'menorca',   continent: 'europe', label: 'Menorca',   emoji: '🏖️', title: 'Menorca — the quieter Balearic',        date: 'May 2024',     lat: 39.9497, lng: 4.0882,   color: '#0097a7', gradFrom: '#00bcd4', gradTo: '#006064', href: null,                    sub: 'Spain · island escape' }
@@ -216,6 +224,16 @@
     { id: 'africa', name: 'Africa', icon: 'fa-globe-africa' }
   ];
 
+  /* ---- Helpers ---- */
+  function tr(key) {
+    return (typeof window.tKey === 'function' ? window.tKey(key) : key);
+  }
+
+  function tripCount(n) {
+    if (n === 1) return '1 ' + tr('travel.card.trip');
+    return n + ' ' + tr('travel.card.trips');
+  }
+
   /* ---- Card rendering ---- */
   function buildBigCard(trip) {
     var clickable = !!trip.href;
@@ -225,7 +243,7 @@
       '<article class="dest-card ' + (clickable ? 'clickable' : 'not-clickable') + '">' +
         '<div class="dest-card-cover" style="background:linear-gradient(135deg,' + trip.gradFrom + ',' + trip.gradTo + ')">' +
           '<span class="dest-card-emoji">' + trip.emoji + '</span>' +
-          (clickable ? '' : '<span class="dest-card-soon">Soon</span>') +
+          (clickable ? '' : '<span class="dest-card-soon">' + tr('travel.card.soon') + '</span>') +
         '</div>' +
         '<div class="dest-card-body">' +
           '<div class="dest-card-date">' + trip.date + '</div>' +
@@ -251,22 +269,25 @@
       '</div>' +
       (clickable
         ? '<i class="fas fa-chevron-right dest-card-sm-caret"></i>'
-        : '<span class="dest-card-sm-soon">Soon</span>');
+        : '<span class="dest-card-sm-soon">' + tr('travel.card.soon') + '</span>');
     if (clickable) {
       el.addEventListener('click', function () { handleTripClick(trip); });
     }
     return el;
   }
 
-  /* ---- Build "Recent" row (top 4) ---- */
-  var recentEl = document.getElementById('dest-recent');
-  if (recentEl) {
+  /* ---- Render sections ---- */
+  function renderRecent() {
+    var recentEl = document.getElementById('dest-recent');
+    if (!recentEl) return;
+    recentEl.innerHTML = '';
     TRIPS.slice(0, 4).forEach(function (t) { recentEl.appendChild(buildBigCard(t)); });
   }
 
-  /* ---- Build continent accordions (remaining 6) ---- */
-  var continentsEl = document.getElementById('dest-continents');
-  if (continentsEl) {
+  function renderContinents() {
+    var continentsEl = document.getElementById('dest-continents');
+    if (!continentsEl) return;
+    continentsEl.innerHTML = '';
     var remaining = TRIPS.slice(4);
     CONTINENTS.forEach(function (c) {
       var trips = remaining.filter(function (t) { return t.continent === c.id; });
@@ -277,7 +298,7 @@
         '<button class="continent-toggle" type="button" aria-expanded="false">' +
           '<i class="fas ' + c.icon + ' continent-icon"></i>' +
           '<span class="continent-name">' + c.name + '</span>' +
-          '<span class="continent-count">' + trips.length + ' trip' + (trips.length > 1 ? 's' : '') + '</span>' +
+          '<span class="continent-count">' + tripCount(trips.length) + '</span>' +
           '<i class="fas fa-chevron-down continent-chevron"></i>' +
         '</button>' +
         '<div class="continent-content"><div class="continent-grid"></div></div>';
@@ -293,6 +314,22 @@
       continentsEl.appendChild(block);
     });
   }
+
+  function renderAll() {
+    renderRecent();
+    renderContinents();
+  }
+
+  renderAll();
+
+  /* ---- Re-render on language change ---- */
+  document.addEventListener('langchange', function () {
+    renderAll();
+    var statusEl = document.getElementById('globe-hud-status');
+    if (statusEl && !inFlight) {
+      statusEl.textContent = tr('travel.globe.idle');
+    }
+  });
 
   /* ---- Init globe ---- */
   var container = document.getElementById('globeViz');
@@ -324,7 +361,7 @@
   globe.controls().dampingFactor = 0.08;
   globe.pointOfView({ lat: 30, lng: 25, altitude: 2.1 });
 
-  /* ---- Helpers ---- */
+  /* ---- Easing ---- */
   function easeInOutCubic(t) {
     return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
   }
@@ -357,7 +394,7 @@
     });
   }
 
-  /* ---- Flight animation (arc only, no plane emoji) ---- */
+  /* ---- Flight animation ---- */
   var animRaf = null;
   var inFlight = false;
 
@@ -365,7 +402,7 @@
     if (inFlight) return;
     inFlight = true;
     var statusEl = document.getElementById('globe-hud-status');
-    if (statusEl) statusEl.textContent = 'Plotting course to ' + trip.label + '…';
+    if (statusEl) statusEl.textContent = tr('travel.globe.plotting') + trip.label + '…';
 
     smoothScrollToGlobe().then(function () {
       return getUserLoc();
@@ -379,7 +416,6 @@
       };
       globe.arcsData([arc]).arcDashLength(0.001).arcDashGap(0.999);
 
-      // Frame the route
       globe.pointOfView({
         lat: (origin.lat + trip.lat) / 2,
         lng: (origin.lng + trip.lng) / 2,
@@ -397,21 +433,20 @@
           animRaf = requestAnimationFrame(step);
         } else {
           if (trip.href) {
-            // Seamless fade-out to the trip's destination color, then navigate
             var overlay = document.getElementById('globe-fade-overlay');
             if (overlay) {
               overlay.style.background = trip.gradTo;
               overlay.style.opacity = '1';
             }
-            if (statusEl) statusEl.textContent = 'Landing in ' + trip.label + '…';
+            if (statusEl) statusEl.textContent = tr('travel.globe.landing') + trip.label + '…';
             setTimeout(function () { window.location.href = trip.href; }, 650);
           } else {
-            if (statusEl) statusEl.textContent = trip.label + ' — story coming soon';
+            if (statusEl) statusEl.textContent = trip.label + tr('travel.globe.soon_suffix');
             setTimeout(function () {
               globe.arcsData([]);
               globe.controls().autoRotate = true;
               inFlight = false;
-              if (statusEl) statusEl.textContent = 'Drag to spin · Click a destination above to take off';
+              if (statusEl) statusEl.textContent = tr('travel.globe.idle');
             }, 2200);
           }
         }
