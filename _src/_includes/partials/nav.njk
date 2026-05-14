@@ -1,0 +1,19 @@
+{# Shared minimal navbar for travel pages.
+   pathPrefix: "" for /travel.html, "../" for /travel/*.html #}
+<nav class="navbar fixed-top navbar-dark bg-dark shadow-sm" role="navigation" aria-label="Main navigation">
+  <div class="container-fluid px-4 d-flex align-items-center">
+    <a class="navbar-brand text-white mb-0" href="{{ pathPrefix }}index.html"><i class="fas fa-home fa-sm"></i></a>
+    <ul class="navbar-nav ml-auto d-flex flex-row align-items-center">
+      <li class="nav-item">
+        <a class="nav-link" href="mailto:{{ site.email }}"><i class="fas fa-envelope mr-1"></i> Contact</a>
+      </li>
+      <li class="nav-item ml-2 d-flex align-items-center">
+        <div class="lang-toggle">
+          <button class="lang-opt active" data-lang="en" onclick="setLang('en')">EN</button>
+          <span class="lang-sep">|</span>
+          <button class="lang-opt" data-lang="fr" onclick="setLang('fr')">FR</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,56 @@
+{% extends "layouts/base.njk" %}
+
+{% set pathPrefix = "../" %}
+
+{% block body %}
+<header class="post-hero" style="background: linear-gradient(135deg, {{ gradFrom }} 0%, {{ gradTo }} 100%);">
+  <div class="container-fluid px-4">
+    <div class="post-breadcrumb">
+      <a href="../travel.html" data-i18n="nav.travel">Travel</a> <i class="fas fa-chevron-right"></i> <span>{{ label }}</span>
+    </div>
+    <div class="post-emoji">{{ emoji }}</div>
+    <h1 class="display-4">
+      <span data-lang-block="en">{{ heroTitleEn or title }}</span>
+      {% if heroTitleFr %}<span data-lang-block="fr">{{ heroTitleFr }}</span>{% endif %}
+    </h1>
+    <p class="lead">
+      <span data-lang-block="en">{{ heroSubtitleEn or heroSubtitle }}</span>
+      {% if heroSubtitleFr %}<span data-lang-block="fr">{{ heroSubtitleFr }}</span>{% endif %}
+    </p>
+  </div>
+</header>
+
+<main id="main" role="main">
+  <article class="py-5">
+    <div class="container-fluid px-4">
+      <div class="post-content">
+        {% if status == "construction" %}
+          <div class="text-center py-5">
+            <i class="fas fa-hard-hat fa-3x mb-3" style="color:#d4a945;"></i>
+            <h3 data-lang-block="en">Under Construction</h3>
+            <h3 data-lang-block="fr">En construction</h3>
+            <p class="text-muted" data-lang-block="en">The travel diary for {{ label }} is being written — check back soon.</p>
+            <p class="text-muted" data-lang-block="fr">Le journal de voyage pour {{ labelFr or label }} est en cours de rédaction — revenez bientôt.</p>
+          </div>
+        {% else %}
+          {{ content | safe }}
+        {% endif %}
+      </div>
+    </div>
+  </article>
+
+  <section class="py-5 bg-light text-center">
+    <div class="container-fluid px-4">
+      <h4 class="mb-3">
+        <span data-lang-block="en">Read more travel stories</span>
+        <span data-lang-block="fr">Lire d'autres récits</span>
+      </h4>
+      <a href="../travel.html" class="btn btn-primary btn-lg">
+        <i class="fas fa-arrow-left"></i>
+        <span data-lang-block="en">All travel stories</span>
+        <span data-lang-block="fr">Tous les récits</span>
+      </a>
+    </div>
+  </section>
+</main>
+{% endblock %}

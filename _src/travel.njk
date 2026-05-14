@@ -1,55 +1,23 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <link rel="icon" type="image/png" href="logo-website-file-globe-icon-svg-wikimedia-commons-21.png">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
-    <title>Travel Blog — Alexandre Bredillot</title>
-    <meta name="description" content="Travel stories, photographs and notes from the road by Alexandre Bredillot.">
-    <meta name="author" content="Alexandre BREDILLOT">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://mcjack3d.github.io/travel.html">
-    <meta property="og:title" content="Travel Blog — Alexandre Bredillot">
-    <meta property="og:description" content="Travel stories, photographs and notes from the road.">
-    <link rel="icon" href="Images/close.png">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="Style%20Sheets/style.css" rel="stylesheet">
-    <link href="Style%20Sheets/portfolio-extra.css" rel="stylesheet">
-    
+---
+permalink: /travel.html
+pathPrefix: ""
+title: "Travel Blog — Alexandre Bredillot"
+description: "Travel stories, photographs and notes from the road by Alexandre Bredillot."
+themeColor: "#000000"
+ogDescription: "Travel stories, photographs and notes from the road."
+---
+{% extends "layouts/base.njk" %}
+
+{% block head %}
     <meta name="keywords" content="Alexandre Bredillot, Travel Blog, Travel Stories, Photography">
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://mcjack3d.github.io/travel.html">
-    <meta property="twitter:title" content="Travel Blog — Alexandre Bredillot">
-    <meta property="twitter:description" content="Travel stories, photographs and notes from the road.">
+    <meta property="twitter:url" content="{{ site.url }}/travel.html">
+    <meta property="twitter:title" content="{{ title }}">
+    <meta property="twitter:description" content="{{ ogDescription }}">
     <script src="https://unpkg.com/globe.gl/dist/globe.gl.min.js"></script>
+{% endblock %}
 
-  </head>
-  <body>
-
-
-<nav class="navbar fixed-top navbar-dark bg-dark shadow-sm" role="navigation" aria-label="Main navigation">
-  <div class="container-fluid px-4 d-flex align-items-center">
-    <a class="navbar-brand text-white mb-0" href="index.html"><i class="fas fa-home fa-sm"></i></a>
-    <ul class="navbar-nav ml-auto d-flex flex-row align-items-center">
-      <li class="nav-item">
-        <a class="nav-link" href="mailto:alexandrebredillot@gmail.com"><i class="fas fa-envelope mr-1"></i> Contact</a>
-      </li>
-      <li class="nav-item ml-2 d-flex align-items-center">
-        <div class="lang-toggle">
-          <button class="lang-opt active" data-lang="en" onclick="setLang('en')">EN</button>
-          <span class="lang-sep">|</span>
-          <button class="lang-opt" data-lang="fr" onclick="setLang('fr')">FR</button>
-        </div>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-
-
+{% block body %}
 <header id="travel-hero" class="d-flex flex-column justify-content-center align-items-center text-center bg-primary text-white" style="min-height: 60vh; padding-top: 6rem; position: relative; overflow: hidden;">
   <div class="container-fluid px-4">
     <div class="travel-hero-icon mb-3"><i class="fas fa-globe-europe"></i></div>
@@ -104,7 +72,7 @@
     <div class="container-fluid px-4 text-center">
       <h3 class="section-title mb-3" data-i18n="travel.cta.title">Want to talk travel?</h3>
       <p class="mb-4" data-i18n="travel.cta.body">Recommendations, route ideas, or just sharing photos — happy to chat.</p>
-      <a href="mailto:alexandrebredillot@gmail.com" class="btn btn-primary btn-lg">
+      <a href="mailto:{{ site.email }}" class="btn btn-primary btn-lg">
         <i class="fas fa-envelope"></i> <span data-i18n="travel.cta.btn_email">Send a message</span>
       </a>
       <a href="index.html" class="btn btn-outline-primary btn-lg ml-2">
@@ -114,32 +82,9 @@
   </section>
 
 </main>
+{% endblock %}
 
-
-<footer class="py-4 bg-primary text-white">
-  <div class="container-fluid px-4 text-center">
-    <div class="mb-2">
-      <a href="https://www.linkedin.com/in/alexandre-bredillot" target="_blank" rel="noopener" class="text-white mx-2" title="LinkedIn"><i class="fab fa-linkedin fa-lg" style="color:#fff;"></i></a>
-      <a href="https://github.com/McJack3d" target="_blank" rel="noopener" class="text-white mx-2" title="GitHub"><i class="fab fa-github fa-lg" style="color:#fff;"></i></a>
-      <a href="mailto:alexandrebredillot@gmail.com" class="text-white mx-2" title="Email"><i class="fas fa-envelope fa-lg" style="color:#fff;"></i></a>
-    </div>
-    <p class="small mb-0">&copy; 2026 Alexandre BREDILLOT — <span data-i18n="footer.rights">All rights reserved.</span></p>
-  </div>
-</footer>
-
-<button id="scrollToTop" class="scroll-to-top btn btn-primary" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></button>
-
-
-<script src="Scripts/jquery-3.4.1.min.js"></script>
-<script src="Scripts/bootstrap.bundle.min.js"></script>
-<script src="Scripts/i18n.js"></script>
-<script>
-  (function($){
-    $(window).scroll(function(){if($(this).scrollTop()>300){$('#scrollToTop').fadeIn();}else{$('#scrollToTop').fadeOut();}});
-    $('#scrollToTop').click(function(){$('html,body').animate({scrollTop:0},500);return false;});
-  })(jQuery);
-</script>
-
+{% block scripts %}
 <script>
   (function($){
     $(document).on('click','a.btn[href^="#"]', function(e){
@@ -155,8 +100,8 @@
 </script>
 
 <script>
-
-window.__TRIPS__ = [{"id":"vietnam","continent":"asia","label":"Vietnam","emoji":"🛵","title":"Vietnam — south to north","date":"May–Jun 2026","lat":21.0285,"lng":105.8542,"color":"#27ae60","gradFrom":"#27ae60","gradTo":"#1a5e38","href":"travel/vietnam.html","sub":"Hanoi · Hội An · Ha Long Bay"},{"id":"italy","continent":"europe","label":"Italy","emoji":"🍕","title":"Italy — ruins, heat, espresso","date":"Apr–May 2025","lat":41.9028,"lng":12.4964,"color":"#e74c3c","gradFrom":"#e74c3c","gradTo":"#922b21","href":"travel/italy.html","sub":"Rome · Naples"},{"id":"moldova","continent":"europe","label":"Moldova","emoji":"🍷","title":"Moldova — the hidden cellar","date":"Mar 2025","lat":47.0105,"lng":28.8638,"color":"#8e44ad","gradFrom":"#8e44ad","gradTo":"#6c3483","href":"travel/moldova.html","sub":"Chișinău · Milestii Mici"},{"id":"brussels","continent":"europe","label":"Brussels","emoji":"🏛️","title":"Brussels — EU bubble, waffle reality","date":"Mar 2025","lat":50.8503,"lng":4.3517,"color":"#f39c12","gradFrom":"#f39c12","gradTo":"#d35400","href":"travel/brussels.html","sub":"Belgium · Grand Place"},{"id":"morocco","continent":"africa","label":"Morocco","emoji":"🕌","title":"Morocco — contrast and colour","date":"Jan 2025","lat":31.6295,"lng":-7.9811,"color":"#e67e22","gradFrom":"#e67e22","gradTo":"#8e0f0f","href":"travel/morocco.html","sub":"Marrakech · Fès · Sahara"},{"id":"amsterdam","continent":"europe","label":"Amsterdam","emoji":"🚲","title":"Amsterdam — canals & afternoons","date":"Nov 2024","lat":52.3676,"lng":4.9041,"color":"#1a6fa8","gradFrom":"#e67e22","gradTo":"#1a6fa8","href":"travel/amsterdam.html","sub":"Netherlands · 3 days"},{"id":"dublin","continent":"europe","label":"Dublin","emoji":"🍺","title":"Dublin — pubs, craic and cliffs","date":"Oct 2024","lat":53.3498,"lng":-6.2603,"color":"#1abc9c","gradFrom":"#1abc9c","gradTo":"#148f77","href":"travel/dublin.html","sub":"Ireland · city & coast"},{"id":"armenia","continent":"asia","label":"Armenia","emoji":"⛪","title":"Armenia — ancient and wild","date":"Oct 2024","lat":40.1792,"lng":44.4991,"color":"#e74c3c","gradFrom":"#c0392b","gradTo":"#641e16","href":"travel/armenia.html","sub":"Yerevan · Geghard · Tatev"},{"id":"china","continent":"asia","label":"China","emoji":"🏯","title":"China — a country at full speed","date":"Aug 2024","lat":39.9042,"lng":116.4074,"color":"#c0392b","gradFrom":"#c0392b","gradTo":"#7b0d0d","href":"travel/china.html","sub":"Beijing · Shanghai · Chengdu"},{"id":"menorca","continent":"europe","label":"Menorca","emoji":"🏖️","title":"Menorca — the quieter Balearic","date":"May 2024","lat":39.9497,"lng":4.0882,"color":"#0097a7","gradFrom":"#00bcd4","gradTo":"#006064","href":"travel/menorca.html","sub":"Spain · island escape"}];
+{# Trips data inlined from _src/_data/trips.js at build time. #}
+window.__TRIPS__ = {{ trips | dump | safe }};
 </script>
 
 <script>
@@ -164,7 +109,7 @@ window.__TRIPS__ = [{"id":"vietnam","continent":"asia","label":"Vietnam","emoji"
   if (typeof Globe === 'undefined') return;
 
   var TRIPS = window.__TRIPS__;
-  var CONTINENTS = [{"id":"europe","name":"Europe","icon":"fa-globe-europe"},{"id":"asia","name":"Asia","icon":"fa-globe-asia"},{"id":"africa","name":"Africa","icon":"fa-globe-africa"}];
+  var CONTINENTS = {{ continents | dump | safe }};
 
   function tr(key) { return (typeof window.tKey === 'function' ? window.tKey(key) : key); }
   function tripCount(n) { if (n === 1) return '1 ' + tr('travel.card.trip'); return n + ' ' + tr('travel.card.trips'); }
@@ -366,7 +311,4 @@ window.__TRIPS__ = [{"id":"vietnam","continent":"asia","label":"Vietnam","emoji"
   setTimeout(onResize, 100);
 })();
 </script>
-
-
-  </body>
-</html>
+{% endblock %}

@@ -1,0 +1,15 @@
+{
+  "name": "mcjack3d-github-io",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Alexandre Bredillot — portfolio + travel blog",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve --port=8080",
+    "clean": "rimraf travel.html travel/vietnam.html travel/italy.html travel/moldova.html travel/brussels.html travel/dublin.html travel/armenia.html travel/menorca.html travel/china.html travel/amsterdam.html travel/morocco.html"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "markdown-it": "^14.1.1"
+  }
+}
