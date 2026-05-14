@@ -67,8 +67,8 @@
       told through short stories and field notes.
     </p>
     <div class="mt-3">
-      <a href="#stories" class="btn btn-light btn-lg"><i class="fas fa-book-open"></i> Read Stories</a>
-      <a href="#map" class="btn btn-outline-light btn-lg"><i class="fas fa-map-marked-alt"></i> Destinations</a>
+      <a href="#destinations" class="btn btn-light btn-lg"><i class="fas fa-book-open"></i> Browse Trips</a>
+      <a href="#globe-section" class="btn btn-outline-light btn-lg"><i class="fas fa-globe"></i> Open Globe</a>
     </div>
   </div>
 </header>
@@ -87,65 +87,41 @@
     </div>
   </section>
 
-  <!-- GLOBE + STORIES -->
-  <section id="stories" class="travel-globe-section">
-    <div class="travel-globe-layout">
-      <div class="travel-globe-side">
-        <div id="globeViz"></div>
-        <p class="globe-caption">
-          <i class="fas fa-mouse-pointer"></i>&nbsp; Drag to spin &nbsp;·&nbsp; Click a destination to fly there
-        </p>
+  <!-- DESTINATIONS -->
+  <section id="destinations" class="py-5">
+    <div class="container">
+      <h3 class="section-title">Destinations</h3>
+      <p class="mb-4 text-muted">Click any trip to fly there on the globe below.</p>
+
+      <h5 class="dest-subhead">Recent trips</h5>
+      <div class="row" id="dest-recent">
+        <!-- populated by JS: 4 most recent -->
       </div>
-      <div class="travel-list-side">
-        <div class="travel-list-inner">
-          <div class="travel-list-top">
-            <h2 class="travel-list-title">Trips</h2>
-            <span class="travel-list-badge">10 destinations</span>
-          </div>
-          <div id="trip-list" class="trip-scroll">
-            <!-- populated by JS -->
-          </div>
+
+      <h5 class="dest-subhead mt-5">More trips by continent</h5>
+      <div id="dest-continents" class="continent-list">
+        <!-- populated by JS: continent accordions -->
+      </div>
+
+      <div class="wishlist-block mt-5">
+        <h6 class="wishlist-title"><i class="fas fa-compass"></i> Wishlist</h6>
+        <div class="wishlist-chips">
+          <span class="wishlist-chip">Japan</span>
+          <span class="wishlist-chip">Iceland</span>
+          <span class="wishlist-chip">Patagonia</span>
+          <span class="wishlist-chip">Trans-Siberian railway</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- DESTINATIONS / MAP -->
-  <section id="map" class="py-5">
-    <div class="container">
-      <h3 class="section-title">Destinations</h3>
-      <p class="mb-4">A non-exhaustive list of places I’ve spent meaningful time in.</p>
-
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <h5><i class="fas fa-globe-europe" aria-hidden="true"></i> Europe</h5>
-          <ul class="destinations-list">
-            <li><i class="fas fa-map-marker-alt"></i> France — Paris, Lille, Fontevraud, French Alps</li>
-            <li><i class="fas fa-map-marker-alt"></i> Luxembourg</li>
-            <li><i class="fas fa-map-marker-alt"></i> Netherlands — Amsterdam</li>
-            <li><i class="fas fa-map-marker-alt"></i> Spain</li>
-            <li><i class="fas fa-map-marker-alt"></i> Belgium</li>
-          </ul>
-        </div>
-        <div class="col-md-4 mb-4">
-          <h5><i class="fas fa-globe-asia" aria-hidden="true"></i> Asia & Africa</h5>
-          <ul class="destinations-list">
-            <li><i class="fas fa-map-marker-alt"></i> China — Beijing, Shanghai, Chengdu</li>
-            <li><i class="fas fa-map-marker-alt"></i> Vietnam — Hanoi, Hội An, Ha Long Bay</li>
-            <li><i class="fas fa-map-marker-alt"></i> Morocco — Marrakech, Fès, Sahara</li>
-          </ul>
-        </div>
-        <div class="col-md-4 mb-4">
-          <h5><i class="fas fa-compass" aria-hidden="true"></i> Wishlist</h5>
-          <ul class="destinations-list">
-            <li><i class="far fa-star"></i> Japan</li>
-            <li><i class="far fa-star"></i> Iceland</li>
-            <li><i class="far fa-star"></i> Patagonia</li>
-            <li><i class="far fa-star"></i> Trans-Siberian railway</li>
-          </ul>
-        </div>
-      </div>
+  <!-- GLOBE (full screen) -->
+  <section id="globe-section" class="globe-fullscreen-section">
+    <div id="globeViz"></div>
+    <div class="globe-hud">
+      <span id="globe-hud-status">Drag to spin · Click a destination above to take off</span>
     </div>
+    <div id="globe-fade-overlay" class="globe-fade-overlay"></div>
   </section>
 
   <!-- CTA -->
@@ -222,38 +198,99 @@
   if (typeof Globe === 'undefined') return;
 
   var TRIPS = [
-    { id: 'vietnam',   label: 'Vietnam',   emoji: '🛵', title: 'Vietnam — south to north',             date: 'May–Jun 2025', lat: 21.0285, lng: 105.8542, color: '#27ae60', gradFrom: '#27ae60', gradTo: '#1a5e38', href: 'travel/vietnam.html',   sub: 'Hanoi · Hội An · Ha Long Bay' },
-    { id: 'italy',     label: 'Italy',     emoji: '🍕', title: 'Italy — ruins, heat, espresso',         date: 'Apr–May 2025', lat: 41.9028, lng: 12.4964,  color: '#e74c3c', gradFrom: '#e74c3c', gradTo: '#922b21', href: null,                    sub: 'Rome · Naples' },
-    { id: 'moldova',   label: 'Moldova',   emoji: '🍷', title: 'Moldova — the hidden cellar',           date: 'Mar 2025',     lat: 47.0105, lng: 28.8638,  color: '#8e44ad', gradFrom: '#8e44ad', gradTo: '#6c3483', href: null,                    sub: 'Chișinău · Milestii Mici' },
-    { id: 'brussels',  label: 'Brussels',  emoji: '🏛️', title: 'Brussels — EU bubble, waffle reality', date: 'Mar 2025',     lat: 50.8503, lng: 4.3517,   color: '#f39c12', gradFrom: '#f39c12', gradTo: '#d35400', href: null,                    sub: 'Belgium · Grand Place' },
-    { id: 'morocco',   label: 'Morocco',   emoji: '🕌', title: 'Morocco — contrast and colour',         date: 'Jan 2025',     lat: 31.6295, lng: -7.9811,  color: '#e67e22', gradFrom: '#e67e22', gradTo: '#8e0f0f', href: 'travel/morocco.html',  sub: 'Marrakech · Fès · Sahara' },
-    { id: 'amsterdam', label: 'Amsterdam', emoji: '🚲', title: 'Amsterdam — canals, bikes & afternoons',date: 'Nov 2024',     lat: 52.3676, lng: 4.9041,   color: '#1a6fa8', gradFrom: '#e67e22', gradTo: '#1a6fa8', href: 'travel/amsterdam.html',sub: 'Netherlands · 3 days' },
-    { id: 'dublin',    label: 'Dublin',    emoji: '🍺', title: 'Dublin — pubs, craic and cliffs',        date: 'Oct 2024',     lat: 53.3498, lng: -6.2603,  color: '#1abc9c', gradFrom: '#1abc9c', gradTo: '#148f77', href: null,                    sub: 'Ireland · city & coast' },
-    { id: 'armenia',   label: 'Armenia',   emoji: '⛪', title: 'Armenia — ancient, wild, overlooked',   date: 'Oct 2024',     lat: 40.1792, lng: 44.4991,  color: '#e74c3c', gradFrom: '#c0392b', gradTo: '#641e16', href: null,                    sub: 'Yerevan · Geghard · Tatev' },
-    { id: 'china',     label: 'China',     emoji: '🏯', title: 'China — a country at full speed',        date: 'Aug 2024',     lat: 39.9042, lng: 116.4074, color: '#c0392b', gradFrom: '#c0392b', gradTo: '#7b0d0d', href: 'travel/china.html',    sub: 'Beijing · Shanghai · Chengdu' },
-    { id: 'menorca',   label: 'Menorca',   emoji: '🏖️', title: 'Menorca — the quieter Balearic',        date: 'May 2024',     lat: 39.9497, lng: 4.0882,   color: '#0097a7', gradFrom: '#00bcd4', gradTo: '#006064', href: null,                    sub: 'Spain · island escape' }
+    { id: 'vietnam',   continent: 'asia',   label: 'Vietnam',   emoji: '🛵', title: 'Vietnam — south to north',             date: 'May–Jun 2025', lat: 21.0285, lng: 105.8542, color: '#27ae60', gradFrom: '#27ae60', gradTo: '#1a5e38', href: 'travel/vietnam.html',   sub: 'Hanoi · Hội An · Ha Long Bay' },
+    { id: 'italy',     continent: 'europe', label: 'Italy',     emoji: '🍕', title: 'Italy — ruins, heat, espresso',         date: 'Apr–May 2025', lat: 41.9028, lng: 12.4964,  color: '#e74c3c', gradFrom: '#e74c3c', gradTo: '#922b21', href: null,                    sub: 'Rome · Naples' },
+    { id: 'moldova',   continent: 'europe', label: 'Moldova',   emoji: '🍷', title: 'Moldova — the hidden cellar',           date: 'Mar 2025',     lat: 47.0105, lng: 28.8638,  color: '#8e44ad', gradFrom: '#8e44ad', gradTo: '#6c3483', href: null,                    sub: 'Chișinău · Milestii Mici' },
+    { id: 'brussels',  continent: 'europe', label: 'Brussels',  emoji: '🏛️', title: 'Brussels — EU bubble, waffle reality', date: 'Mar 2025',     lat: 50.8503, lng: 4.3517,   color: '#f39c12', gradFrom: '#f39c12', gradTo: '#d35400', href: null,                    sub: 'Belgium · Grand Place' },
+    { id: 'morocco',   continent: 'africa', label: 'Morocco',   emoji: '🕌', title: 'Morocco — contrast and colour',         date: 'Jan 2025',     lat: 31.6295, lng: -7.9811,  color: '#e67e22', gradFrom: '#e67e22', gradTo: '#8e0f0f', href: 'travel/morocco.html',  sub: 'Marrakech · Fès · Sahara' },
+    { id: 'amsterdam', continent: 'europe', label: 'Amsterdam', emoji: '🚲', title: 'Amsterdam — canals & afternoons',       date: 'Nov 2024',     lat: 52.3676, lng: 4.9041,   color: '#1a6fa8', gradFrom: '#e67e22', gradTo: '#1a6fa8', href: 'travel/amsterdam.html',sub: 'Netherlands · 3 days' },
+    { id: 'dublin',    continent: 'europe', label: 'Dublin',    emoji: '🍺', title: 'Dublin — pubs, craic and cliffs',        date: 'Oct 2024',     lat: 53.3498, lng: -6.2603,  color: '#1abc9c', gradFrom: '#1abc9c', gradTo: '#148f77', href: null,                    sub: 'Ireland · city & coast' },
+    { id: 'armenia',   continent: 'asia',   label: 'Armenia',   emoji: '⛪', title: 'Armenia — ancient and wild',            date: 'Oct 2024',     lat: 40.1792, lng: 44.4991,  color: '#e74c3c', gradFrom: '#c0392b', gradTo: '#641e16', href: null,                    sub: 'Yerevan · Geghard · Tatev' },
+    { id: 'china',     continent: 'asia',   label: 'China',     emoji: '🏯', title: 'China — a country at full speed',        date: 'Aug 2024',     lat: 39.9042, lng: 116.4074, color: '#c0392b', gradFrom: '#c0392b', gradTo: '#7b0d0d', href: 'travel/china.html',    sub: 'Beijing · Shanghai · Chengdu' },
+    { id: 'menorca',   continent: 'europe', label: 'Menorca',   emoji: '🏖️', title: 'Menorca — the quieter Balearic',        date: 'May 2024',     lat: 39.9497, lng: 4.0882,   color: '#0097a7', gradFrom: '#00bcd4', gradTo: '#006064', href: null,                    sub: 'Spain · island escape' }
   ];
 
-  /* ---- Build scrolling list ---- */
-  var listEl = document.getElementById('trip-list');
-  if (listEl) {
-    TRIPS.forEach(function (trip) {
-      var item = document.createElement('div');
-      item.className = 'trip-item ' + (trip.href ? 'has-page' : 'soon');
-      item.innerHTML =
-        '<div class="trip-thumb" style="background:linear-gradient(135deg,' + trip.gradFrom + ',' + trip.gradTo + ')">' + trip.emoji + '</div>' +
-        '<div class="trip-info">' +
-          '<div class="trip-date-label">' + trip.date + '</div>' +
-          '<div class="trip-name">' + trip.title + '</div>' +
-          '<div class="trip-sub">' + trip.sub + '</div>' +
+  var CONTINENTS = [
+    { id: 'europe', name: 'Europe', icon: 'fa-globe-europe' },
+    { id: 'asia',   name: 'Asia',   icon: 'fa-globe-asia' },
+    { id: 'africa', name: 'Africa', icon: 'fa-globe-africa' }
+  ];
+
+  /* ---- Card rendering ---- */
+  function buildBigCard(trip) {
+    var clickable = !!trip.href;
+    var card = document.createElement('div');
+    card.className = 'col-md-6 col-lg-3 mb-4';
+    card.innerHTML =
+      '<article class="dest-card ' + (clickable ? 'clickable' : 'not-clickable') + '">' +
+        '<div class="dest-card-cover" style="background:linear-gradient(135deg,' + trip.gradFrom + ',' + trip.gradTo + ')">' +
+          '<span class="dest-card-emoji">' + trip.emoji + '</span>' +
+          (clickable ? '' : '<span class="dest-card-soon">Soon</span>') +
         '</div>' +
-        (trip.href
-          ? '<div class="trip-caret"><i class="fas fa-chevron-right"></i></div>'
-          : '<span class="trip-soon-tag">Soon</span>');
-      if (trip.href) {
-        item.addEventListener('click', function () { handleTripClick(trip); });
-      }
-      listEl.appendChild(item);
+        '<div class="dest-card-body">' +
+          '<div class="dest-card-date">' + trip.date + '</div>' +
+          '<h6 class="dest-card-title">' + trip.title + '</h6>' +
+          '<p class="dest-card-sub">' + trip.sub + '</p>' +
+        '</div>' +
+      '</article>';
+    if (clickable) {
+      card.querySelector('.dest-card').addEventListener('click', function () { handleTripClick(trip); });
+    }
+    return card;
+  }
+
+  function buildSmallCard(trip) {
+    var clickable = !!trip.href;
+    var el = document.createElement('div');
+    el.className = 'dest-card-sm ' + (clickable ? 'clickable' : 'not-clickable');
+    el.innerHTML =
+      '<div class="dest-card-sm-thumb" style="background:linear-gradient(135deg,' + trip.gradFrom + ',' + trip.gradTo + ')">' + trip.emoji + '</div>' +
+      '<div class="dest-card-sm-info">' +
+        '<div class="dest-card-sm-date">' + trip.date + '</div>' +
+        '<div class="dest-card-sm-title">' + trip.label + ' — ' + trip.sub + '</div>' +
+      '</div>' +
+      (clickable
+        ? '<i class="fas fa-chevron-right dest-card-sm-caret"></i>'
+        : '<span class="dest-card-sm-soon">Soon</span>');
+    if (clickable) {
+      el.addEventListener('click', function () { handleTripClick(trip); });
+    }
+    return el;
+  }
+
+  /* ---- Build "Recent" row (top 4) ---- */
+  var recentEl = document.getElementById('dest-recent');
+  if (recentEl) {
+    TRIPS.slice(0, 4).forEach(function (t) { recentEl.appendChild(buildBigCard(t)); });
+  }
+
+  /* ---- Build continent accordions (remaining 6) ---- */
+  var continentsEl = document.getElementById('dest-continents');
+  if (continentsEl) {
+    var remaining = TRIPS.slice(4);
+    CONTINENTS.forEach(function (c) {
+      var trips = remaining.filter(function (t) { return t.continent === c.id; });
+      if (trips.length === 0) return;
+      var block = document.createElement('div');
+      block.className = 'continent-block';
+      block.innerHTML =
+        '<button class="continent-toggle" type="button" aria-expanded="false">' +
+          '<i class="fas ' + c.icon + ' continent-icon"></i>' +
+          '<span class="continent-name">' + c.name + '</span>' +
+          '<span class="continent-count">' + trips.length + ' trip' + (trips.length > 1 ? 's' : '') + '</span>' +
+          '<i class="fas fa-chevron-down continent-chevron"></i>' +
+        '</button>' +
+        '<div class="continent-content"><div class="continent-grid"></div></div>';
+      var grid = block.querySelector('.continent-grid');
+      trips.forEach(function (t) { grid.appendChild(buildSmallCard(t)); });
+      var toggle = block.querySelector('.continent-toggle');
+      var content = block.querySelector('.continent-content');
+      toggle.addEventListener('click', function () {
+        var open = block.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        content.style.maxHeight = open ? (grid.scrollHeight + 32) + 'px' : '0';
+      });
+      continentsEl.appendChild(block);
     });
   }
 
@@ -271,57 +308,25 @@
     .atmosphereAltitude(0.28)
     .arcsData([])
     .arcColor('color')
-    .arcAltitudeAutoScale(0.45)
-    .arcStroke(0.7)
+    .arcAltitudeAutoScale(0.5)
+    .arcStroke(0.85)
     .arcDashLength(0.001)
     .arcDashGap(0.999)
     .arcDashAnimateTime(0)
     .pointsData(TRIPS.map(function (t) { return { lat: t.lat, lng: t.lng, color: t.color }; }))
     .pointColor('color')
     .pointAltitude(0.01)
-    .pointRadius(0.4)
-    .htmlElementsData([])
-    .htmlElement(function (d) {
-      var el = document.createElement('div');
-      el.style.pointerEvents = 'none';
-      el.style.userSelect = 'none';
-      el.innerHTML = d.html;
-      return el;
-    });
+    .pointRadius(0.45);
 
   globe.controls().autoRotate = true;
   globe.controls().autoRotateSpeed = 0.35;
   globe.controls().enableDamping = true;
   globe.controls().dampingFactor = 0.08;
-  globe.pointOfView({ lat: 30, lng: 25, altitude: 2.2 });
+  globe.pointOfView({ lat: 30, lng: 25, altitude: 2.1 });
 
   /* ---- Helpers ---- */
   function easeInOutCubic(t) {
     return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
-  }
-
-  function greatCirclePt(lat1, lng1, lat2, lng2, t) {
-    var r = Math.PI / 180;
-    var p1 = lat1 * r, p2 = lat2 * r, l1 = lng1 * r, l2 = lng2 * r;
-    var d = 2 * Math.asin(Math.sqrt(
-      Math.pow(Math.sin((p2 - p1) / 2), 2) +
-      Math.cos(p1) * Math.cos(p2) * Math.pow(Math.sin((l2 - l1) / 2), 2)
-    ));
-    if (d < 0.001) return [lat2, lng2];
-    var A = Math.sin((1 - t) * d) / Math.sin(d);
-    var B = Math.sin(t * d) / Math.sin(d);
-    var x = A * Math.cos(p1) * Math.cos(l1) + B * Math.cos(p2) * Math.cos(l2);
-    var y = A * Math.cos(p1) * Math.sin(l1) + B * Math.cos(p2) * Math.sin(l2);
-    var z = A * Math.sin(p1) + B * Math.sin(p2);
-    return [Math.atan2(z, Math.sqrt(x * x + y * y)) / r, Math.atan2(y, x) / r];
-  }
-
-  function bearing(lat1, lng1, lat2, lng2) {
-    var r = Math.PI / 180;
-    var dL = (lng2 - lng1) * r;
-    var yy = Math.sin(dL) * Math.cos(lat2 * r);
-    var xx = Math.cos(lat1 * r) * Math.sin(lat2 * r) - Math.sin(lat1 * r) * Math.cos(lat2 * r) * Math.cos(dL);
-    return ((Math.atan2(yy, xx) / r) + 360) % 360;
   }
 
   function getUserLoc() {
@@ -330,56 +335,84 @@
       navigator.geolocation.getCurrentPosition(
         function (p) { resolve({ lat: p.coords.latitude, lng: p.coords.longitude }); },
         function () { resolve({ lat: 48.8566, lng: 2.3522 }); },
-        { timeout: 4000 }
+        { timeout: 4000, maximumAge: 600000 }
       );
     });
   }
 
-  /* ---- Flight animation ---- */
+  function smoothScrollToGlobe() {
+    var section = document.getElementById('globe-section');
+    if (!section) return Promise.resolve();
+    var top = section.getBoundingClientRect().top + window.pageYOffset;
+    window.scrollTo({ top: top, behavior: 'smooth' });
+    return new Promise(function (resolve) {
+      var elapsed = 0;
+      var iv = setInterval(function () {
+        elapsed += 60;
+        if (Math.abs(window.pageYOffset - top) < 4 || elapsed > 1400) {
+          clearInterval(iv);
+          resolve();
+        }
+      }, 60);
+    });
+  }
+
+  /* ---- Flight animation (arc only, no plane emoji) ---- */
   var animRaf = null;
+  var inFlight = false;
 
   function handleTripClick(trip) {
-    if (animRaf) { cancelAnimationFrame(animRaf); animRaf = null; }
-    getUserLoc().then(function (origin) {
+    if (inFlight) return;
+    inFlight = true;
+    var statusEl = document.getElementById('globe-hud-status');
+    if (statusEl) statusEl.textContent = 'Plotting course to ' + trip.label + '…';
+
+    smoothScrollToGlobe().then(function () {
+      return getUserLoc();
+    }).then(function (origin) {
       globe.controls().autoRotate = false;
 
-      var arc = { startLat: origin.lat, startLng: origin.lng, endLat: trip.lat, endLng: trip.lng, color: ['rgba(255,255,255,0.9)', trip.color] };
+      var arc = {
+        startLat: origin.lat, startLng: origin.lng,
+        endLat: trip.lat,     endLng: trip.lng,
+        color: ['rgba(255,255,255,0.95)', trip.color]
+      };
       globe.arcsData([arc]).arcDashLength(0.001).arcDashGap(0.999);
 
+      // Frame the route
       globe.pointOfView({
         lat: (origin.lat + trip.lat) / 2,
         lng: (origin.lng + trip.lng) / 2,
-        altitude: 2.6
-      }, 1100);
+        altitude: 2.4
+      }, 900);
 
-      var DURATION = 3000;
+      var DURATION = 2400;
       var t0 = Date.now();
 
       function step() {
         var raw = Math.min((Date.now() - t0) / DURATION, 1);
         var e = easeInOutCubic(raw);
-
         globe.arcDashLength(Math.max(e, 0.001)).arcDashGap(Math.max(1 - e, 0));
-
-        var pos = greatCirclePt(origin.lat, origin.lng, trip.lat, trip.lng, e);
-        var nxt = greatCirclePt(origin.lat, origin.lng, trip.lat, trip.lng, Math.min(e + 0.025, 1));
-        var hdg = bearing(pos[0], pos[1], nxt[0], nxt[1]);
-
-        globe.htmlElementsData([{
-          lat: pos[0], lng: pos[1],
-          html: '<span style="font-size:20px;line-height:1;display:inline-block;transform:rotate(' + (hdg - 90) + 'deg);filter:drop-shadow(0 2px 8px rgba(0,0,0,.9))">✈️</span>'
-        }]);
-
         if (raw < 1) {
           animRaf = requestAnimationFrame(step);
         } else {
           if (trip.href) {
-            setTimeout(function () { window.location.href = trip.href; }, 600);
+            // Seamless fade-out to the trip's destination color, then navigate
+            var overlay = document.getElementById('globe-fade-overlay');
+            if (overlay) {
+              overlay.style.background = trip.gradTo;
+              overlay.style.opacity = '1';
+            }
+            if (statusEl) statusEl.textContent = 'Landing in ' + trip.label + '…';
+            setTimeout(function () { window.location.href = trip.href; }, 650);
           } else {
+            if (statusEl) statusEl.textContent = trip.label + ' — story coming soon';
             setTimeout(function () {
-              globe.arcsData([]).htmlElementsData([]);
+              globe.arcsData([]);
               globe.controls().autoRotate = true;
-            }, 2000);
+              inFlight = false;
+              if (statusEl) statusEl.textContent = 'Drag to spin · Click a destination above to take off';
+            }, 2200);
           }
         }
       }
