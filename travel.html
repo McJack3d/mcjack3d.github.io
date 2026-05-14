@@ -38,7 +38,7 @@
 <!-- NAV — simplified: brand + email contact + lang toggle only -->
 <nav class="navbar fixed-top navbar-dark bg-dark shadow-sm" role="navigation" aria-label="Main navigation">
   <div class="container-fluid px-4 d-flex align-items-center">
-    <a class="navbar-brand text-white font-weight-bold mb-0" href="index.html">Alexandre BREDILLOT</a>
+    <a class="navbar-brand text-white mb-0" href="index.html"><i class="fas fa-home fa-sm"></i></a>
     <ul class="navbar-nav ml-auto d-flex flex-row align-items-center">
       <li class="nav-item">
         <a class="nav-link" href="mailto:alexandrebredillot@gmail.com"><i class="fas fa-envelope mr-1"></i> Contact</a>
@@ -379,7 +379,8 @@
     smoothScrollToGlobe().then(function () {
       return getUserLoc();
     }).then(function (origin) {
-      globe.controls().autoRotate = false;
+      /* Keep autoRotate running at near-zero speed so Three.js render loop stays alive */
+      globe.controls().autoRotateSpeed = 0.001;
 
       var arc = {
         startLat: origin.lat, startLng: origin.lng,
@@ -388,10 +389,17 @@
       };
       globe.arcsData([arc]).arcDashLength(0.001).arcDashGap(0.999);
 
+      /* Adaptive altitude: zoom out more for long-haul routes */
+      var dlng = Math.abs(trip.lng - origin.lng);
+      if (dlng > 180) dlng = 360 - dlng;
+      var dlat = Math.abs(trip.lat - origin.lat);
+      var span = Math.sqrt(dlat * dlat + dlng * dlng);
+      var alt = span > 130 ? 4.2 : span > 90 ? 3.5 : span > 50 ? 3.0 : 2.8;
+
       globe.pointOfView({
         lat: (origin.lat + trip.lat) / 2,
         lng: (origin.lng + trip.lng) / 2,
-        altitude: 2.8
+        altitude: alt
       }, 900);
 
       var DURATION = 2400;
@@ -401,11 +409,10 @@
         var raw = Math.min((Date.now() - t0) / DURATION, 1);
         var e = easeInOutCubic(raw);
         globe.arcDashLength(Math.max(e, 0.001)).arcDashGap(Math.max(1 - e, 0));
-        /* Force Three.js to render this frame even when OrbitControls have settled */
-        try { globe.renderer().render(globe.scene(), globe.camera()); } catch(ex) {}
         if (raw < 1) {
           animRaf = requestAnimationFrame(step);
         } else {
+          globe.controls().autoRotate = false;
           var overlay = document.getElementById('globe-fade-overlay');
           if (overlay) {
             overlay.style.background = trip.gradTo;
