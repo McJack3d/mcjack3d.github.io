@@ -1179,3 +1179,56 @@ html[lang="fr"] [data-lang-block="en"] { display: none !important; }
   border-radius: 0 4px 4px 0;
 }
 .diary-note strong { color: #8a6914; }
+
+/* =========================
+   Travel hero button visibility fix
+   (global a { color:#000 } would make buttons invisible on black hero)
+   ========================= */
+#travel-hero .btn-light {
+  background-color: #fff;
+  color: #000 !important;
+  border-color: #fff;
+}
+#travel-hero .btn-light:hover,
+#travel-hero .btn-light:focus {
+  background-color: #f1f1f1;
+  color: #000 !important;
+  border-color: #f1f1f1;
+}
+#travel-hero .btn-outline-light {
+  background-color: transparent;
+  color: #fff !important;
+  border: 2px solid rgba(255,255,255,0.75);
+}
+#travel-hero .btn-outline-light:hover,
+#travel-hero .btn-outline-light:focus {
+  background-color: #fff;
+  color: #000 !important;
+  border-color: #fff;
+}
+
+/* =========================
+   Diary photo captions — hidden (alt text covers accessibility)
+   ========================= */
+.diary-photo figcaption { display: none; }
+
+/* =========================
+   Diary photo grid — tighter spacing + wider content
+   ========================= */
+.diary-photos { gap: 0.4rem; }
+.post-content { max-width: 960px; }
+
+/* post-hero works with container-fluid too */
+.post-hero > .container-fluid { position: relative; z-index: 1; }
+
+/* Travel link style — subtle map links inside article prose */
+.travel-map-link {
+  color: inherit;
+  border-bottom: 1px dotted rgba(0,0,0,0.35);
+  text-decoration: none;
+}
+.travel-map-link:hover {
+  border-bottom-color: #27ae60;
+  color: #1a5e38;
+  text-decoration: none;
+}
