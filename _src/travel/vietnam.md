@@ -68,7 +68,7 @@ heroSubtitleFr: "Saigon · Dalat · Hội An · Hanoï · Baie d'Ha Long — Mai
 
   <div class="diary-photos">
     <figure class="diary-photo">
-      <img src="../Images/travel/vietnam/DSCF2720.JPG" alt="Phở Hòa Pasteur — first pho of the trip" loading="lazy">
+      <picture><source srcset="../Images/travel/vietnam/webp/DSCF2720.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2720.JPG" alt="Phở Hòa Pasteur — first pho of the trip" loading="lazy" width="1600" height="1067"></picture>
     </figure>
   </div>
 </section>
@@ -94,15 +94,15 @@ heroSubtitleFr: "Saigon · Dalat · Hội An · Hanoï · Baie d'Ha Long — Mai
   </div>
 
   <div class="diary-photos">
-    <figure class="diary-photo"><img src="../Images/travel/vietnam/DSCF2722.JPG" alt="Tháp Chăm at Tao Đàn park" loading="lazy"></figure>
-    <figure class="diary-photo"><img src="../Images/travel/vietnam/DSCF2726.JPG" alt="Tao Đàn park" loading="lazy"></figure>
-    <figure class="diary-photo"><img src="../Images/travel/vietnam/DSCF2732.JPG" alt="Bánh Mì Huỳnh Hoa — Lê Thị Riêng" loading="lazy"></figure>
-    <figure class="diary-photo"><img src="../Images/travel/vietnam/DSCF2737.JPG" alt="Reunification Palace" loading="lazy"></figure>
-    <figure class="diary-photo"><img src="../Images/travel/vietnam/DSCF2739.JPG" alt="Independence Palace" loading="lazy"></figure>
-    <figure class="diary-photo"><img src="../Images/travel/vietnam/DSCF2740.JPG" alt="Palace gardens" loading="lazy"></figure>
-    <figure class="diary-photo"><img src="../Images/travel/vietnam/DSCF2748.JPG" alt="Afternoon walk through downtown Saigon" loading="lazy"></figure>
-    <figure class="diary-photo"><img src="../Images/travel/vietnam/DSCF2749.JPG" alt="Afternoon walk through Saigon" loading="lazy"></figure>
-    <figure class="diary-photo"><img src="../Images/travel/vietnam/DSCF2754.JPG" alt="Saigon late afternoon" loading="lazy"></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2722.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2722.JPG" alt="Tháp Chăm at Tao Đàn park" loading="lazy" width="1600" height="2401"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2726.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2726.JPG" alt="Tao Đàn park" loading="lazy" width="1600" height="1067"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2732.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2732.JPG" alt="Bánh Mì Huỳnh Hoa — Lê Thị Riêng" loading="lazy" width="1600" height="1067"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2737.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2737.JPG" alt="Reunification Palace" loading="lazy" width="1600" height="1067"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2739.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2739.JPG" alt="Independence Palace" loading="lazy" width="1600" height="1067"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2740.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2740.JPG" alt="Palace gardens" loading="lazy" width="1600" height="2401"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2748.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2748.JPG" alt="Afternoon walk through downtown Saigon" loading="lazy" width="1600" height="1067"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2749.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2749.JPG" alt="Afternoon walk through Saigon" loading="lazy" width="1600" height="1067"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2754.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2754.JPG" alt="Saigon late afternoon" loading="lazy" width="1600" height="1067"></picture></figure>
   </div>
 </section>
 
@@ -131,12 +131,12 @@ heroSubtitleFr: "Saigon · Dalat · Hội An · Hanoï · Baie d'Ha Long — Mai
   </div>
 
   <div class="diary-photos">
-    <figure class="diary-photo"><img src="../Images/travel/vietnam/DSCF2755.JPG" alt="Walk to the historical centre of Saigon" loading="lazy"></figure>
-    <figure class="diary-photo"><img src="../Images/travel/vietnam/DSCF2756.JPG" alt="Saigon historical centre" loading="lazy"></figure>
-    <figure class="diary-photo"><img src="../Images/travel/vietnam/DSCF2758.JPG" alt="Downtown Saigon" loading="lazy"></figure>
-    <figure class="diary-photo"><img src="../Images/travel/vietnam/DSCF2759.JPG" alt="Tonkin Specialty Coffee — egg coffee and ginger coffee" loading="lazy"></figure>
-    <figure class="diary-photo"><img src="../Images/travel/vietnam/DSCF2766.JPG" alt="Sticky rice with mango at Xoài-Mango" loading="lazy"></figure>
-    <figure class="diary-photo"><img src="../Images/travel/vietnam/DSCF2767.JPG" alt="Banana-leaf sticky rice in Cholon" loading="lazy"></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2755.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2755.JPG" alt="Walk to the historical centre of Saigon" loading="lazy" width="1600" height="1067"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2756.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2756.JPG" alt="Saigon historical centre" loading="lazy" width="1600" height="1067"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2758.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2758.JPG" alt="Downtown Saigon" loading="lazy" width="1600" height="1067"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2759.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2759.JPG" alt="Tonkin Specialty Coffee — egg coffee and ginger coffee" loading="lazy" width="1600" height="1067"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2766.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2766.JPG" alt="Sticky rice with mango at Xoài-Mango" loading="lazy" width="1600" height="2400"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2767.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2767.JPG" alt="Banana-leaf sticky rice in Cholon" loading="lazy" width="1600" height="1067"></picture></figure>
   </div>
 </section>
 
@@ -165,8 +165,8 @@ heroSubtitleFr: "Saigon · Dalat · Hội An · Hanoï · Baie d'Ha Long — Mai
   </div>
 
   <div class="diary-photos">
-    <figure class="diary-photo"><img src="../Images/travel/vietnam/IMG_7019.JPG" alt="Phở Hương Bình — drivers' lunch spot" loading="lazy"></figure>
-    <figure class="diary-photo"><img src="../Images/travel/vietnam/DSCF2775.JPG" alt="Guta — Vietnamese coffee chain" loading="lazy"></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/IMG_7019.webp" type="image/webp"><img src="../Images/travel/vietnam/IMG_7019.JPG" alt="Phở Hương Bình — drivers' lunch spot" loading="lazy" width="1600" height="2134"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2775.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2775.JPG" alt="Guta — Vietnamese coffee chain" loading="lazy" width="1600" height="1067"></picture></figure>
   </div>
 
   <div class="diary-note" data-lang-block="en">
