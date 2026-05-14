@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#1a5e38">
     <title>Vietnam — Travel Blog · Alexandre Bredillot</title>
-    <meta name="description" content="Vietnam travel story — Hanoi, Hội An, Ha Long Bay. Notes by Alexandre Bredillot.">
+    <meta name="description" content="Vietnam travel story — Saigon, Dalat, Hoi An, Hanoi. Notes by Alexandre Bredillot.">
     <meta name="author" content="Alexandre BREDILLOT">
 
     <meta property="og:type" content="article">
@@ -31,14 +31,21 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse ml-auto" id="nav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="../index.html#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="../index.html#education">Education</a></li>
-        <li class="nav-item"><a class="nav-link" href="../index.html#experience">Experience</a></li>
-        <li class="nav-item"><a class="nav-link" href="../index.html#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="../index.html#projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link active" href="../travel.html">Travel</a></li>
-        <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact</a></li>
+      <ul class="navbar-nav ml-auto align-items-center">
+        <li class="nav-item"><a class="nav-link" href="../index.html#about" data-i18n="nav.about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#education" data-i18n="nav.education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#experience" data-i18n="nav.experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#skills" data-i18n="nav.skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#projects" data-i18n="nav.projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link active" href="../travel.html" data-i18n="nav.travel">Travel</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html#contact" data-i18n="nav.contact">Contact</a></li>
+        <li class="nav-item ml-2 d-flex align-items-center">
+          <div class="lang-toggle">
+            <button class="lang-opt active" data-lang="en" onclick="setLang('en')">EN</button>
+            <span class="lang-sep">|</span>
+            <button class="lang-opt" data-lang="fr" onclick="setLang('fr')">FR</button>
+          </div>
+        </li>
       </ul>
     </div>
   </div>
@@ -47,11 +54,17 @@
 <header class="post-hero" style="background: linear-gradient(135deg, #27ae60 0%, #1a5e38 100%);">
   <div class="container">
     <div class="post-breadcrumb">
-      <a href="../travel.html">Travel</a> <i class="fas fa-chevron-right"></i> <span>Vietnam</span>
+      <a href="../travel.html" data-i18n="nav.travel">Travel</a> <i class="fas fa-chevron-right"></i> <span>Vietnam</span>
     </div>
     <div class="post-emoji">🛵</div>
-    <h1 class="display-4">Vietnam — south to north</h1>
-    <p class="lead">Hanoi · Hội An · Ha Long Bay — 2024–2025</p>
+    <h1 class="display-4">
+      <span data-lang-block="en">Vietnam — south to north</span>
+      <span data-lang-block="fr">Vietnam — du sud au nord</span>
+    </h1>
+    <p class="lead">
+      <span data-lang-block="en">Saigon · Dalat · Hoi An · Hanoi · Ha Long Bay — May–June 2026</span>
+      <span data-lang-block="fr">Saigon · Dalat · Hội An · Hanoï · Baie d'Ha Long — Mai–Juin 2026</span>
+    </p>
   </div>
 </header>
 
@@ -61,39 +74,230 @@
     <div class="container">
       <div class="post-content">
 
-        <h3 class="section-title">The trip in brief</h3>
-        <p class="post-placeholder">
-          Full writeup coming soon — route from south to north, transport choices, where I slept.
-        </p>
-
-        <h3 class="section-title">Highlights</h3>
-        <ul>
-          <li>Hanoi — Old Quarter, street food, the chaos of the traffic at peak hour</li>
-          <li>Hội An — lanterns at night, tailored shirts, riverside cafés</li>
-          <li>Ha Long Bay — a boat at dawn through the karst islands</li>
-          <li><em>More highlights to be added.</em></li>
-        </ul>
-
-        <h3 class="section-title">Photos</h3>
-        <div class="post-gallery-placeholder">
-          <div>Photo 1</div>
-          <div>Photo 2</div>
-          <div>Photo 3</div>
-          <div>Photo 4</div>
-          <div>Photo 5</div>
-          <div>Photo 6</div>
+        <!-- INTRO -->
+        <div data-lang-block="en">
+          <h3 class="section-title">The trip in brief</h3>
+          <p>Six weeks across Vietnam, south to north, starting in Saigon and slowly making our way up. This is a running journal — added to as the trip unfolds.</p>
         </div>
-        <p class="text-muted small mt-3"><em>Gallery to be populated — drop photos into the Images folder.</em></p>
+        <div data-lang-block="fr">
+          <h3 class="section-title">Le voyage en bref</h3>
+          <p>Six semaines à travers le Vietnam, du sud au nord, en commençant par Saigon et en remontant tranquillement. Un journal qui se remplit au fil des étapes.</p>
+        </div>
 
-        <h3 class="section-title">Practical tips</h3>
-        <ul>
-          <li><em>Visa, internal flights vs trains, street food rules, scooter rental — to be added.</em></li>
-        </ul>
+        <!-- SAIGON -->
+        <h3 class="section-title mt-5">
+          <span data-lang-block="en">Saigon (Ho Chi Minh City) — first four days</span>
+          <span data-lang-block="fr">Saigon (Hô Chi Minh-Ville) — les quatre premiers jours</span>
+        </h3>
 
-        <h3 class="section-title">What I'd do differently</h3>
-        <p class="post-placeholder">
-          Reflections to be added.
-        </p>
+        <!-- DAY 1 -->
+        <section class="diary-day">
+          <div class="diary-day-header">
+            <span class="diary-day-label" data-lang-block="en">Day 1</span>
+            <span class="diary-day-label" data-lang-block="fr">Jour 1</span>
+            <span class="diary-day-date">5 May 2026</span>
+            <h4 class="diary-day-title">
+              <span data-lang-block="en">Arrival in Saigon</span>
+              <span data-lang-block="fr">Arrivée à Saigon</span>
+            </h4>
+          </div>
+
+          <div data-lang-block="en">
+            <p>We landed in Saigon on 5 May 2026. A quick Grab ride took us to our hotel, <strong>Tra My Saigon</strong> — really cheap, but not particularly clean, and the floor of our room was completely warped by humidity. We stayed three nights, which felt like the right amount of time to discover the city without dragging it out. Saigon is alive and loud — not necessarily the kind of place you go to unwind on holiday, but exactly what you want for a first contact with the country.</p>
+            <p>For our first dinner we tested <strong>Phở Hòa Pasteur</strong>: a solid introduction to pho. We spent the rest of the evening wandering on foot, soaking up the Saigon nightlife.</p>
+          </div>
+          <div data-lang-block="fr">
+            <p>Nous sommes arrivés à Saigon le 5 mai 2026. Après un petit Grab rapide, direction notre hôtel, <strong>Tra My Saigon</strong> — vraiment peu cher, mais pas extrêmement propre, et le plancher de notre chambre était complètement détruit par l'humidité. Nous y sommes restés trois nuits, le temps de découvrir la ville sans trop s'attarder. Saigon est très vivante et bruyante — pas nécessairement le cadre qu'on cherche en vacances, mais parfait pour un premier contact avec le pays.</p>
+            <p>Pour notre premier dîner, nous avons testé le <strong>Phở Hòa Pasteur</strong> : une bonne introduction au pho. Nous avons passé le reste de la soirée à marcher et nous émerveiller au gré de la vie nocturne saïgonaise.</p>
+          </div>
+
+          <div class="diary-photos">
+            <figure class="diary-photo">
+              <img src="../Images/travel/vietnam/DSCF2720.JPG" alt="Phở Hòa Pasteur" loading="lazy">
+              <figcaption>Phở Hòa Pasteur — first pho of the trip</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <!-- DAY 2 -->
+        <section class="diary-day">
+          <div class="diary-day-header">
+            <span class="diary-day-label" data-lang-block="en">Day 2</span>
+            <span class="diary-day-label" data-lang-block="fr">Jour 2</span>
+            <span class="diary-day-date">6 May 2026</span>
+            <h4 class="diary-day-title">
+              <span data-lang-block="en">Tao Đàn Park &amp; the Reunification Palace</span>
+              <span data-lang-block="fr">Parc Tao Đàn &amp; Palais de la Réunification</span>
+            </h4>
+          </div>
+
+          <div data-lang-block="en">
+            <p>Daytime visit to the <strong>Tháp Chăm at Tao Đàn park</strong>, followed by our first proper banh mi at <strong>Bánh Mì Huỳnh Hoa — Lê Thị Riêng</strong>. After lunch, the <strong>Reunification (Independence) Palace</strong> and its gardens. The side pavilion holds most of the historical context with detailed maps explaining the modern history of Vietnam well — though there's a lot to absorb. The palace itself is more of an architectural visit: imagine the place in use (rooftop helicopter, bunker, reception hall, gardens, interiors). It's not air-conditioned — anyone who suffers in the heat should plan around the cooler hours.</p>
+            <p>For dinner we ended up in what turned out to be our first <em>"bad experience"</em>: a restaurant highly recommended on Google, but in practice far too touristy, well above Saigon prices, and visibly split between a foreigner room and a local room.</p>
+          </div>
+          <div data-lang-block="fr">
+            <p>Visite de jour du <strong>Tháp Chăm dans le parc Tao Đàn</strong>, puis dégustation de notre premier vrai banh mi chez <strong>Bánh Mì Huỳnh Hoa — Lê Thị Riêng</strong>. L'après-midi, le <strong>Palais de la Réunification (Independence Palace)</strong> et ses jardins. Le pavillon attenant concentre la majorité du contexte historique avec de grandes cartes qui détaillent bien l'histoire moderne du Vietnam, mais cela reste assez compliqué à assimiler compte tenu de la densité du récit. Le palais en lui-même est plutôt une visite d'architecture, pour imaginer la vie pendant son utilisation (hélicoptère sur le toit, bunker, belle salle de réception, beaux jardins, intérieurs). Le palais n'étant pas climatisé, il est préférable, pour les personnes qui souffrent de la chaleur, de le visiter quand il ne fait pas trop chaud.</p>
+            <p>Pour le dîner, nous avons essuyé notre première <em>« mauvaise expérience »</em> : un restaurant pourtant bien recommandé sur Google nous est apparu beaucoup trop touristique, trop onéreux par rapport à la norme saïgonaise, et visiblement divisé en deux salles — une pour les étrangers, une pour les locaux.</p>
+          </div>
+
+          <div class="diary-photos">
+            <figure class="diary-photo">
+              <img src="../Images/travel/vietnam/DSCF2722.JPG" alt="Tháp Chăm at Tao Đàn park" loading="lazy">
+              <figcaption>Tháp Chăm · Tao Đàn park</figcaption>
+            </figure>
+            <figure class="diary-photo">
+              <img src="../Images/travel/vietnam/DSCF2726.JPG" alt="Tao Đàn park" loading="lazy">
+              <figcaption>Tao Đàn park</figcaption>
+            </figure>
+            <figure class="diary-photo">
+              <img src="../Images/travel/vietnam/DSCF2732.JPG" alt="Bánh Mì Huỳnh Hoa" loading="lazy">
+              <figcaption>Bánh Mì Huỳnh Hoa — Lê Thị Riêng</figcaption>
+            </figure>
+            <figure class="diary-photo">
+              <img src="../Images/travel/vietnam/DSCF2737.JPG" alt="Reunification Palace" loading="lazy">
+              <figcaption>Reunification Palace</figcaption>
+            </figure>
+            <figure class="diary-photo">
+              <img src="../Images/travel/vietnam/DSCF2739.JPG" alt="Independence Palace" loading="lazy">
+              <figcaption>Independence Palace</figcaption>
+            </figure>
+            <figure class="diary-photo">
+              <img src="../Images/travel/vietnam/DSCF2740.JPG" alt="Palace gardens" loading="lazy">
+              <figcaption>Palace gardens</figcaption>
+            </figure>
+            <figure class="diary-photo">
+              <img src="../Images/travel/vietnam/DSCF2748.JPG" alt="Saigon afternoon walk" loading="lazy">
+              <figcaption>Afternoon walk · downtown Saigon</figcaption>
+            </figure>
+            <figure class="diary-photo">
+              <img src="../Images/travel/vietnam/DSCF2749.JPG" alt="Saigon afternoon walk" loading="lazy">
+              <figcaption>Afternoon walk</figcaption>
+            </figure>
+            <figure class="diary-photo">
+              <img src="../Images/travel/vietnam/DSCF2754.JPG" alt="Saigon afternoon" loading="lazy">
+              <figcaption>Saigon, late afternoon</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <!-- DAY 3 -->
+        <section class="diary-day">
+          <div class="diary-day-header">
+            <span class="diary-day-label" data-lang-block="en">Day 3</span>
+            <span class="diary-day-label" data-lang-block="fr">Jour 3</span>
+            <span class="diary-day-date">7 May 2026</span>
+            <h4 class="diary-day-title">
+              <span data-lang-block="en">Old centre, Cholon &amp; Bui Vien</span>
+              <span data-lang-block="fr">Centre historique, Cholon &amp; Bui Vien</span>
+            </h4>
+          </div>
+
+          <div data-lang-block="en">
+            <p>We walked from the hotel down to Saigon's historic centre. Coffee stop at <strong>Tonkin Specialty Coffee</strong> — touristy but excellent. We tried an egg coffee and a ginger coffee. The café is tucked away on the second floor, at the end of a long corridor.</p>
+            <p>Lunch two minutes away at <strong>Bún riêu Gánh</strong>: authentic, slightly pricey, with a wonderfully savoury pork-and-shrimp pho. First experience with <em>Mắm tôm</em>, a fermented shrimp paste — very strong, very particular flavour.</p>
+            <p>In the afternoon we visited a station of the brand-new <strong>Metro Line 1</strong>: the station was deserted, ridership clearly hasn't taken off yet. In a desperate quest for sticky rice we landed at <strong>Xoài-Mango Local Dishes</strong>, then took a Grab to <strong>Cholon</strong>, Saigon's Chinatown. Dessert at <strong>Xôi Lá Chuối phường An Đông</strong>, then Cristina got her nails done at <em>Lisa Nail &amp; Spa — Tiệm Nail Quận 5</em>.</p>
+            <p>Back to the hotel, then out again that evening to walk <strong>Bùi Viện Walking Street</strong> — Saigon's nightlife strip: bars with dancers, very loud DJ sets. Not exactly a family outing.</p>
+          </div>
+          <div data-lang-block="fr">
+            <p>Nous avons continué à pied depuis l'hôtel jusqu'au centre historique de Saigon. Pause café chez <strong>Tonkin Specialty Coffee</strong>, touristique mais excellente adresse. Nous avons dégusté un egg coffee et un café au gingembre. Le café est caché au deuxième étage, au bout d'un long couloir.</p>
+            <p>Déjeuner à deux pas de là au <strong>Bún riêu Gánh</strong> : authentique, un peu onéreux, un pho porc et crevette très savoureux. Première expérience avec le <em>Mắm tôm</em>, une pâte de crevettes fermentée au goût très fort et particulier.</p>
+            <p>L'après-midi, visite d'une station de la toute nouvelle <strong>ligne 1 du métro</strong>, qui semblait avoir très peu de succès : la station était complètement déserte. Dans une quête désespérée de riz gluant, nous avons jeté notre dévolu sur <strong>Xoài-Mango Local Dishes</strong>, puis pris un Grab pour <strong>Cholon</strong>, le quartier chinois de Saigon. Dessert chez <strong>Xôi Lá Chuối phường An Đông</strong>, et Cristina s'est fait faire les ongles chez <em>Lisa Nail &amp; Spa — Tiệm Nail Quận 5</em>.</p>
+            <p>Retour à l'hôtel, puis ressortie en soirée pour visiter la <strong>Bùi Viện Walking Street</strong>, la rue qui regroupe la nightlife de Saigon : bars avec danseuses, sets de DJ très bruyants. Pas nécessairement à visiter en famille.</p>
+          </div>
+
+          <div class="diary-photos">
+            <figure class="diary-photo">
+              <img src="../Images/travel/vietnam/DSCF2755.JPG" alt="Saigon historical centre" loading="lazy">
+              <figcaption>Walk to the historical centre</figcaption>
+            </figure>
+            <figure class="diary-photo">
+              <img src="../Images/travel/vietnam/DSCF2756.JPG" alt="Saigon historical centre" loading="lazy">
+              <figcaption>Historical centre</figcaption>
+            </figure>
+            <figure class="diary-photo">
+              <img src="../Images/travel/vietnam/DSCF2758.JPG" alt="Saigon downtown" loading="lazy">
+              <figcaption>Downtown Saigon</figcaption>
+            </figure>
+            <figure class="diary-photo">
+              <img src="../Images/travel/vietnam/DSCF2759.JPG" alt="Tonkin Specialty Coffee" loading="lazy">
+              <figcaption>Tonkin Specialty Coffee — egg coffee &amp; ginger coffee</figcaption>
+            </figure>
+            <figure class="diary-photo">
+              <img src="../Images/travel/vietnam/DSCF2766.JPG" alt="Sticky rice with mango at Xoài-Mango" loading="lazy">
+              <figcaption>Xoài-Mango — sticky rice &amp; mango</figcaption>
+            </figure>
+            <figure class="diary-photo">
+              <img src="../Images/travel/vietnam/DSCF2767.JPG" alt="Banana-leaf sticky rice in Cholon" loading="lazy">
+              <figcaption>Xôi Lá Chuối · Cholon</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <!-- DAY 4 -->
+        <section class="diary-day">
+          <div class="diary-day-header">
+            <span class="diary-day-label" data-lang-block="en">Day 4</span>
+            <span class="diary-day-label" data-lang-block="fr">Jour 4</span>
+            <span class="diary-day-date">8 May 2026</span>
+            <h4 class="diary-day-title">
+              <span data-lang-block="en">War Remnants Museum &amp; the night bus to Dalat</span>
+              <span data-lang-block="fr">Musée des Vestiges de la Guerre &amp; bus de nuit pour Dalat</span>
+            </h4>
+          </div>
+
+          <div data-lang-block="en">
+            <p>Last day in Saigon. Our bus to Dalat left at 23:30 so we left our bags at the hotel for the day — most decent Saigon hotels are happy to do this for free. Lunch at <strong>Phở Hương Bình</strong>, surrounded by drivers on their break.</p>
+            <p>Then the <strong>War Remnants Museum</strong>: another window onto modern Vietnamese history, mostly focused on the American war with a smaller section on the French colonial legacy, plus extensive photography halls.</p>
+            <p>We then drifted toward the modern centre to take refuge inside the malls during the midday heat peak (noon–2pm). A stop at <strong>Guta</strong>, a local Vietnamese chain, then the <strong>Vincom Center</strong> boutiques, the <strong>Bến Thành Market</strong>, and <strong>Saigon Square</strong>. Both markets offer counterfeits at prices that look interesting to a Western eye but remain inflated compared to actual production cost or to what you can find elsewhere in Vietnam. Saigon Square is noticeably calmer and some of the shops carry better quality.</p>
+            <p>In the evening we picked up our bus for Dalat — a quick wait at another local coffee chain, <strong>Katinat</strong>.</p>
+          </div>
+          <div data-lang-block="fr">
+            <p>Dernier jour à Saigon. Notre bus pour Dalat partait à 23h30, donc nous avons laissé nos affaires à l'hôtel pour la journée — la plupart des hôtels convenables à Saigon acceptent volontiers et gratuitement. Déjeuner au <strong>Phở Hương Bình</strong>, entourés de chauffeurs en pause.</p>
+            <p>Puis visite du <strong>Musée des Vestiges de la Guerre</strong>, qui revient également sur l'histoire moderne du Vietnam, principalement axé sur la période avec les Américains, avec un petit morceau sur les vestiges coloniaux français et de nombreuses sections photographiques.</p>
+            <p>Nous nous sommes ensuite dirigés vers le centre moderne pour nous isoler dans les malls et profiter de la climatisation au pic de chaleur (entre midi et 14h). Pause boissons chez <strong>Guta</strong>, chaîne vietnamienne, puis visite des boutiques du <strong>Vincom Center</strong>, du <strong>Marché Bến Thành</strong> et de <strong>Saigon Square</strong>. Les deux marchés présentent des tarifs intéressants pour les Occidentaux mais proposent des contrefaçons de qualité variable à des prix tout de même exagérés au regard du coût de fabrication ou de ce qu'on trouve ailleurs au Vietnam. On recommande tout de même le deuxième, beaucoup plus calme et avec des boutiques plus qualitatives.</p>
+            <p>En soirée, nous sommes allés récupérer notre bus pour Dalat — petite attente dans un <strong>Katinat</strong>, autre chaîne de café vietnamienne.</p>
+          </div>
+
+          <div class="diary-photos">
+            <figure class="diary-photo">
+              <img src="../Images/travel/vietnam/IMG_7019.JPG" alt="Phở Hương Bình" loading="lazy">
+              <figcaption>Phở Hương Bình — drivers' lunch spot</figcaption>
+            </figure>
+            <figure class="diary-photo">
+              <img src="../Images/travel/vietnam/DSCF2775.JPG" alt="Guta drinks" loading="lazy">
+              <figcaption>Guta — Vietnamese coffee chain</figcaption>
+            </figure>
+          </div>
+
+          <div class="diary-note" data-lang-block="en">
+            <strong>Tip ·</strong> Most Saigon hotels will keep your luggage for free between checkout and an evening bus. Useful if your overnight transport leaves late.
+          </div>
+          <div class="diary-note" data-lang-block="fr">
+            <strong>Astuce ·</strong> La plupart des hôtels à Saigon gardent gratuitement les bagages entre le check-out et un bus du soir. Pratique si votre transport de nuit part tard.
+          </div>
+        </section>
+
+        <!-- COMING UP -->
+        <h3 class="section-title mt-5">
+          <span data-lang-block="en">Coming up</span>
+          <span data-lang-block="fr">À venir</span>
+        </h3>
+        <div data-lang-block="en">
+          <ul>
+            <li>Dalat — highlands, coffee plantations, cooler air</li>
+            <li>Hội An — lanterns at night, tailored shirts, riverside cafés</li>
+            <li>Hanoi — Old Quarter, street food, traffic at peak hour</li>
+            <li>Ha Long Bay — boat at dawn through the karst islands</li>
+          </ul>
+        </div>
+        <div data-lang-block="fr">
+          <ul>
+            <li>Dalat — hauts plateaux, plantations de café, fraîcheur</li>
+            <li>Hội An — lanternes le soir, chemises sur mesure, cafés au bord du fleuve</li>
+            <li>Hanoï — vieux quartier, street food, trafic aux heures de pointe</li>
+            <li>Baie d'Ha Long — bateau à l'aube entre les pitons karstiques</li>
+          </ul>
+        </div>
 
       </div>
     </div>
@@ -101,9 +305,14 @@
 
   <section class="py-5 bg-light text-center">
     <div class="container">
-      <h4 class="mb-3">Read more travel stories</h4>
+      <h4 class="mb-3">
+        <span data-lang-block="en">Read more travel stories</span>
+        <span data-lang-block="fr">Lire d'autres récits</span>
+      </h4>
       <a href="../travel.html" class="btn btn-primary btn-lg">
-        <i class="fas fa-arrow-left"></i> All travel stories
+        <i class="fas fa-arrow-left"></i>
+        <span data-lang-block="en">All travel stories</span>
+        <span data-lang-block="fr">Tous les récits</span>
       </a>
     </div>
   </section>
@@ -123,7 +332,7 @@
         <i class="fas fa-envelope fa-lg" style="color:#fff;"></i>
       </a>
     </div>
-    <p class="small mb-0">&copy; 2025 Alexandre BREDILLOT — All rights reserved.</p>
+    <p class="small mb-0">&copy; 2025 Alexandre BREDILLOT — <span data-i18n="footer.rights">All rights reserved.</span></p>
   </div>
 </footer>
 
@@ -133,6 +342,7 @@
 
 <script src="../Scripts/jquery-3.4.1.min.js"></script>
 <script src="../Scripts/bootstrap.bundle.min.js"></script>
+<script src="../Scripts/i18n.js"></script>
 <script>
   (function($){
     $(window).scroll(function() {
