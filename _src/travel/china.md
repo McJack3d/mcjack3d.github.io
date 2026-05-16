@@ -27,6 +27,8 @@ heroTitleEn: "China — a country at full speed"
 heroTitleFr: "Chine — un pays à pleine vitesse"
 heroSubtitleEn: "Beijing · Shanghai · Chengdu — August 2024"
 heroSubtitleFr: "Pékin · Shanghai · Chengdu — Août 2024"
+heroTitleRo: "China — o țară în plină viteză"
+heroSubtitleRo: "Beijing · Shanghai · Chengdu — August 2024"
 ---
 
 <h3 class="section-title">The trip in brief</h3>

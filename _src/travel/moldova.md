@@ -27,4 +27,6 @@ heroTitleEn: "Moldova — the hidden cellar"
 heroTitleFr: "Moldavie — la cave cachée"
 heroSubtitleEn: "Chișinău · Milestii Mici — March 2025"
 heroSubtitleFr: "Chișinău · Milestii Mici — Mars 2025"
+heroTitleRo: "Moldova — pivnița ascunsă"
+heroSubtitleRo: "Chișinău · Mileștii Mici — Martie 2025"
 ---

@@ -27,4 +27,6 @@ heroTitleEn: "Menorca — the quieter Balearic"
 heroTitleFr: "Minorque — la Baléare la plus calme"
 heroSubtitleEn: "Spain · island escape — May 2024"
 heroSubtitleFr: "Espagne · escapade insulaire — Mai 2024"
+heroTitleRo: "Menorca — cea mai liniștită Baleară"
+heroSubtitleRo: "Spania · evadare pe insulă — Mai 2024"
 ---

@@ -288,6 +288,42 @@
       'travel.cta.body': 'Recommandations, idées d\'itinéraires ou simple échange de photos — avec plaisir.',
       'travel.cta.btn_email': 'Envoyer un message',
       'travel.cta.btn_back': 'Retour au portfolio'
+    },
+
+    /* Romanian — offered strictly on the travel blog */
+    ro: {
+      'nav.travel': 'Călătorii',
+      'footer.rights': 'Toate drepturile rezervate.',
+
+      'travel.hero.title': 'Blog de Călătorie',
+      'travel.hero.subtitle': 'Notițe, fotografii și impresii de pe drum',
+      'travel.hero.desc': 'Un jurnal personal al locurilor care mi-au modelat perspectiva — orașe, munți și străzi liniștite, povestite prin scurte relatări și însemnări de călătorie.',
+      'travel.hero.btn_browse': 'Explorează călătoriile',
+      'travel.hero.btn_globe': 'Deschide globul',
+
+      'travel.intro.title': 'Despre acest blog',
+      'travel.intro.body': 'Dincolo de date și finanțe, călătoriile au fost mereu cel mai sigur mod prin care știu să învăț mai repede. Această pagină adună scurte texte din călătorii recente — ce am văzut, ce m-a surprins și micile lucruri practice care merită reținute. Articolele sunt adăugate treptat, ori de câte ori o destinație merită povestită.',
+
+      'travel.dest.title': 'Destinații',
+      'travel.dest.subtitle': 'Apasă pe o călătorie pentru a zbura acolo pe globul de mai jos.',
+      'travel.dest.recent': 'Călătorii recente',
+      'travel.dest.by_continent': 'Mai multe călătorii pe continente',
+      'travel.dest.wishlist': 'Listă de dorințe',
+
+      'travel.globe.idle': 'Trage pentru a roti · Apasă pe o destinație de mai sus pentru a decola',
+      'travel.globe.plotting': 'Se calculează traseul spre ',
+      'travel.globe.landing': 'Aterizare în ',
+      'travel.globe.soon_suffix': ' — poveste în curând',
+
+      'travel.card.soon': 'În curând',
+      'travel.card.coming_soon': 'În curând',
+      'travel.card.trip': 'călătorie',
+      'travel.card.trips': 'călătorii',
+
+      'travel.cta.title': 'Vrei să vorbim despre călătorii?',
+      'travel.cta.body': 'Recomandări, idei de itinerar sau pur și simplu schimb de fotografii — cu plăcere.',
+      'travel.cta.btn_email': 'Trimite un mesaj',
+      'travel.cta.btn_back': 'Înapoi la portofoliu'
     }
   };
 
@@ -311,11 +347,15 @@
   }
 
   function setLang(lang) {
-    if (lang !== 'en' && lang !== 'fr') lang = 'en';
-    document.documentElement.lang = lang;
+    if (lang !== 'en' && lang !== 'fr' && lang !== 'ro') lang = 'en';
+    /* Romanian is offered strictly on the travel blog (the only place the RO
+       toggle is rendered). Elsewhere the choice is remembered but shown in English. */
+    var effective = lang;
+    if (lang === 'ro' && !document.querySelector('.lang-opt[data-lang="ro"]')) effective = 'en';
+    document.documentElement.lang = effective;
     try { localStorage.setItem(LANG_KEY, lang); } catch (e) {}
-    applyLang(lang);
-    document.dispatchEvent(new CustomEvent('langchange', { detail: { lang: lang } }));
+    applyLang(effective);
+    document.dispatchEvent(new CustomEvent('langchange', { detail: { lang: effective } }));
   }
 
   function getSavedLang() {

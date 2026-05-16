@@ -27,6 +27,8 @@ heroTitleEn: "Morocco — contrast and colour"
 heroTitleFr: "Maroc — contraste et couleur"
 heroSubtitleEn: "Marrakech · Fès · Sahara — January 2025"
 heroSubtitleFr: "Marrakech · Fès · Sahara — Janvier 2025"
+heroTitleRo: "Maroc — contrast și culoare"
+heroSubtitleRo: "Marrakech · Fès · Sahara — Ianuarie 2025"
 ---
 
 <h3 class="section-title">The trip in brief</h3>

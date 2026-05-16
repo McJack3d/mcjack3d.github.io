@@ -27,6 +27,8 @@ heroTitleEn: "Amsterdam — canals & afternoons"
 heroTitleFr: "Amsterdam — canaux et après-midi"
 heroSubtitleEn: "Netherlands — November 2024"
 heroSubtitleFr: "Pays-Bas — Novembre 2024"
+heroTitleRo: "Amsterdam — canale și după-amiezi"
+heroSubtitleRo: "Țările de Jos — Noiembrie 2024"
 ---
 
 <h3 class="section-title">The trip in brief</h3>
