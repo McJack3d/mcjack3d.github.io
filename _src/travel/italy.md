@@ -27,4 +27,6 @@ heroTitleEn: "Italy — ruins, heat, espresso"
 heroTitleFr: "Italie — ruines, chaleur, espresso"
 heroSubtitleEn: "Rome · Naples — April–May 2025"
 heroSubtitleFr: "Rome · Naples — Avril–Mai 2025"
+heroTitleRo: "Italia — ruine, căldură, espresso"
+heroSubtitleRo: "Roma · Napoli — Aprilie–Mai 2025"
 ---

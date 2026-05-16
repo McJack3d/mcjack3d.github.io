@@ -27,4 +27,6 @@ heroTitleEn: "Armenia — ancient and wild"
 heroTitleFr: "Arménie — ancienne et sauvage"
 heroSubtitleEn: "Yerevan · Geghard · Tatev — October 2024"
 heroSubtitleFr: "Erevan · Geghard · Tatev — Octobre 2024"
+heroTitleRo: "Armenia — străveche și sălbatică"
+heroSubtitleRo: "Erevan · Geghard · Tatev — Octombrie 2024"
 ---
