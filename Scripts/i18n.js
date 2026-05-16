@@ -135,6 +135,7 @@
 
       /* --- Travel card dynamic text --- */
       'travel.card.soon': 'Soon',
+      'travel.card.coming_soon': 'Coming soon',
       'travel.card.trip': 'trip',
       'travel.card.trips': 'trips',
 
@@ -278,6 +279,7 @@
 
       /* --- Travel card dynamic text --- */
       'travel.card.soon': 'Bientôt',
+      'travel.card.coming_soon': 'Bientôt disponible',
       'travel.card.trip': 'voyage',
       'travel.card.trips': 'voyages',
 
