@@ -250,6 +250,13 @@ heroSubtitleRo: "Saigon · Dalat · Hội An · Hanoi · Golful Ha Long — Mai�
     <p>Plimbare în jurul lacului <strong>Hồ Xuân Hương</strong> — lacul central care dă caracterul orașului — apoi film la <strong>CineStar Đà Lạt</strong> ca să scăpăm de ceața dimineții și să ne recuperăm după autobuz. Un pui de somn pe iarba din parcul Yersin după ce a ieșit soarele, apoi un prânz excelent la <strong>Mì Quảng Hội An</strong> (un bol de tăiței în stil Hội An — tăiței lați de orez cu supă, creveți, porc, arahide și biscuiți de susan).</p>
     <p>Seara: patiserie la <strong>Lien Hoa Bakery</strong>, brutăria iconică din Dalat cu influențe franceze; apoi <strong>Bánh Tráng Nướng Hiền</strong> pentru pizza stradală (foaie de orez la grătar cu ou, ceapă verde, creveți uscați și ardei iute — un clasic Dalat irezistibil); înghețată de avocado la <strong>Chạm Cafe</strong>. Am închiriat un scooter pentru următoarele două zile de la <strong>Happy Scooter</strong> (150.000 VND/zi — circa 5,50 €).</p>
   </div>
+
+  <div class="diary-photos">
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/PXL_20260508_162037720.webp" type="image/webp"><img src="../Images/travel/vietnam/PXL_20260508_162037720.jpg" alt="Sleeper bus from Saigon to Dalat" loading="lazy"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/PXL_20260508_163308888.webp" type="image/webp"><img src="../Images/travel/vietnam/PXL_20260508_163308888.jpg" alt="Overnight sleeper bus to Dalat" loading="lazy"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2785.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2785.JPG" alt="Pho at Mì Quảng Hội An, Dalat" loading="lazy"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2798.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2798.JPG" alt="Bánh Tráng Nướng — Dalat street pizza" loading="lazy"></picture></figure>
+  </div>
 </section>
 
 <section class="diary-day">
@@ -280,6 +287,21 @@ heroSubtitleRo: "Saigon · Dalat · Hội An · Hanoi · Golful Ha Long — Mai�
     <p>Înapoi în oraș pentru primul nostru <em>bánh bèo</em> la <strong>Bánh bèo Bà Hường</strong> — mici prăjituri de orez aburite, cu pastă de creveți, ulei de ceapă verde și coajă crocantă de porc. Apoi din nou pe scooter pe drumul DT725 până la <strong>Pagoda Linh Ẩn</strong>, unde o statuie feminină de Buddha de 151 de metri domină valea — una dintre cele mai înalte din Vietnam. Ocol prin <strong>Chùa Vạn Đức</strong>.</p>
     <p>Seara: primii <em>nem nướng</em> (frigărui de porc la grătar înfășurate în foaie de orez cu ierburi proaspete) la <strong>Nem nướng Dũng Lộc</strong>, apoi o farfurie generoasă de orez cu porc la grătar la <strong>Cơm tấm Cô Hai</strong>. Zi încheiată, ca de obicei, cu patiserie de la Lien Hoa Bakery.</p>
   </div>
+
+  <div class="diary-photos">
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2827.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2827.JPG" alt="Thiền Viện Trúc Lâm Zen monastery" loading="lazy"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2813.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2813.JPG" alt="Thiền Viện Trúc Lâm gardens" loading="lazy"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2818.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2818.JPG" alt="Thiền Viện Trúc Lâm above the pine forest" loading="lazy"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2832.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2832.JPG" alt="Tay mơ Amateurs — forest café" loading="lazy"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2839.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2839.JPG" alt="Forest café near Trúc Lâm" loading="lazy"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2840.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2840.JPG" alt="Mountain path to the forest café" loading="lazy"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2842.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2842.JPG" alt="First bánh bèo at Bánh bèo Bà Hường" loading="lazy"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2845.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2845.JPG" alt="151-metre female Buddha, Linh Ẩn Pagoda" loading="lazy"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2848.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2848.JPG" alt="Linh Ẩn Pagoda gardens" loading="lazy"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2869.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2869.JPG" alt="Linh Ẩn Pagoda" loading="lazy"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2891.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2891.JPG" alt="Nem nướng Dũng Lộc" loading="lazy"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2893.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2893.JPG" alt="Grilled pork skewers, Dalat" loading="lazy"></picture></figure>
+  </div>
 </section>
 
 <section class="diary-day">
@@ -309,6 +331,13 @@ heroSubtitleRo: "Saigon · Dalat · Hội An · Hanoi · Golful Ha Long — Mai�
     <p>Am ridicat întâi biletele de autobuz spre Quy Nhon de la gară, apoi am pornit spre <strong>Muntele Langbiang</strong> (2.167 m). Traseul e de aproximativ 5 km dus-întors; ultimul kilometru spre vârf implică frânghii pe o pantă abruptă și noroioasă. O albină m-a înțepat undeva pe drum — incident minor. Poteca se simte cu adevărat sălbatică: cai sălbatici pășunând pe versanți, o salamandră care traversează cărarea, un șarpe mic. Am întâlnit în total patru turiști. La baza traseului există un punct de control unde te înregistrezi înainte să pornești.</p>
     <p>La coborâre am observat mai bine agricultura la seră care acoperă dealurile din jurul Dalat-ului: versanți întregi sub folii albe opace de plastic, protejând căpșuni, legume și flori de ploile de muson și de insecte — produse cultivate la standarde internaționale de export. Un peisaj suprarealist văzut de sus.</p>
     <p>Ultima oprire: <strong>Pagoda Linh Phước</strong>, finalizată în 1952 după trei ani de construcție și decorată cu o faimoasă mozaică din peste 12.000 de bucăți de sticle sparte. Impresionant. Un autocar turistic rusesc tocmai sosise înaintea noastră — contrastul cu liniștea de pe Langbiang era izbitor.</p>
+  </div>
+
+  <div class="diary-photos">
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2915.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2915.JPG" alt="Langbiang Mountain — ropes on the final climb" loading="lazy"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2949.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2949.JPG" alt="Linh Phước Pagoda mosaic" loading="lazy"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2923.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2923.JPG" alt="Linh Phước Pagoda — broken-glass mosaic" loading="lazy"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2931.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2931.JPG" alt="Linh Phước Pagoda detail" loading="lazy"></picture></figure>
   </div>
 </section>
 
@@ -370,6 +399,13 @@ heroSubtitleRo: "Saigon · Dalat · Hội An · Hanoi · Golful Ha Long — Mai�
     <p>Banh mi la micul dejun, apoi scooter spre sud până la <strong>Bãi Xếp</strong>, un mic sat de pescari cu o mică golfuleț care păstrează un caracter intim și local în ciuda câtorva resort-uri care îi mușcă din margini. Marea e calmă, apa transparentă. Am stat cea mai mare parte a dimineții — și da, ne-am ars la soare în ciuda cremei de protecție; reflexia luminii de pe apă e nemiloasă.</p>
     <p>Prânz la <strong>Cá Gỗ – Làng Chài Bãi Xếp</strong>: cu ușurință cel mai bun prânz al întregii călătorii. Bucătărie deschisă direct pe malul mării, fructe de mare proaspete incredibil, gătite simplu și perfect, și au adus un mic desert la final fără să cerem. Genul de local la care te întorci a doua zi și îți pare rău că nu l-ai descoperit din prima.</p>
   </div>
+
+  <div class="diary-photos">
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2961.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2961.JPG" alt="Bãi Xếp fishing village cove" loading="lazy"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3024.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3024.JPG" alt="Cá Gỗ — Làng Chài Bãi Xếp" loading="lazy"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3029.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3029.JPG" alt="Fresh seafood at Cá Gỗ" loading="lazy"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3010.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3010.JPG" alt="Open kitchen at Cá Gỗ, Bãi Xếp" loading="lazy"></picture></figure>
+  </div>
 </section>
 
 <section class="diary-day">
@@ -399,6 +435,14 @@ heroSubtitleRo: "Saigon · Dalat · Hội An · Hanoi · Golful Ha Long — Mai�
     <p>Sesiune de lucru dimineața la <strong>Tree Hugger café</strong> — fără aer condiționat, dar ieftin, liniștit și cu WiFi bun. Prânz: <em>bánh xèo</em> cu fructe de mare la <strong>Bánh Xèo Tôm Nhảy Rau Mầm</strong> (clătită vietnameză crocantă cu creveți, muguri de soia și ierburi — se rulează în frunză de salată verde și se înmoaie în nuoc cham). Apoi o oră la <strong>PP Gym</strong> — 60.000 VND de persoană, echipament complet, atmosferă prietenoasă.</p>
     <p>După-amiaza pe <strong>Bãi biển Quy Hòa</strong> — o plajă lungă, curată, umbrită de copaci, care părea frecventată exclusiv de localnici. Intrare: 5.000 VND + 2.000 VND pentru scooter. O lume aparte față de locurile mai aglomerate.</p>
     <p>Cină la <strong>MÂM</strong> — <em>bún đậu mắm tôm</em>: vermicelli de orez, tofu prăjit, porc fiert, ierburi proaspete, totul înmuiat în pastă de creveți fermentați. Un preparat polarizant; mirosul îi descurajează pe mulți, dar gustul răsplătește curajul. Desert: <em>chè</em> la <strong>Chè Cô Thúy</strong>. O notă despre chè — este o categorie largă de deserturi vietnameze dulci, feluri de supe cu lapte de cocos, tapioca, fructe și fasole: mai ușoare și mai nuanțate decât sună, servite fie calde, fie reci.</p>
+  </div>
+
+  <div class="diary-photos">
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3037.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3037.JPG" alt="Tree Hugger café, Quy Nhon" loading="lazy"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3034.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3034.JPG" alt="Breakfast at Tree Hugger café" loading="lazy"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3059.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3059.JPG" alt="Bãi biển Quy Hòa — the locals' beach" loading="lazy"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3066.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3066.JPG" alt="MÂM — bún đậu mắm tôm" loading="lazy"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3067.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3067.JPG" alt="Evening on Quy Nhon beach" loading="lazy"></picture></figure>
   </div>
 </section>
 
@@ -432,6 +476,15 @@ heroSubtitleRo: "Saigon · Dalat · Hội An · Hanoi · Golful Ha Long — Mai�
     <p>Două ore de umbră și băuturi reci la <strong>HOSHI COFFEE &amp; TEA</strong>, unde un student local s-a așezat la masa noastră și a petrecut timpul exersându-și engleza. Plăcut și neașteptat.</p>
     <p>După-amiaza: <strong>templul Linh Phong / Ông Núi</strong>, un sit ermit din secolul al XVIII-lea construit în jurul peșterii călugărului Lê Ban. Buddha în poziție șezândă de 108 metri de la vârf este considerat cel mai înalt din Asia de Sud-Est. Urcușul înseamnă peste 600 de trepte — fezabil, dar solicitant la 40 de grade. Panorama de sus — lagună, pădure, mare deschisă — e răsplata. Aleile înguste care coboară spre plajă ne-au oferit un spectacol remarcabil: un cuplu intrase în mare până la gât ca să desfășoare un năvod mare în arc de cerc. Când l-au tras, era plin de hamsii argintii și creveți mici în lumina amurgului. O simplitate izbitoare.</p>
     <p>Cină în <strong>satul Xuong Ly</strong>, la un restaurant fără prețuri afișate. Am mâncat porumb la grătar, orez cu fructe de mare, calmar uscat la soare (satisfăcător de mestecat) și <em>Ốc đá biển</em> — melci de mare cu o amăreală finală prețuită pe care vietnamezii o numesc <em>vị nhẫn</em>. Nota de plată: 600.000 VND pentru o masă ce n-avea niciun motiv să coste atât. În cuvintele lui Alexandre: jefuiți.</p>
+  </div>
+
+  <div class="diary-photos">
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3094.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3094.JPG" alt="Bánh Ít Cham Towers" loading="lazy"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3123.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3123.JPG" alt="Bánh Ít Cham Towers — over 900 years old" loading="lazy"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3122.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3122.JPG" alt="Cham tower interior" loading="lazy"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3131.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3131.JPG" alt="Linh Phong / Ông Núi temple" loading="lazy"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3159.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3159.JPG" alt="Panorama from Ông Núi — lagoon, forest and sea" loading="lazy"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3190.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3190.JPG" alt="Seine fishing at dusk near Quy Nhon" loading="lazy"></picture></figure>
   </div>
 </section>
 
