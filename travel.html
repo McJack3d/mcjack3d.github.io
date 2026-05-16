@@ -120,11 +120,9 @@
 <footer class="py-4 bg-primary text-white">
   <div class="container-fluid px-4 text-center">
     <div class="mb-2">
-      <a href="https://www.linkedin.com/in/alexandre-bredillot" target="_blank" rel="noopener" class="text-white mx-2" title="LinkedIn"><i class="fab fa-linkedin fa-lg" style="color:#fff;"></i></a>
-      <a href="https://github.com/McJack3d" target="_blank" rel="noopener" class="text-white mx-2" title="GitHub"><i class="fab fa-github fa-lg" style="color:#fff;"></i></a>
       <a href="mailto:alexandrebredillot@gmail.com" class="text-white mx-2" title="Email"><i class="fas fa-envelope fa-lg" style="color:#fff;"></i></a>
     </div>
-    <p class="small mb-0">&copy; 2026 Alexandre BREDILLOT — <span data-i18n="footer.rights">All rights reserved.</span></p>
+    <p class="small mb-0">&copy; 2026 Cristina Gricianii and Alexandre Bredillot — <span data-i18n="footer.rights">All rights reserved.</span></p>
   </div>
 </footer>
 
@@ -171,7 +169,8 @@ window.__TRIPS__ = [
     "gradFrom":  "#27ae60",
     "gradTo":    "#1a5e38",
     "href":      "travel/vietnam.html",
-    "sub":       "Hanoi · Hội An · Ha Long Bay"
+    "sub":       "Hanoi · Hội An · Ha Long Bay",
+    "live":      true
   },
   {
     "id":        "italy",
@@ -186,7 +185,8 @@ window.__TRIPS__ = [
     "gradFrom":  "#e74c3c",
     "gradTo":    "#922b21",
     "href":      "travel/italy.html",
-    "sub":       "Rome · Naples"
+    "sub":       "Rome · Naples",
+    "live":      false
   },
   {
     "id":        "moldova",
@@ -201,7 +201,8 @@ window.__TRIPS__ = [
     "gradFrom":  "#8e44ad",
     "gradTo":    "#6c3483",
     "href":      "travel/moldova.html",
-    "sub":       "Chișinău · Milestii Mici"
+    "sub":       "Chișinău · Milestii Mici",
+    "live":      false
   },
   {
     "id":        "brussels",
@@ -216,7 +217,8 @@ window.__TRIPS__ = [
     "gradFrom":  "#f39c12",
     "gradTo":    "#d35400",
     "href":      "travel/brussels.html",
-    "sub":       "Belgium · Grand Place"
+    "sub":       "Belgium · Grand Place",
+    "live":      false
   },
   {
     "id":        "morocco",
@@ -231,7 +233,8 @@ window.__TRIPS__ = [
     "gradFrom":  "#e67e22",
     "gradTo":    "#8e0f0f",
     "href":      "travel/morocco.html",
-    "sub":       "Marrakech · Fès · Sahara"
+    "sub":       "Marrakech · Fès · Sahara",
+    "live":      false
   },
   {
     "id":        "amsterdam",
@@ -246,7 +249,8 @@ window.__TRIPS__ = [
     "gradFrom":  "#e67e22",
     "gradTo":    "#1a6fa8",
     "href":      "travel/amsterdam.html",
-    "sub":       "Netherlands · 3 days"
+    "sub":       "Netherlands · 3 days",
+    "live":      false
   },
   {
     "id":        "dublin",
@@ -261,7 +265,8 @@ window.__TRIPS__ = [
     "gradFrom":  "#1abc9c",
     "gradTo":    "#148f77",
     "href":      "travel/dublin.html",
-    "sub":       "Ireland · city & coast"
+    "sub":       "Ireland · city & coast",
+    "live":      false
   },
   {
     "id":        "armenia",
@@ -276,7 +281,8 @@ window.__TRIPS__ = [
     "gradFrom":  "#c0392b",
     "gradTo":    "#641e16",
     "href":      "travel/armenia.html",
-    "sub":       "Yerevan · Geghard · Tatev"
+    "sub":       "Yerevan · Geghard · Tatev",
+    "live":      false
   },
   {
     "id":        "china",
@@ -291,7 +297,8 @@ window.__TRIPS__ = [
     "gradFrom":  "#c0392b",
     "gradTo":    "#7b0d0d",
     "href":      "travel/china.html",
-    "sub":       "Beijing · Shanghai · Chengdu"
+    "sub":       "Beijing · Shanghai · Chengdu",
+    "live":      false
   },
   {
     "id":        "menorca",
@@ -306,7 +313,8 @@ window.__TRIPS__ = [
     "gradFrom":  "#00bcd4",
     "gradTo":    "#006064",
     "href":      "travel/menorca.html",
-    "sub":       "Spain · island escape"
+    "sub":       "Spain · island escape",
+    "live":      false
   }
 ];
 </script>
@@ -324,10 +332,13 @@ window.__TRIPS__ = [
   function buildBigCard(trip) {
     var card = document.createElement('div');
     card.className = 'col-md-6 col-lg-3 mb-4';
+    var soonBadge = trip.live ? '' :
+      '<span class="dest-card-soon">' + tr('travel.card.coming_soon') + '</span>';
     card.innerHTML =
-      '<article class="dest-card clickable">' +
+      '<article class="dest-card ' + (trip.live ? 'clickable' : 'not-clickable') + '">' +
         '<div class="dest-card-cover" style="background:linear-gradient(135deg,' + trip.gradFrom + ',' + trip.gradTo + ')">' +
           '<span class="dest-card-emoji">' + trip.emoji + '</span>' +
+          soonBadge +
         '</div>' +
         '<div class="dest-card-body">' +
           '<div class="dest-card-date">' + trip.date + '</div>' +
@@ -335,21 +346,28 @@ window.__TRIPS__ = [
           '<p class="dest-card-sub">' + trip.sub + '</p>' +
         '</div>' +
       '</article>';
-    card.querySelector('.dest-card').addEventListener('click', function () { handleTripClick(trip); });
+    if (trip.live) {
+      card.querySelector('.dest-card').addEventListener('click', function () { handleTripClick(trip); });
+    }
     return card;
   }
 
   function buildSmallCard(trip) {
     var el = document.createElement('div');
-    el.className = 'dest-card-sm clickable';
+    el.className = 'dest-card-sm ' + (trip.live ? 'clickable' : 'not-clickable');
+    var trailing = trip.live ?
+      '<i class="fas fa-chevron-right dest-card-sm-caret"></i>' :
+      '<span class="dest-card-sm-soon">' + tr('travel.card.coming_soon') + '</span>';
     el.innerHTML =
       '<div class="dest-card-sm-thumb" style="background:linear-gradient(135deg,' + trip.gradFrom + ',' + trip.gradTo + ')">' + trip.emoji + '</div>' +
       '<div class="dest-card-sm-info">' +
         '<div class="dest-card-sm-date">' + trip.date + '</div>' +
         '<div class="dest-card-sm-title">' + trip.label + ' — ' + trip.sub + '</div>' +
       '</div>' +
-      '<i class="fas fa-chevron-right dest-card-sm-caret"></i>';
-    el.addEventListener('click', function () { handleTripClick(trip); });
+      trailing;
+    if (trip.live) {
+      el.addEventListener('click', function () { handleTripClick(trip); });
+    }
     return el;
   }
 

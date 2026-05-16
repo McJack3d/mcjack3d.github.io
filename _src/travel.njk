@@ -119,7 +119,8 @@ window.__TRIPS__ = [
     "gradFrom":  {{ d.gradFrom | dump | safe }},
     "gradTo":    {{ d.gradTo | dump | safe }},
     "href":      {{ ("travel/" + d.slug + ".html") | dump | safe }},
-    "sub":       {{ d.sub | dump | safe }}
+    "sub":       {{ d.sub | dump | safe }},
+    "live":      {{ (d.live or false) | dump | safe }}
   }{% if not loop.last %},{% endif %}
 {%- endfor %}
 ];
@@ -138,10 +139,13 @@ window.__TRIPS__ = [
   function buildBigCard(trip) {
     var card = document.createElement('div');
     card.className = 'col-md-6 col-lg-3 mb-4';
+    var soonBadge = trip.live ? '' :
+      '<span class="dest-card-soon">' + tr('travel.card.coming_soon') + '</span>';
     card.innerHTML =
-      '<article class="dest-card clickable">' +
+      '<article class="dest-card ' + (trip.live ? 'clickable' : 'not-clickable') + '">' +
         '<div class="dest-card-cover" style="background:linear-gradient(135deg,' + trip.gradFrom + ',' + trip.gradTo + ')">' +
           '<span class="dest-card-emoji">' + trip.emoji + '</span>' +
+          soonBadge +
         '</div>' +
         '<div class="dest-card-body">' +
           '<div class="dest-card-date">' + trip.date + '</div>' +
@@ -149,21 +153,28 @@ window.__TRIPS__ = [
           '<p class="dest-card-sub">' + trip.sub + '</p>' +
         '</div>' +
       '</article>';
-    card.querySelector('.dest-card').addEventListener('click', function () { handleTripClick(trip); });
+    if (trip.live) {
+      card.querySelector('.dest-card').addEventListener('click', function () { handleTripClick(trip); });
+    }
     return card;
   }
 
   function buildSmallCard(trip) {
     var el = document.createElement('div');
-    el.className = 'dest-card-sm clickable';
+    el.className = 'dest-card-sm ' + (trip.live ? 'clickable' : 'not-clickable');
+    var trailing = trip.live ?
+      '<i class="fas fa-chevron-right dest-card-sm-caret"></i>' :
+      '<span class="dest-card-sm-soon">' + tr('travel.card.coming_soon') + '</span>';
     el.innerHTML =
       '<div class="dest-card-sm-thumb" style="background:linear-gradient(135deg,' + trip.gradFrom + ',' + trip.gradTo + ')">' + trip.emoji + '</div>' +
       '<div class="dest-card-sm-info">' +
         '<div class="dest-card-sm-date">' + trip.date + '</div>' +
         '<div class="dest-card-sm-title">' + trip.label + ' — ' + trip.sub + '</div>' +
       '</div>' +
-      '<i class="fas fa-chevron-right dest-card-sm-caret"></i>';
-    el.addEventListener('click', function () { handleTripClick(trip); });
+      trailing;
+    if (trip.live) {
+      el.addEventListener('click', function () { handleTripClick(trip); });
+    }
     return el;
   }
 
