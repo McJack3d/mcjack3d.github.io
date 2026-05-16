@@ -18,9 +18,7 @@
 **Personal Portfolio** - Not licensed for direct reuse.
 
 ✅ **You May:**
-- Use as inspiration for your own portfolio
-- Learn from code structure and techniques
-- Reference specific implementations
+- Use as inspiration for your own portfoliow
 
 ❌ **Please Don't:**
 - Copy content or design wholesale
