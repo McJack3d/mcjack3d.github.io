@@ -83,7 +83,7 @@ heroSubtitleRo: "Saigon · Dalat · Hội An · Hanoi · Golful Ha Long — Mai�
   <div class="diary-photos">
     <figure class="diary-photo">
       <picture><source srcset="../Images/travel/vietnam/webp/DSCF2720.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2720.JPG" alt="Phở Hòa Pasteur — first pho of the trip" loading="lazy" width="1600" height="2400"></picture>
-    </figure>
+    <figcaption>Phở Hòa Pasteur — first pho of the trip</figcaption></figure>
   </div>
 </section>
 
@@ -114,15 +114,15 @@ heroSubtitleRo: "Saigon · Dalat · Hội An · Hanoi · Golful Ha Long — Mai�
   </div>
 
   <div class="diary-photos">
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2722.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2722.JPG" alt="Tháp Chăm at Tao Đàn park" loading="lazy" width="1600" height="2401"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2726.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2726.JPG" alt="Tao Đàn park" loading="lazy" width="1600" height="2400"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2732.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2732.JPG" alt="Bánh Mì Huỳnh Hoa — Lê Thị Riêng" loading="lazy" width="1600" height="2400"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2737.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2737.JPG" alt="Reunification Palace" loading="lazy" width="1600" height="2400"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2739.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2739.JPG" alt="Independence Palace" loading="lazy" width="1600" height="2400"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2740.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2740.JPG" alt="Palace gardens" loading="lazy" width="1600" height="2401"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2748.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2748.JPG" alt="Afternoon walk through downtown Saigon" loading="lazy" width="1600" height="2400"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2749.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2749.JPG" alt="Afternoon walk through Saigon" loading="lazy" width="1600" height="2400"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2754.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2754.JPG" alt="Saigon late afternoon" loading="lazy" width="1600" height="2400"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2722.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2722.JPG" alt="Tháp Chăm at Tao Đàn park" loading="lazy" width="1600" height="2401"></picture><figcaption>Tháp Chăm at Tao Đàn park</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2726.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2726.JPG" alt="Tao Đàn park" loading="lazy" width="1600" height="2400"></picture><figcaption>Tao Đàn park</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2732.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2732.JPG" alt="Bánh Mì Huỳnh Hoa — Lê Thị Riêng" loading="lazy" width="1600" height="2400"></picture><figcaption>Bánh Mì Huỳnh Hoa — Lê Thị Riêng</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2737.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2737.JPG" alt="Reunification Palace" loading="lazy" width="1600" height="2400"></picture><figcaption>Reunification Palace</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2739.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2739.JPG" alt="Independence Palace" loading="lazy" width="1600" height="2400"></picture><figcaption>Independence Palace</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2740.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2740.JPG" alt="Palace gardens" loading="lazy" width="1600" height="2401"></picture><figcaption>Palace gardens</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2748.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2748.JPG" alt="Afternoon walk through downtown Saigon" loading="lazy" width="1600" height="2400"></picture><figcaption>Afternoon walk through downtown Saigon</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2749.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2749.JPG" alt="Afternoon walk through Saigon" loading="lazy" width="1600" height="2400"></picture><figcaption>Afternoon walk through Saigon</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2754.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2754.JPG" alt="Saigon late afternoon" loading="lazy" width="1600" height="2400"></picture><figcaption>Saigon late afternoon</figcaption></figure>
   </div>
 </section>
 
@@ -159,12 +159,12 @@ heroSubtitleRo: "Saigon · Dalat · Hội An · Hanoi · Golful Ha Long — Mai�
   </div>
 
   <div class="diary-photos">
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2755.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2755.JPG" alt="Walk to the historical centre of Saigon" loading="lazy" width="1600" height="2400"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2756.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2756.JPG" alt="Saigon historical centre" loading="lazy" width="1600" height="2400"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2758.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2758.JPG" alt="Downtown Saigon" loading="lazy" width="1600" height="2400"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2759.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2759.JPG" alt="Tonkin Specialty Coffee — egg coffee and ginger coffee" loading="lazy" width="1600" height="2400"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2766.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2766.JPG" alt="Sticky rice with mango at Xoài-Mango" loading="lazy" width="1600" height="2400"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2767.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2767.JPG" alt="Banana-leaf sticky rice in Cholon" loading="lazy" width="1600" height="2400"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2755.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2755.JPG" alt="Walk to the historical centre of Saigon" loading="lazy" width="1600" height="2400"></picture><figcaption>Walk to the historical centre of Saigon</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2756.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2756.JPG" alt="Saigon historical centre" loading="lazy" width="1600" height="2400"></picture><figcaption>Saigon historical centre</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2758.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2758.JPG" alt="Downtown Saigon" loading="lazy" width="1600" height="2400"></picture><figcaption>Downtown Saigon</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2759.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2759.JPG" alt="Tonkin Specialty Coffee — egg coffee and ginger coffee" loading="lazy" width="1600" height="2400"></picture><figcaption>Tonkin Specialty Coffee — egg coffee and ginger coffee</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2766.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2766.JPG" alt="Sticky rice with mango at Xoài-Mango" loading="lazy" width="1600" height="2400"></picture><figcaption>Sticky rice with mango at Xoài-Mango</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2767.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2767.JPG" alt="Banana-leaf sticky rice in Cholon" loading="lazy" width="1600" height="2400"></picture><figcaption>Banana-leaf sticky rice in Cholon</figcaption></figure>
   </div>
 </section>
 
@@ -201,8 +201,8 @@ heroSubtitleRo: "Saigon · Dalat · Hội An · Hanoi · Golful Ha Long — Mai�
   </div>
 
   <div class="diary-photos">
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/IMG_7019.webp" type="image/webp"><img src="../Images/travel/vietnam/IMG_7019.JPG" alt="Phở Hương Bình — drivers' lunch spot" loading="lazy" width="1600" height="2134"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2775.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2775.JPG" alt="Guta — Vietnamese coffee chain" loading="lazy" width="1600" height="2400"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/IMG_7019.webp" type="image/webp"><img src="../Images/travel/vietnam/IMG_7019.JPG" alt="Phở Hương Bình — drivers' lunch spot" loading="lazy" width="1600" height="2134"></picture><figcaption>Phở Hương Bình — drivers' lunch spot</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2775.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2775.JPG" alt="Guta — Vietnamese coffee chain" loading="lazy" width="1600" height="2400"></picture><figcaption>Guta — Vietnamese coffee chain</figcaption></figure>
   </div>
 
   <div class="diary-note" data-lang-block="en">
@@ -252,10 +252,10 @@ heroSubtitleRo: "Saigon · Dalat · Hội An · Hanoi · Golful Ha Long — Mai�
   </div>
 
   <div class="diary-photos">
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/PXL_20260508_162037720.webp" type="image/webp"><img src="../Images/travel/vietnam/PXL_20260508_162037720.jpg" alt="Sleeper bus from Saigon to Dalat" loading="lazy" width="1600" height="2133"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/PXL_20260508_163308888.webp" type="image/webp"><img src="../Images/travel/vietnam/PXL_20260508_163308888.jpg" alt="Overnight sleeper bus to Dalat" loading="lazy" width="1600" height="2133"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2785.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2785.JPG" alt="Pho at Mì Quảng Hội An, Dalat" loading="lazy" width="1600" height="1067"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2798.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2798.JPG" alt="Bánh Tráng Nướng — Dalat street pizza" loading="lazy" width="1600" height="2400"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/PXL_20260508_162037720.webp" type="image/webp"><img src="../Images/travel/vietnam/PXL_20260508_162037720.jpg" alt="Sleeper bus from Saigon to Dalat" loading="lazy" width="1600" height="2133"></picture><figcaption>Sleeper bus from Saigon to Dalat</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/PXL_20260508_163308888.webp" type="image/webp"><img src="../Images/travel/vietnam/PXL_20260508_163308888.jpg" alt="Overnight sleeper bus to Dalat" loading="lazy" width="1600" height="2133"></picture><figcaption>Overnight sleeper bus to Dalat</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2785.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2785.JPG" alt="Pho at Mì Quảng Hội An, Dalat" loading="lazy" width="1600" height="1067"></picture><figcaption>Pho at Mì Quảng Hội An, Dalat</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2798.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2798.JPG" alt="Bánh Tráng Nướng — Dalat street pizza" loading="lazy" width="1600" height="2400"></picture><figcaption>Bánh Tráng Nướng — Dalat street pizza</figcaption></figure>
   </div>
 </section>
 
@@ -289,18 +289,18 @@ heroSubtitleRo: "Saigon · Dalat · Hội An · Hanoi · Golful Ha Long — Mai�
   </div>
 
   <div class="diary-photos">
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2827.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2827.JPG" alt="Thiền Viện Trúc Lâm Zen monastery" loading="lazy" width="1600" height="2400"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2813.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2813.JPG" alt="Thiền Viện Trúc Lâm gardens" loading="lazy" width="1600" height="2400"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2818.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2818.JPG" alt="Thiền Viện Trúc Lâm above the pine forest" loading="lazy" width="1600" height="2400"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2832.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2832.JPG" alt="Tay mơ Amateurs — forest café" loading="lazy" width="1600" height="2400"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2839.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2839.JPG" alt="Forest café near Trúc Lâm" loading="lazy" width="1600" height="2400"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2840.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2840.JPG" alt="Mountain path to the forest café" loading="lazy" width="1600" height="2400"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2842.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2842.JPG" alt="First bánh bèo at Bánh bèo Bà Hường" loading="lazy" width="1600" height="2400"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2845.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2845.JPG" alt="151-metre female Buddha, Linh Ẩn Pagoda" loading="lazy" width="1600" height="2400"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2848.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2848.JPG" alt="Linh Ẩn Pagoda gardens" loading="lazy" width="1600" height="2400"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2869.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2869.JPG" alt="Linh Ẩn Pagoda" loading="lazy" width="1600" height="2400"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2891.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2891.JPG" alt="Nem nướng Dũng Lộc" loading="lazy" width="1600" height="2400"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2893.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2893.JPG" alt="Grilled pork skewers, Dalat" loading="lazy" width="1600" height="2400"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2827.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2827.JPG" alt="Thiền Viện Trúc Lâm Zen monastery" loading="lazy" width="1600" height="2400"></picture><figcaption>Thiền Viện Trúc Lâm Zen monastery</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2813.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2813.JPG" alt="Thiền Viện Trúc Lâm gardens" loading="lazy" width="1600" height="2400"></picture><figcaption>Thiền Viện Trúc Lâm gardens</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2818.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2818.JPG" alt="Thiền Viện Trúc Lâm above the pine forest" loading="lazy" width="1600" height="2400"></picture><figcaption>Thiền Viện Trúc Lâm above the pine forest</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2832.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2832.JPG" alt="Tay mơ Amateurs — forest café" loading="lazy" width="1600" height="2400"></picture><figcaption>Tay mơ Amateurs — forest café</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2839.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2839.JPG" alt="Forest café near Trúc Lâm" loading="lazy" width="1600" height="2400"></picture><figcaption>Forest café near Trúc Lâm</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2840.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2840.JPG" alt="Mountain path to the forest café" loading="lazy" width="1600" height="2400"></picture><figcaption>Mountain path to the forest café</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2842.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2842.JPG" alt="First bánh bèo at Bánh bèo Bà Hường" loading="lazy" width="1600" height="2400"></picture><figcaption>First bánh bèo at Bánh bèo Bà Hường</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2845.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2845.JPG" alt="151-metre female Buddha, Linh Ẩn Pagoda" loading="lazy" width="1600" height="2400"></picture><figcaption>151-metre female Buddha, Linh Ẩn Pagoda</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2848.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2848.JPG" alt="Linh Ẩn Pagoda gardens" loading="lazy" width="1600" height="2400"></picture><figcaption>Linh Ẩn Pagoda gardens</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2869.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2869.JPG" alt="Linh Ẩn Pagoda" loading="lazy" width="1600" height="2400"></picture><figcaption>Linh Ẩn Pagoda</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2891.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2891.JPG" alt="Nem nướng Dũng Lộc" loading="lazy" width="1600" height="2400"></picture><figcaption>Nem nướng Dũng Lộc</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2893.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2893.JPG" alt="Grilled pork skewers, Dalat" loading="lazy" width="1600" height="2400"></picture><figcaption>Grilled pork skewers, Dalat</figcaption></figure>
   </div>
 </section>
 
@@ -334,10 +334,10 @@ heroSubtitleRo: "Saigon · Dalat · Hội An · Hanoi · Golful Ha Long — Mai�
   </div>
 
   <div class="diary-photos">
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2915.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2915.JPG" alt="Langbiang Mountain — ropes on the final climb" loading="lazy" width="1600" height="1067"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2949.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2949.JPG" alt="Linh Phước Pagoda mosaic" loading="lazy" width="1600" height="2400"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2923.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2923.JPG" alt="Linh Phước Pagoda — broken-glass mosaic" loading="lazy" width="1600" height="2400"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2931.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2931.JPG" alt="Linh Phước Pagoda detail" loading="lazy" width="1600" height="2400"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2915.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2915.JPG" alt="Langbiang Mountain — ropes on the final climb" loading="lazy" width="1600" height="1067"></picture><figcaption>Langbiang Mountain — ropes on the final climb</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2949.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2949.JPG" alt="Linh Phước Pagoda mosaic" loading="lazy" width="1600" height="2400"></picture><figcaption>Linh Phước Pagoda mosaic</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2923.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2923.JPG" alt="Linh Phước Pagoda — broken-glass mosaic" loading="lazy" width="1600" height="2400"></picture><figcaption>Linh Phước Pagoda — broken-glass mosaic</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2931.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2931.JPG" alt="Linh Phước Pagoda detail" loading="lazy" width="1600" height="2400"></picture><figcaption>Linh Phước Pagoda detail</figcaption></figure>
   </div>
 </section>
 
@@ -401,10 +401,10 @@ heroSubtitleRo: "Saigon · Dalat · Hội An · Hanoi · Golful Ha Long — Mai�
   </div>
 
   <div class="diary-photos">
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2961.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2961.JPG" alt="Bãi Xếp fishing village cove" loading="lazy" width="1600" height="1067"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3024.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3024.JPG" alt="Cá Gỗ — Làng Chài Bãi Xếp" loading="lazy" width="1600" height="2400"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3029.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3029.JPG" alt="Fresh seafood at Cá Gỗ" loading="lazy" width="1600" height="1067"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3010.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3010.JPG" alt="Open kitchen at Cá Gỗ, Bãi Xếp" loading="lazy" width="1600" height="1067"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2961.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2961.JPG" alt="Bãi Xếp fishing village cove" loading="lazy" width="1600" height="1067"></picture><figcaption>Bãi Xếp fishing village cove</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3024.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3024.JPG" alt="Cá Gỗ — Làng Chài Bãi Xếp" loading="lazy" width="1600" height="2400"></picture><figcaption>Cá Gỗ — Làng Chài Bãi Xếp</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3029.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3029.JPG" alt="Fresh seafood at Cá Gỗ" loading="lazy" width="1600" height="1067"></picture><figcaption>Fresh seafood at Cá Gỗ</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3010.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3010.JPG" alt="Open kitchen at Cá Gỗ, Bãi Xếp" loading="lazy" width="1600" height="1067"></picture><figcaption>Open kitchen at Cá Gỗ, Bãi Xếp</figcaption></figure>
   </div>
 </section>
 
@@ -438,12 +438,12 @@ heroSubtitleRo: "Saigon · Dalat · Hội An · Hanoi · Golful Ha Long — Mai�
   </div>
 
   <div class="diary-photos">
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3037.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3037.JPG" alt="Tree Hugger café, Quy Nhon" loading="lazy" width="1600" height="2400"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3034.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3034.JPG" alt="Breakfast at Tree Hugger café" loading="lazy" width="1600" height="2400"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/IMG_7106.webp" type="image/webp"><img src="../Images/travel/vietnam/IMG_7106.jpg" alt="Tree Hugger café — breakfast" loading="lazy" width="1600" height="2133"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3059.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3059.JPG" alt="Bãi biển Quy Hòa — the locals' beach" loading="lazy" width="1600" height="1067"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3066.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3066.JPG" alt="MÂM — bún đậu mắm tôm" loading="lazy" width="1600" height="1067"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3067.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3067.JPG" alt="Evening on Quy Nhon beach" loading="lazy" width="1600" height="2400"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3037.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3037.JPG" alt="Tree Hugger café, Quy Nhon" loading="lazy" width="1600" height="2400"></picture><figcaption>Tree Hugger café, Quy Nhon</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3034.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3034.JPG" alt="Breakfast at Tree Hugger café" loading="lazy" width="1600" height="2400"></picture><figcaption>Breakfast at Tree Hugger café</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/IMG_7106.webp" type="image/webp"><img src="../Images/travel/vietnam/IMG_7106.jpg" alt="Tree Hugger café — breakfast" loading="lazy" width="1600" height="2133"></picture><figcaption>Tree Hugger café — breakfast</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3059.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3059.JPG" alt="Bãi biển Quy Hòa — the locals' beach" loading="lazy" width="1600" height="1067"></picture><figcaption>Bãi biển Quy Hòa — the locals' beach</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3066.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3066.JPG" alt="MÂM — bún đậu mắm tôm" loading="lazy" width="1600" height="1067"></picture><figcaption>MÂM — bún đậu mắm tôm</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3067.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3067.JPG" alt="Evening on Quy Nhon beach" loading="lazy" width="1600" height="2400"></picture><figcaption>Evening on Quy Nhon beach</figcaption></figure>
   </div>
 </section>
 
@@ -480,12 +480,12 @@ heroSubtitleRo: "Saigon · Dalat · Hội An · Hanoi · Golful Ha Long — Mai�
   </div>
 
   <div class="diary-photos">
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3094.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3094.JPG" alt="Bánh Ít Cham Towers" loading="lazy" width="1600" height="2400"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3123.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3123.JPG" alt="Bánh Ít Cham Towers — over 900 years old" loading="lazy" width="1600" height="2400"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3122.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3122.JPG" alt="Cham tower interior" loading="lazy" width="1600" height="2401"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3131.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3131.JPG" alt="Linh Phong / Ông Núi temple" loading="lazy" width="1600" height="2400"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3159.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3159.JPG" alt="Panorama from Ông Núi — lagoon, forest and sea" loading="lazy" width="1600" height="2400"></picture></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3190.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3190.JPG" alt="Seine fishing at dusk near Quy Nhon" loading="lazy" width="1600" height="1067"></picture></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3094.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3094.JPG" alt="Bánh Ít Cham Towers" loading="lazy" width="1600" height="2400"></picture><figcaption>Bánh Ít Cham Towers</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3123.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3123.JPG" alt="Bánh Ít Cham Towers — over 900 years old" loading="lazy" width="1600" height="2400"></picture><figcaption>Bánh Ít Cham Towers — over 900 years old</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3122.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3122.JPG" alt="Cham tower interior" loading="lazy" width="1600" height="2401"></picture><figcaption>Cham tower interior</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3131.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3131.JPG" alt="Linh Phong / Ông Núi temple" loading="lazy" width="1600" height="2400"></picture><figcaption>Linh Phong / Ông Núi temple</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3159.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3159.JPG" alt="Panorama from Ông Núi — lagoon, forest and sea" loading="lazy" width="1600" height="2400"></picture><figcaption>Panorama from Ông Núi — lagoon, forest and sea</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3190.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3190.JPG" alt="Seine fishing at dusk near Quy Nhon" loading="lazy" width="1600" height="1067"></picture><figcaption>Seine fishing at dusk near Quy Nhon</figcaption></figure>
   </div>
 </section>
 

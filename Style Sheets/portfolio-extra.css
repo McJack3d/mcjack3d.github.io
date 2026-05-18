@@ -1212,14 +1212,13 @@ html[lang="ro"] [data-lang-block="fr"] { display: none !important; }
 }
 
 /* =========================
-   Diary photo captions — hidden (alt text covers accessibility)
-   ========================= */
-.diary-photo figcaption { display: none; }
-
-/* =========================
    Diary photo grid — tighter spacing + wider content
    ========================= */
 .diary-photos { gap: 0.4rem; }
+/* 4-photo galleries: balanced 2x2 grid, never a 3 + 1 orphan row */
+.diary-photos:has(.diary-photo:nth-child(4):last-child) {
+  grid-template-columns: repeat(2, 1fr);
+}
 .post-content { max-width: 960px; }
 
 /* post-hero works with container-fluid too */
