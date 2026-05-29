@@ -17,4 +17,4 @@
  * Until a real key is set, place links simply behave as normal Google Maps
  * links (the rich popover stays inert), so nothing breaks.
  */
-window.PLACES_UI_KIT_KEY = "YOUR_MAPS_API_KEY";
+window.PLACES_UI_KIT_KEY = "AIzaSyCSmZIcTBkD57YZjmQolCLrPnEUo5e-o0M";
