@@ -103,10 +103,10 @@
 
       /* --- Contact --- */
       'contact.title': 'Contact',
-      'contact.email': 'Email:',
-      'contact.phone': 'Phone:',
-      'contact.linkedin': 'LinkedIn:',
-      'contact.github_label': 'GitHub:',
+      'contact.email': 'Email',
+      'contact.phone': 'Phone',
+      'contact.linkedin': 'LinkedIn',
+      'contact.github_label': 'GitHub',
       'contact.open': 'Open to opportunities in data science, AI strategy, and data governance roles. Feel free to reach out!',
       'contact.cv': 'Download CV',
 
@@ -251,10 +251,10 @@
 
       /* --- Contact --- */
       'contact.title': 'Contact',
-      'contact.email': 'Email :',
-      'contact.phone': 'Téléphone :',
-      'contact.linkedin': 'LinkedIn :',
-      'contact.github_label': 'GitHub :',
+      'contact.email': 'Email',
+      'contact.phone': 'Téléphone',
+      'contact.linkedin': 'LinkedIn',
+      'contact.github_label': 'GitHub',
       'contact.open': 'Disponible pour des opportunités en data science, stratégie IA et gouvernance des données. N\'hésitez pas à me contacter !',
       'contact.cv': 'Télécharger le CV',
 
