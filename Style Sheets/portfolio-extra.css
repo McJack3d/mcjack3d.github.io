@@ -1985,3 +1985,17 @@ main#main { position: relative; z-index: 1; }
 @media (prefers-reduced-motion: reduce) {
   .jm-marker-halo { animation: none; opacity: 0.15; }
 }
+
+/* --- Scroll-to-top: follow the country accent on travel posts ---
+   <body> carries --post-accent on country pages; everywhere else the
+   button keeps the site's blue. */
+#scrollToTop.scroll-to-top {
+  background-color: var(--post-accent, #2A1FFF);
+  border-color: var(--post-accent, #2A1FFF);
+}
+#scrollToTop.scroll-to-top:hover,
+#scrollToTop.scroll-to-top:focus {
+  background-color: var(--post-accent, #2A1FFF);
+  border-color: var(--post-accent, #2A1FFF);
+  filter: brightness(1.12);
+}
