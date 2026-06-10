@@ -2454,6 +2454,7 @@ h6,
 
 .btn {
   padding: 10px 25px;
+  border: 1px solid transparent;
   border-radius: 100px;
 }
 
@@ -2744,9 +2745,11 @@ header#home .container {
   color: #ffffff;
 }
 
-/* Scroll-to-top: center icon + enforce purple */
+/* Scroll-to-top: center icon + enforce purple.
+   Hidden at rest; shown either via the .show class (index.html scroll
+   handler) or via jQuery fadeIn inline styles (travel pages). */
 #scrollToTop.scroll-to-top {
-  display: inline-flex;
+  display: none;
   align-items: center;
   justify-content: center;
   width: 48px;
@@ -2756,6 +2759,17 @@ header#home .container {
   background-color: #2A1FFF;
   border-color: #2A1FFF;
   color: #fff;
+  line-height: 46px;
+}
+
+#scrollToTop.scroll-to-top.show {
+  display: inline-flex;
+  animation: scrolltop-in 0.25s ease;
+}
+
+@keyframes scrolltop-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 #scrollToTop.scroll-to-top:hover,
@@ -3038,15 +3052,12 @@ a.btn:hover,
 a.btn:focus,
 .btn:focus {
   text-decoration: none !important;
-  color: #fff;
-  background-color: #0b5ed7;
-  border-color: #0a58ca;
 }
 
-/* Outline primary: unify hover */
+/* Outline primary: brand colors + unified hover */
 .btn-outline-primary {
-  color: #0b5ed7;
-  border-color: #0b5ed7;
+  color: #000000;
+  border-color: #000000;
   background: transparent;
 }
 
@@ -3054,7 +3065,34 @@ a.btn:focus,
 .btn-outline-primary:focus {
   color: #fff;
   background-color: #2A1FFF;
-  border-color: #0b5ed7;
+  border-color: #2A1FFF;
+}
+
+/* Light button variants (used on dark hero backgrounds) */
+.btn-light {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #000000;
+}
+
+.btn-light:hover,
+.btn-light:focus {
+  background-color: #e9e9f5;
+  border-color: #e9e9f5;
+  color: #000000;
+}
+
+.btn-outline-light {
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.8);
+  color: #ffffff;
+}
+
+.btn-outline-light:hover,
+.btn-outline-light:focus {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #000000;
 }
 
 /* Navbar links: no underline + consistent hover color */
