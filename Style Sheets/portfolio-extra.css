@@ -39,16 +39,6 @@ html {
   box-shadow: 0 6px 18px rgba(42,31,255,0.18);
 }
 
-/* Hero fallback avatar (shown when no profile photo is available) */
-.profile-avatar-hero {
-  width: 220px;
-  height: 220px;
-  font-size: 80px;
-  letter-spacing: 0.02em;
-  border: 3px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0 16px 50px rgba(42, 31, 255, 0.35);
-}
-
 /* Small spacing tweaks */
 header#home { padding-top: 5rem; }
 .card-link { color: var(--primary); }
@@ -345,27 +335,11 @@ header .mt-3 .btn { min-width: 110px; }
 }
 
 /* =========================
-   Hero profile photo
+   Hero buttons
    ========================= */
-.hero-photo {
-  width: 100%;
-  max-width: 340px;
-  height: auto;
-  border-radius: 14px;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
-  border: 3px solid rgba(255, 255, 255, 0.08);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-.hero-photo:hover {
-  transform: translateY(-4px) scale(1.01);
-  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.45);
-}
 #home .btn-light { color: #000; }
 #home .btn-light:hover { background: #f1f1f1; color: #000; }
 #home .btn-outline-light:hover { background: #fff; color: #000; }
-@media (max-width: 767px) {
-  .hero-photo { max-width: 240px; }
-}
 
 /* =========================
    Timeline (Experience)
@@ -1408,8 +1382,10 @@ header#home {
 }
 
 #home h1.hero-name {
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  font-size: clamp(2.6rem, 7vw, 4.75rem);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.025em;
   color: #fff;
 }
 @supports (-webkit-background-clip: text) or (background-clip: text) {
@@ -1422,9 +1398,15 @@ header#home {
   }
 }
 
+.hero-subtitle {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+}
+
 .hero-desc {
-  max-width: 600px;
-  color: rgba(255, 255, 255, 0.82);
+  max-width: 620px;
+  color: rgba(255, 255, 255, 0.72);
 }
 
 .hero-social {
@@ -1555,74 +1537,92 @@ header#home {
 }
 
 /* --- Contact: icon tiles --- */
-.contact-list {
+.contact-lead {
+  max-width: 640px;
+  color: #555;
+  margin-bottom: 2rem;
+}
+.contact-card {
   display: flex;
   flex-direction: column;
-  gap: 0.65rem;
-}
-.contact-item {
-  display: flex;
   align-items: center;
-  gap: 0.9rem;
-  padding: 0.8rem 1rem;
+  text-align: center;
+  gap: 0.35rem;
+  height: 100%;
+  padding: 1.6rem 1rem 1.4rem;
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 12px;
+  border-radius: 16px;
   color: #000;
   transition: all 0.25s ease;
 }
-.contact-item:hover {
+.contact-card:hover {
   text-decoration: none;
   color: #000;
   border-color: rgba(42, 31, 255, 0.35);
-  transform: translateX(3px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(13, 10, 60, 0.1);
 }
-.contact-icon {
-  flex-shrink: 0;
+.contact-card-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 42px;
-  height: 42px;
-  border-radius: 10px;
-  background: #000;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 0.5rem;
+  border-radius: 50%;
+  background: rgba(42, 31, 255, 0.08);
+  color: #2A1FFF;
+  font-size: 1.2rem;
+  transition: all 0.25s ease;
+}
+.contact-card:hover .contact-card-icon {
+  background: linear-gradient(135deg, #2A1FFF 0%, #0c0a33 100%);
   color: #fff;
-  font-size: 1rem;
-  transition: background 0.25s ease;
 }
-.contact-item:hover .contact-icon {
-  background: #2A1FFF;
-}
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-}
-.contact-label {
+.contact-card-label {
   font-size: 0.7rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.08em;
   color: #888;
 }
-.contact-value {
-  font-weight: 500;
+.contact-card-value {
+  font-weight: 600;
+  font-size: 0.92rem;
   word-break: break-word;
 }
 
-/* Contact CTA panel */
-.contact-cta {
-  height: 100%;
+/* Contact CTA banner */
+.contact-banner {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 12px;
-  padding: 1.75rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  padding: 2rem 2.25rem;
+  border-radius: 18px;
+  color: #fff;
+  background:
+    radial-gradient(620px 280px at 85% 20%, rgba(42, 31, 255, 0.45), transparent 60%),
+    linear-gradient(135deg, #0a0b16 0%, #000 70%);
 }
+.contact-banner h4 {
+  color: #fff;
+  font-weight: 700;
+}
+.contact-banner-text p {
+  color: rgba(255, 255, 255, 0.75);
+}
+.contact-banner-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.contact-banner .btn-light { color: #000; }
+.contact-banner .btn-light:hover { background: #f1f1f1; color: #000; }
+.contact-banner .btn-outline-light:hover { background: #fff; color: #000; }
 
 /* --- Footer: accent top line --- */
 footer.bg-primary {
@@ -1643,10 +1643,10 @@ footer.bg-primary::before {
   header#home {
     padding-top: 4.5rem;
   }
-  .profile-avatar-hero {
-    width: 160px;
-    height: 160px;
-    font-size: 56px;
+  .contact-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.75rem 1.5rem;
   }
 }
 @media (max-width: 575px) {
