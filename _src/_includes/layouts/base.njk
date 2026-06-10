@@ -22,7 +22,9 @@
     <link href="{{ pathPrefix }}Style%20Sheets/portfolio-extra.css" rel="stylesheet">
     {% block head %}{% endblock %}
   </head>
-  <body>
+  {# Country posts define an accent color; exposing it on <body> lets
+     fixed elements outside <main> (e.g. the scroll-to-top button) use it. #}
+  <body{% if color or gradTo %} style="--post-accent: {{ color or gradTo }};"{% endif %}>
 
 {% include "partials/nav.njk" %}
 

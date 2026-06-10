@@ -71,7 +71,6 @@
 <script>
 window.__JOURNEY__ = {
   outline: {{ journeyMap | dump | safe }},
-  accent: {{ (color or gradTo) | dump | safe }},
   stops: [
   {%- for s in journey %}
     { label: {{ s.label | dump | safe }}, lat: {{ s.lat }}, lng: {{ s.lng }}, anchor: {{ s.anchor | dump | safe }}{% if s.labelSide %}, labelSide: {{ s.labelSide | dump | safe }}{% endif %} }{% if not loop.last %},{% endif %}
