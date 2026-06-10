@@ -65,6 +65,28 @@
 <script src="{{ pathPrefix }}Scripts/places-config.js"></script>
 <script src="{{ pathPrefix }}Scripts/places-ui.js" defer></script>
 <script src="{{ pathPrefix }}Scripts/diary-lightbox.js" defer></script>
+{% if journeyMap and journey %}
+{# Scroll-following itinerary map (see Scripts/journey-map.js).
+   Stops are projected from lat/lng at runtime; anchors are heading ids in the article. #}
+<script>
+window.__JOURNEY__ = {
+  outline: {{ journeyMap | dump | safe }},
+  accent: {{ (color or gradTo) | dump | safe }},
+  stops: [
+  {%- for s in journey %}
+    { label: {{ s.label | dump | safe }}, lat: {{ s.lat }}, lng: {{ s.lng }}, anchor: {{ s.anchor | dump | safe }}{% if s.labelSide %}, labelSide: {{ s.labelSide | dump | safe }}{% endif %} }{% if not loop.last %},{% endif %}
+  {%- endfor %}
+  ],
+  upcoming: [
+  {%- for s in journeyUpcoming %}
+    { label: {{ s.label | dump | safe }}, lat: {{ s.lat }}, lng: {{ s.lng }}{% if s.labelSide %}, labelSide: {{ s.labelSide | dump | safe }}{% endif %} }{% if not loop.last %},{% endif %}
+  {%- endfor %}
+  ]
+};
+</script>
+<script src="{{ pathPrefix }}Scripts/journey-outlines/{{ journeyMap }}.js" defer></script>
+<script src="{{ pathPrefix }}Scripts/journey-map.js" defer></script>
+{% endif %}
 <script>
   // Reveal diary sections as they scroll into view
   (function () {

@@ -19,6 +19,22 @@ gradFrom: "#27ae60"
 gradTo: "#1a5e38"
 sub: "Hanoi · Hội An · Ha Long Bay"
 
+# --- Scroll-following journey map (Scripts/journey-map.js) ---
+# Each stop pairs a lat/lng with the id of its section heading below.
+journeyMap: vietnam
+journey:
+  - { label: "Saigon",    lat: 10.7769, lng: 106.7009, anchor: stop-saigon }
+  - { label: "Dalat",     lat: 11.9404, lng: 108.4583, anchor: stop-dalat }
+  - { label: "Quy Nhon",  lat: 13.7765, lng: 109.2237, anchor: stop-quynhon }
+  - { label: "Hội An",    lat: 15.8801, lng: 108.3380, anchor: stop-hoian }
+  - { label: "Huế",       lat: 16.4637, lng: 107.5909, anchor: stop-hue }
+  - { label: "Đồng Hới",  lat: 17.4659, lng: 106.5984, anchor: stop-donghoi }
+  - { label: "Ninh Bình", lat: 20.2506, lng: 105.9745, anchor: stop-ninhbinh }
+journeyUpcoming:
+  - { label: "Sapa",      lat: 22.3364, lng: 103.8438 }
+  - { label: "Hanoi",     lat: 21.0285, lng: 105.8542 }
+  - { label: "Ha Long",   lat: 20.9101, lng: 107.1839, labelSide: right }
+
 # --- Page <head> ---
 title: "Vietnam — Travel Blog · Alexandre Bredillot"
 description: "Vietnam travel story — Saigon, Dalat, Hoi An, Hanoi. Notes by Alexandre Bredillot."
@@ -48,7 +64,7 @@ heroSubtitleRo: "Saigon · Dalat · Hội An · Hanoi · Golful Ha Long — Mai�
   <p>Șase săptămâni prin Vietnam, de la sud la nord, pornind din Saigon și urcând încet. Acesta este un jurnal de bord — completat pe măsură ce etapele se succedă.</p>
 </div>
 
-<h3 class="section-title mt-5">
+<h3 class="section-title mt-5" id="stop-saigon">
   <span data-lang-block="en">Saigon (Ho Chi Minh City) — first four days</span>
   <span data-lang-block="fr">Saigon (Hô Chi Minh-Ville) — les quatre premiers jours</span>
   <span data-lang-block="ro">Saigon (Ho Chi Minh City) — primele patru zile</span>
@@ -216,7 +232,7 @@ heroSubtitleRo: "Saigon · Dalat · Hội An · Hanoi · Golful Ha Long — Mai�
   </div>
 </section>
 
-<h3 class="section-title mt-5">
+<h3 class="section-title mt-5" id="stop-dalat">
   <span data-lang-block="en">Dalat — highlands and cool air</span>
   <span data-lang-block="fr">Dalat — hauts plateaux et fraîcheur</span>
   <span data-lang-block="ro">Dalat — podișul și aerul răcoros</span>
@@ -341,7 +357,7 @@ heroSubtitleRo: "Saigon · Dalat · Hội An · Hanoi · Golful Ha Long — Mai�
   </div>
 </section>
 
-<h3 class="section-title mt-5">
+<h3 class="section-title mt-5" id="stop-quynhon">
   <span data-lang-block="en">Quy Nhon — the coast nobody talks about</span>
   <span data-lang-block="fr">Quy Nhon — le littoral dont personne ne parle</span>
   <span data-lang-block="ro">Quy Nhon — coasta despre care nimeni nu vorbește</span>
@@ -489,7 +505,7 @@ heroSubtitleRo: "Saigon · Dalat · Hội An · Hanoi · Golful Ha Long — Mai�
   </div>
 </section>
 
-<h3 class="section-title mt-5">
+<h3 class="section-title mt-5" id="stop-hoian">
   <span data-lang-block="en">Da Nang &amp; Hội An — coast, craft and a scenic railway</span>
   <span data-lang-block="fr">Da Nang &amp; Hội An — littoral, artisanat et train panoramique</span>
   <span data-lang-block="ro">Da Nang &amp; Hội An — coastă, meșteșug și o cale ferată panoramică</span>
@@ -696,7 +712,7 @@ heroSubtitleRo: "Saigon · Dalat · Hội An · Hanoi · Golful Ha Long — Mai�
   <!-- Photos for this day to be added -->
 </section>
 
-<h3 class="section-title mt-5">
+<h3 class="section-title mt-5" id="stop-hue">
   <span data-lang-block="en">Huế — the imperial city</span>
   <span data-lang-block="fr">Huế — la cité impériale</span>
   <span data-lang-block="ro">Huế — orașul imperial</span>
@@ -795,7 +811,7 @@ heroSubtitleRo: "Saigon · Dalat · Hội An · Hanoi · Golful Ha Long — Mai�
   <!-- Photos for this day to be added -->
 </section>
 
-<h3 class="section-title mt-5">
+<h3 class="section-title mt-5" id="stop-donghoi">
   <span data-lang-block="en">Đồng Hới &amp; Phong Nha — caves and rest</span>
   <span data-lang-block="fr">Đồng Hới &amp; Phong Nha — grottes et repos</span>
   <span data-lang-block="ro">Đồng Hới &amp; Phong Nha — peșteri și odihnă</span>
@@ -859,7 +875,7 @@ heroSubtitleRo: "Saigon · Dalat · Hội An · Hanoi · Golful Ha Long — Mai�
   <!-- Photos for this day to be added -->
 </section>
 
-<h3 class="section-title mt-5">
+<h3 class="section-title mt-5" id="stop-ninhbinh">
   <span data-lang-block="en">Ninh Bình — among the karsts</span>
   <span data-lang-block="fr">Ninh Bình — au milieu des karsts</span>
   <span data-lang-block="ro">Ninh Bình — printre formațiunile carstice</span>
