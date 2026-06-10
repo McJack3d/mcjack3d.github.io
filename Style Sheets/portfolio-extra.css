@@ -211,10 +211,54 @@ header .mt-3 .btn { min-width: 110px; }
    Travel blog styles
    ========================= */
 
+/* Minimal travel navbar: items in a row (custom Bootstrap build has no
+   flex-row / d-sm-block utilities) */
+.travel-nav .navbar-nav {
+  flex-direction: row;
+  align-items: center;
+}
+.travel-nav .navbar-brand { white-space: nowrap; }
+.travel-nav .nav-link {
+  padding: 0.5rem 0.75rem;
+  white-space: nowrap;
+}
+@media (max-width: 575px) {
+  .travel-nav .navbar-brand { font-size: 0.9rem; }
+  .travel-nav .nav-link { padding: 0.5rem 0.4rem; font-size: 0.9rem; }
+  .travel-nav .nav-item-travel { display: none; }
+}
+
+#travel-hero {
+  background:
+    radial-gradient(1100px 540px at 12% 10%, rgba(42, 31, 255, 0.32), transparent 60%),
+    radial-gradient(900px 520px at 88% 90%, rgba(42, 31, 255, 0.20), transparent 55%),
+    linear-gradient(165deg, #0a0b16 0%, #000 65%) !important;
+}
 #travel-hero .travel-hero-icon {
-  font-size: 4rem;
-  color: #fff;
-  opacity: 0.9;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 92px;
+  height: 92px;
+  font-size: 2.7rem;
+  color: #a8a2ff;
+  border-radius: 28px;
+  background: rgba(42, 31, 255, 0.14);
+  border: 1px solid rgba(168, 162, 255, 0.35);
+  box-shadow: 0 14px 44px rgba(42, 31, 255, 0.25);
+}
+#travel-hero h1 {
+  font-size: clamp(2.5rem, 6vw, 4.2rem);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+@supports (-webkit-background-clip: text) or (background-clip: text) {
+  #travel-hero h1 {
+    background: linear-gradient(100deg, #fff 55%, #8c85ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 .travel-card {
@@ -506,9 +550,9 @@ header .mt-3 .btn { min-width: 110px; }
    ========================= */
 .post-hero {
   position: relative;
-  min-height: 55vh;
+  min-height: 60vh;
   padding-top: 7rem;
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -521,15 +565,33 @@ header .mt-3 .btn { min-width: 110px; }
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.18);
+  background:
+    radial-gradient(900px 460px at 85% -10%, rgba(255, 255, 255, 0.14), transparent 60%),
+    radial-gradient(800px 480px at 8% 110%, rgba(0, 0, 0, 0.42), transparent 62%),
+    rgba(0, 0, 0, 0.18);
+}
+.post-hero::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 90px;
+  background: linear-gradient(transparent, rgba(255, 255, 255, 0.16));
+  pointer-events: none;
 }
 .post-hero > .container { position: relative; z-index: 1; }
 .post-breadcrumb {
-  font-size: 0.85rem;
-  letter-spacing: 0.05em;
+  display: inline-block;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  margin-bottom: 1rem;
-  opacity: 0.9;
+  margin-bottom: 1.5rem;
+  padding: 0.35rem 1rem;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.28);
 }
 .post-breadcrumb a {
   color: #fff;
@@ -537,15 +599,36 @@ header .mt-3 .btn { min-width: 110px; }
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 .post-breadcrumb a:hover { border-bottom-color: #fff; }
-.post-breadcrumb i { margin: 0 0.4rem; font-size: 0.7rem; opacity: 0.7; }
+.post-breadcrumb i { margin: 0 0.4rem; font-size: 0.65rem; opacity: 0.7; }
 .post-emoji {
-  font-size: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 96px;
+  height: 96px;
+  font-size: 3.1rem;
   line-height: 1;
-  margin-bottom: 1rem;
-  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
+  margin: 0 auto 1.25rem;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.13);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.28);
 }
-.post-hero h1 { color: #fff; font-weight: 700; }
-.post-hero .lead { opacity: 0.92; }
+.post-hero h1 {
+  color: #fff;
+  font-size: clamp(2.3rem, 5.5vw, 3.9rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.08;
+  text-shadow: 0 3px 22px rgba(0, 0, 0, 0.35);
+}
+.post-hero .lead {
+  opacity: 0.92;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
 
 .post-content {
   max-width: 760px;
@@ -759,10 +842,10 @@ header .mt-3 .btn { min-width: 110px; }
   margin-bottom: 1rem;
 }
 .dest-card {
-  border-radius: 12px;
+  border-radius: 16px;
   overflow: hidden;
   background: #fff;
-  border: 1px solid rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.08);
   height: 100%;
   transition: all 0.25s ease;
   position: relative;
@@ -770,8 +853,8 @@ header .mt-3 .btn { min-width: 110px; }
 .dest-card.clickable { cursor: pointer; }
 .dest-card.clickable:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.14);
-  border-color: rgba(0,0,0,0.1);
+  box-shadow: 0 14px 32px rgba(13, 10, 60, 0.14);
+  border-color: rgba(42, 31, 255, 0.35);
 }
 .dest-card.not-clickable { cursor: default; opacity: 0.78; }
 .dest-card-cover {
@@ -1078,11 +1161,34 @@ html[lang="ro"] [data-lang-block="fr"] { display: none !important; }
    Travel diary
    ========================= */
 .diary-day {
-  margin-top: 2.5rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid rgba(0,0,0,0.08);
+  position: relative;
+  margin-top: 3rem;
+  padding-left: 2.1rem;
 }
-.diary-day:first-of-type { border-top: none; padding-top: 0; }
+.diary-day:first-of-type { margin-top: 2rem; }
+/* timeline rail segment */
+.diary-day::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 1.7rem;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.03));
+  border-radius: 1px;
+}
+/* timeline dot */
+.diary-day::after {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 0.35rem;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--post-accent, #1a5e38);
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.05);
+}
 .diary-day-header {
   display: flex;
   align-items: baseline;
@@ -1092,35 +1198,38 @@ html[lang="ro"] [data-lang-block="fr"] { display: none !important; }
 }
 .diary-day-label {
   display: inline-block;
-  background: #1a5e38;
+  background: var(--post-accent, #1a5e38);
   color: #fff;
   font-weight: 700;
-  font-size: 0.75rem;
-  letter-spacing: 0.08em;
-  padding: 3px 10px;
-  border-radius: 4px;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  padding: 4px 12px;
+  border-radius: 999px;
   text-transform: uppercase;
 }
 .diary-day-title {
-  font-size: 1.4rem;
-  font-weight: 600;
-  margin: 0;
-  color: #1a5e38;
+  flex-basis: 100%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 0.15rem 0 0;
+  color: #111;
 }
 .diary-day-date {
   color: #888;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
+  font-weight: 500;
 }
-.diary-day p { line-height: 1.75; }
+.diary-day p { line-height: 1.8; }
 .diary-photos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 0.75rem;
-  margin: 1.5rem 0;
+  gap: 0.6rem;
+  margin: 1.75rem 0;
 }
 .diary-photo {
   margin: 0;
-  border-radius: 6px;
+  border-radius: 12px;
   overflow: hidden;
   background: #f4f4f4;
   aspect-ratio: 3/4;
@@ -1133,29 +1242,131 @@ html[lang="ro"] [data-lang-block="fr"] { display: none !important; }
   display: block;
   transition: transform 0.4s;
 }
-.diary-photo:hover img { transform: scale(1.03); }
+.diary-photo:hover img { transform: scale(1.04); }
 .diary-photo figcaption {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 0.5rem 0.75rem;
-  background: linear-gradient(transparent, rgba(0,0,0,0.7));
+  padding: 1.4rem 0.85rem 0.6rem;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.72));
   color: #fff;
   font-size: 0.78rem;
-  line-height: 1.3;
+  line-height: 1.35;
 }
 .diary-photo-wide { grid-column: 1 / -1; aspect-ratio: 16/9; }
 .diary-photo-tall { aspect-ratio: 3/4; }
+/* a lone photo shouldn't span the full article width */
+.diary-photos:has(.diary-photo:only-child) {
+  grid-template-columns: minmax(0, 420px);
+}
 .diary-note {
-  background: #f8f6f2;
+  background: #fbf7ee;
+  border: 1px solid rgba(212, 169, 69, 0.35);
   border-left: 3px solid #d4a945;
-  padding: 0.85rem 1.1rem;
-  margin: 1.25rem 0;
+  padding: 0.95rem 1.2rem;
+  margin: 1.5rem 0;
   font-size: 0.92rem;
-  border-radius: 0 4px 4px 0;
+  border-radius: 0 12px 12px 0;
 }
 .diary-note strong { color: #8a6914; }
+
+/* city/section headers inside a post pick up the destination accent */
+.post-content .section-title::after {
+  background: linear-gradient(90deg, var(--post-accent, #2A1FFF), transparent);
+}
+
+/* --- Diary photo lightbox --- */
+.diary-photo-zoomable { cursor: zoom-in; }
+.diary-photo-zoomable:focus-visible {
+  outline: 3px solid var(--post-accent, #2A1FFF);
+  outline-offset: 2px;
+}
+body.diary-lightbox-lock { overflow: hidden; }
+.diary-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(8, 8, 14, 0.93);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+.diary-lightbox.open {
+  opacity: 1;
+  visibility: visible;
+}
+.diary-lightbox-figure {
+  margin: 0;
+  max-width: min(92vw, 1100px);
+  max-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.diary-lightbox-img {
+  max-width: 100%;
+  max-height: 78vh;
+  border-radius: 10px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.6);
+}
+.diary-lightbox-caption {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.88rem;
+  margin-top: 0.85rem;
+  text-align: center;
+}
+.diary-lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.25rem;
+  width: 46px;
+  height: 46px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.diary-lightbox-close:hover { background: rgba(255, 255, 255, 0.22); }
+.diary-lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.diary-lightbox-nav:hover { background: rgba(255, 255, 255, 0.22); }
+.diary-lightbox-prev { left: 1.25rem; }
+.diary-lightbox-next { right: 1.25rem; }
+.diary-lightbox-counter {
+  position: absolute;
+  bottom: 1.1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+}
+@media (max-width: 575px) {
+  .diary-day { padding-left: 1.5rem; }
+  .diary-lightbox-nav { width: 42px; height: 42px; }
+  .diary-lightbox-prev { left: 0.5rem; }
+  .diary-lightbox-next { right: 0.5rem; }
+}
 
 /* =========================
    Travel hero button visibility fix
@@ -1192,7 +1403,7 @@ html[lang="ro"] [data-lang-block="fr"] { display: none !important; }
 .diary-photos:has(.diary-photo:nth-child(4):last-child) {
   grid-template-columns: repeat(2, 1fr);
 }
-.post-content { max-width: 960px; }
+.post-content { max-width: 880px; }
 
 /* post-hero works with container-fluid too */
 .post-hero > .container-fluid { position: relative; z-index: 1; }
@@ -1204,8 +1415,8 @@ html[lang="ro"] [data-lang-block="fr"] { display: none !important; }
   text-decoration: none;
 }
 .travel-map-link:hover {
-  border-bottom-color: #27ae60;
-  color: #1a5e38;
+  border-bottom-color: var(--post-accent, #27ae60);
+  color: var(--post-accent, #1a5e38);
   text-decoration: none;
 }
 .travel-map-link {

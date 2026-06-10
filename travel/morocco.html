@@ -25,13 +25,17 @@
   <body>
 
 
-<nav class="navbar fixed-top navbar-dark bg-dark shadow-sm" role="navigation" aria-label="Main navigation">
+<nav class="navbar fixed-top navbar-dark bg-dark shadow-sm travel-nav" role="navigation" aria-label="Main navigation">
   <div class="container-fluid px-4 d-flex align-items-center">
-    <ul class="navbar-nav ml-auto d-flex flex-row align-items-center">
+    <a class="navbar-brand text-white font-weight-bold mb-0" href="../index.html">Alexandre BREDILLOT</a>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item nav-item-travel">
+        <a class="nav-link" href="../travel.html"><i class="fas fa-globe-europe mr-1"></i> <span data-i18n="nav.travel">Travel</span></a>
+      </li>
       <li class="nav-item">
         <a class="nav-link" href="mailto:alexandrebredillot@gmail.com"><i class="fas fa-envelope mr-1"></i> Contact</a>
       </li>
-      <li class="nav-item ml-2 d-flex align-items-center">
+      <li class="nav-item ml-2">
         <div class="lang-toggle">
           <button class="lang-opt active" data-lang="en" onclick="setLang('en')">EN</button>
           <span class="lang-sep">|</span>
@@ -46,7 +50,7 @@
 
 
 
-<header class="post-hero" style="background: linear-gradient(135deg, #e67e22 0%, #8e0f0f 100%);">
+<header class="post-hero" style="--post-accent: #e67e22; background: linear-gradient(150deg, #e67e22 0%, #8e0f0f 80%);">
   <div class="container-fluid px-4">
     <div class="post-breadcrumb">
       <a href="../travel.html" data-i18n="nav.travel">Travel</a> <i class="fas fa-chevron-right"></i> <span>Morocco</span>
@@ -65,7 +69,7 @@
   </div>
 </header>
 
-<main id="main" role="main">
+<main id="main" role="main" style="--post-accent: #e67e22;">
   <article class="py-5">
     <div class="container-fluid px-4">
       <div class="post-content">
@@ -147,6 +151,27 @@
 
 <script src="../Scripts/places-config.js"></script>
 <script src="../Scripts/places-ui.js" defer></script>
+<script src="../Scripts/diary-lightbox.js" defer></script>
+<script>
+  // Reveal diary sections as they scroll into view
+  (function () {
+    if (!('IntersectionObserver' in window)) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var targets = document.querySelectorAll('.diary-day');
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.05, rootMargin: '0px 0px -40px 0px' });
+    targets.forEach(function (el) {
+      el.classList.add('reveal');
+      io.observe(el);
+    });
+  })();
+</script>
 
 
   </body>

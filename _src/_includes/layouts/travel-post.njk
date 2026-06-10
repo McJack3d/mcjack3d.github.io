@@ -3,7 +3,7 @@
 {% set pathPrefix = "../" %}
 
 {% block body %}
-<header class="post-hero" style="background: linear-gradient(135deg, {{ gradFrom }} 0%, {{ gradTo }} 100%);">
+<header class="post-hero" style="--post-accent: {{ color or gradTo }}; background: linear-gradient(150deg, {{ gradFrom }} 0%, {{ gradTo }} 80%);">
   <div class="container-fluid px-4">
     <div class="post-breadcrumb">
       <a href="../travel.html" data-i18n="nav.travel">Travel</a> <i class="fas fa-chevron-right"></i> <span>{{ label }}</span>
@@ -22,7 +22,7 @@
   </div>
 </header>
 
-<main id="main" role="main">
+<main id="main" role="main" style="--post-accent: {{ color or gradTo }};">
   <article class="py-5">
     <div class="container-fluid px-4">
       <div class="post-content">
@@ -64,4 +64,25 @@
 {% block scripts %}
 <script src="{{ pathPrefix }}Scripts/places-config.js"></script>
 <script src="{{ pathPrefix }}Scripts/places-ui.js" defer></script>
+<script src="{{ pathPrefix }}Scripts/diary-lightbox.js" defer></script>
+<script>
+  // Reveal diary sections as they scroll into view
+  (function () {
+    if (!('IntersectionObserver' in window)) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var targets = document.querySelectorAll('.diary-day');
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.05, rootMargin: '0px 0px -40px 0px' });
+    targets.forEach(function (el) {
+      el.classList.add('reveal');
+      io.observe(el);
+    });
+  })();
+</script>
 {% endblock %}
