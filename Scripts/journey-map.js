@@ -185,7 +185,8 @@
   function layout() {
     var vh = window.innerHeight;
     scale = (vh * MAP_VH) / map.height;
-    anchorX = article.getBoundingClientRect().left + DOT_X;
+    // on phones the content margin is slim — keep the marker on screen
+    anchorX = Math.max(14, article.getBoundingClientRect().left + DOT_X);
     anchorY = vh * REF;
 
     stops.forEach(function (s) { s.px = { x: s.ux * scale, y: s.uy * scale }; });

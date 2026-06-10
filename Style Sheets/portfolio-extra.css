@@ -1880,15 +1880,20 @@ footer.bg-primary::before {
   left: 0;
   z-index: 0;
   pointer-events: none;
-  display: none;
   opacity: 0;
   transition: opacity 0.6s ease;
 }
 .journey-map.jm-visible {
   opacity: 1;
 }
-@media (min-width: 992px) {
-  .journey-map { display: block; }
+/* on small screens the text spans the full width: keep the map but drop
+   the city labels (they would clip at the edge or collide with the text)
+   and soften the route where it passes beneath the prose */
+@media (max-width: 991px) {
+  .jm-label { display: none; }
+  .jm-leg-fill { stroke-opacity: 0.45; }
+  .jm-leg-base,
+  .jm-route-upcoming { stroke-opacity: 0.6; }
 }
 .journey-map svg {
   display: block;
