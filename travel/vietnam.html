@@ -27,7 +27,7 @@
 
 <nav class="navbar fixed-top navbar-dark bg-dark shadow-sm travel-nav" role="navigation" aria-label="Main navigation">
   <div class="container-fluid px-4 d-flex align-items-center">
-    <a class="navbar-brand text-white font-weight-bold mb-0" href="../index.html">Alexandre BREDILLOT</a>
+    <a class="navbar-brand text-white mb-0" href="../index.html" aria-label="Home"><i class="fas fa-home"></i></a>
     <ul class="navbar-nav ml-auto">
       <li class="nav-item nav-item-travel">
         <a class="nav-link" href="../travel.html"><i class="fas fa-globe-europe mr-1"></i> <span data-i18n="nav.travel">Travel</span></a>
@@ -86,7 +86,7 @@
   <h3 class="section-title">Călătoria pe scurt</h3>
   <p>Șase săptămâni prin Vietnam, de la sud la nord, pornind din Saigon și urcând încet. Acesta este un jurnal de bord — completat pe măsură ce etapele se succedă.</p>
 </div>
-<h3 class="section-title mt-5">
+<h3 class="section-title mt-5" id="stop-saigon">
   <span data-lang-block="en">Saigon (Ho Chi Minh City) — first four days</span>
   <span data-lang-block="fr">Saigon (Hô Chi Minh-Ville) — les quatre premiers jours</span>
   <span data-lang-block="ro">Saigon (Ho Chi Minh City) — primele patru zile</span>
@@ -240,7 +240,7 @@
     <strong>Sfat ·</strong> Majoritatea hotelurilor din Saigon păstrează bagajele gratuit între check-out și un autobuz de seară. Util dacă transportul de noapte pleacă târziu.
   </div>
 </section>
-<h3 class="section-title mt-5">
+<h3 class="section-title mt-5" id="stop-dalat">
   <span data-lang-block="en">Dalat — highlands and cool air</span>
   <span data-lang-block="fr">Dalat — hauts plateaux et fraîcheur</span>
   <span data-lang-block="ro">Dalat — podișul și aerul răcoros</span>
@@ -355,7 +355,7 @@
     <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF2931.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF2931.JPG" alt="Linh Phước Pagoda detail" loading="lazy" width="1600" height="2400"></picture><figcaption>Linh Phước Pagoda detail</figcaption></figure>
   </div>
 </section>
-<h3 class="section-title mt-5">
+<h3 class="section-title mt-5" id="stop-quynhon">
   <span data-lang-block="en">Quy Nhon — the coast nobody talks about</span>
   <span data-lang-block="fr">Quy Nhon — le littoral dont personne ne parle</span>
   <span data-lang-block="ro">Quy Nhon — coasta despre care nimeni nu vorbește</span>
@@ -491,7 +491,7 @@
     <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3190.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3190.JPG" alt="Seine fishing at dusk near Quy Nhon" loading="lazy" width="1600" height="1067"></picture><figcaption>Seine fishing at dusk near Quy Nhon</figcaption></figure>
   </div>
 </section>
-<h3 class="section-title mt-5">
+<h3 class="section-title mt-5" id="stop-hoian">
   <span data-lang-block="en">Da Nang &amp; Hội An — coast, craft and a scenic railway</span>
   <span data-lang-block="fr">Da Nang &amp; Hội An — littoral, artisanat et train panoramique</span>
   <span data-lang-block="ro">Da Nang &amp; Hội An — coastă, meșteșug și o cale ferată panoramică</span>
@@ -679,7 +679,7 @@
   </div>
   <!-- Photos for this day to be added -->
 </section>
-<h3 class="section-title mt-5">
+<h3 class="section-title mt-5" id="stop-hue">
   <span data-lang-block="en">Huế — the imperial city</span>
   <span data-lang-block="fr">Huế — la cité impériale</span>
   <span data-lang-block="ro">Huế — orașul imperial</span>
@@ -768,7 +768,7 @@
   </div>
   <!-- Photos for this day to be added -->
 </section>
-<h3 class="section-title mt-5">
+<h3 class="section-title mt-5" id="stop-donghoi">
   <span data-lang-block="en">Đồng Hới &amp; Phong Nha — caves and rest</span>
   <span data-lang-block="fr">Đồng Hới &amp; Phong Nha — grottes et repos</span>
   <span data-lang-block="ro">Đồng Hới &amp; Phong Nha — peșteri și odihnă</span>
@@ -825,7 +825,7 @@
   </div>
   <!-- Photos for this day to be added -->
 </section>
-<h3 class="section-title mt-5">
+<h3 class="section-title mt-5" id="stop-ninhbinh">
   <span data-lang-block="en">Ninh Bình — among the karsts</span>
   <span data-lang-block="fr">Ninh Bình — au milieu des karsts</span>
   <span data-lang-block="ro">Ninh Bình — printre formațiunile carstice</span>
@@ -986,6 +986,31 @@
 <script src="../Scripts/places-config.js"></script>
 <script src="../Scripts/places-ui.js" defer></script>
 <script src="../Scripts/diary-lightbox.js" defer></script>
+
+
+<script>
+window.__JOURNEY__ = {
+  outline: "vietnam",
+  accent: "#27ae60",
+  stops: [
+    { label: "Saigon", lat: 10.7769, lng: 106.7009, anchor: "stop-saigon" },
+    { label: "Dalat", lat: 11.9404, lng: 108.4583, anchor: "stop-dalat" },
+    { label: "Quy Nhon", lat: 13.7765, lng: 109.2237, anchor: "stop-quynhon" },
+    { label: "Hội An", lat: 15.8801, lng: 108.338, anchor: "stop-hoian" },
+    { label: "Huế", lat: 16.4637, lng: 107.5909, anchor: "stop-hue" },
+    { label: "Đồng Hới", lat: 17.4659, lng: 106.5984, anchor: "stop-donghoi" },
+    { label: "Ninh Bình", lat: 20.2506, lng: 105.9745, anchor: "stop-ninhbinh" }
+  ],
+  upcoming: [
+    { label: "Sapa", lat: 22.3364, lng: 103.8438 },
+    { label: "Hanoi", lat: 21.0285, lng: 105.8542 },
+    { label: "Ha Long", lat: 20.9101, lng: 107.1839, labelSide: "right" }
+  ]
+};
+</script>
+<script src="../Scripts/journey-outlines/vietnam.js" defer></script>
+<script src="../Scripts/journey-map.js" defer></script>
+
 <script>
   // Reveal diary sections as they scroll into view
   (function () {
