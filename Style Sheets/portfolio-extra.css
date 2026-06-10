@@ -1868,18 +1868,19 @@ footer.bg-primary::before {
 
 /* =========================
    Journey map — scroll-following itinerary on travel posts
-   (built by Scripts/journey-map.js; desktop gutter only)
+   (built by Scripts/journey-map.js; desktop left gutter only)
+   Black & white: the country pans behind the frame as you read.
    ========================= */
 .journey-map {
   position: fixed;
   top: 50%;
-  right: 18px;
-  width: min(calc((100vw - 960px) / 2 - 20px), 270px, 38vh);
+  left: 18px;
+  width: min(calc((100vw - 960px) / 2 - 20px), 280px, 52vh);
   z-index: 1;
   pointer-events: none;
   display: none;
   opacity: 0;
-  transform: translateY(-50%) translateX(14px);
+  transform: translateY(-50%) translateX(-14px);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 .journey-map.jm-visible {
@@ -1893,14 +1894,17 @@ footer.bg-primary::before {
   display: block;
   width: 100%;
   height: auto;
-  overflow: visible;
+  overflow: hidden;
+  /* soften the window edges so the sliding map reads as a background */
+  -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 9%, #000 91%, transparent 100%);
+  mask-image: linear-gradient(180deg, transparent 0, #000 9%, #000 91%, transparent 100%);
 }
 .jm-country {
-  filter: drop-shadow(0 16px 30px rgba(25, 35, 60, 0.13));
+  filter: drop-shadow(0 12px 24px rgba(15, 18, 24, 0.14));
 }
 .jm-land {
   fill: #ffffff;
-  stroke: #c9cfd8;
+  stroke: #b9bfc7;
   stroke-width: 1;
   stroke-linejoin: round;
 }
@@ -1913,8 +1917,8 @@ footer.bg-primary::before {
 }
 .jm-leg-fill {
   fill: none;
-  stroke: var(--jm-accent, #27ae60);
-  stroke-width: 2.4;
+  stroke: #20262e;
+  stroke-width: 2.2;
   stroke-linecap: round;
 }
 .jm-route-upcoming {
@@ -1931,7 +1935,7 @@ footer.bg-primary::before {
   transition: fill 0.35s ease, stroke 0.35s ease;
 }
 .jm-stop.jm-reached {
-  fill: var(--jm-accent, #27ae60);
+  fill: #20262e;
   stroke: #fff;
 }
 .jm-stop-upcoming {
@@ -1950,19 +1954,19 @@ footer.bg-primary::before {
   stroke-width: 3px;
 }
 .jm-label.jm-reached {
-  fill: #39424e;
+  fill: #20262e;
 }
 .jm-label-upcoming {
   fill: #b6bdc7;
   font-weight: 500;
 }
 .jm-marker {
-  fill: var(--jm-accent, #27ae60);
+  fill: #111519;
   stroke: #fff;
   stroke-width: 2;
 }
 .jm-marker-halo {
-  fill: var(--jm-accent, #27ae60);
+  fill: #545d68;
   opacity: 0.22;
   transform-box: fill-box;
   transform-origin: center;
