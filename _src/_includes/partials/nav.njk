@@ -1,12 +1,16 @@
 {# Shared minimal navbar for travel pages.
    pathPrefix: "" for /travel.html, "../" for /travel/*.html #}
-<nav class="navbar fixed-top navbar-dark bg-dark shadow-sm" role="navigation" aria-label="Main navigation">
+<nav class="navbar fixed-top navbar-dark bg-dark shadow-sm travel-nav" role="navigation" aria-label="Main navigation">
   <div class="container-fluid px-4 d-flex align-items-center">
-    <ul class="navbar-nav ml-auto d-flex flex-row align-items-center">
+    <a class="navbar-brand text-white font-weight-bold mb-0" href="{{ pathPrefix }}index.html">Alexandre BREDILLOT</a>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item nav-item-travel">
+        <a class="nav-link" href="{{ pathPrefix }}travel.html"><i class="fas fa-globe-europe mr-1"></i> <span data-i18n="nav.travel">Travel</span></a>
+      </li>
       <li class="nav-item">
         <a class="nav-link" href="mailto:{{ site.email }}"><i class="fas fa-envelope mr-1"></i> Contact</a>
       </li>
-      <li class="nav-item ml-2 d-flex align-items-center">
+      <li class="nav-item ml-2">
         <div class="lang-toggle">
           <button class="lang-opt active" data-lang="en" onclick="setLang('en')">EN</button>
           <span class="lang-sep">|</span>

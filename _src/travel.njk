@@ -21,7 +21,7 @@ ogDescription: "Travel stories, photographs and notes from the road."
 <header id="travel-hero" class="d-flex flex-column justify-content-center align-items-center text-center bg-primary text-white" style="min-height: 60vh; padding-top: 6rem; position: relative; overflow: hidden;">
   <div class="container-fluid px-4">
     <div class="travel-hero-icon mb-3"><i class="fas fa-globe-europe"></i></div>
-    <h1 class="display-4 mb-2" style="color:#fff;" data-i18n="travel.hero.title">Travel Blog</h1>
+    <h1 class="display-4 mb-2 text-white" data-i18n="travel.hero.title">Travel Blog</h1>
     <p class="lead mb-1" data-i18n="travel.hero.subtitle">Notes, photographs and impressions from the road</p>
     <p class="text-light mb-3" style="max-width: 700px; margin: 0 auto;" data-i18n="travel.hero.desc">
       A personal log of places that have shaped my perspective — cities, mountains, and quiet streets,
@@ -127,14 +127,19 @@ window.__TRIPS__ = [
 </script>
 
 <script>
+/* Destination cards — rendered independently of the globe so the page
+   still works when the globe library fails to load. */
 (function () {
-  if (typeof Globe === 'undefined') return;
-
   var TRIPS = window.__TRIPS__;
   var CONTINENTS = {{ continents | dump | safe }};
 
   function tr(key) { return (typeof window.tKey === 'function' ? window.tKey(key) : key); }
   function tripCount(n) { if (n === 1) return '1 ' + tr('travel.card.trip'); return n + ' ' + tr('travel.card.trips'); }
+
+  function handleTripClick(trip) {
+    if (typeof window.__flyToTrip === 'function') window.__flyToTrip(trip);
+    else window.location.href = trip.href;
+  }
 
   function buildBigCard(trip) {
     var card = document.createElement('div');
@@ -222,10 +227,20 @@ window.__TRIPS__ = [
   document.addEventListener('langchange', function () {
     renderAll();
     var statusEl = document.getElementById('globe-hud-status');
-    if (statusEl && !inFlight) statusEl.textContent = tr('travel.globe.idle');
+    if (statusEl && !window.__globeInFlight) statusEl.textContent = tr('travel.globe.idle');
   });
+})();
+</script>
 
-  /* ---- Globe ---- */
+<script>
+/* ---- Globe (optional enhancement) ---- */
+(function () {
+  if (typeof Globe === 'undefined') return;
+
+  var TRIPS = window.__TRIPS__;
+
+  function tr(key) { return (typeof window.tKey === 'function' ? window.tKey(key) : key); }
+
   var container = document.getElementById('globeViz');
   if (!container) return;
 
@@ -283,11 +298,10 @@ window.__TRIPS__ = [
   }
 
   var animRaf = null;
-  var inFlight = false;
 
-  function handleTripClick(trip) {
-    if (inFlight) return;
-    inFlight = true;
+  window.__flyToTrip = function (trip) {
+    if (window.__globeInFlight) return;
+    window.__globeInFlight = true;
     var statusEl = document.getElementById('globe-hud-status');
     if (statusEl) statusEl.textContent = tr('travel.globe.plotting') + trip.label + '…';
 
@@ -332,7 +346,7 @@ window.__TRIPS__ = [
       }
       animRaf = requestAnimationFrame(step);
     });
-  }
+  };
 
   function onResize() {
     if (container.offsetWidth > 0) {
