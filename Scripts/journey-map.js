@@ -40,7 +40,7 @@
   var DWELL = 0.6; // fraction of each section spent resting on its stop
   var REF = 0.42; // reading line, as a fraction of viewport height
   var MAP_VH = 2.0; // Vietnam's height relative to the viewport — "giant"
-  var DOT_X = -16; // anchor just left of the diary day-dot column, clear of headings
+  var DOT_X = 9; // sit on the diary day-dot column (its ::after centre)
 
   function project(s) {
     return {
@@ -111,6 +111,9 @@
     if (parent) parent.appendChild(el);
     return el;
   }
+
+  // the moving marker stands in for the diary timeline dots/rail (hidden via CSS)
+  document.body.classList.add('jm-active');
 
   var container = document.createElement('div');
   container.className = 'journey-map';

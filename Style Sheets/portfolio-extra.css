@@ -1177,6 +1177,10 @@ html[lang="ro"] [data-lang-block="fr"] { display: none !important; }
   background: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.03));
   border-radius: 1px;
 }
+/* When the scroll-following journey map is present, its moving position
+   marker stands in for the static dots/rail, so hide them on that post. */
+body.jm-active .diary-day::before,
+body.jm-active .diary-day::after { display: none; }
 /* timeline dot */
 .diary-day::after {
   content: '';
