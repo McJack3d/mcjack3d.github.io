@@ -109,6 +109,9 @@
       'contact.github_label': 'GitHub',
       'contact.open': 'Open to opportunities in data science, AI strategy, and data governance roles. Feel free to reach out!',
       'contact.cv': 'Download CV',
+      'contact.banner_title': 'Let\'s work together',
+      'contact.banner_body': 'Send me a message — I usually reply within a day.',
+      'contact.btn_email': 'Email me',
 
       /* --- Footer --- */
       'footer.rights': 'All rights reserved.',
@@ -257,6 +260,9 @@
       'contact.github_label': 'GitHub',
       'contact.open': 'Disponible pour des opportunités en data science, stratégie IA et gouvernance des données. N\'hésitez pas à me contacter !',
       'contact.cv': 'Télécharger le CV',
+      'contact.banner_title': 'Travaillons ensemble',
+      'contact.banner_body': 'Envoyez-moi un message — je réponds généralement sous 24 h.',
+      'contact.btn_email': 'M\'écrire',
 
       /* --- Footer --- */
       'footer.rights': 'Tous droits réservés.',

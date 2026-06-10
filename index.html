@@ -85,15 +85,12 @@
 <header id="home" class="d-flex flex-column justify-content-center align-items-center bg-primary text-white">
   <div id="particles-js"></div>
   <div class="container position-relative" style="z-index: 1;">
-    <div class="row align-items-center justify-content-center">
-      <div class="col-md-5 text-center mb-4 mb-md-0">
-        <img src="Images/profile.jpg" alt="Alexandre Bredillot" class="hero-photo" onerror="this.outerHTML='&lt;div class=&quot;profile-avatar profile-avatar-hero&quot; aria-hidden=&quot;true&quot;&gt;AB&lt;/div&gt;'">
-      </div>
-      <div class="col-md-7 text-center">
-        <p class="hero-eyebrow mb-2" data-i18n="hero.role">Data and AI specialist</p>
-        <h1 class="display-4 hero-name mb-2">Alexandre BREDILLOT</h1>
-        <p class="text-light mb-3" data-i18n="hero.subtitle">MSc Data Science & AI student — finance & data background</p>
-        <p class="hero-desc mx-auto mb-3" data-i18n="hero.desc">
+    <div class="row justify-content-center">
+      <div class="col-lg-9 text-center">
+        <p class="hero-eyebrow mb-3" data-i18n="hero.role">Data and AI specialist</p>
+        <h1 class="hero-name mb-3">Alexandre BREDILLOT</h1>
+        <p class="hero-subtitle mb-3" data-i18n="hero.subtitle">MSc Data Science & AI student — finance & data background</p>
+        <p class="hero-desc mx-auto mb-4" data-i18n="hero.desc">
           I turn financial and operational data into reliable insight and automation.
           Skilled in Python, SQL, Dataiku, QlikSense, BI tools (Tableau & Power BI), and statistical analysis.
           Professional experience in banking, asset management, and business development.
@@ -443,46 +440,49 @@
       <section id="contact" class="py-5 bg-light">
         <div class="container">
           <h3 class="section-title" data-i18n="contact.title">Contact</h3>
+          <p class="contact-lead" data-i18n="contact.open">Open to opportunities in data science, AI strategy, and data governance roles. Feel free to reach out!</p>
           <div class="row">
-            <div class="col-md-6 mb-4 mb-md-0">
-              <div class="contact-list">
-                <a class="contact-item" href="mailto:alexandrebredillot@gmail.com">
-                  <span class="contact-icon"><i class="fas fa-envelope" aria-hidden="true"></i></span>
-                  <span class="contact-info">
-                    <span class="contact-label" data-i18n="contact.email">Email</span>
-                    <span class="contact-value">alexandrebredillot@gmail.com</span>
-                  </span>
-                </a>
-                <a class="contact-item" href="tel:+33620352173">
-                  <span class="contact-icon"><i class="fas fa-phone" aria-hidden="true"></i></span>
-                  <span class="contact-info">
-                    <span class="contact-label" data-i18n="contact.phone">Phone</span>
-                    <span class="contact-value">+33 6 20 35 21 73</span>
-                  </span>
-                </a>
-                <a class="contact-item" href="https://www.linkedin.com/in/alexandre-bredillot" target="_blank" rel="noopener">
-                  <span class="contact-icon"><i class="fab fa-linkedin-in" aria-hidden="true"></i></span>
-                  <span class="contact-info">
-                    <span class="contact-label" data-i18n="contact.linkedin">LinkedIn</span>
-                    <span class="contact-value">linkedin.com/in/alexandre-bredillot</span>
-                  </span>
-                </a>
-                <a class="contact-item" href="https://github.com/McJack3d" target="_blank" rel="noopener">
-                  <span class="contact-icon"><i class="fab fa-github" aria-hidden="true"></i></span>
-                  <span class="contact-info">
-                    <span class="contact-label" data-i18n="contact.github_label">GitHub</span>
-                    <span class="contact-value">github.com/McJack3d</span>
-                  </span>
-                </a>
-              </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <a class="contact-card" href="mailto:alexandrebredillot@gmail.com">
+                <span class="contact-card-icon"><i class="fas fa-envelope" aria-hidden="true"></i></span>
+                <span class="contact-card-label" data-i18n="contact.email">Email</span>
+                <span class="contact-card-value">alexandrebredillot@gmail.com</span>
+              </a>
             </div>
-            <div class="col-md-6">
-              <div class="contact-cta">
-                <p class="mb-3" data-i18n="contact.open">Open to opportunities in data science, AI strategy, and data governance roles. Feel free to reach out!</p>
-                <a href="Images/CV_Alexandre_Bredillot.pdf" class="btn btn-primary text-white" target="_blank" rel="noopener" id="cv-download">
-                  <i class="fas fa-download text-white" aria-hidden="true"></i> <span data-i18n="contact.cv">Download CV</span>
-                </a>
-              </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <a class="contact-card" href="tel:+33620352173">
+                <span class="contact-card-icon"><i class="fas fa-phone" aria-hidden="true"></i></span>
+                <span class="contact-card-label" data-i18n="contact.phone">Phone</span>
+                <span class="contact-card-value">+33 6 20 35 21 73</span>
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <a class="contact-card" href="https://www.linkedin.com/in/alexandre-bredillot" target="_blank" rel="noopener">
+                <span class="contact-card-icon"><i class="fab fa-linkedin-in" aria-hidden="true"></i></span>
+                <span class="contact-card-label" data-i18n="contact.linkedin">LinkedIn</span>
+                <span class="contact-card-value">alexandre-bredillot</span>
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <a class="contact-card" href="https://github.com/McJack3d" target="_blank" rel="noopener">
+                <span class="contact-card-icon"><i class="fab fa-github" aria-hidden="true"></i></span>
+                <span class="contact-card-label" data-i18n="contact.github_label">GitHub</span>
+                <span class="contact-card-value">McJack3d</span>
+              </a>
+            </div>
+          </div>
+          <div class="contact-banner">
+            <div class="contact-banner-text">
+              <h4 class="mb-1" data-i18n="contact.banner_title">Let's work together</h4>
+              <p class="mb-0" data-i18n="contact.banner_body">Send me a message — I usually reply within a day.</p>
+            </div>
+            <div class="contact-banner-actions">
+              <a href="Images/CV_Alexandre_Bredillot.pdf" class="btn btn-light" target="_blank" rel="noopener" id="cv-download">
+                <i class="fas fa-download" aria-hidden="true"></i> <span data-i18n="contact.cv">Download CV</span>
+              </a>
+              <a href="mailto:alexandrebredillot@gmail.com" class="btn btn-outline-light">
+                <i class="fas fa-paper-plane" aria-hidden="true"></i> <span data-i18n="contact.btn_email">Email me</span>
+              </a>
             </div>
           </div>
         </div>
@@ -557,7 +557,7 @@
       (function() {
         if (!('IntersectionObserver' in window)) return;
         if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-        var targets = document.querySelectorAll('#main > section, .timeline-item, .project-card, .edu-card, .skills-group');
+        var targets = document.querySelectorAll('#main > section, .timeline-item, .project-card, .edu-card, .skills-group, .contact-card, .contact-banner');
         var io = new IntersectionObserver(function(entries) {
           entries.forEach(function(entry) {
             if (entry.isIntersecting) {
