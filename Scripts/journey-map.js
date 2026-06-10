@@ -1,13 +1,14 @@
 /*
- * Journey map — scroll-following travel itinerary
+ * Journey map — giant scroll-following background (travel posts)
  * --------------------------------------------------------------------------
- * Renders a fixed black-and-white country map in the left page gutter of a
- * travel post. The map is a sliding window: the camera follows the current
- * position, so the country pans behind the frame as the reader scrolls.
- * Stops and the route line trace the itinerary — the marker travels from
- * city to city, pausing on each stop while its diary section is on screen.
- * The drawn route ends at the last published stop; upcoming stops are
- * sketched in dotted grey.
+ * Draws the whole country as a huge, faint black-and-white background behind
+ * the diary. The reader's position is pinned to the diary timeline-dot
+ * column on the left of the days: the marker stays anchored there while the
+ * country itself glides around behind the text. While a city's section is on
+ * screen the map rests; crossing into the next city, the map slides so the
+ * next stop arrives under the marker, revealing more of the country and the
+ * itinerary. The drawn route ends at the last published stop; upcoming stops
+ * are sketched in dotted grey.
  *
  * Inputs (set by the page before this script runs):
  *   window.__JOURNEY__          { outline, stops[], upcoming[] }
@@ -32,7 +33,10 @@
   if (!article) return;
 
   var SVG_NS = 'http://www.w3.org/2000/svg';
-  var DWELL = 0.5; // fraction of each section spent parked on its stop
+  var DWELL = 0.6; // fraction of each section spent resting on its stop
+  var REF = 0.42; // reading line, as a fraction of viewport height
+  var MAP_VH = 1.6; // country height relative to the viewport — "giant"
+  var DOT_X = -16; // anchor just left of the diary day-dot column, clear of headings
 
   function project(s) {
     return {
@@ -46,19 +50,19 @@
       var el = document.getElementById(s.anchor);
       if (!el) return null;
       var p = project(s);
-      return { label: s.label, side: s.labelSide || 'left', x: p.x, y: p.y, el: el };
+      return { label: s.label, side: s.labelSide || 'left', ux: p.x, uy: p.y, el: el };
     })
     .filter(Boolean);
   if (stops.length < 2) return;
 
   var upcoming = (cfg.upcoming || []).map(function (s) {
     var p = project(s);
-    return { label: s.label, side: s.labelSide || 'left', x: p.x, y: p.y };
+    return { label: s.label, side: s.labelSide || 'right', ux: p.x, uy: p.y };
   });
 
-  /* ---- Leg geometry: gentle quadratic bow toward the seaward (east) side.
-     Arc lengths are sampled so marker position and stroke reveal agree
-     without touching the DOM (the map may start out display:none). ---- */
+  /* ---- Leg geometry (screen px, rebuilt on resize): gentle quadratic bow
+     toward the seaward (east) side. Arc lengths are sampled so marker
+     position and stroke reveal agree. ---- */
   function quadAt(leg, t) {
     var u = 1 - t;
     return {
@@ -75,7 +79,7 @@
     var ny = -dx / span;
     if (nx < 0) { nx = -nx; ny = -ny; } // bow east
     if (Math.abs(nx) < 0.25 && ny > 0) { nx = -nx; ny = -ny; } // near-horizontal: bow north
-    var bow = Math.min(13, span * 0.18);
+    var bow = Math.min(30, span * 0.16);
     var leg = {
       a: a,
       b: b,
@@ -115,9 +119,6 @@
       ' ' + leg.b.x.toFixed(1) + ' ' + leg.b.y.toFixed(1);
   }
 
-  var legs = [];
-  for (var i = 0; i < stops.length - 1; i++) legs.push(buildLeg(stops[i], stops[i + 1]));
-
   /* ---- Build the SVG ---- */
   function svgEl(tag, attrs, parent) {
     var el = document.createElementNS(SVG_NS, tag);
@@ -130,79 +131,105 @@
   container.className = 'journey-map';
   container.setAttribute('aria-hidden', 'true');
 
-  /* The frame shows a window of the country; the camera group inside pans
-     vertically so the current position stays in view as the reader scrolls. */
-  var WINDOW_H = Math.min(map.height, Math.round(map.height * 0.62));
-  var svg = svgEl('svg', { viewBox: '0 0 ' + map.width + ' ' + WINDOW_H }, container);
-  var camera = svgEl('g', { 'class': 'jm-camera' }, svg);
+  var svg = svgEl('svg', {}, container);
 
-  var country = svgEl('g', { 'class': 'jm-country' }, camera);
-  map.paths.forEach(function (d) { svgEl('path', { 'class': 'jm-land', d: d }, country); });
-
-  // dotted continuation through upcoming stops
-  if (upcoming.length) {
-    var from = stops[stops.length - 1];
-    var d = '';
-    upcoming.forEach(function (u) {
-      var leg = buildLeg(from, u);
-      d += legD(leg);
-      from = u;
-    });
-    svgEl('path', { 'class': 'jm-route-upcoming', d: d }, camera);
-  }
-
-  var baseEls = legs.map(function (leg) {
-    return svgEl('path', { 'class': 'jm-leg-base', d: legD(leg) }, camera);
+  /* The country outline keeps its generated unit coordinates and is scaled
+     by transform (crisp 1px coastline via non-scaling strokes). The route
+     layer is rebuilt in screen px on resize, so dashes, dots and labels
+     stay at their natural size. Both layers share the same pan. */
+  var gCountry = svgEl('g', { 'class': 'jm-country' }, svg);
+  map.paths.forEach(function (d) {
+    svgEl('path', { 'class': 'jm-land', d: d, 'vector-effect': 'non-scaling-stroke' }, gCountry);
   });
-  var fillEls = legs.map(function (leg) {
-    return svgEl('path', {
-      'class': 'jm-leg-fill',
-      d: legD(leg),
-      'stroke-dasharray': leg.len.toFixed(1),
-      'stroke-dashoffset': leg.len.toFixed(1)
-    }, camera);
+  var gRoute = svgEl('g', { 'class': 'jm-route' }, svg);
+
+  var upcomingEl = upcoming.length ? svgEl('path', { 'class': 'jm-route-upcoming' }, gRoute) : null;
+  var baseEls = stops.slice(1).map(function () {
+    return svgEl('path', { 'class': 'jm-leg-base' }, gRoute);
   });
-
-  function addLabel(s, cls) {
-    var left = s.side !== 'right';
-    svgEl('text', {
-      'class': cls,
-      x: (left ? s.x - 8 : s.x + 8).toFixed(1),
-      y: (s.y + 3.5).toFixed(1),
-      'text-anchor': left ? 'end' : 'start'
-    }, camera).textContent = s.label;
-  }
-
-  upcoming.forEach(function (u) {
-    svgEl('circle', { 'class': 'jm-stop-upcoming', cx: u.x.toFixed(1), cy: u.y.toFixed(1), r: 3 }, camera);
-    addLabel(u, 'jm-label jm-label-upcoming');
+  var fillEls = stops.slice(1).map(function () {
+    return svgEl('path', { 'class': 'jm-leg-fill' }, gRoute);
   });
-
+  var upcomingStopEls = upcoming.map(function (u) {
+    var c = svgEl('circle', { 'class': 'jm-stop-upcoming', r: 4 }, gRoute);
+    u.labelEl = svgEl('text', { 'class': 'jm-label jm-label-upcoming' }, gRoute);
+    u.labelEl.textContent = u.label;
+    return c;
+  });
   var stopEls = stops.map(function (s) {
-    var c = svgEl('circle', { 'class': 'jm-stop', cx: s.x.toFixed(1), cy: s.y.toFixed(1), r: 4 }, camera);
-    addLabel(s, 'jm-label');
-    s.labelEl = camera.lastChild;
+    var c = svgEl('circle', { 'class': 'jm-stop', r: 5 }, gRoute);
+    s.labelEl = svgEl('text', { 'class': 'jm-label' }, gRoute);
+    s.labelEl.textContent = s.label;
     return c;
   });
 
-  var halo = svgEl('circle', { 'class': 'jm-marker-halo', r: 7 }, camera);
-  var marker = svgEl('circle', { 'class': 'jm-marker', r: 4.5 }, camera);
+  // the anchored "you are here" point — the map moves, this doesn't
+  var halo = svgEl('circle', { 'class': 'jm-marker-halo', r: 9 }, svg);
+  var marker = svgEl('circle', { 'class': 'jm-marker', r: 5.5 }, svg);
 
   document.body.appendChild(container);
 
-  /* ---- Scroll → progress ---- */
-  function easeInOut(t) {
-    return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+  /* ---- Layout: scale + anchor, recomputed on resize ---- */
+  var scale = 1;
+  var anchorX = 0;
+  var anchorY = 0;
+  var legs = [];
+
+  function placeLabel(s, p) {
+    var left = s.side !== 'right';
+    s.labelEl.setAttribute('x', (left ? p.x - 11 : p.x + 11).toFixed(1));
+    s.labelEl.setAttribute('y', (p.y + 4).toFixed(1));
+    s.labelEl.setAttribute('text-anchor', left ? 'end' : 'start');
   }
 
-  function setMarker(p) {
-    marker.setAttribute('cx', p.x.toFixed(2));
-    marker.setAttribute('cy', p.y.toFixed(2));
-    halo.setAttribute('cx', p.x.toFixed(2));
-    halo.setAttribute('cy', p.y.toFixed(2));
-    // pan the camera so the marker stays in view (clamped at map edges)
-    var camY = Math.max(WINDOW_H / 2, Math.min(map.height - WINDOW_H / 2, p.y));
-    camera.setAttribute('transform', 'translate(0 ' + (WINDOW_H / 2 - camY).toFixed(2) + ')');
+  function layout() {
+    var vh = window.innerHeight;
+    scale = (vh * MAP_VH) / map.height;
+    anchorX = article.getBoundingClientRect().left + DOT_X;
+    anchorY = vh * REF;
+
+    stops.forEach(function (s) { s.px = { x: s.ux * scale, y: s.uy * scale }; });
+    upcoming.forEach(function (u) { u.px = { x: u.ux * scale, y: u.uy * scale }; });
+
+    legs = [];
+    for (var i = 0; i < stops.length - 1; i++) legs.push(buildLeg(stops[i].px, stops[i + 1].px));
+    legs.forEach(function (leg, j) {
+      baseEls[j].setAttribute('d', legD(leg));
+      fillEls[j].setAttribute('d', legD(leg));
+      fillEls[j].setAttribute('stroke-dasharray', leg.len.toFixed(1));
+    });
+
+    if (upcomingEl) {
+      var from = stops[stops.length - 1].px;
+      var d = '';
+      upcoming.forEach(function (u) {
+        var leg = buildLeg(from, u.px);
+        d += legD(leg);
+        from = u.px;
+      });
+      upcomingEl.setAttribute('d', d);
+    }
+
+    stops.forEach(function (s, j) {
+      stopEls[j].setAttribute('cx', s.px.x.toFixed(1));
+      stopEls[j].setAttribute('cy', s.px.y.toFixed(1));
+      placeLabel(s, s.px);
+    });
+    upcoming.forEach(function (u, j) {
+      upcomingStopEls[j].setAttribute('cx', u.px.x.toFixed(1));
+      upcomingStopEls[j].setAttribute('cy', u.px.y.toFixed(1));
+      placeLabel(u, u.px);
+    });
+
+    marker.setAttribute('cx', anchorX.toFixed(1));
+    marker.setAttribute('cy', anchorY.toFixed(1));
+    halo.setAttribute('cx', anchorX.toFixed(1));
+    halo.setAttribute('cy', anchorY.toFixed(1));
+  }
+
+  /* ---- Scroll → progress → pan ---- */
+  function easeInOut(t) {
+    return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
   }
 
   function tick() {
@@ -210,7 +237,7 @@
     if (container.offsetWidth === 0) return; // hidden by the responsive breakpoint
 
     var vh = window.innerHeight;
-    var refY = vh * 0.42;
+    var refY = vh * REF;
 
     var aRect = article.getBoundingClientRect();
     var visible = aRect.top < vh * 0.45 && aRect.bottom > vh * 0.3;
@@ -231,7 +258,7 @@
         if (tops[i] < refY && tops[i + 1] >= refY) {
           var t = (refY - tops[i]) / (tops[i + 1] - tops[i]);
           seg = i;
-          // dwell on the stop while its section is being read
+          // rest on the stop while its section is being read
           frac = t <= DWELL ? 0 : easeInOut((t - DWELL) / (1 - DWELL));
           break;
         }
@@ -243,11 +270,17 @@
       fillEls[j].setAttribute('stroke-dashoffset', off.toFixed(1));
     });
 
-    setMarker(frac >= 1 ? stops[seg + 1] : pointAtFraction(legs[seg], frac));
+    // pan the country so the current position sits under the anchored marker
+    var p = frac >= 1 ? stops[seg + 1].px : pointAtFraction(legs[seg], frac);
+    var tx = anchorX - p.x;
+    var ty = anchorY - p.y;
+    gCountry.setAttribute('transform',
+      'translate(' + tx.toFixed(2) + ' ' + ty.toFixed(2) + ') scale(' + scale.toFixed(4) + ')');
+    gRoute.setAttribute('transform', 'translate(' + tx.toFixed(2) + ' ' + ty.toFixed(2) + ')');
 
     var current = -1;
     stops.forEach(function (s, j) {
-      var reached = tops[j] < refY || (j === 0 && visible);
+      var reached = tops[j] < refY || j === 0;
       stopEls[j].classList.toggle('jm-reached', reached);
       s.labelEl.classList.toggle('jm-reached', reached);
       if (reached) current = j;
@@ -263,10 +296,15 @@
     }
   }
 
+  function relayout() {
+    layout();
+    schedule();
+  }
+
   window.addEventListener('scroll', schedule, { passive: true });
-  window.addEventListener('resize', schedule);
-  window.addEventListener('load', schedule);
+  window.addEventListener('resize', relayout);
+  window.addEventListener('load', relayout);
   document.addEventListener('langchange', schedule);
-  setMarker(stops[0]);
+  layout();
   schedule();
 })();

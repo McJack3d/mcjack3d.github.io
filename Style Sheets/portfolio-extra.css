@@ -1867,117 +1867,116 @@ footer.bg-primary::before {
 }
 
 /* =========================
-   Journey map — scroll-following itinerary on travel posts
-   (built by Scripts/journey-map.js; desktop left gutter only)
-   Black & white: the country pans behind the frame as you read.
+   Journey map — giant scroll-following background on travel posts
+   (built by Scripts/journey-map.js; Vietnam diary only, desktop)
+   The reader's position is anchored on the diary timeline-dot column;
+   the country glides behind the text between cities.
    ========================= */
 .journey-map {
   position: fixed;
-  top: 50%;
-  left: 18px;
-  width: min(calc((100vw - 960px) / 2 - 20px), 280px, 52vh);
-  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
   pointer-events: none;
   display: none;
   opacity: 0;
-  transform: translateY(-50%) translateX(-14px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.6s ease;
 }
 .journey-map.jm-visible {
   opacity: 1;
-  transform: translateY(-50%);
 }
-@media (min-width: 1340px) {
+@media (min-width: 992px) {
   .journey-map { display: block; }
 }
 .journey-map svg {
   display: block;
   width: 100%;
-  height: auto;
-  overflow: hidden;
-  /* soften the window edges so the sliding map reads as a background */
-  -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 9%, #000 91%, transparent 100%);
-  mask-image: linear-gradient(180deg, transparent 0, #000 9%, #000 91%, transparent 100%);
+  height: 100%;
 }
+/* keep the article (and hero) painting above the background map */
+.post-hero { z-index: 2; }
+main#main { position: relative; z-index: 1; }
+
 .jm-country {
-  filter: drop-shadow(0 12px 24px rgba(15, 18, 24, 0.14));
+  filter: drop-shadow(0 30px 60px rgba(15, 20, 30, 0.1));
 }
 .jm-land {
-  fill: #ffffff;
-  stroke: #b9bfc7;
+  fill: #f5f7f9;
+  stroke: #d7dbe0;
   stroke-width: 1;
   stroke-linejoin: round;
 }
 .jm-leg-base {
   fill: none;
-  stroke: #c4cad3;
+  stroke: #bfc6ce;
   stroke-width: 1.5;
-  stroke-dasharray: 2 5;
+  stroke-dasharray: 3 7;
   stroke-linecap: round;
 }
 .jm-leg-fill {
   fill: none;
-  stroke: #20262e;
+  stroke: #6e7884;
   stroke-width: 2.2;
   stroke-linecap: round;
 }
 .jm-route-upcoming {
   fill: none;
-  stroke: #c8ced6;
-  stroke-width: 1.4;
-  stroke-dasharray: 1 6;
+  stroke: #c6ccd4;
+  stroke-width: 1.5;
+  stroke-dasharray: 2 8;
   stroke-linecap: round;
 }
 .jm-stop {
   fill: #fff;
-  stroke: #aab2bd;
-  stroke-width: 1.6;
+  stroke: #a7afb9;
+  stroke-width: 1.8;
   transition: fill 0.35s ease, stroke 0.35s ease;
 }
 .jm-stop.jm-reached {
-  fill: #20262e;
+  fill: #525c66;
   stroke: #fff;
 }
 .jm-stop-upcoming {
-  fill: #eceef2;
+  fill: #eef0f3;
   stroke: #b7bec9;
-  stroke-width: 1.2;
+  stroke-width: 1.4;
 }
 .jm-label {
   font-family: inherit;
-  font-size: 10.5px;
+  font-size: 12px;
   font-weight: 600;
-  fill: #9aa3af;
+  fill: #a7afb9;
   transition: fill 0.35s ease;
   paint-order: stroke;
-  stroke: rgba(255, 255, 255, 0.85);
-  stroke-width: 3px;
+  stroke: rgba(255, 255, 255, 0.9);
+  stroke-width: 3.5px;
 }
 .jm-label.jm-reached {
-  fill: #20262e;
+  fill: #4a545f;
 }
 .jm-label-upcoming {
   fill: #b6bdc7;
   font-weight: 500;
 }
 .jm-marker {
-  fill: #111519;
+  fill: #20262e;
   stroke: #fff;
   stroke-width: 2;
 }
 .jm-marker-halo {
-  fill: #545d68;
-  opacity: 0.22;
+  fill: #6a7480;
+  opacity: 0.2;
   transform-box: fill-box;
   transform-origin: center;
   animation: jm-pulse 2.2s ease-out infinite;
 }
 @keyframes jm-pulse {
-  0% { transform: scale(0.6); opacity: 0.35; }
+  0% { transform: scale(0.6); opacity: 0.3; }
   70% { transform: scale(1.9); opacity: 0; }
   100% { transform: scale(1.9); opacity: 0; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .jm-marker-halo { animation: none; opacity: 0.18; }
-  .journey-map { transition: opacity 0.5s ease; }
+  .jm-marker-halo { animation: none; opacity: 0.15; }
 }
