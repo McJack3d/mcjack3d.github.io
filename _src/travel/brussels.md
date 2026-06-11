@@ -27,6 +27,4 @@ heroTitleEn: "Brussels — EU bubble, waffle reality"
 heroTitleFr: "Bruxelles — bulle européenne, gaufres bien réelles"
 heroSubtitleEn: "Belgium · Grand Place — March 2025"
 heroSubtitleFr: "Belgique · Grand-Place — Mars 2025"
-heroTitleRo: "Bruxelles — bula UE, realitatea vafelelor"
-heroSubtitleRo: "Belgia · Grand-Place — Martie 2025"
 ---

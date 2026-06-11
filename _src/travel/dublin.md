@@ -27,6 +27,4 @@ heroTitleEn: "Dublin — pubs, craic and cliffs"
 heroTitleFr: "Dublin — pubs, ambiance et falaises"
 heroSubtitleEn: "Ireland · city & coast — October 2024"
 heroSubtitleFr: "Irlande · ville & côte — Octobre 2024"
-heroTitleRo: "Dublin — puburi, voie bună și faleze"
-heroSubtitleRo: "Irlanda · oraș și coastă — Octombrie 2024"
 ---
