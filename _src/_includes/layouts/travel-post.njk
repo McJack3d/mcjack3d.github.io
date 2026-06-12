@@ -12,12 +12,10 @@
     <h1 class="display-4">
       <span data-lang-block="en">{{ heroTitleEn or title }}</span>
       <span data-lang-block="fr">{{ heroTitleFr or heroTitleEn or title }}</span>
-      <span data-lang-block="ro">{{ heroTitleRo or heroTitleEn or title }}</span>
     </h1>
     <p class="lead">
       <span data-lang-block="en">{{ heroSubtitleEn or heroSubtitle }}</span>
       <span data-lang-block="fr">{{ heroSubtitleFr or heroSubtitleEn or heroSubtitle }}</span>
-      <span data-lang-block="ro">{{ heroSubtitleRo or heroSubtitleEn or heroSubtitle }}</span>
     </p>
   </div>
 </header>
@@ -31,10 +29,8 @@
             <i class="fas fa-hard-hat fa-3x mb-3" style="color:#d4a945;"></i>
             <h3 data-lang-block="en">Under Construction</h3>
             <h3 data-lang-block="fr">En construction</h3>
-            <h3 data-lang-block="ro">În construcție</h3>
             <p class="text-muted" data-lang-block="en">The travel diary for {{ label }} is being written — check back soon.</p>
             <p class="text-muted" data-lang-block="fr">Le journal de voyage pour {{ labelFr or label }} est en cours de rédaction — revenez bientôt.</p>
-            <p class="text-muted" data-lang-block="ro">Jurnalul de călătorie pentru {{ label }} este în curs de redactare — revino în curând.</p>
           </div>
         {% else %}
           {{ content | safe }}
@@ -48,13 +44,11 @@
       <h4 class="mb-3">
         <span data-lang-block="en">Read more travel stories</span>
         <span data-lang-block="fr">Lire d'autres récits</span>
-        <span data-lang-block="ro">Citește alte povești de călătorie</span>
       </h4>
       <a href="../travel.html" class="btn btn-primary btn-lg">
         <i class="fas fa-arrow-left"></i>
         <span data-lang-block="en">All travel stories</span>
         <span data-lang-block="fr">Tous les récits</span>
-        <span data-lang-block="ro">Toate poveștile</span>
       </a>
     </div>
   </section>

@@ -1150,12 +1150,8 @@ header .mt-3 .btn { min-width: 110px; }
 /* =========================
    Multilingual content blocks (long-form pages)
    ========================= */
-html[lang="en"] [data-lang-block="fr"],
-html[lang="en"] [data-lang-block="ro"] { display: none !important; }
-html[lang="fr"] [data-lang-block="en"],
-html[lang="fr"] [data-lang-block="ro"] { display: none !important; }
-html[lang="ro"] [data-lang-block="en"],
-html[lang="ro"] [data-lang-block="fr"] { display: none !important; }
+html[lang="en"] [data-lang-block="fr"] { display: none !important; }
+html[lang="fr"] [data-lang-block="en"] { display: none !important; }
 
 /* =========================
    Travel diary
