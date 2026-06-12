@@ -443,6 +443,10 @@ heroSubtitleFr: "Saigon · Dalat · Hội An · Hanoï · Baie d'Ha Long — Mai
   </div>
 
   <!-- Photos for this day to be added -->
+
+  <div class="diary-photos">
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3238.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3238.JPG" alt="Mỳ Quảng Cô Sáu — a Michelin Bib Gourmand stop" loading="lazy" width="1600" height="2400"></picture><figcaption>Mỳ Quảng Cô Sáu — a Michelin Bib Gourmand stop</figcaption></figure>
+  </div>
 </section>
 
 <section class="diary-day">
@@ -472,6 +476,14 @@ heroSubtitleFr: "Saigon · Dalat · Hội An · Hanoï · Baie d'Ha Long — Mai
   </div>
 
   <!-- Photos for this day to be added -->
+
+  <div class="diary-photos">
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3244.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3244.JPG" alt="Da Nang seen from Sơn Trà, the Monkey Mountain" loading="lazy" width="1600" height="1067"></picture><figcaption>Da Nang seen from Sơn Trà, the Monkey Mountain</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3275.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3275.JPG" alt="A quiet cove below the peninsula road" loading="lazy" width="1600" height="1067"></picture><figcaption>A quiet cove below the peninsula road</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3271.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3271.JPG" alt="Rhesus macaques come down to the beach" loading="lazy" width="1600" height="2400"></picture><figcaption>Rhesus macaques come down to the beach</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3281.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3281.JPG" alt="Macaque drawn in by travellers' coconuts" loading="lazy" width="1600" height="2400"></picture><figcaption>Macaque drawn in by travellers' coconuts</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3289.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3289.JPG" alt="Dinner at 4 Ladies Kitchen" loading="lazy" width="1600" height="2400"></picture><figcaption>Dinner at 4 Ladies Kitchen</figcaption></figure>
+  </div>
 </section>
 
 <section class="diary-day">
@@ -495,6 +507,13 @@ heroSubtitleFr: "Saigon · Dalat · Hội An · Hanoï · Baie d'Ha Long — Mai
   </div>
 
   <!-- Photos for this day to be added -->
+
+  <div class="diary-photos">
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/PXL_20260518_021221903.webp" type="image/webp"><img src="../Images/travel/vietnam/PXL_20260518_021221903.jpg" alt="Nâm House Café — hidden down an alley" loading="lazy" width="1600" height="2133"></picture><figcaption>Nâm House Café — hidden down an alley</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/IMG_7152.webp" type="image/webp"><img src="../Images/travel/vietnam/IMG_7152.jpg" alt="Two floors of fans and pastries at Nâm House" loading="lazy" width="1600" height="2133"></picture><figcaption>Two floors of fans and pastries at Nâm House</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/IMG_7155.webp" type="image/webp"><img src="../Images/travel/vietnam/IMG_7155.jpg" alt="Caramelised pork at Cơm tấm Bà Lang" loading="lazy" width="1600" height="2133"></picture><figcaption>Caramelised pork at Cơm tấm Bà Lang</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/IMG_7156.webp" type="image/webp"><img src="../Images/travel/vietnam/IMG_7156.jpg" alt="Street workout at My Khe beach" loading="lazy" width="1600" height="2133"></picture><figcaption>Street workout at My Khe beach</figcaption></figure>
+  </div>
 </section>
 
 <section class="diary-day">
@@ -526,6 +545,14 @@ heroSubtitleFr: "Saigon · Dalat · Hội An · Hanoï · Baie d'Ha Long — Mai
   </div>
 
   <!-- Photos for this day to be added -->
+
+  <div class="diary-photos">
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3306.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3306.JPG" alt="Grotto shrine in the Marble Mountains, on the road to Hội An" loading="lazy" width="1600" height="2400"></picture><figcaption>Grotto shrine in the Marble Mountains, on the road to Hội An</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3308.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3308.JPG" alt="Quan Âm statue in a rock niche" loading="lazy" width="1600" height="2400"></picture><figcaption>Quan Âm statue in a rock niche</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3327.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3327.JPG" alt="Hội An old town — yellow façades and tiled roofs" loading="lazy" width="1600" height="2400"></picture><figcaption>Hội An old town — yellow façades and tiled roofs</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3314.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3314.JPG" alt="Cao lầu noodles at the central market" loading="lazy" width="1600" height="2400"></picture><figcaption>Cao lầu noodles at the central market</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3330.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3330.JPG" alt="Hoi An Coffee Hub, at the end of an alley" loading="lazy" width="1600" height="2400"></picture><figcaption>Hoi An Coffee Hub, at the end of an alley</figcaption></figure>
+  </div>
 </section>
 
 <section class="diary-day">
@@ -549,6 +576,12 @@ heroSubtitleFr: "Saigon · Dalat · Hội An · Hanoï · Baie d'Ha Long — Mai
   </div>
 
   <!-- Photos for this day to be added -->
+
+  <div class="diary-photos">
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3349.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3349.JPG" alt="The silk workshop in Nam Phước" loading="lazy" width="1600" height="2400"></picture><figcaption>The silk workshop in Nam Phước</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3343.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3343.JPG" alt="Eighteen generations of weavers" loading="lazy" width="1600" height="2400"></picture><figcaption>Eighteen generations of weavers</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3345.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3345.JPG" alt="Mulberry-silk looms still running by hand" loading="lazy" width="1600" height="2400"></picture><figcaption>Mulberry-silk looms still running by hand</figcaption></figure>
+  </div>
 </section>
 
 <section class="diary-day">
@@ -576,6 +609,10 @@ heroSubtitleFr: "Saigon · Dalat · Hội An · Hanoï · Baie d'Ha Long — Mai
   </div>
 
   <!-- Photos for this day to be added -->
+
+  <div class="diary-photos">
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/IMG_7183.webp" type="image/webp"><img src="../Images/travel/vietnam/IMG_7183.jpg" alt="Bánh mì warmed over the coals at Hoa's Beef Steak and Eggs" loading="lazy" width="1600" height="2133"></picture><figcaption>Bánh mì warmed over the coals at Hoa's Beef Steak and Eggs</figcaption></figure>
+  </div>
 </section>
 
 <h3 class="section-title mt-5" id="stop-hue">
@@ -604,6 +641,11 @@ heroSubtitleFr: "Saigon · Dalat · Hội An · Hanoï · Baie d'Ha Long — Mai
   </div>
 
   <!-- Photos for this day to be added -->
+
+  <div class="diary-photos">
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3358.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3358.JPG" alt="The coastal line between Da Nang and Huế" loading="lazy" width="1600" height="1067"></picture><figcaption>The coastal line between Da Nang and Huế</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3375.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3375.JPG" alt="Untouched coastline from the train window" loading="lazy" width="1600" height="2400"></picture><figcaption>Untouched coastline from the train window</figcaption></figure>
+  </div>
 </section>
 
 <section class="diary-day">
@@ -631,6 +673,10 @@ heroSubtitleFr: "Saigon · Dalat · Hội An · Hanoï · Baie d'Ha Long — Mai
   </div>
 
   <!-- Photos for this day to be added -->
+
+  <div class="diary-photos">
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/a009d043-940f-4fb5-acee-bd6cc1a312b8.webp" type="image/webp"><img src="../Images/travel/vietnam/a009d043-940f-4fb5-acee-bd6cc1a312b8.jpg" alt="Korean burgers and soy milk at H'KEP" loading="lazy" width="1600" height="2401"></picture><figcaption>Korean burgers and soy milk at H'KEP</figcaption></figure>
+  </div>
 </section>
 
 <section class="diary-day">
@@ -705,6 +751,10 @@ heroSubtitleFr: "Saigon · Dalat · Hội An · Hanoï · Baie d'Ha Long — Mai
   </div>
 
   <!-- Photos for this day to be added -->
+
+  <div class="diary-photos">
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/IMG_7223.webp" type="image/webp"><img src="../Images/travel/vietnam/IMG_7223.jpg" alt="Inside Phong Nha cave — millions of years of stalactites" loading="lazy" width="1600" height="2133"></picture><figcaption>Inside Phong Nha cave — millions of years of stalactites</figcaption></figure>
+  </div>
 </section>
 
 <h3 class="section-title mt-5" id="stop-ninhbinh">
@@ -737,6 +787,12 @@ heroSubtitleFr: "Saigon · Dalat · Hội An · Hanoï · Baie d'Ha Long — Mai
   </div>
 
   <!-- Photos for this day to be added -->
+
+  <div class="diary-photos">
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3645.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3645.JPG" alt="Our homestay in the middle of the karsts" loading="lazy" width="1600" height="2400"></picture><figcaption>Our homestay in the middle of the karsts</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3648.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3648.JPG" alt="Lakes and limestone towers around the homestay" loading="lazy" width="1600" height="1067"></picture><figcaption>Lakes and limestone towers around the homestay</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3718.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3718.JPG" alt="Evening walk in Ninh Bình" loading="lazy" width="1600" height="1067"></picture><figcaption>Evening walk in Ninh Bình</figcaption></figure>
+  </div>
 </section>
 
 <section class="diary-day">
@@ -760,6 +816,15 @@ heroSubtitleFr: "Saigon · Dalat · Hội An · Hanoï · Baie d'Ha Long — Mai
   </div>
 
   <!-- Photos for this day to be added -->
+
+  <div class="diary-photos">
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3653.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3653.JPG" alt="Rowing into the caves at Tràng An" loading="lazy" width="1600" height="1067"></picture><figcaption>Rowing into the caves at Tràng An</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3655.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3655.JPG" alt="Karst cliffs above the river" loading="lazy" width="1600" height="2400"></picture><figcaption>Karst cliffs above the river</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3664.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3664.JPG" alt="Temples tucked into the jungle" loading="lazy" width="1600" height="2400"></picture><figcaption>Temples tucked into the jungle</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3686.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3686.JPG" alt="Between two caves, Tràng An" loading="lazy" width="1600" height="2400"></picture><figcaption>Between two caves, Tràng An</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3682.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3682.JPG" alt="The boat tour winds through the massif" loading="lazy" width="1600" height="2400"></picture><figcaption>The boat tour winds through the massif</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3697.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3697.JPG" alt="Lunch at Bánh Mì Giòn" loading="lazy" width="1600" height="1067"></picture><figcaption>Lunch at Bánh Mì Giòn</figcaption></figure>
+  </div>
 </section>
 
 <section class="diary-day">
@@ -813,6 +878,10 @@ heroSubtitleFr: "Saigon · Dalat · Hội An · Hanoï · Baie d'Ha Long — Mai
     <p>Au réveil, plus de brouillard&nbsp;: grand soleil et surtout une température bien fraîche et agréable. Balade dans le village d'à côté, où l'on a trouvé un bon riz au bœuf et aux légumes. La promenade nous réservait de beaux paysages, une route en serpentins et des femmes h'mong en habits traditionnels, au travail.</p>
     <p>De retour à l'auberge, on s'est fait des amis&nbsp;! La famille de notre hôte a des enfants — cinq, pour être exact. On a échangé surtout grâce à Google Translate et vite compris qu'entre eux, ils parlent h'mong. Ils nous ont appris un jeu de cartes et on a joué avec les plus grands.</p>
   </div>
+
+  <div class="diary-photos">
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3775.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3775.JPG" alt="Evening light on the rice terraces by the homestay" loading="lazy" width="1600" height="2400"></picture><figcaption>Evening light on the rice terraces by the homestay</figcaption></figure>
+  </div>
 </section>
 
 <section class="diary-day">
@@ -835,6 +904,10 @@ heroSubtitleFr: "Saigon · Dalat · Hội An · Hanoï · Baie d'Ha Long — Mai
     <p>À la campagne, le réveil se fait bien avant cinq heures — pour nous, c'est le coq, à 5h45. La vue nous attendait à la fenêtre, intacte et aussi belle que la veille&nbsp;; Cristina n'arrivait pas à en détacher les yeux, avec presque de la peine à partir. Mais une aventure nous attendait et il fallait la commencer de bonne heure&nbsp;: nous avions décidé de construire notre propre Ha Giang Loop — le trip en scooter que tous les backpackers font en tour guidé — version maison, direction <strong><a href="https://www.google.com/maps?q=Mu+Cang+Chai+Vietnam" target="_blank" rel="noopener" class="travel-map-link">Mù Cang Chải</a></strong>&nbsp;: quatre jours, trois nuits (qui se termineront finalement un jour plus tôt). Ce qui impliquait nous deux <em>plus</em> nos sacs à l'arrière du scooter. Le premier arrimage fut un supplice au bout de vingt minutes&nbsp;; après une reconfiguration imposée à la première station essence, le deuxième était meilleur — mais toujours assez inconfortable pour ne pas rouler plus d'une heure sans s'arrêter.</p>
     <p>La route nous aidait à oublier l'inconfort. Des montagnes et des rizières tout autour, et de grands «&nbsp;HELLO&nbsp;!&nbsp;» lancés par tous ceux que l'on croisait. Arrêt petit-déjeuner devant un stand de rue qui préparait des bánh mì à seulement 10&nbsp;000 dongs — et juste à côté, des finissants de lycée sont sortis nous inviter à partager leur repas. Les Vietnamiens sont très accueillants&nbsp;; même loin des grandes villes, on se sent à l'aise.</p>
     <p>Vers 15h20, on arrivait enfin à notre logement — l'une des plus belles vues du voyage, pour à peine 12 CAD la nuit. Encore fallait-il la mériter&nbsp;: Cristina a même dû descendre du scooter pour qu'il réussisse à grimper la montée raide vers le haut de la montagne. Une nuit bien paisible et réparatrice.</p>
+  </div>
+
+  <div class="diary-photos">
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3728.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3728.JPG" alt="Mountains and rice terraces all along the road" loading="lazy" width="1600" height="2400"></picture><figcaption>Mountains and rice terraces all along the road</figcaption></figure>
   </div>
 </section>
 
@@ -860,6 +933,10 @@ heroSubtitleFr: "Saigon · Dalat · Hội An · Hanoï · Baie d'Ha Long — Mai
     <p>On avait en tête de faire beaucoup moins de route ce jour-là&nbsp;; les plans ont changé. Nous avons rejoint le seul hébergement de la région, dont l'hôte avait prévenu Alexandre par WhatsApp qu'il ne restait que le dortoir — une grande chambre partagée, des matelas posés deux par deux à même le sol. Nous savions que les conditions seraient spartiates et qu'une nuit ne nous tuerait pas. Mais ce premier juin était bien plus chaud, la pièce ne comptait que deux ventilateurs et il fallait une moustiquaire pour dormir. On s'est reposés un peu chez l'hôte avant de décider de reprendre la route vers le prochain hébergement plutôt que de dormir dans le dortoir.</p>
     <p>La route, plus longue que prévu, nous a payés au centuple&nbsp;: un tracé qui longeait une rivière turquoise et, plus on avançait, plus on découvrait de nouvelles minorités ethniques du Vietnam. L'architecture des maisons changeait autant que les façons de cultiver — champs de rosiers, riz sur brûlis autant qu'inondé, soja, arbres fruitiers et toutes les autres délicatesses que produisent les terres vietnamiennes. En haut de chaque col, on coupait le moteur&nbsp;: la nature chantait et nos yeux observaient.</p>
     <p>Vers 17h00, on arrivait à notre logement&nbsp;: un petit hôtel très bien aménagé avec piscine et jardin — le <strong>Love Hill</strong>. On pose les bagages, et cinq minutes plus tard on est dans la piscine. Une bonne chose qu'on ait osé, puisque deux couples vietnamiens et leurs enfants nous ont suivis. Ce soir-là, Cristina a aussi eu le dernier appel concluant pour son premier job à Paris&nbsp;!</p>
+  </div>
+
+  <div class="diary-photos">
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/IMG_7277.webp" type="image/webp"><img src="../Images/travel/vietnam/IMG_7277.jpg" alt="The view over the valley from the homestay" loading="lazy" width="1600" height="2133"></picture><figcaption>The view over the valley from the homestay</figcaption></figure>
   </div>
 </section>
 
