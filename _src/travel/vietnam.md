@@ -30,11 +30,14 @@ journey:
   - { label: "Huế",       lat: 16.4637, lng: 107.5909, anchor: stop-hue }
   - { label: "Đồng Hới",  lat: 17.4659, lng: 106.5984, anchor: stop-donghoi }
   - { label: "Ninh Bình", lat: 20.2506, lng: 105.9745, anchor: stop-ninhbinh }
-  - { label: "Sapa",      lat: 22.3364, lng: 103.8438, anchor: stop-sapa }
+  - { label: "Sapa",      lat: 22.2965, lng: 103.9786, anchor: stop-sapa }
+  - { label: "Mù Cang Chải", lat: 21.7580, lng: 104.2410, anchor: stop-mucangchai }
+  - { label: "Than Uyên", lat: 21.8730, lng: 103.8120, anchor: stop-thanuyen }
+  - { label: "Sapa",      lat: 22.3364, lng: 103.8438, anchor: stop-sapa-return }
   - { label: "Hanoi",     lat: 21.0285, lng: 105.8542, anchor: stop-hanoi }
+  - { label: "Da Nang",   lat: 16.0544, lng: 108.2022, anchor: stop-danang }
   - { label: "Mui Ne",    lat: 10.9333, lng: 108.2833, anchor: stop-muine }
-journeyUpcoming:
-  - { label: "Ha Long",   lat: 20.9101, lng: 107.1839, labelSide: right }
+  - { label: "Saigon",    lat: 10.7769, lng: 106.7009, anchor: stop-saigon-return }
 
 # --- Page <head> ---
 title: "Vietnam — Travel Blog · Alexandre Bredillot"
@@ -643,9 +646,9 @@ heroSubtitleFr: "Saigon · Dalat · Hội An · Hanoï · Baie d'Ha Long — Mai
 
   <!-- Photos for this day to be added -->
 
-  <div class="diary-photos">
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3358.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3358.JPG" alt="The coastal line between Da Nang and Huế" loading="lazy" width="1600" height="1067"></picture><figcaption>The coastal line between Da Nang and Huế</figcaption></figure>
-    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3375.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3375.JPG" alt="Untouched coastline from the train window" loading="lazy" width="1600" height="2400"></picture><figcaption>Untouched coastline from the train window</figcaption></figure>
+  <div class="diary-photos diary-photos-split">
+    <figure class="diary-photo diary-photo-landscape"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3358.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3358.JPG" alt="The coastal line between Da Nang and Huế" loading="lazy" width="1600" height="1067"></picture><figcaption>The coastal line between Da Nang and Huế</figcaption></figure>
+    <figure class="diary-photo diary-photo-portrait"><picture><source srcset="../Images/travel/vietnam/webp/DSCF3375.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF3375.JPG" alt="Untouched coastline from the train window" loading="lazy" width="1600" height="2400"></picture><figcaption>Untouched coastline from the train window</figcaption></figure>
   </div>
 </section>
 
@@ -885,7 +888,7 @@ heroSubtitleFr: "Saigon · Dalat · Hội An · Hanoï · Baie d'Ha Long — Mai
   </div>
 </section>
 
-<section class="diary-day">
+<section class="diary-day" id="stop-mucangchai">
   <div class="diary-day-header">
     <span class="diary-day-label" data-lang-block="en">Day 27</span>
     <span class="diary-day-label" data-lang-block="fr">Jour 27</span>
@@ -912,7 +915,7 @@ heroSubtitleFr: "Saigon · Dalat · Hội An · Hanoï · Baie d'Ha Long — Mai
   </div>
 </section>
 
-<section class="diary-day">
+<section class="diary-day" id="stop-thanuyen">
   <div class="diary-day-header">
     <span class="diary-day-label" data-lang-block="en">Day 28</span>
     <span class="diary-day-label" data-lang-block="fr">Jour 28</span>
@@ -941,12 +944,7 @@ heroSubtitleFr: "Saigon · Dalat · Hội An · Hanoï · Baie d'Ha Long — Mai
   </div>
 </section>
 
-<h3 class="section-title mt-5" id="stop-hanoi">
-  <span data-lang-block="en">Hanoi — the capital, street by street</span>
-  <span data-lang-block="fr">Hanoï — la capitale, rue par rue</span>
-</h3>
-
-<section class="diary-day">
+<section class="diary-day" id="stop-sapa-return">
   <div class="diary-day-header">
     <span class="diary-day-label" data-lang-block="en">Day 29</span>
     <span class="diary-day-label" data-lang-block="fr">Jour 29</span>
@@ -975,6 +973,11 @@ heroSubtitleFr: "Saigon · Dalat · Hội An · Hanoï · Baie d'Ha Long — Mai
     <strong>Astuce ·</strong> Pour les bus interurbains, achetez votre billet au point de départ (agence ou hôtel) plutôt qu'en ligne — même bus, souvent moins cher (pour nous&nbsp;: 300k contre un tarif en ligne plus élevé).
   </div>
 </section>
+
+<h3 class="section-title mt-5" id="stop-hanoi">
+  <span data-lang-block="en">Hanoi — the capital, street by street</span>
+  <span data-lang-block="fr">Hanoï — la capitale, rue par rue</span>
+</h3>
 
 <section class="diary-day">
   <div class="diary-day-header">
@@ -1151,7 +1154,7 @@ heroSubtitleFr: "Saigon · Dalat · Hội An · Hanoï · Baie d'Ha Long — Mai
   </div>
 </section>
 
-<h3 class="section-title mt-5">
+<h3 class="section-title mt-5" id="stop-danang">
   <span data-lang-block="en">Back south — Đà Nẵng, round two</span>
   <span data-lang-block="fr">Retour vers le sud — Đà Nẵng, deuxième round</span>
 </h3>
@@ -1245,7 +1248,7 @@ heroSubtitleFr: "Saigon · Dalat · Hội An · Hanoï · Baie d'Ha Long — Mai
   </div>
 </section>
 
-<section class="diary-day">
+<section class="diary-day" id="stop-saigon-return">
   <div class="diary-day-header">
     <span class="diary-day-label" data-lang-block="en">Day 42</span>
     <span class="diary-day-label" data-lang-block="fr">Jour 42</span>
@@ -1262,18 +1265,19 @@ heroSubtitleFr: "Saigon · Dalat · Hội An · Hanoï · Baie d'Ha Long — Mai
     <p>Le 15 juin, nous sommes retournés à HCMC pour y passer la nuit avant notre vol retour vers la France. Nous avons profité une dernière fois du meilleur banh mi que nous avons trouvé pendant notre séjour, le <strong><a href="https://www.google.com/maps?q=Banh+Mi+Huynh+Hoa+Ho+Chi+Minh+City" target="_blank" rel="noopener" class="travel-map-link">Bánh Mì Huynh Hoa</a></strong>, payé cette fois-ci en ligne avec Grab pour moins cher que le coût en magasin (avec des coupons sur l'app).</p>
   </div>
 </section>
+<section class="diary-day">
+  <div class="diary-day-header">
+    <span class="diary-day-date">16 June 2026</span>
+    <h4 class="diary-day-title">
+      <span data-lang-block="en">Departure &amp; Epilogue</span>
+      <span data-lang-block="fr">Départ &amp; Épilogue</span>
+    </h4>
+  </div>
+  <div data-lang-block="en">
+    <p>On June 16th, we boarded our flight back to France, bringing a close to our 42-day journey across Vietnam. From the chaotic, motorbike-filled streets of Saigon to the mist-shrouded valleys of Sapa, the karst towers of Ninh Bình, and the coastal train rides along the South China Sea, we covered thousands of kilometers by train, sleeper bus, and motorbikes. We left with our bags packed with local souvenirs—silk scarves, bespoke leather bags, and rain jackets—and our memories filled with the flavors of egg coffee, local street food, and the best bánh mì in the world. Vietnam was a beautiful, chaotic, and incredibly warm adventure that we will never forget.</p>
+  </div>
+  <div data-lang-block="fr">
+    <p>Le 16 juin, nous avons embarqué pour notre vol retour vers la France, clôturant notre voyage de 42 jours à travers le Vietnam. Des rues chaotiques et bondées de motos de Saigon aux vallées brumeuses de Sapa, en passant par les pics karstiques de Ninh Bình et les trajets en train longeant la mer, nous avons parcouru des milliers de kilomètres en train, bus couchette et moto. Nous repartons les valises chargées de souvenirs locaux—foulards en soie, sac en cuir sur mesure et vestes de pluie—et la tête pleine de saveurs de café à l'œuf, de street food locale et du meilleur bánh mì du monde. Le Vietnam aura été une aventure magnifique, intense et incroyablement chaleureuse que nous n'oublierons jamais.</p>
+  </div>
+</section>
 
-<h3 class="section-title mt-5">
-  <span data-lang-block="en">Coming up</span>
-  <span data-lang-block="fr">À venir</span>
-</h3>
-<div data-lang-block="en">
-  <ul>
-    <li>Ha Long Bay — boat at dawn through the karst islands</li>
-  </ul>
-</div>
-<div data-lang-block="fr">
-  <ul>
-    <li>Baie d'Ha Long — bateau à l'aube entre les pitons karstiques</li>
-  </ul>
-</div>

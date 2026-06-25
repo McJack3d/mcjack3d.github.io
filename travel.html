@@ -456,24 +456,21 @@ window.__TRIPS__ = [
     .pointAltitude(0.01)
     .pointRadius(0.45);
 
-  globe.controls().autoRotate = true;
-  globe.controls().autoRotateSpeed = 0.35;
-  globe.controls().enableDamping = true;
-  globe.controls().dampingFactor = 0.08;
+  function setupControls() {
+    var controls = globe.controls();
+    if (controls) {
+      controls.autoRotate = true;
+      controls.autoRotateSpeed = 0.35;
+      controls.enableDamping = true;
+      controls.dampingFactor = 0.08;
+    } else {
+      setTimeout(setupControls, 50);
+    }
+  }
+  setupControls();
   globe.pointOfView({ lat: 30, lng: 25, altitude: 2.1 });
 
   function easeInOutCubic(t) { return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; }
-
-  function getUserLoc() {
-    return new Promise(function (resolve) {
-      if (!navigator.geolocation) return resolve({ lat: 48.8566, lng: 2.3522 });
-      navigator.geolocation.getCurrentPosition(
-        function (p) { resolve({ lat: p.coords.latitude, lng: p.coords.longitude }); },
-        function () { resolve({ lat: 48.8566, lng: 2.3522 }); },
-        { timeout: 4000, maximumAge: 600000 }
-      );
-    });
-  }
 
   function smoothScrollToGlobe() {
     var section = document.getElementById('globe-section');
@@ -497,47 +494,67 @@ window.__TRIPS__ = [
     var statusEl = document.getElementById('globe-hud-status');
     if (statusEl) statusEl.textContent = tr('travel.globe.plotting') + trip.label + '…';
 
-    smoothScrollToGlobe().then(function () { return getUserLoc(); }).then(function (origin) {
-      globe.controls().autoRotateSpeed = 0.001;
+    // Start with a fixed Paris, France origin to load instantly without annoying browser location prompt popups
+    var origin = { lat: 48.8566, lng: 2.3522 };
+    
+    var controls = globe.controls();
+    if (controls) controls.autoRotateSpeed = 0.001;
 
-      var arc = {
-        startLat: origin.lat, startLng: origin.lng,
-        endLat: trip.lat,     endLng: trip.lng,
-        color: ['rgba(255,255,255,0.95)', trip.color]
-      };
-      globe.arcsData([arc]).arcDashLength(0.001).arcDashGap(0.999);
+    var arc = {
+      startLat: origin.lat, startLng: origin.lng,
+      endLat: trip.lat,     endLng: trip.lng,
+      color: ['rgba(255,255,255,0.95)', trip.color]
+    };
+    globe.arcsData([arc]).arcDashLength(0.001).arcDashGap(0.999);
 
-      var dlng = Math.abs(trip.lng - origin.lng);
-      if (dlng > 180) dlng = 360 - dlng;
-      var dlat = Math.abs(trip.lat - origin.lat);
-      var span = Math.sqrt(dlat * dlat + dlng * dlng);
-      var alt = span > 130 ? 4.2 : span > 90 ? 3.5 : span > 50 ? 3.0 : 2.8;
+    var dlng = Math.abs(trip.lng - origin.lng);
+    if (dlng > 180) dlng = 360 - dlng;
+    var dlat = Math.abs(trip.lat - origin.lat);
+    var span = Math.sqrt(dlat * dlat + dlng * dlng);
+    var alt = span > 130 ? 4.2 : span > 90 ? 3.5 : span > 50 ? 3.0 : 2.8;
 
+    // Phase 1: Fly camera to flight midpoint (zooming out to see the globe)
+    globe.pointOfView({
+      lat: (origin.lat + trip.lat) / 2,
+      lng: (origin.lng + trip.lng) / 2,
+      altitude: alt
+    }, 1100);
+
+    // Phase 2: Zoom camera in directly onto the destination as the flight lands
+    setTimeout(function() {
       globe.pointOfView({
-        lat: (origin.lat + trip.lat) / 2,
-        lng: (origin.lng + trip.lng) / 2,
-        altitude: alt
-      }, 900);
+        lat: trip.lat,
+        lng: trip.lng,
+        altitude: 1.4
+      }, 1000);
+    }, 1100);
 
-      var DURATION = 2400;
-      var t0 = Date.now();
+    // Scroll to the globe simultaneously
+    smoothScrollToGlobe();
 
-      function step() {
-        var raw = Math.min((Date.now() - t0) / DURATION, 1);
-        var e = easeInOutCubic(raw);
-        globe.arcDashLength(Math.max(e, 0.001)).arcDashGap(Math.max(1 - e, 0));
-        if (raw < 1) {
-          animRaf = requestAnimationFrame(step);
-        } else {
-          globe.controls().autoRotate = false;
-          var overlay = document.getElementById('globe-fade-overlay');
-          if (overlay) { overlay.style.background = trip.gradTo; overlay.style.opacity = '1'; }
-          if (statusEl) statusEl.textContent = tr('travel.globe.landing') + trip.label + '…';
-          setTimeout(function () { window.location.href = trip.href; }, 650);
-        }
+    var DURATION = 2100;
+    var t0 = Date.now();
+
+    function step() {
+      var raw = Math.min((Date.now() - t0) / DURATION, 1);
+      var e = easeInOutCubic(raw);
+      globe.arcDashLength(Math.max(e, 0.001)).arcDashGap(Math.max(1 - e, 0));
+      if (raw < 1) {
+        animRaf = requestAnimationFrame(step);
+      } else {
+        var controls = globe.controls();
+        if (controls) controls.autoRotate = false;
+        var overlay = document.getElementById('globe-fade-overlay');
+        if (overlay) { overlay.style.background = trip.gradTo; overlay.style.opacity = '1'; }
+        if (statusEl) statusEl.textContent = tr('travel.globe.landing') + trip.label + '…';
+        setTimeout(function () { window.location.href = trip.href; }, 650);
       }
+    }
+
+    // Delay the flight path start slightly to let the scroll animation get underway
+    setTimeout(function() {
       animRaf = requestAnimationFrame(step);
-    });
+    }, 250);
   };
 
   function onResize() {

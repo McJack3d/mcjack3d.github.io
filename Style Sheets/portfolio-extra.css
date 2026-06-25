@@ -1258,7 +1258,28 @@ body.jm-active .diary-day::after { display: none; }
 .diary-photo-tall { aspect-ratio: 3/4; }
 /* a lone photo shouldn't span the full article width */
 .diary-photos:has(.diary-photo:only-child) {
-  grid-template-columns: minmax(0, 420px);
+  grid-template-columns: minmax(0, 540px);
+  justify-content: center;
+}
+
+/* 2-photo galleries with landscape and portrait/food mix */
+.diary-photo-landscape {
+  aspect-ratio: 3/2;
+}
+.diary-photo-portrait {
+  aspect-ratio: 3/4;
+}
+
+@media (min-width: 500px) {
+  .diary-photos-split {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .diary-photos-split .diary-photo-landscape {
+    grid-column: span 2;
+  }
+  .diary-photos-split .diary-photo-portrait {
+    grid-column: span 1;
+  }
 }
 .diary-note {
   background: #fbf7ee;
