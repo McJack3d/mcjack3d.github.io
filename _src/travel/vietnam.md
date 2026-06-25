@@ -32,6 +32,7 @@ journey:
   - { label: "Ninh Bình", lat: 20.2506, lng: 105.9745, anchor: stop-ninhbinh }
   - { label: "Sapa",      lat: 22.3364, lng: 103.8438, anchor: stop-sapa }
   - { label: "Hanoi",     lat: 21.0285, lng: 105.8542, anchor: stop-hanoi }
+  - { label: "Mui Ne",    lat: 10.9333, lng: 108.2833, anchor: stop-muine }
 journeyUpcoming:
   - { label: "Ha Long",   lat: 20.9101, lng: 107.1839, labelSide: right }
 
@@ -1173,6 +1174,92 @@ heroSubtitleFr: "Saigon · Dalat · Hội An · Hanoï · Baie d'Ha Long — Mai
   <div data-lang-block="fr">
     <p>Nous sommes arrivés autour de 6h20 à la gare routière de Da Nang. Après une bonne demi-heure d'indications peu claires, imprécises et houleuses, nous reprenions conscience qu'il fallait quémander pour être amenés via la navette jusqu'à notre hôtel, comme c'était initialement écrit sur l'application Vexere. Après un court taxi, l'hôtel nous indiquait un early check-in payant&nbsp;: avant 8h00 au prix de la nuit, et avant 14h00 à l'heure (30k dongs de l'heure). Nous avons laissé les bagages et décidé de passer la matinée à la plage, à nous reposer et nous baigner.</p>
     <p>Petit bánh mì à <strong><a href="https://www.google.com/maps?q=Heo+nuong+lu+Ong+Phu+Dat+Da+Nang" target="_blank" rel="noopener" class="travel-map-link">Heo nướng lu Ông Phú Đạt</a></strong>, visite du <strong><a href="https://www.google.com/maps?q=My+An+Da+Nang" target="_blank" rel="noopener" class="travel-map-link">quartier de Mỹ An</a></strong> et de l'ensemble des rues autour de notre hôtel — puis check-in enfin, douche et repos. Le journal continue.</p>
+  </div>
+</section>
+
+<h3 class="section-title mt-5" id="stop-muine">
+  <span data-lang-block="en">Mui Ne &amp; the final stretch</span>
+  <span data-lang-block="fr">Mui Ne &amp; la fin du voyage</span>
+</h3>
+
+<section class="diary-day">
+  <div class="diary-day-header">
+    <span class="diary-day-label" data-lang-block="en">Day 39</span>
+    <span class="diary-day-label" data-lang-block="fr">Jour 39</span>
+    <span class="diary-day-date">12 June 2026</span>
+    <h4 class="diary-day-title">
+      <span data-lang-block="en">Cửa Ngõ Café &amp; the bus to Mui Ne</span>
+      <span data-lang-block="fr">Cửa Ngõ Café &amp; bus pour Mui Ne</span>
+    </h4>
+  </div>
+  <div data-lang-block="en">
+    <p>Cristina had an interview scheduled, so we spent the morning at <strong><a href="https://www.google.com/maps?q=Cua+Ngo+Ca+fe+Da+Nang" target="_blank" rel="noopener" class="travel-map-link">Cửa Ngõ Café</a></strong>, after browsing the shops in the streets around our accommodation (across from My Khe beach). We grabbed our last bánh mì at <strong><a href="https://www.google.com/maps?q=Heo+nuong+lu+Ong+Phu+Dat+Da+Nang" target="_blank" rel="noopener" class="travel-map-link">Heo nướng lu Ông Phú Đạt</a></strong> and <strong><a href="https://www.google.com/maps?q=Banh+Mi+Ba+Lan+Da+Nang" target="_blank" rel="noopener" class="travel-map-link">Bánh Mì Bà Lan</a></strong> before boarding our bus to Mui Ne.</p>
+  </div>
+  <div data-lang-block="fr">
+    <p>Au programme pour Cristina : un entretien. Nous sommes donc allés au café <strong><a href="https://www.google.com/maps?q=Cua+Ngo+Ca+fe+Da+Nang" target="_blank" rel="noopener" class="travel-map-link">Cửa Ngõ Café</a></strong> où nous avons passé une bonne partie de la matinée, après avoir fait des boutiques dans les rues adjacentes à notre hébergement (en face de My Khe beach). Nous avons mangé notre dernier banh mi à <strong><a href="https://www.google.com/maps?q=Heo+nuong+lu+Ong+Phu+Dat+Da+Nang" target="_blank" rel="noopener" class="travel-map-link">Heo nướng lu Ông Phú Đạt</a></strong> et <strong><a href="https://www.google.com/maps?q=Banh+Mi+Ba+Lan+Da+Nang" target="_blank" rel="noopener" class="travel-map-link">Bánh Mì Bà Lan</a></strong> avant d'embarquer sur notre bus, direction Mui Ne.</p>
+  </div>
+</section>
+
+<section class="diary-day">
+  <div class="diary-day-header">
+    <span class="diary-day-label" data-lang-block="en">Day 40</span>
+    <span class="diary-day-label" data-lang-block="fr">Jour 40</span>
+    <span class="diary-day-date">13 June 2026</span>
+    <h4 class="diary-day-title">
+      <span data-lang-block="en">iHome Backpacker Resort &amp; first dip in Mui Ne</span>
+      <span data-lang-block="fr">iHome Backpacker Resort &amp; première baignade à Mui Ne</span>
+    </h4>
+  </div>
+  <div data-lang-block="en">
+    <p>We arrived early at <strong><a href="https://www.google.com/maps?q=iHome+Backpacker+Resort+Mui+Ne" target="_blank" rel="noopener" class="travel-map-link">iHome Backpacker Resort</a></strong> and made full use of the beach and pool. Lunch was at <strong><a href="https://www.google.com/maps?q=Banh+canh+cha+ca+Hong+Mui+Ne" target="_blank" rel="noopener" class="travel-map-link">Bánh canh chả cá Hồng</a></strong> on the main road. The rest of the day was spent reading and working by the pool.</p>
+    <p><strong>Note:</strong> Mui Ne's beach is inaccessible between 11 AM and 3 PM during high tide. It reappears in the late afternoon as the UV index drops. At that time it's busy with locals. Walking along the shore, you can spot crabs, starfish, and small fish. Beach clubs open at sunset, though dining options are limited.</p>
+  </div>
+  <div data-lang-block="fr">
+    <p>Arrivée tôt dans notre hostel <strong><a href="https://www.google.com/maps?q=iHome+Backpacker+Resort+Mui+Ne" target="_blank" rel="noopener" class="travel-map-link">iHome Backpacker Resort</a></strong>, nous avons profité de la plage et de la piscine mises à disposition, puis sommes allés prendre un déjeuner juste à côté, sur la route principale (<strong><a href="https://www.google.com/maps?q=Banh+canh+cha+ca+Hong+Mui+Ne" target="_blank" rel="noopener" class="travel-map-link">Bánh canh chả cá Hồng</a></strong>). Nous avons passé le reste de la journée à nous reposer, à lire et travailler à côté de la piscine.</p>
+    <p><strong>À noter :</strong> La plage à Mui Ne n'est pas vraiment accessible entre 11h et 15h, pendant la marée haute. Elle se découvre après en soirée au moment où l'indice UV redescend. À ce moment-là elle est vraiment fréquentée, principalement par des locaux. Il n'est pas rare de trouver en se promenant sur la plage petits crustacés, étoiles de mer et poissons.</p>
+  </div>
+  <div class="diary-photos">
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF4049.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF4049.JPG" alt="Mui Ne beach at high tide" loading="lazy" width="1600" height="2400"></picture><figcaption>Mui Ne beach at high tide</figcaption></figure>
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF4052.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF4052.JPG" alt="Beach life in Mui Ne" loading="lazy" width="1600" height="2400"></picture><figcaption>Beach life in Mui Ne</figcaption></figure>
+  </div>
+</section>
+
+<section class="diary-day">
+  <div class="diary-day-header">
+    <span class="diary-day-label" data-lang-block="en">Day 41</span>
+    <span class="diary-day-label" data-lang-block="fr">Jour 41</span>
+    <span class="diary-day-date">14 June 2026</span>
+    <h4 class="diary-day-title">
+      <span data-lang-block="en">Beach days &amp; Ham Tien Market</span>
+      <span data-lang-block="fr">Journées plage &amp; marché de Ham Tien</span>
+    </h4>
+  </div>
+  <div data-lang-block="en">
+    <p>Our last two full days followed a similar pattern: we simply enjoyed the beach setting before our return to France. One highlight was visiting <strong><a href="https://www.google.com/maps?q=Ham+Tien+Market+Mui+Ne" target="_blank" rel="noopener" class="travel-map-link">Ham Tien Market</a></strong> to buy fresh fruit and eat affordably.</p>
+  </div>
+  <div data-lang-block="fr">
+    <p>Nos deux dernières journées ont été assez similaires. Nous avons tout simplement profité de ce cadre balnéaire avant notre retour en France. Une activité qui nous a beaucoup plu à Mui Ne a été d'aller au <strong><a href="https://www.google.com/maps?q=Ham+Tien+Market+Mui+Ne" target="_blank" rel="noopener" class="travel-map-link">marché Ham Tien</a></strong> pour acheter des fruits et se restaurer à moindre coût.</p>
+  </div>
+  <div class="diary-photos">
+    <figure class="diary-photo"><picture><source srcset="../Images/travel/vietnam/webp/DSCF4053.webp" type="image/webp"><img src="../Images/travel/vietnam/DSCF4053.JPG" alt="Ham Tien Market" loading="lazy" width="1600" height="2400"></picture><figcaption>Ham Tien Market</figcaption></figure>
+  </div>
+</section>
+
+<section class="diary-day">
+  <div class="diary-day-header">
+    <span class="diary-day-label" data-lang-block="en">Day 42</span>
+    <span class="diary-day-label" data-lang-block="fr">Jour 42</span>
+    <span class="diary-day-date">15 June 2026</span>
+    <h4 class="diary-day-title">
+      <span data-lang-block="en">Back to Ho Chi Minh City</span>
+      <span data-lang-block="fr">Retour à Hô Chi Minh-Ville</span>
+    </h4>
+  </div>
+  <div data-lang-block="en">
+    <p>We returned to Ho Chi Minh City for our final night before the flight back to France. We took the opportunity to visit <strong><a href="https://www.google.com/maps?q=Banh+Mi+Huynh+Hoa+Ho+Chi+Minh+City" target="_blank" rel="noopener" class="travel-map-link">Bánh Mì Huynh Hoa</a></strong> one last time — the best bánh mì we found during our entire stay. This time we ordered via Grab with coupons, paying less than the in-store price.</p>
+  </div>
+  <div data-lang-block="fr">
+    <p>Le 15 juin, nous sommes retournés à HCMC pour y passer la nuit avant notre vol retour vers la France. Nous avons profité une dernière fois du meilleur banh mi que nous avons trouvé pendant notre séjour, le <strong><a href="https://www.google.com/maps?q=Banh+Mi+Huynh+Hoa+Ho+Chi+Minh+City" target="_blank" rel="noopener" class="travel-map-link">Bánh Mì Huynh Hoa</a></strong>, payé cette fois-ci en ligne avec Grab pour moins cher que le coût en magasin (avec des coupons sur l'app).</p>
   </div>
 </section>
 
