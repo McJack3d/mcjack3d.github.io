@@ -14,14 +14,14 @@
 
       /* --- Hero (index) --- */
       'hero.role': 'Data and AI specialist',
-      'hero.subtitle': 'MSc Data Science & AI student — finance & data background',
+      'hero.subtitle': 'Data & AI Professional — Beauty Tech & Finance background',
       'hero.desc': 'I turn financial and operational data into reliable insight and automation. Skilled in Python, SQL, Dataiku, QlikSense, BI tools (Tableau & Power BI), and statistical analysis. Professional experience in banking, asset management, and business development.',
       'hero.btn_projects': 'See projects',
       'hero.btn_contact': 'Get in touch',
 
       /* --- About --- */
       'about.title': 'Professional Summary',
-      'about.body': 'MSc Data Science & AI student with experience in data governance, financial data management and statistical analysis. Skilled in Python, SQL and BI tools, with professional experience in banking, asset management and business development. Motivated to contribute to innovative organisations by leveraging data to improve decision-making and operational efficiency.',
+      'about.body': 'Data & AI Professional with a proven track record in building scalable data products across the Beauty Tech and Financial sectors. Experienced in engineering robust data pipelines, enforcing strict data quality standards, and driving statistical analysis. Skilled in Python, SQL, and BI tools, with a strong passion for transforming complex data into actionable business insights.',
 
       /* --- Education --- */
       'edu.title': 'Education',
@@ -43,6 +43,12 @@
       'exp.army.li1': 'Reserve soldier in the 6th squadron of a cavalry regiment specialized in NRBC.',
       'exp.army.li2': 'Trained and equipped to operate in and respond to Nuclear, Radiological, Biological, and Chemical (NRBC) threat environments.',
       'exp.army.li3': 'Experience in high-discipline operational settings, teamwork, and readiness for time-constrained missions.',
+      'exp.loreal.period': 'July – December 2026 · Clichy, France',
+      'exp.loreal.role': 'Data Intern – Global Commerce Data Domain',
+      'exp.loreal.li1': '<strong>Global B2B Data Visualization:</strong> Developing a webapp dashboard ("Find Your Customer") to bring fragmented B2B and sellout data directly into the hands of business teams across divisions.',
+      'exp.loreal.li2': '<strong>Data Harmonization &amp; Quality:</strong> Structuring massive volumes of complex Master Data (Customer, Point of Sale, Sales Force Structure) into scalable, business-ready assets, while ensuring rigorous data quality control.',
+      'exp.loreal.li3': '<strong>Cross-Functional Collaboration:</strong> Working daily with Data Product Owners and Data Engineers on the Global Commerce Transformation strategy to optimize data workflows and product delivery.',
+      'exp.loreal.manager': 'Manager: Mr. Luc Bochet, Lead Data Product Owner',
       'exp.lbp.period': 'January – July 2025 · Paris, France',
       'exp.lbp.role': 'Data Analyst Intern',
       'exp.lbp.li1': '<strong>Data flow governance:</strong> supervised and optimized payment flow processes with focus on SEPA/DSP2/IP compliance.',
@@ -165,14 +171,14 @@
 
       /* --- Hero (index) --- */
       'hero.role': 'Spécialiste Data et IA',
-      'hero.subtitle': 'Étudiant MSc Data Science & IA — parcours finance & data',
+      'hero.subtitle': 'Data & AI Professional — parcours Data, Beauty Tech & Finance',
       'hero.desc': 'Je transforme les données financières et opérationnelles en insights fiables et en automatisation. Compétences en Python, SQL, Dataiku, QlikSense, outils BI (Tableau & Power BI) et analyse statistique. Expérience professionnelle dans la banque, la gestion d\'actifs et le développement commercial.',
       'hero.btn_projects': 'Voir les projets',
       'hero.btn_contact': 'Prendre contact',
 
       /* --- About --- */
       'about.title': 'Résumé professionnel',
-      'about.body': 'Étudiant MSc Data Science & IA, avec une expérience en gouvernance des données, gestion des données financières et analyse statistique. Compétences en Python, SQL et outils BI, avec une expérience professionnelle dans la banque, la gestion d\'actifs et le développement commercial. Motivé pour contribuer à des organisations innovantes en exploitant les données pour améliorer la prise de décision et l\'efficacité opérationnelle.',
+      'about.body': 'Data & AI Professional démontrant une solide expérience dans la création de produits data scalables dans les secteurs de la Beauty Tech et de la Finance. Expérimenté dans la conception de pipelines de données robustes, le maintien de standards stricts de qualité des données et l\'analyse statistique. Maîtrisant Python, SQL et les outils de BI, avec une forte volonté de transformer des données complexes en insights actionnables.',
 
       /* --- Education --- */
       'edu.title': 'Formation',
@@ -194,6 +200,12 @@
       'exp.army.li1': 'Soldat de réserve au 6e escadron d\'un régiment de cavalerie spécialisé NRBC.',
       'exp.army.li2': 'Formé et équipé pour opérer dans des environnements de menace Nucléaire, Radiologique, Biologique et Chimique (NRBC).',
       'exp.army.li3': 'Expérience dans des environnements opérationnels à haute discipline, travail en équipe et réactivité pour des missions sous contrainte de temps.',
+      'exp.loreal.period': 'Juillet – Décembre 2026 · Clichy, France',
+      'exp.loreal.role': 'Stagiaire Data – Global Commerce Data Domain',
+      'exp.loreal.li1': '<strong>Visualisation de données B2B :</strong> développement d\\'un tableau de bord web ("Find Your Customer") pour mettre les données B2B et de sellout à la disposition directe des équipes métier.',
+      'exp.loreal.li2': '<strong>Harmonisation &amp; Qualité des données :</strong> structuration de volumes massifs de Master Data (Client, Point de Vente, Structure de la Force de Vente) en actifs scalables et exploitables, avec un contrôle qualité rigoureux.',
+      'exp.loreal.li3': '<strong>Collaboration inter-équipes :</strong> travail quotidien avec les Data Product Owners et les Data Engineers sur la stratégie Global Commerce Transformation pour optimiser les flux de données.',
+      'exp.loreal.manager': 'Manager : M. Luc Bochet, Lead Data Product Owner',
       'exp.lbp.period': 'Janvier – Juillet 2025 · Paris, France',
       'exp.lbp.role': 'Stagiaire Data Analyst',
       'exp.lbp.li1': '<strong>Gouvernance des flux de données :</strong> supervision et optimisation des processus de flux de paiements avec un focus sur la conformité SEPA/DSP2/IP.',

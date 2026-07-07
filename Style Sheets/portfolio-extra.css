@@ -1638,6 +1638,8 @@ header#home {
 
 .hero-desc {
   max-width: 620px;
+  margin: 0 auto;
+  text-align: center;
   color: rgba(255, 255, 255, 0.72);
 }
 

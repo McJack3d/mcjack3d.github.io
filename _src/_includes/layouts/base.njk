@@ -21,6 +21,15 @@
     <link href="{{ pathPrefix }}Style%20Sheets/style.css" rel="stylesheet">
     <link href="{{ pathPrefix }}Style%20Sheets/portfolio-extra.css" rel="stylesheet">
     {% block head %}{% endblock %}
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8TC1V54604"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-8TC1V54604');
+    </script>
   </head>
   {# Country posts define an accent color; exposing it on <body> lets
      fixed elements outside <main> (e.g. the scroll-to-top button) use it. #}
