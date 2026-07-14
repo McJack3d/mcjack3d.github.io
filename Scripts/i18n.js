@@ -202,7 +202,7 @@
       'exp.army.li3': 'Expérience dans des environnements opérationnels à haute discipline, travail en équipe et réactivité pour des missions sous contrainte de temps.',
       'exp.loreal.period': 'Juillet – Décembre 2026 · Clichy, France',
       'exp.loreal.role': 'Stagiaire Data – Global Commerce Data Domain',
-      'exp.loreal.li1': '<strong>Visualisation de données B2B :</strong> développement d\\'un tableau de bord web ("Find Your Customer") pour mettre les données B2B et de sellout à la disposition directe des équipes métier.',
+      'exp.loreal.li1': '<strong>Visualisation de données B2B :</strong> développement d\'un tableau de bord web ("Find Your Customer") pour mettre les données B2B et de sellout à la disposition directe des équipes métier.',
       'exp.loreal.li2': '<strong>Harmonisation &amp; Qualité des données :</strong> structuration de volumes massifs de Master Data (Client, Point de Vente, Structure de la Force de Vente) en actifs scalables et exploitables, avec un contrôle qualité rigoureux.',
       'exp.loreal.li3': '<strong>Collaboration inter-équipes :</strong> travail quotidien avec les Data Product Owners et les Data Engineers sur la stratégie Global Commerce Transformation pour optimiser les flux de données.',
       'exp.loreal.manager': 'Manager : M. Luc Bochet, Lead Data Product Owner',
