@@ -11,17 +11,35 @@
       'nav.projects': 'Projects',
       'nav.travel': 'Travel',
       'nav.contact': 'Contact',
+      'nav.skip': 'Skip to content',
+      'nav.menu': 'Menu',
+      'nav.cmd': 'Open command menu',
 
       /* --- Hero (index) --- */
-      'hero.role': 'Data and AI specialist',
-      'hero.subtitle': 'Data & AI Professional — Beauty Tech & Finance background',
-      'hero.desc': 'I turn financial and operational data into reliable insight and automation. Skilled in Python, SQL, Dataiku, QlikSense, BI tools (Tableau & Power BI), and statistical analysis. Professional experience in banking, asset management, and business development.',
-      'hero.btn_projects': 'See projects',
-      'hero.btn_contact': 'Get in touch',
+      'hero.now': 'Now — Data Intern at L\'Oréal Beauty Tech',
+      'hero.lead': 'I turn complex data into',
+      'hero.rotate': 'products people actually use|pipelines teams can trust|models that explain themselves|decisions backed by evidence',
+      'hero.rot_sr': 'I turn complex data into products people use, pipelines teams can trust, models that explain themselves and decisions backed by evidence.',
+      'hero.desc': 'Data & AI professional across Beauty Tech and Finance — from master data and data contracts at L\'Oréal to payment data flows at La Banque Postale and FinBERT-powered return forecasting in my MSc thesis.',
+      'hero.btn_projects': 'Explore my work',
+      'hero.scroll': 'Scroll',
+      'hero.stack': 'Tech stack',
 
       /* --- About --- */
       'about.title': 'Professional Summary',
       'about.body': 'Data & AI Professional with a proven track record in building scalable data products across the Beauty Tech and Financial sectors. Experienced in engineering robust data pipelines, enforcing strict data quality standards, and driving statistical analysis. Skilled in Python, SQL, and BI tools, with a strong passion for transforming complex data into actionable business insights.',
+
+      'about.headline': 'From raw data to products, pipelines and decisions.',
+      'about.based': 'Based in Paris & Lille, France',
+      'about.now_label': 'Currently',
+      'about.now_body': 'Data Intern in the Global Commerce Data Domain — building <strong>“Find Your Customer”</strong>, a React app on GCP, and formalising data contracts for priority Commerce data flows.',
+      'about.stat.articles': 'news articles scored with FinBERT for my MSc thesis',
+      'about.stat.mae': 'MAE improvement at the 5-day horizon, statistically significant',
+      'about.stat.certs': 'certifications — IBM, Anthropic, Bloomberg & SAFe',
+      'about.stat.langs': 'languages — French, English, Spanish, Russian',
+      'about.beyond_label': 'Beyond work',
+      'about.travel_title': 'Travel blog',
+      'about.travel_body': 'Stories, photos and maps from 10 destinations across 3 continents.',
 
       /* --- Education --- */
       'edu.title': 'Education',
@@ -38,6 +56,20 @@
 
       /* --- Experience --- */
       'exp.title': 'Professional Experience',
+      'exp.current': 'Current',
+      'exp.ongoing': 'Ongoing',
+      'exp.more': 'Show {n} more',
+      'exp.less': 'Show less',
+      'exp.tag.contracts': 'Data contracts',
+      'exp.tag.treasury': 'Treasury',
+      'exp.tag.reporting': 'Financial reporting',
+      'exp.tag.ap': 'Accounts payable',
+      'exp.tag.vat': 'VAT',
+      'exp.tag.market': 'Market analysis',
+      'exp.tag.campaigns': 'Email campaigns',
+      'exp.tag.ads': 'Digital advertising',
+      'exp.tag.discipline': 'Discipline',
+      'exp.tag.teamwork': 'Teamwork',
       'exp.army.period': 'Since December 2022 · Fontevraud L\'Abbaye, France',
       'exp.army.role': 'Reserve Soldier',
       'exp.army.li1': 'Reserve soldier in the 6th squadron of a cavalry regiment specialized in NRBC.',
@@ -97,38 +129,62 @@
       'skills.interest.games': 'Video games',
 
       /* --- Projects --- */
-      'projects.title': 'Projects & Portfolio',
+      'projects.title': 'Selected projects',
+      'projects.featured': 'Featured · MSc Thesis · EDHEC 2026',
+      'projects.pipeline': 'Five-phase reproducible pipeline',
+      'projects.p1': 'Feasibility audit',
+      'projects.p2': 'Data engineering',
+      'projects.p3': 'FinBERT sentiment scoring',
+      'projects.p4': 'LSTM · chronological hold-out',
+      'projects.p5': 'SHAP explainability',
+      'projects.stat.mae': 'MAE gain at 5 days',
+      'projects.stat.articles': 'news articles',
+      'projects.stat.days': 'ticker-days',
+      'projects.stat.tickers': 'tickers · SMR, LEU, NNE',
+      'projects.more_title': 'More in the pipeline',
       'projects.thesis.desc': 'Does FinBERT-derived news sentiment improve short-term return prediction for small-cap nuclear equities? This MSc thesis builds a fully reproducible five-phase pipeline — feasibility audit, data engineering (3,992 ticker-days, 25,885 news articles covering SMR, LEU, NNE), FinBERT sentiment scoring, LSTM training with chronological hold-out, and SHAP explainability. Key finding: sentiment augmentation yields a statistically significant average MAE improvement of <strong>+5.18%</strong> at the 5-day horizon; no aggregate benefit at the 1-day horizon. Hypothesis testing via Diebold-Mariano tests.',
       'projects.thesis.btn_dl': 'Download Thesis (PDF)',
       'projects.thesis.btn_code': 'Source Code',
-      'projects.tradbot.title': '🤖 TRAD_BOT — Algorithmic Trading Suite (Binance + IBKR)',
+      'projects.tradbot.title': 'TRAD_BOT — Algorithmic Trading Suite (Binance + IBKR)',
       'projects.tradbot.desc': 'Two independent algorithmic trading bots in one repository. The Binance bot runs a delta-neutral cash-and-carry strategy (long spot + short perpetual) to harvest funding every 8 hours, with an event-driven backtester, walk-forward analysis, real-time WebSocket market data, risk kill-switches and Telegram/email monitoring. The IBKR bot trades US equities through a two-stage sentiment funnel (FinBERT → LLM gatekeeper) with a dollar-neutral portfolio overlay. Multiple execution modes: backtest, paper, dry-run and live.',
-      'projects.tradbot.btn_view': 'View Project',
-      'projects.tradbot.btn_code': 'Source Code',
-      'projects.kleerer.title': '🩺 kleerer — Open, Science-Based Health Data',
+      'projects.tradbot.btn_view': 'View on GitHub',
+      'projects.kleerer.title': 'kleerer — Open, Science-Based Health Data',
       'projects.kleerer.desc': 'An open-source project making health data available to people looking for evidence-based advice and recommendations, instead of ad-driven content. Ships as a small, fast static site (GitHub Pages) with a comparison tool as its first building block, plus a bot module handling data automation behind the scenes. Actively evolving — more science-based tools are on the way.',
-      'projects.kleerer.btn_view': 'View Project',
+      'projects.kleerer.btn_view': 'Visit website',
       'projects.kleerer.btn_code': 'Source Code',
-      'projects.future.title': '🚀 More projects coming soon 🏗️',
-      'projects.future.desc': 'This space is reserved for upcoming work in data science, quantitative finance and AI. Stay tuned — new projects are on the way.',
-      'projects.future.btn_view': 'View Project',
-      'projects.future.btn_code': 'Source Code',
+      'projects.future.desc': 'New work in data science, quantitative finance and AI is on the way — follow along on GitHub.',
       'projects.github': 'View Projects on GitHub',
 
       /* --- Contact --- */
-      'contact.title': 'Contact',
-      'contact.email': 'Email',
-      'contact.phone': 'Phone',
       'contact.linkedin': 'LinkedIn',
       'contact.github_label': 'GitHub',
       'contact.open': 'Open to opportunities in data science, AI strategy, and data governance roles. Feel free to reach out!',
       'contact.cv': 'Download CV',
       'contact.banner_title': 'Let\'s work together',
       'contact.banner_body': 'Send me a message — I usually reply within a day.',
-      'contact.btn_email': 'Email me',
+      'contact.copy': 'Copy',
+      'contact.copy_label': 'Copy email address',
+      'contact.copied': 'Email address copied to clipboard',
 
       /* --- Footer --- */
       'footer.rights': 'All rights reserved.',
+      'footer.top': 'Back to top',
+
+      /* --- Command palette (index) --- */
+      'cmd.title': 'Command menu',
+      'cmd.placeholder': 'Type a command or search…',
+      'cmd.nav': 'Navigate',
+      'cmd.actions': 'Actions',
+      'cmd.copy': 'Copy email address',
+      'cmd.thesis': 'Read the MSc thesis (PDF)',
+      'cmd.linkedin': 'Open LinkedIn profile',
+      'cmd.github': 'Open GitHub profile',
+      'cmd.travel': 'Open the travel blog',
+      'cmd.lang': 'Passer en français',
+      'cmd.empty': 'No results',
+      'cmd.hint_nav': 'navigate',
+      'cmd.hint_run': 'select',
+      'cmd.hint_close': 'close',
 
       /* --- Travel hero --- */
       'travel.hero.title': 'Travel Blog',
@@ -176,17 +232,35 @@
       'nav.projects': 'Projets',
       'nav.travel': 'Voyages',
       'nav.contact': 'Contact',
+      'nav.skip': 'Aller au contenu',
+      'nav.menu': 'Menu',
+      'nav.cmd': 'Ouvrir le menu de commandes',
 
       /* --- Hero (index) --- */
-      'hero.role': 'Spécialiste Data et IA',
-      'hero.subtitle': 'Data & AI Professional — parcours Data, Beauty Tech & Finance',
-      'hero.desc': 'Je transforme les données financières et opérationnelles en insights fiables et en automatisation. Compétences en Python, SQL, Dataiku, QlikSense, outils BI (Tableau & Power BI) et analyse statistique. Expérience professionnelle dans la banque, la gestion d\'actifs et le développement commercial.',
-      'hero.btn_projects': 'Voir les projets',
-      'hero.btn_contact': 'Prendre contact',
+      'hero.now': 'Actuellement — Stagiaire Data chez L’Oréal Beauty Tech',
+      'hero.lead': 'Je transforme des données complexes en',
+      'hero.rotate': 'produits réellement utilisés|pipelines dignes de confiance|modèles qui s’expliquent|décisions fondées sur les preuves',
+      'hero.rot_sr': 'Je transforme des données complexes en produits utiles, en pipelines fiables, en modèles explicables et en décisions fondées sur les preuves.',
+      'hero.desc': 'Professionnel Data & IA entre Beauty Tech et Finance — des master data et data contracts chez L’Oréal aux flux de paiement de La Banque Postale, jusqu’à la prévision de rendements pilotée par FinBERT dans ma thèse de MSc.',
+      'hero.btn_projects': 'Découvrir mes projets',
+      'hero.scroll': 'Défiler',
+      'hero.stack': 'Stack technique',
 
       /* --- About --- */
       'about.title': 'Résumé professionnel',
       'about.body': 'Data & AI Professional démontrant une solide expérience dans la création de produits data scalables dans les secteurs de la Beauty Tech et de la Finance. Expérimenté dans la conception de pipelines de données robustes, le maintien de standards stricts de qualité des données et l\'analyse statistique. Maîtrisant Python, SQL et les outils de BI, avec une forte volonté de transformer des données complexes en insights actionnables.',
+
+      'about.headline': 'De la donnée brute aux produits, pipelines et décisions.',
+      'about.based': 'Basé à Paris & Lille, France',
+      'about.now_label': 'Actuellement',
+      'about.now_body': 'Stagiaire Data au sein du Global Commerce Data Domain — je développe <strong>« Find Your Customer »</strong>, une application React sur GCP, et formalise les data contracts des flux de données Commerce prioritaires.',
+      'about.stat.articles': 'articles d’actualité analysés avec FinBERT pour ma thèse de MSc',
+      'about.stat.mae': 'd’amélioration de la MAE à l’horizon 5 jours, statistiquement significative',
+      'about.stat.certs': 'certifications — IBM, Anthropic, Bloomberg & SAFe',
+      'about.stat.langs': 'langues — français, anglais, espagnol, russe',
+      'about.beyond_label': 'En dehors du travail',
+      'about.travel_title': 'Blog voyage',
+      'about.travel_body': 'Récits, photos et cartes de 10 destinations sur 3 continents.',
 
       /* --- Education --- */
       'edu.title': 'Formation',
@@ -203,6 +277,20 @@
 
       /* --- Experience --- */
       'exp.title': 'Expérience professionnelle',
+      'exp.current': 'En cours',
+      'exp.ongoing': 'En parallèle',
+      'exp.more': 'Voir {n} de plus',
+      'exp.less': 'Voir moins',
+      'exp.tag.contracts': 'Data contracts',
+      'exp.tag.treasury': 'Trésorerie',
+      'exp.tag.reporting': 'Reporting financier',
+      'exp.tag.ap': 'Comptabilité fournisseurs',
+      'exp.tag.vat': 'TVA',
+      'exp.tag.market': 'Analyse de marché',
+      'exp.tag.campaigns': 'Campagnes e-mail',
+      'exp.tag.ads': 'Publicité digitale',
+      'exp.tag.discipline': 'Discipline',
+      'exp.tag.teamwork': 'Esprit d’équipe',
       'exp.army.period': 'Depuis décembre 2022 · Fontevraud L\'Abbaye, France',
       'exp.army.role': 'Soldat de réserve',
       'exp.army.li1': 'Soldat de réserve au 6e escadron d\'un régiment de cavalerie spécialisé NRBC.',
@@ -262,38 +350,62 @@
       'skills.interest.games': 'Jeux vidéo',
 
       /* --- Projects --- */
-      'projects.title': 'Projets & Portfolio',
+      'projects.title': 'Projets sélectionnés',
+      'projects.featured': 'À la une · Thèse MSc · EDHEC 2026',
+      'projects.pipeline': 'Pipeline reproductible en cinq phases',
+      'projects.p1': 'Audit de faisabilité',
+      'projects.p2': 'Ingénierie des données',
+      'projects.p3': 'Scoring de sentiment FinBERT',
+      'projects.p4': 'LSTM · validation chronologique',
+      'projects.p5': 'Explicabilité SHAP',
+      'projects.stat.mae': 'gain de MAE à 5 jours',
+      'projects.stat.articles': 'articles d’actualité',
+      'projects.stat.days': 'ticker-jours',
+      'projects.stat.tickers': 'tickers · SMR, LEU, NNE',
+      'projects.more_title': 'D’autres projets en préparation',
       'projects.thesis.desc': 'Le sentiment issu des actualités via FinBERT améliore-t-il la prédiction des rendements à court terme pour les petites capitalisations nucléaires ? Cette thèse MSc construit un pipeline reproductible en cinq phases — audit de faisabilité, ingénierie des données (3 992 ticker-jours, 25 885 articles couvrant SMR, LEU, NNE), scoring de sentiment FinBERT, entraînement LSTM avec validation chronologique, et explicabilité SHAP. Résultat clé : l\'augmentation par sentiment améliore de manière statistiquement significative la MAE moyenne de <strong>+5,18 %</strong> à l\'horizon 5 jours ; aucun bénéfice agrégé à l\'horizon 1 jour. Tests d\'hypothèses via les tests de Diebold-Mariano.',
       'projects.thesis.btn_dl': 'Télécharger la thèse (PDF)',
       'projects.thesis.btn_code': 'Code source',
-      'projects.tradbot.title': '🤖 TRAD_BOT — Suite de trading algorithmique (Binance + IBKR)',
+      'projects.tradbot.title': 'TRAD_BOT — Suite de trading algorithmique (Binance + IBKR)',
       'projects.tradbot.desc': 'Deux bots de trading algorithmique indépendants dans un même dépôt. Le bot Binance applique une stratégie delta-neutre cash-and-carry (long spot + short perpétuel) pour capter le funding toutes les 8 heures, avec backtester événementiel, analyse walk-forward, données de marché en temps réel via WebSocket, coupe-circuits de risque et monitoring Telegram/email. Le bot IBKR trade des actions américaines via un entonnoir de sentiment à deux étages (FinBERT → filtre LLM) avec une couverture de portefeuille dollar-neutre. Plusieurs modes d’exécution : backtest, paper, dry-run et live.',
-      'projects.tradbot.btn_view': 'Voir le projet',
-      'projects.tradbot.btn_code': 'Code source',
-      'projects.kleerer.title': '🩺 kleerer — Données de santé ouvertes et scientifiques',
+      'projects.tradbot.btn_view': 'Voir sur GitHub',
+      'projects.kleerer.title': 'kleerer — Données de santé ouvertes et scientifiques',
       'projects.kleerer.desc': 'Un projet open-source qui rend les données de santé accessibles aux personnes en quête de conseils et de recommandations fondés sur des preuves, plutôt que sur du contenu publicitaire. Livré sous forme d\'un site statique léger et rapide (GitHub Pages) avec un outil de comparaison comme première brique, et un module bot qui automatise la collecte de données en coulisses. En développement actif — d\'autres outils scientifiques arrivent bientôt.',
-      'projects.kleerer.btn_view': 'Voir le projet',
+      'projects.kleerer.btn_view': 'Voir le site',
       'projects.kleerer.btn_code': 'Code source',
-      'projects.future.title': '🚀 D’autres projets bientôt 🏗️',
-      'projects.future.desc': 'Cet espace est réservé aux projets à venir en data science, finance quantitative et IA. Restez à l’écoute — de nouveaux projets arrivent bientôt.',
-      'projects.future.btn_view': 'Voir le projet',
-      'projects.future.btn_code': 'Code source',
+      'projects.future.desc': 'De nouveaux projets en data science, finance quantitative et IA arrivent — suivez-les sur GitHub.',
       'projects.github': 'Voir les projets sur GitHub',
 
       /* --- Contact --- */
-      'contact.title': 'Contact',
-      'contact.email': 'Email',
-      'contact.phone': 'Téléphone',
       'contact.linkedin': 'LinkedIn',
       'contact.github_label': 'GitHub',
       'contact.open': 'Disponible pour des opportunités en data science, stratégie IA et gouvernance des données. N\'hésitez pas à me contacter !',
       'contact.cv': 'Télécharger le CV',
       'contact.banner_title': 'Travaillons ensemble',
       'contact.banner_body': 'Envoyez-moi un message — je réponds généralement sous 24 h.',
-      'contact.btn_email': 'M\'écrire',
+      'contact.copy': 'Copier',
+      'contact.copy_label': 'Copier l’adresse e-mail',
+      'contact.copied': 'Adresse e-mail copiée dans le presse-papiers',
 
       /* --- Footer --- */
       'footer.rights': 'Tous droits réservés.',
+      'footer.top': 'Retour en haut',
+
+      /* --- Command palette (index) --- */
+      'cmd.title': 'Menu de commandes',
+      'cmd.placeholder': 'Tapez une commande ou recherchez…',
+      'cmd.nav': 'Naviguer',
+      'cmd.actions': 'Actions',
+      'cmd.copy': 'Copier l’adresse e-mail',
+      'cmd.thesis': 'Lire la thèse de MSc (PDF)',
+      'cmd.linkedin': 'Ouvrir le profil LinkedIn',
+      'cmd.github': 'Ouvrir le profil GitHub',
+      'cmd.travel': 'Ouvrir le blog voyage',
+      'cmd.lang': 'Switch to English',
+      'cmd.empty': 'Aucun résultat',
+      'cmd.hint_nav': 'naviguer',
+      'cmd.hint_run': 'valider',
+      'cmd.hint_close': 'fermer',
 
       /* --- Travel hero --- */
       'travel.hero.title': 'Blog Voyage',
@@ -347,8 +459,14 @@
       var val = tKey(el.getAttribute('data-i18n-html'), lang);
       if (val !== undefined) el.innerHTML = val;
     });
+    document.querySelectorAll('[data-i18n-aria]').forEach(function (el) {
+      var val = tKey(el.getAttribute('data-i18n-aria'), lang);
+      if (val !== undefined) el.setAttribute('aria-label', val);
+    });
     document.querySelectorAll('.lang-opt').forEach(function (btn) {
-      btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+      var active = btn.getAttribute('data-lang') === lang;
+      btn.classList.toggle('active', active);
+      btn.setAttribute('aria-pressed', active ? 'true' : 'false');
     });
   }
 

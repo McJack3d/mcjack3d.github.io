@@ -1,34 +1,43 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
   <head>
-    <link rel="icon" type="image/png" href="logo-website-file-globe-icon-svg-wikimedia-commons-21.png">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
-    <title>Alexandre Bredillot — Data and AI specialist</title>
-    <meta name="description" content="Alexandre BREDILLOT — Data & AI Professional. Building scalable data products across Beauty Tech & Financial sectors.">
-    <meta name="keywords" content="Alexandre Bredillot, Data and AI specialist, Data Science, Data Governance">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Alexandre BREDILLOT — Data and AI specialist</title>
+    <meta name="description" content="Alexandre BREDILLOT — Data & AI professional building scalable data products across Beauty Tech (L'Oréal) and Finance. Python, SQL, GCP, NLP and data governance.">
+    <meta name="keywords" content="Alexandre Bredillot, Data and AI specialist, Data Science, Data Governance, L'Oréal, EDHEC, FinBERT">
     <meta name="author" content="Alexandre BREDILLOT">
+    <meta name="theme-color" content="#05060c">
+    <meta name="color-scheme" content="dark">
+    <link rel="canonical" href="https://mcjack3d.github.io/">
 
-    <!-- Open Graph / Facebook -->
+    <link rel="icon" href="Images/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="logo-website-file-globe-icon-svg-wikimedia-commons-21.png" type="image/png" sizes="any">
+    <link rel="apple-touch-icon" href="Images/apple-touch-icon.png">
+
+    <!-- Open Graph / Facebook / LinkedIn -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mcjack3d.github.io/">
-    <meta property="og:title" content="Alexandre Bredillot — Data and AI specialist">
-    <meta property="og:description" content="Data & AI Professional with a proven track record in building scalable data products across the Beauty Tech and Financial sectors.">
+    <meta property="og:title" content="Alexandre BREDILLOT — Data and AI specialist">
+    <meta property="og:description" content="Data & AI professional building scalable data products across Beauty Tech and Finance.">
+    <meta property="og:image" content="https://mcjack3d.github.io/Images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Alexandre BREDILLOT — Data and AI specialist">
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://mcjack3d.github.io/">
-    <meta property="twitter:title" content="Alexandre Bredillot — Data and AI specialist">
-    <meta property="twitter:description" content="Data & AI Professional with a proven track record in building scalable data products across the Beauty Tech and Financial sectors.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Alexandre BREDILLOT — Data and AI specialist">
+    <meta name="twitter:description" content="Data & AI professional building scalable data products across Beauty Tech and Finance.">
+    <meta name="twitter:image" content="https://mcjack3d.github.io/Images/og-image.png">
 
-    <!-- Performance & Fonts -->
+    <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <!-- Font Awesome (CDN, v5.10.0) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="Style%20Sheets/style.css" rel="stylesheet">
-    <link href="Style%20Sheets/portfolio-extra.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="Style%20Sheets/home.css" rel="stylesheet">
 
     <!-- Structured data -->
     <script type="application/ld+json">
@@ -36,13 +45,17 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Alexandre BREDILLOT",
+      "url": "https://mcjack3d.github.io/",
+      "image": "https://mcjack3d.github.io/Images/og-image.png",
       "email": "alexandrebredillot@gmail.com",
       "telephone": "+33 6 20 35 21 73",
       "jobTitle": "Data and AI specialist",
+      "worksFor": { "@type": "Organization", "name": "L'Oréal" },
       "alumniOf": [
-        "EDHEC Business School",
-        "ESSCA School of Management"
+        { "@type": "CollegeOrUniversity", "name": "EDHEC Business School" },
+        { "@type": "CollegeOrUniversity", "name": "ESSCA School of Management" }
       ],
+      "knowsAbout": ["Data Science", "Machine Learning", "NLP", "Data Governance", "Data Quality", "Master Data Management", "Python", "SQL", "Google Cloud Platform"],
       "sameAs": [
         "https://www.linkedin.com/in/alexandre-bredillot",
         "https://github.com/McJack3d"
@@ -60,481 +73,660 @@
       gtag('config', 'G-8TC1V54604');
     </script>
   </head>
-  <body data-spy="scroll" data-target="#nav" data-offset="120">
+  <body class="home">
 
-<!-- NAV -->
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark shadow-sm" role="navigation" aria-label="Main navigation">
-  <div class="container px-4 d-flex align-items-center flex-nowrap">
-    <a class="navbar-brand text-white font-weight-bold mb-0" href="#home">Alexandre BREDILLOT</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse ml-auto" id="nav">
-      <ul class="navbar-nav ml-auto align-items-center">
-        <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav.about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#education" data-i18n="nav.education">Education</a></li>
-        <li class="nav-item"><a class="nav-link" href="#experience" data-i18n="nav.experience">Experience</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills" data-i18n="nav.skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects" data-i18n="nav.projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="travel.html" data-i18n="nav.travel">Travel</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav.contact">Contact</a></li>
-        <li class="nav-item ml-2 d-flex align-items-center">
-          <div class="lang-toggle">
-            <button class="lang-opt active" data-lang="en" onclick="setLang('en')">EN</button>
-            <span class="lang-sep">|</span>
-            <button class="lang-opt" data-lang="fr" onclick="setLang('fr')">FR</button>
+    <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
+
+    <!-- Icon sprite -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+      <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></symbol>
+      <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .3a12 12 0 0 0-3.8 23.38c.6.11.82-.26.82-.58l-.01-2.04c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.62-5.48 5.92.42.36.81 1.1.81 2.22l-.01 3.29c0 .32.21.7.82.58A12 12 0 0 0 12 .3"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.5 7 8.5 6 8.5-6"/></g></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20.5h14"/></g></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12h15"/><path d="m13 5.5 6.5 6.5-6.5 6.5"/></g></symbol>
+      <symbol id="i-arrow-ur" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></g></symbol>
+      <symbol id="i-arrow-up" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19.5v-15"/><path d="m5.5 11 6.5-6.5 6.5 6.5"/></g></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11.5" height="11.5" rx="2.5"/><path d="M5.5 15H5a1.5 1.5 0 0 1-1.5-1.5V5A1.5 1.5 0 0 1 5 3.5h8.5A1.5 1.5 0 0 1 15 5v.5"/></g></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+      <symbol id="i-file" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3.5H7A2 2 0 0 0 5 5.5v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8.5z"/><path d="M14 3.5v5h5"/><path d="M9 13h6M9 16.5h6"/></g></symbol>
+      <symbol id="i-code" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m16 17.5 5.5-5.5L16 6.5"/><path d="M8 6.5 2.5 12 8 17.5"/></g></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></g></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11.2A7 7 0 0 1 19 9.8C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.5"/></g></symbol>
+      <symbol id="i-cap" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11v5c0 1.4 2.5 3 5.5 3s5.5-1.6 5.5-3v-5"/><path d="M21.5 9v5"/></g></symbol>
+      <symbol id="i-spark" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5c.5 4.9 2.6 7 7.5 7.5v.1c-4.9.5-7 2.6-7.5 7.5h-.1c-.5-4.9-2.6-7-7.5-7.5V10c4.9-.5 7-2.6 7.5-7.5z" transform="translate(0 2)"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M4 8h16M4 16h16"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></g></symbol>
+      <symbol id="i-lang" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5h9M8.5 3.5v2M6 5.5c.8 3.4 3 6 6 7.5M11 5.5c-.9 3.9-3.3 6.9-7 8.5"/><path d="m12.5 20.5 4-9.5 4 9.5M14 17h5"/></g></symbol>
+      <symbol id="i-layers" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3.5 9 4.5-9 4.5L3 8z"/><path d="m3 12.5 9 4.5 9-4.5"/><path d="m3 16.5 9 4.5 9-4.5"/></g></symbol>
+      <symbol id="i-chart" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 20.5h17"/><path d="M6.5 16.5v-4M11 16.5V7.5M15.5 16.5v-6M20 16.5V4.5"/></g></symbol>
+      <symbol id="i-brain" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.2"/><circle cx="18" cy="6" r="2.2"/><circle cx="12" cy="12" r="2.2"/><circle cx="6" cy="18" r="2.2"/><circle cx="18" cy="18" r="2.2"/><path d="m7.6 7.6 2.8 2.8M16.4 7.6l-2.8 2.8M7.6 16.4l2.8-2.8M16.4 16.4l-2.8-2.8"/></g></symbol>
+      <symbol id="i-badge" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9.5" r="6"/><path d="m8.5 14.5-1.5 7 5-2.5 5 2.5-1.5-7"/></g></symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 20s-8-4.6-8-10.4A4.4 4.4 0 0 1 12 7a4.4 4.4 0 0 1 8 2.6C20 15.4 12 20 12 20z"/></symbol>
+    </svg>
+
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <!-- NAV -->
+    <header class="site-nav" id="site-nav">
+      <div class="nav-inner">
+        <a class="brand" href="#home" aria-label="Alexandre BREDILLOT">
+          <span class="brand-mark" aria-hidden="true">AB</span>
+          <span class="brand-name">Alexandre <b>BREDILLOT</b></span>
+        </a>
+        <nav class="nav-links" id="nav-links" aria-label="Main navigation">
+          <a href="#about" data-i18n="nav.about">About</a>
+          <a href="#experience" data-i18n="nav.experience">Experience</a>
+          <a href="#projects" data-i18n="nav.projects">Projects</a>
+          <a href="#education" data-i18n="nav.education">Education</a>
+          <a href="#skills" data-i18n="nav.skills">Skills</a>
+          <a href="travel.html" data-i18n="nav.travel">Travel</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <div class="lang-toggle" role="group" aria-label="Language / Langue">
+            <button class="lang-opt active" type="button" data-lang="en" onclick="setLang('en')" aria-pressed="true">EN</button>
+            <button class="lang-opt" type="button" data-lang="fr" onclick="setLang('fr')" aria-pressed="false">FR</button>
           </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- HERO -->
-<header id="home" class="d-flex flex-column justify-content-center align-items-center bg-primary text-white">
-  <div id="particles-js"></div>
-  <div class="container position-relative" style="z-index: 1;">
-    <div class="row justify-content-center">
-      <div class="col-lg-9 text-center">
-        <p class="hero-eyebrow mb-3" data-i18n="hero.role">Data and AI specialist</p>
-        <h1 class="hero-name mb-3">Alexandre BREDILLOT</h1>
-        <p class="hero-subtitle mb-3" data-i18n="hero.subtitle">Data & AI Professional — Beauty Tech & Finance background</p>
-        <p class="hero-desc mx-auto mb-4" data-i18n="hero.desc">
-          I turn financial and operational data into reliable insight and automation.
-          Skilled in Python, SQL, Dataiku, QlikSense, BI tools (Tableau & Power BI), and statistical analysis.
-          Professional experience in banking, asset management, and business development.
-        </p>
-        <div class="mt-3">
-          <a href="#projects" class="btn btn-light"><i class="fas fa-folder-open"></i> <span data-i18n="hero.btn_projects">See projects</span></a>
-          <a href="#contact" class="btn btn-outline-light"><i class="fas fa-envelope"></i> <span data-i18n="hero.btn_contact">Get in touch</span></a>
-        </div>
-        <div class="hero-social mt-4">
-          <a href="https://www.linkedin.com/in/alexandre-bredillot" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-          <a href="https://github.com/McJack3d" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
-          <a href="mailto:alexandrebredillot@gmail.com" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+          <button class="cmd-trigger" type="button" data-cmd-open aria-label="Open command menu" data-i18n-aria="nav.cmd">
+            <svg class="ico" aria-hidden="true"><use href="#i-search"/></svg>
+            <kbd class="cmd-key" data-cmd-key>⌘K</kbd>
+          </button>
+          <button class="nav-toggle" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="Menu" data-i18n-aria="nav.menu">
+            <span></span><span></span>
+          </button>
         </div>
       </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <canvas class="hero-field" id="hero-field" aria-hidden="true"></canvas>
+      <div class="hero-inner container">
+        <a class="hero-status" href="#experience">
+          <span class="pulse" aria-hidden="true"></span>
+          <span data-i18n="hero.now">Now — Data Intern at L'Oréal Beauty Tech</span>
+          <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </a>
+
+        <h1 class="hero-name">
+          <span class="sr-only">Alexandre BREDILLOT</span>
+          <span class="line" aria-hidden="true"><span>Alexandre</span></span>
+          <span class="line" aria-hidden="true"><span class="grad">BREDILLOT</span></span>
+        </h1>
+
+        <p class="hero-lead">
+          <span data-i18n="hero.lead">I turn complex data into</span>
+          <span class="rotator" id="hero-rotator" aria-hidden="true">products people actually use</span>
+          <span class="sr-only" data-i18n="hero.rot_sr">I turn complex data into products people use, pipelines teams can trust, models that explain themselves and decisions backed by evidence.</span>
+        </p>
+
+        <p class="hero-desc" data-i18n="hero.desc">Data &amp; AI professional across Beauty Tech and Finance — from master data and data contracts at L'Oréal to payment data flows at La Banque Postale and FinBERT-powered return forecasting in my MSc thesis.</p>
+
+        <div class="hero-cta">
+          <a class="btn btn-primary magnetic" href="#projects">
+            <span data-i18n="hero.btn_projects">Explore my work</span>
+            <svg class="ico ico-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+          <a class="btn btn-ghost magnetic" href="Images/CV_Alexandre_Bredillot.pdf" target="_blank" rel="noopener">
+            <svg class="ico" aria-hidden="true"><use href="#i-download"/></svg>
+            <span data-i18n="contact.cv">Download CV</span>
+          </a>
+          <ul class="hero-social">
+            <li><a href="https://www.linkedin.com/in/alexandre-bredillot" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ico" aria-hidden="true"><use href="#i-linkedin"/></svg></a></li>
+            <li><a href="https://github.com/McJack3d" target="_blank" rel="noopener" aria-label="GitHub"><svg class="ico" aria-hidden="true"><use href="#i-github"/></svg></a></li>
+            <li><a href="mailto:alexandrebredillot@gmail.com" aria-label="Email"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <a href="#about" class="hero-scroll">
+        <span data-i18n="hero.scroll">Scroll</span>
+        <i aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <!-- STACK MARQUEE -->
+    <div class="marquee" role="region" aria-label="Tech stack" data-i18n-aria="hero.stack">
+      <div class="marquee-track">
+        <ul class="marquee-list">
+          <li>Python</li><li>SQL</li><li>Google Cloud</li><li>BigQuery</li><li>React</li><li>PyTorch</li><li>FinBERT</li><li>scikit-learn</li><li>Dataiku</li><li>QlikSense</li><li>Power BI</li><li>Tableau</li><li>SAP ECC</li><li>TIBCO EBX</li><li>SHAP</li><li>Looker Studio</li>
+        </ul>
+        <ul class="marquee-list" aria-hidden="true">
+          <li>Python</li><li>SQL</li><li>Google Cloud</li><li>BigQuery</li><li>React</li><li>PyTorch</li><li>FinBERT</li><li>scikit-learn</li><li>Dataiku</li><li>QlikSense</li><li>Power BI</li><li>Tableau</li><li>SAP ECC</li><li>TIBCO EBX</li><li>SHAP</li><li>Looker Studio</li>
+        </ul>
+      </div>
     </div>
-  </div>
-  <a href="#about" class="hero-scroll" aria-label="Scroll to content"><i class="fas fa-chevron-down" aria-hidden="true"></i></a>
-</header>
 
-    <main id="main" role="main">
+    <main id="main">
 
-      <!-- ABOUT / SUMMARY -->
-      <section id="about" class="py-5">
+      <!-- 01 ABOUT -->
+      <section id="about" class="section">
         <div class="container">
-          <h3 class="section-title" data-i18n="about.title">Professional Summary</h3>
-          <p data-i18n="about.body">Data & AI Professional with a proven track record in building scalable data products across the Beauty Tech and Financial sectors. Experienced in engineering robust data pipelines, enforcing strict data quality standards, and driving statistical analysis. Skilled in Python, SQL, and BI tools, with a strong passion for transforming complex data into actionable business insights.</p>
-        </div>
-      </section>
+          <header class="section-head" data-reveal>
+            <p class="section-kicker"><span class="idx">01</span><span data-i18n="nav.about">About</span></p>
+            <h2 class="section-title" data-i18n="about.headline">From raw data to products, pipelines and decisions.</h2>
+          </header>
 
-      <!-- EDUCATION -->
-      <section id="education" class="py-5 bg-light">
-        <div class="container">
-          <h3 class="section-title" data-i18n="edu.title">Education</h3>
-          <div class="row">
-            <div class="col-md-6 mb-4 mb-md-0">
-              <div class="edu-card">
-                <span class="edu-icon" aria-hidden="true"><i class="fas fa-graduation-cap"></i></span>
-                <h5>EDHEC Business School — MSc Data Science & Artificial Intelligence</h5>
-                <p class="mb-1 small text-muted" data-i18n="edu.edhec.period">Since 2025 — Lille, France</p>
-                <p class="mb-3" data-i18n="edu.edhec.desc">Ranked #4 Business School in France. Focus on applied data science and AI for business.</p>
+          <div class="bento">
+            <article class="tile tile-summary spot" data-reveal>
+              <p class="tile-label" data-i18n="about.title">Professional Summary</p>
+              <p class="summary-text" data-i18n="about.body">Data &amp; AI Professional with a proven track record in building scalable data products across the Beauty Tech and Financial sectors. Experienced in engineering robust data pipelines, enforcing strict data quality standards, and driving statistical analysis. Skilled in Python, SQL, and BI tools, with a strong passion for transforming complex data into actionable business insights.</p>
+              <p class="tile-foot">
+                <svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg>
+                <span data-i18n="about.based">Based in Paris &amp; Lille, France</span>
+              </p>
+            </article>
 
-                <p class="mb-1" data-i18n-html="edu.edhec.core"><strong>Core:</strong> Python for data analysis; statistical modeling & inference; data mining & machine learning (clustering/PCA, classification, ensembles), model validation & interpretability.</p>
-                <p class="mb-1" data-i18n-html="edu.edhec.advanced"><strong>Advanced:</strong> Deep learning (Keras), NLP (topic modeling, embeddings, sentiment + intro to LLMs), time series forecasting (ARIMA/SARIMA + ML), scalable data management & analytics engineering (SQL/cloud pipelines, production considerations).</p>
-                <p class="mb-0" data-i18n-html="edu.edhec.applied"><strong>Applied analytics:</strong> Web analytics stack (GA4/GTM, BigQuery SQL, Looker Studio) and business projects translating data into decision-ready dashboards and recommendations.</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="edu-card">
-                <span class="edu-icon" aria-hidden="true"><i class="fas fa-university"></i></span>
-                <h5>ESSCA School of Management — Bachelor in International Management</h5>
-                <p class="mb-1 small text-muted" data-i18n="edu.essca.period">2022 — 2025 — Paris, France</p>
-                <p class="mb-3" data-i18n="edu.essca.desc">Studied international management with coursework in finance and analytics.</p>
+            <article class="tile tile-now spot" data-reveal>
+              <p class="tile-label"><span class="pulse" aria-hidden="true"></span><span data-i18n="about.now_label">Currently</span></p>
+              <p class="now-org">L'Oréal <span>Beauty Tech</span></p>
+              <p class="now-body" data-i18n-html="about.now_body">Data Intern in the Global Commerce Data Domain — building <strong>“Find Your Customer”</strong>, a React app on GCP, and formalising data contracts for priority Commerce data flows.</p>
+            </article>
 
-                <p class="mb-1" data-i18n-html="edu.essca.business"><strong>Business, strategy & project delivery:</strong> project management, strategy, organisational behaviour, cross-cultural management, business simulation.</p>
-                <p class="mb-1" data-i18n-html="edu.essca.marketing"><strong>Marketing, negotiation & communication:</strong> marketing project, negotiation, market research, multimedia communication (campaigns & stakeholder comms).</p>
-                <p class="mb-0" data-i18n-html="edu.essca.finance"><strong>Finance, economics & governance:</strong> finance for managers, economics, political economy, international trade, intro to law & international relations.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            <article class="tile tile-stat spot" data-reveal>
+              <p class="stat-num" data-count="25885">25,885</p>
+              <p class="stat-label" data-i18n="about.stat.articles">news articles scored with FinBERT for my MSc thesis</p>
+            </article>
 
-      <!-- EXPERIENCE -->
-      <section id="experience" class="py-5">
-        <div class="container">
-          <h3 class="section-title" data-i18n="exp.title">Professional Experience</h3>
+            <article class="tile tile-stat spot" data-reveal>
+              <p class="stat-num" data-count="5.18" data-decimals="2" data-prefix="+" data-suffix="%">+5.18%</p>
+              <p class="stat-label" data-i18n="about.stat.mae">MAE improvement at the 5-day horizon, statistically significant</p>
+            </article>
 
-          <div class="timeline">
+            <article class="tile tile-stat spot" data-reveal>
+              <p class="stat-num" data-count="21">21</p>
+              <div class="stat-mini" aria-hidden="true"><span style="--f:11"></span><span style="--f:8"></span><span style="--f:1"></span><span style="--f:1"></span></div>
+              <p class="stat-label" data-i18n="about.stat.certs">certifications — IBM, Anthropic, Bloomberg &amp; SAFe</p>
+            </article>
 
-            <div class="timeline-item">
-              <div class="timeline-marker"></div>
-              <div class="timeline-content">
-                <span class="timeline-date" data-i18n="exp.army.period">Since December 2022 · Fontevraud L'Abbaye, France</span>
-                <h5 class="timeline-title">French Army Reserve — 2nd Dragoon Regiment, 6th Squadron</h5>
-                <p class="timeline-role" data-i18n="exp.army.role">Reserve Soldier</p>
-                <ul>
-                  <li data-i18n="exp.army.li1">Reserve soldier in the 6th squadron of a cavalry regiment specialized in NRBC.</li>
-                  <li data-i18n="exp.army.li2">Trained and equipped to operate in and respond to Nuclear, Radiological, Biological, and Chemical (NRBC) threat environments.</li>
-                  <li data-i18n="exp.army.li3">Experience in high-discipline operational settings, teamwork, and readiness for time-constrained missions.</li>
+            <article class="tile tile-stat spot" data-reveal>
+              <p class="stat-num" data-count="4">4</p>
+              <div class="stat-flags" aria-hidden="true"><span>🇫🇷</span><span>🇬🇧</span><span>🇪🇸</span><span>🇷🇺</span></div>
+              <p class="stat-label" data-i18n="about.stat.langs">languages — French, English, Spanish, Russian</p>
+            </article>
+
+            <a class="tile tile-beyond spot" href="travel.html" data-reveal>
+              <div class="beyond-copy">
+                <p class="tile-label" data-i18n="about.beyond_label">Beyond work</p>
+                <p class="beyond-title"><span data-i18n="about.travel_title">Travel blog</span> <svg class="ico" aria-hidden="true"><use href="#i-arrow-ur"/></svg></p>
+                <p class="beyond-body" data-i18n="about.travel_body">Stories, photos and maps from 10 destinations across 3 continents.</p>
+                <ul class="chip-row">
+                  <li class="chip chip-soft" data-i18n="skills.interest.finance">Finance &amp; investing</li>
+                  <li class="chip chip-soft" data-i18n="skills.interest.calisthenics">Calisthenics</li>
+                  <li class="chip chip-soft" data-i18n="skills.interest.running">Running</li>
+                  <li class="chip chip-soft" data-i18n="skills.interest.motorsport">Motorsports</li>
                 </ul>
               </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-marker"></div>
-              <div class="timeline-content">
-                <span class="timeline-date" data-i18n="exp.loreal.period">July – December 2026 · Clichy, France</span>
-                <h5 class="timeline-title">L'Oréal — Beauty Tech</h5>
-                <p class="timeline-role" data-i18n="exp.loreal.role">Data Intern – Global Commerce Data Domain</p>
-                <ul>
-                  <li data-i18n-html="exp.loreal.li1"><strong>Data Product Build (React &amp; GCP):</strong> Designing and deploying "Find Your Customer", a user-centered React web app on GCP (versioned on GitHub) that lets business and data teams search a customer, view key information and easily access the underlying B2B and sellout data.</li>
-                  <li data-i18n-html="exp.loreal.li2"><strong>Data Contracts &amp; SLAs:</strong> Contributing to the implementation or formalization of data contracts for the priority data flows of the Commerce scope, defining quality rules, alerting and expected service levels.</li>
-                  <li data-i18n-html="exp.loreal.li3"><strong>Master Data Harmonization:</strong> Structuring massive volumes of complex Master Data (Customer, Point of Sale, Sales Force Structure) from the SAP ECC and TIBCO EBX source systems into scalable, business-ready assets.</li>
-                  <li data-i18n-html="exp.loreal.li4"><strong>Data Quality &amp; Remediation:</strong> Identifying and prioritizing personal data quality gaps on the Commerce scope, then steering the corrective actions with the IT teams.</li>
-                  <li data-i18n-html="exp.loreal.li5"><strong>Personal Data Governance &amp; Compliance:</strong> Supporting the Data Protection Officers on the Commerce scope — contributing to the mapping of processing activities and data flows, checking that required compliance information is in place, following up on personal data requests and raising team awareness.</li>
-                  <li data-i18n-html="exp.loreal.li6"><strong>Run &amp; Operational Continuity:</strong> Handling requests and incidents on the assigned scope within agreed timeframes, keeping transparent follow-up on open topics and maintaining up-to-date documentation for recurring processes.</li>
-                  <li data-i18n-html="exp.loreal.li7"><strong>Cross-Functional Collaboration:</strong> Working daily with Data Product Owners and Data Engineers on the Global Commerce Transformation strategy, building a structured understanding of Commerce and Data dynamics to become an identified point of contact and share an actionable synthesis with the SDDS Commerce team.</li>
-                </ul>
-                <p class="small text-muted mb-0" data-i18n="exp.loreal.manager">Manager: Mr. Luc Bochet, Lead Data Product Owner</p>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-marker"></div>
-              <div class="timeline-content">
-                <span class="timeline-date" data-i18n="exp.lbp.period">January – July 2025 · Paris, France</span>
-                <h5 class="timeline-title">La Banque Postale — Data Team, Payment Department</h5>
-                <p class="timeline-role" data-i18n="exp.lbp.role">Data Analyst Intern</p>
-                <ul>
-                  <li data-i18n-html="exp.lbp.li1"><strong>Data flow governance:</strong> supervised and optimized payment flow processes with focus on SEPA/DSP2/IP compliance.</li>
-                  <li data-i18n-html="exp.lbp.li2"><strong>Business needs analysis & implementation:</strong> partnered with stakeholders to understand needs, analyze processes, and deliver tailored reporting automation and KPI tracking improvements.</li>
-                  <li data-i18n-html="exp.lbp.li3"><strong>Automation & reporting:</strong> built dashboards and monitoring tools (QlikSense, Dataiku, SQL, Python) and automated recurring reporting to reduce manual workload and improve real-time visibility.</li>
-                  <li data-i18n-html="exp.lbp.li4"><strong>XML file mapping:</strong> mapped and structured XML files to improve traceability, usability, and downstream integration.</li>
-                  <li data-i18n-html="exp.lbp.li5"><strong>Data flow optimization:</strong> identified anomalies, improved processes, and supported operational reliability for payment workflows.</li>
-                  <li data-i18n-html="exp.lbp.li6"><strong>Data quality management:</strong> implemented validation rules and automated error-detection mechanisms to increase accuracy and consistency of financial data.</li>
-                  <li data-i18n-html="exp.lbp.li7"><strong>Process improvement:</strong> identified bottlenecks in data workflows and delivered optimizations improving processing time and operational efficiency.</li>
-                </ul>
-                <p class="small text-muted mb-0" data-i18n="exp.lbp.manager">Manager: Mr. Hervé Harvoire, Payment Hub Manager</p>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-marker"></div>
-              <div class="timeline-content">
-                <span class="timeline-date" data-i18n="exp.sienna.period">January – July 2024 · Luxembourg</span>
-                <h5 class="timeline-title">Sienna Investment Managers — Finance Team</h5>
-                <p class="timeline-role" data-i18n="exp.sienna.role">Account Payables Trainee</p>
-                <ul>
-                  <li data-i18n-html="exp.sienna.li1"><strong>Treasury management & reporting:</strong> executed daily treasury tasks, reconciled bank statements, and produced liquidity/cash reports; contributed to cash projections and month/year-end processes.</li>
-                  <li data-i18n-html="exp.sienna.li2"><strong>Management reporting & analysis:</strong> supported reporting and performed financial analysis to help monitor portfolios and operational performance.</li>
-                  <li data-i18n-html="exp.sienna.li3"><strong>Accounting & invoicing:</strong> processed and verified supplier invoices; managed sales invoices and maintained accounts payable/receivable; resolved discrepancies with vendors.</li>
-                  <li data-i18n-html="exp.sienna.li4"><strong>Regulatory compliance:</strong> supported VAT and Income Tax preparation and ensured adherence to internal policies and accounting standards.</li>
-                  <li data-i18n-html="exp.sienna.li5"><strong>Documentation & payments:</strong> maintained audit-ready records and supported payment processing (checks, ACH, wire transfers); reconciled employee expense reports.</li>
-                </ul>
-                <p class="small text-muted mb-0" data-i18n="exp.sienna.manager">Manager: Ms. Aija Livca, Account Payable Manager</p>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-marker"></div>
-              <div class="timeline-content">
-                <span class="timeline-date" data-i18n="exp.easy.period">April – July 2023 · Issy-les-Moulineaux, France</span>
-                <h5 class="timeline-title">EasyBourse — Business Development Team</h5>
-                <p class="timeline-role" data-i18n="exp.easy.role">Support to the Business Development Manager</p>
-                <ul>
-                  <li data-i18n="exp.easy.li1">Conducted market and sales performance analysis to identify trends and opportunities.</li>
-                  <li data-i18n="exp.easy.li2">Coordinated incentive programs, email campaigns, and digital advertising to support client engagement.</li>
-                  <li data-i18n="exp.easy.li3">Supported commercial activity by preparing quotations and assisting with business offers.</li>
-                </ul>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- SKILLS -->
-      <section id="skills" class="py-5 bg-light">
-        <div class="container">
-          <h3 class="section-title" data-i18n="skills.title">Skills</h3>
-
-          <div class="skills-group">
-            <h5 class="skills-group-title"><i class="fas fa-code"></i> <span data-i18n="skills.programming">Programming & Data</span></h5>
-            <div class="skill-chips">
-              <span class="skill-chip">Python</span>
-              <span class="skill-chip">pandas</span>
-              <span class="skill-chip">NumPy</span>
-              <span class="skill-chip">scikit-learn</span>
-              <span class="skill-chip">PyTorch</span>
-              <span class="skill-chip">Keras</span>
-              <span class="skill-chip">matplotlib</span>
-              <span class="skill-chip">seaborn</span>
-              <span class="skill-chip">SQL</span>
-              <span class="skill-chip">PostgreSQL</span>
-              <span class="skill-chip">VBA</span>
-              <span class="skill-chip">HTML / CSS</span>
-              <span class="skill-chip">React</span>
-              <span class="skill-chip">Git / GitHub</span>
-              <span class="skill-chip skill-chip-secondary">Java (basics)</span>
-              <span class="skill-chip skill-chip-secondary">Docker (basics)</span>
-            </div>
-          </div>
-
-          <div class="skills-group">
-            <h5 class="skills-group-title"><i class="fas fa-chart-line"></i> <span data-i18n="skills.analytics">Analytics & BI Platforms</span></h5>
-            <div class="skill-chips">
-              <span class="skill-chip">Dataiku</span>
-              <span class="skill-chip">QlikSense</span>
-              <span class="skill-chip">Tableau</span>
-              <span class="skill-chip">Power BI</span>
-              <span class="skill-chip">Looker Studio</span>
-              <span class="skill-chip">BigQuery</span>
-              <span class="skill-chip">Google Cloud (GCP)</span>
-              <span class="skill-chip">GA4 / GTM</span>
-              <span class="skill-chip">Excel (financial modelling)</span>
-              <span class="skill-chip skill-chip-secondary">SAP ECC</span>
-              <span class="skill-chip skill-chip-secondary">TIBCO EBX</span>
-            </div>
-          </div>
-
-          <div class="skills-group">
-            <h5 class="skills-group-title"><i class="fas fa-brain"></i> <span data-i18n="skills.methods">Methods & Soft Skills</span></h5>
-            <div class="skill-chips">
-              <span class="skill-chip">Data governance</span>
-              <span class="skill-chip">Data quality</span>
-              <span class="skill-chip">Data contracts</span>
-              <span class="skill-chip">Master Data Management</span>
-              <span class="skill-chip">Personal data compliance</span>
-              <span class="skill-chip">Run / incident management</span>
-              <span class="skill-chip">Statistical analysis</span>
-              <span class="skill-chip">Time-series forecasting</span>
-              <span class="skill-chip">NLP / Sentiment analysis</span>
-              <span class="skill-chip">Model interpretability (SHAP)</span>
-              <span class="skill-chip">Product thinking</span>
-              <span class="skill-chip">Cross-functional collaboration</span>
-              <span class="skill-chip">Mentoring</span>
-            </div>
-          </div>
-
-          <div class="row mt-4">
-            <div class="col-md-6">
-              <h5 class="skills-group-title"><i class="fas fa-language"></i> <span data-i18n="skills.languages">Languages</span></h5>
-              <ul class="language-list">
-                <li><span class="lang-flag">🇫🇷</span> <strong>French</strong> — <span data-i18n="skills.lang.fr">Native</span></li>
-                <li><span class="lang-flag">🇬🇧</span> <strong>English</strong> — <span data-i18n="skills.lang.en_level">Advanced (C1)</span> · <span class="text-muted small">TOEIC 970 · TOEFL iBT 95</span></li>
-                <li><span class="lang-flag">🇪🇸</span> <strong>Spanish</strong> — <span data-i18n="skills.lang.es">Intermediate (B2)</span></li>
-                <li><span class="lang-flag">🇷🇺</span> <strong>Russian</strong> — <span data-i18n="skills.lang.ru">Elementary (A2)</span></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="mt-4">
-            <h5 class="skills-group-title"><i class="fas fa-certificate"></i> <span data-i18n="skills.certs">Certifications</span></h5>
-            <div class="row">
-              <div class="col-lg-3 col-md-6 mb-3">
-                <p class="cert-issuer-name">SAFe by Scaled Agile</p>
-                <ul class="cert-list">
-                  <li>Certified SAFe® 6 Agilist <span class="text-muted small">· 2026</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-3 col-md-6 mb-3">
-                <p class="cert-issuer-name">Anthropic</p>
-                <ul class="cert-list">
-                  <li>AI Capabilities and Limitations</li>
-                  <li>Model Context Protocol: Advanced Topics</li>
-                  <li>Claude Code in Action</li>
-                  <li>Introduction to Claude Cowork</li>
-                  <li>Claude Code 101</li>
-                  <li>Claude 101</li>
-                  <li>Building with the Claude API</li>
-                  <li>Introduction to Model Context Protocol</li>
-                </ul>
-              </div>
-              <div class="col-lg-3 col-md-6 mb-3">
-                <p class="cert-issuer-name">Bloomberg</p>
-                <ul class="cert-list">
-                  <li>Bloomberg Market Concepts <span class="text-muted small">· 2025</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-3 col-md-6 mb-3">
-                <p class="cert-issuer-name">IBM</p>
-                <ul class="cert-list">
-                  <li>What is Data Science?</li>
-                  <li>Tools for Data Science</li>
-                  <li>Python for Data Science, AI &amp; Development</li>
-                  <li>Machine Learning with Python</li>
-                  <li>Data Science Methodology</li>
-                  <li>Python Project for Data Science</li>
-                  <li>Databases and SQL for Data Science with Python</li>
-                  <li>Data Scientist Career Guide and Interview Preparation</li>
-                  <li>Data Visualization with Python</li>
-                  <li>Data Analysis with Python</li>
-                  <li>Generative AI: Elevate Your Data Science Career</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <h5 class="skills-group-title mt-4"><i class="fas fa-heart"></i> <span data-i18n="skills.interests">Interests</span></h5>
-          <div class="skill-chips">
-            <span class="skill-chip skill-chip-soft" data-i18n="skills.interest.finance">Finance & investing</span>
-            <span class="skill-chip skill-chip-soft" data-i18n="skills.interest.calisthenics">Calisthenics</span>
-            <span class="skill-chip skill-chip-soft" data-i18n="skills.interest.running">Running</span>
-            <span class="skill-chip skill-chip-soft" data-i18n="skills.interest.travel">Travelling</span>
-            <span class="skill-chip skill-chip-soft" data-i18n="skills.interest.motorsport">Motorsports</span>
-            <span class="skill-chip skill-chip-soft" data-i18n="skills.interest.games">Video games</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- PROJECTS -->
-      <section id="projects" class="py-5">
-        <div class="container">
-          <h3 class="section-title" data-i18n="projects.title">Projects & Portfolio</h3>
-          <div class="row">
-            <div class="col-md-6 mb-4">
-              <div class="card shadow-sm h-100 project-card">
-                <div class="card-body">
-                  <h5 class="card-title">📈 Sentiment Analysis & Short-Term Return Predictability in Small-Cap Nuclear Equities — MSc Thesis (EDHEC, 2026)</h5>
-                  <p class="card-text" data-i18n-html="projects.thesis.desc">Does FinBERT-derived news sentiment improve short-term return prediction for small-cap nuclear equities? This MSc thesis builds a fully reproducible five-phase pipeline — feasibility audit, data engineering (3,992 ticker-days, 25,885 news articles covering SMR, LEU, NNE), FinBERT sentiment scoring, LSTM training with chronological hold-out, and SHAP explainability. Key finding: sentiment augmentation yields a statistically significant average MAE improvement of <strong>+5.18%</strong> at the 5-day horizon; no aggregate benefit at the 1-day horizon. Hypothesis testing via Diebold-Mariano tests.</p>
-                  <div class="mt-3">
-                    <span class="badge badge-primary mr-1">Python</span>
-                    <span class="badge badge-primary mr-1">FinBERT / NLP</span>
-                    <span class="badge badge-primary mr-1">LSTM</span>
-                    <span class="badge badge-primary mr-1">SHAP</span>
-                    <span class="badge badge-primary">Financial ML</span>
-                  </div>
-                  <div class="mt-3">
-                    <a href="Images/Bredillot_Thesis_EDHEC_v3.pdf" class="btn btn-sm btn-primary mr-2 mb-2" target="_blank" rel="noopener">
-                      <i class="fas fa-file-pdf text-white" aria-hidden="true"></i> <span data-i18n="projects.thesis.btn_dl">Download Thesis (PDF)</span>
-                    </a>
-                    <a href="https://github.com/McJack3d/FIN_PP/tree/main/THES_SA" class="btn btn-sm btn-outline-primary mb-2" target="_blank" rel="noopener">
-                      <i class="fas fa-code" aria-hidden="true"></i> <span data-i18n="projects.thesis.btn_code">Source Code</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 mb-4">
-              <div class="card shadow-sm h-100 project-card">
-                <div class="card-body">
-                  <h5 class="card-title" data-i18n="projects.tradbot.title">🤖 TRAD_BOT — Algorithmic Trading Suite (Binance + IBKR)</h5>
-                  <p class="card-text" data-i18n="projects.tradbot.desc">Two independent algorithmic trading bots in one repository. The Binance bot runs a delta-neutral cash-and-carry strategy (long spot + short perpetual) to harvest funding every 8 hours, with an event-driven backtester, walk-forward analysis, real-time WebSocket market data, risk kill-switches and Telegram/email monitoring. The IBKR bot trades US equities through a two-stage sentiment funnel (FinBERT → LLM gatekeeper) with a dollar-neutral portfolio overlay. Multiple execution modes: backtest, paper, dry-run and live.</p>
-                  <div class="mt-3">
-                    <span class="badge badge-primary mr-1">Python</span>
-                    <span class="badge badge-primary mr-1">Binance / IBKR</span>
-                    <span class="badge badge-primary mr-1">asyncio</span>
-                    <span class="badge badge-primary mr-1">SQLAlchemy</span>
-                    <span class="badge badge-primary">Streamlit</span>
-                  </div>
-                  <div class="mt-3">
-                    <a href="https://github.com/McJack3d/TRAD_BOT" class="btn btn-sm btn-primary mr-2 mb-2" target="_blank" rel="noopener">
-                      <i class="fab fa-github text-white" aria-hidden="true"></i> <span data-i18n="projects.tradbot.btn_view">View Project</span>
-                    </a>
-                    <a href="https://github.com/McJack3d/TRAD_BOT" class="btn btn-sm btn-outline-primary mb-2" target="_blank" rel="noopener">
-                      <i class="fas fa-code" aria-hidden="true"></i> <span data-i18n="projects.tradbot.btn_code">Source Code</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 mb-4">
-              <div class="card shadow-sm h-100 project-card">
-                <div class="card-body">
-                  <h5 class="card-title" data-i18n="projects.kleerer.title">🩺 kleerer — Open, Science-Based Health Data</h5>
-                  <p class="card-text" data-i18n="projects.kleerer.desc">An open-source project making health data available to people looking for evidence-based advice and recommendations, instead of ad-driven content. Ships as a small, fast static site (GitHub Pages) with a comparison tool as its first building block, plus a bot module handling data automation behind the scenes. Actively evolving — more science-based tools are on the way.</p>
-                  <div class="mt-3">
-                    <span class="badge badge-primary mr-1">HTML/CSS/JS</span>
-                    <span class="badge badge-primary mr-1">Open Source</span>
-                    <span class="badge badge-primary">GitHub Pages</span>
-                  </div>
-                  <div class="mt-3">
-                    <a href="https://kleerer.com" class="btn btn-sm btn-primary mr-2 mb-2" target="_blank" rel="noopener">
-                      <i class="fas fa-external-link-alt text-white" aria-hidden="true"></i> <span data-i18n="projects.kleerer.btn_view">View Project</span>
-                    </a>
-                    <a href="https://github.com/McJack3d/kleerer.io" class="btn btn-sm btn-outline-primary mb-2" target="_blank" rel="noopener">
-                      <i class="fas fa-code" aria-hidden="true"></i> <span data-i18n="projects.kleerer.btn_code">Source Code</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 mb-4">
-              <div class="card project-card project-card-future">
-                <div class="card-body text-center">
-                  <h5 class="card-title" data-i18n="projects.future.title">🚀 More projects coming soon 🏗️</h5>
-                  <p class="card-text" data-i18n="projects.future.desc">This space is reserved for upcoming work in data science, quantitative finance and AI. Stay tuned — new projects are on the way.</p>
-                  <div class="mt-3">
-                    <span class="badge badge-primary mr-1"></span>
-                    <span class="badge badge-primary mr-1"></span>
-                    <span class="badge badge-primary"></span>
-                  </div>
-                  <div class="mt-3">
-                    <a href="#" class="btn btn-sm btn-primary disabled mr-2 mb-2" aria-disabled="true" tabindex="-1">
-                      <i class="fas fa-download text-white" aria-hidden="true"></i> <span data-i18n="projects.future.btn_view">View Project</span>
-                    </a>
-                    <a href="#" class="btn btn-sm btn-outline-primary disabled mb-2" aria-disabled="true" tabindex="-1">
-                      <i class="fas fa-code" aria-hidden="true"></i> <span data-i18n="projects.future.btn_code">Source Code</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="mt-4 text-center">
-            <a href="https://github.com/McJack3d" class="btn btn-primary btn-lg btn-project" target="_blank" rel="noopener">
-              <i class="fab fa-github" aria-hidden="true"></i> <span data-i18n="projects.github">View Projects on GitHub</span>
+              <svg class="orb" viewBox="0 0 200 200" aria-hidden="true">
+                <defs>
+                  <radialGradient id="orb-fill" cx="35%" cy="30%" r="75%">
+                    <stop offset="0" stop-color="#8c85ff" stop-opacity=".55"/>
+                    <stop offset=".6" stop-color="#2a1fff" stop-opacity=".18"/>
+                    <stop offset="1" stop-color="#2a1fff" stop-opacity="0"/>
+                  </radialGradient>
+                </defs>
+                <circle cx="100" cy="100" r="86" fill="url(#orb-fill)"/>
+                <g fill="none" stroke="rgba(190,186,255,.35)" stroke-width="1">
+                  <circle cx="100" cy="100" r="86"/>
+                  <ellipse class="orb-m orb-m1" cx="100" cy="100" rx="86" ry="86"/>
+                  <ellipse class="orb-m orb-m2" cx="100" cy="100" rx="86" ry="86"/>
+                  <ellipse class="orb-m orb-m3" cx="100" cy="100" rx="86" ry="86"/>
+                  <ellipse cx="100" cy="100" rx="86" ry="30"/>
+                  <path d="M14 100h172"/>
+                  <ellipse cx="100" cy="62" rx="72" ry="16" opacity=".6"/>
+                  <ellipse cx="100" cy="138" rx="72" ry="16" opacity=".6"/>
+                </g>
+                <g class="orb-pins" fill="#c9c5ff">
+                  <circle cx="92" cy="70" r="3"/><circle cx="148" cy="96" r="3"/><circle cx="84" cy="122" r="3"/><circle cx="118" cy="58" r="2.4"/>
+                </g>
+              </svg>
             </a>
           </div>
         </div>
       </section>
 
-      <!-- CONTACT -->
-      <section id="contact" class="py-5 bg-light">
+      <!-- 02 EXPERIENCE -->
+      <section id="experience" class="section">
         <div class="container">
-          <h3 class="section-title" data-i18n="contact.title">Contact</h3>
-          <p class="contact-lead" data-i18n="contact.open">Open to opportunities in data science, AI strategy, and data governance roles. Feel free to reach out!</p>
-          <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-6 mb-4">
-              <a class="contact-card" href="mailto:alexandrebredillot@gmail.com">
-                <span class="contact-card-icon"><i class="fas fa-envelope" aria-hidden="true"></i></span>
-                <span class="contact-card-label" data-i18n="contact.email">Email</span>
-                <span class="contact-card-value">alexandrebredillot@gmail.com</span>
-              </a>
+          <header class="section-head" data-reveal>
+            <p class="section-kicker"><span class="idx">02</span><span data-i18n="nav.experience">Experience</span></p>
+            <h2 class="section-title" data-i18n="exp.title">Professional Experience</h2>
+          </header>
+
+          <div class="timeline" id="timeline">
+            <div class="timeline-track" aria-hidden="true"><span class="timeline-fill"></span></div>
+            <ol class="tl-list">
+
+              <li class="tl-item" data-reveal>
+                <p class="tl-date" data-i18n="exp.loreal.period">July – December 2026 · Clichy, France</p>
+                <span class="tl-node" aria-hidden="true"></span>
+                <article class="tl-card spot">
+                  <header class="tl-head">
+                    <span class="org-mark mark-loreal" aria-hidden="true">L'O</span>
+                    <div>
+                      <h3 class="tl-title">L'Oréal — Beauty Tech <span class="badge-live"><span class="pulse" aria-hidden="true"></span><span data-i18n="exp.current">Current</span></span></h3>
+                      <p class="tl-role" data-i18n="exp.loreal.role">Data Intern – Global Commerce Data Domain</p>
+                    </div>
+                  </header>
+                  <ul class="tl-points" data-collapse="3">
+                    <li data-i18n-html="exp.loreal.li1"><strong>Data Product Build (React &amp; GCP):</strong> Designing and deploying "Find Your Customer", a user-centered React web app on GCP (versioned on GitHub) that lets business and data teams search a customer, view key information and easily access the underlying B2B and sellout data.</li>
+                    <li data-i18n-html="exp.loreal.li2"><strong>Data Contracts &amp; SLAs:</strong> Contributing to the implementation or formalization of data contracts for the priority data flows of the Commerce scope, defining quality rules, alerting and expected service levels.</li>
+                    <li data-i18n-html="exp.loreal.li3"><strong>Master Data Harmonization:</strong> Structuring massive volumes of complex Master Data (Customer, Point of Sale, Sales Force Structure) from the SAP ECC and TIBCO EBX source systems into scalable, business-ready assets.</li>
+                    <li data-i18n-html="exp.loreal.li4"><strong>Data Quality &amp; Remediation:</strong> Identifying and prioritizing personal data quality gaps on the Commerce scope, then steering the corrective actions with the IT teams.</li>
+                    <li data-i18n-html="exp.loreal.li5"><strong>Personal Data Governance &amp; Compliance:</strong> Supporting the Data Protection Officers on the Commerce scope — contributing to the mapping of processing activities and data flows, checking that required compliance information is in place, following up on personal data requests and raising team awareness.</li>
+                    <li data-i18n-html="exp.loreal.li6"><strong>Run &amp; Operational Continuity:</strong> Handling requests and incidents on the assigned scope within agreed timeframes, keeping transparent follow-up on open topics and maintaining up-to-date documentation for recurring processes.</li>
+                    <li data-i18n-html="exp.loreal.li7"><strong>Cross-Functional Collaboration:</strong> Working daily with Data Product Owners and Data Engineers on the Global Commerce Transformation strategy, building a structured understanding of Commerce and Data dynamics to become an identified point of contact and share an actionable synthesis with the SDDS Commerce team.</li>
+                  </ul>
+                  <ul class="tag-row">
+                    <li>React</li><li>GCP</li><li>GitHub</li><li>SAP ECC</li><li>TIBCO EBX</li><li data-i18n="exp.tag.contracts">Data contracts</li>
+                  </ul>
+                  <p class="tl-manager" data-i18n="exp.loreal.manager">Manager: Mr. Luc Bochet, Lead Data Product Owner</p>
+                </article>
+              </li>
+
+              <li class="tl-item" data-reveal>
+                <p class="tl-date" data-i18n="exp.lbp.period">January – July 2025 · Paris, France</p>
+                <span class="tl-node" aria-hidden="true"></span>
+                <article class="tl-card spot">
+                  <header class="tl-head">
+                    <span class="org-mark mark-lbp" aria-hidden="true">LBP</span>
+                    <div>
+                      <h3 class="tl-title">La Banque Postale — Data Team, Payment Department</h3>
+                      <p class="tl-role" data-i18n="exp.lbp.role">Data Analyst Intern</p>
+                    </div>
+                  </header>
+                  <ul class="tl-points" data-collapse="3">
+                    <li data-i18n-html="exp.lbp.li1"><strong>Data flow governance:</strong> supervised and optimized payment flow processes with focus on SEPA/DSP2/IP compliance.</li>
+                    <li data-i18n-html="exp.lbp.li2"><strong>Business needs analysis &amp; implementation:</strong> partnered with stakeholders to understand needs, analyze processes, and deliver tailored reporting automation and KPI tracking improvements.</li>
+                    <li data-i18n-html="exp.lbp.li3"><strong>Automation &amp; reporting:</strong> built dashboards and monitoring tools (QlikSense, Dataiku, SQL, Python) and automated recurring reporting to reduce manual workload and improve real-time visibility.</li>
+                    <li data-i18n-html="exp.lbp.li4"><strong>XML file mapping:</strong> mapped and structured XML files to improve traceability, usability, and downstream integration.</li>
+                    <li data-i18n-html="exp.lbp.li5"><strong>Data flow optimization:</strong> identified anomalies, improved processes, and supported operational reliability for payment workflows.</li>
+                    <li data-i18n-html="exp.lbp.li6"><strong>Data quality management:</strong> implemented validation rules and automated error-detection mechanisms to increase accuracy and consistency of financial data.</li>
+                    <li data-i18n-html="exp.lbp.li7"><strong>Process improvement:</strong> identified bottlenecks in data workflows and delivered optimizations improving processing time and operational efficiency.</li>
+                  </ul>
+                  <ul class="tag-row">
+                    <li>QlikSense</li><li>Dataiku</li><li>SQL</li><li>Python</li><li>XML</li><li>SEPA / DSP2</li>
+                  </ul>
+                  <p class="tl-manager" data-i18n="exp.lbp.manager">Manager: Mr. Hervé Harvoire, Payment Hub Manager</p>
+                </article>
+              </li>
+
+              <li class="tl-item" data-reveal>
+                <p class="tl-date" data-i18n="exp.sienna.period">January – July 2024 · Luxembourg</p>
+                <span class="tl-node" aria-hidden="true"></span>
+                <article class="tl-card spot">
+                  <header class="tl-head">
+                    <span class="org-mark mark-sienna" aria-hidden="true">SIM</span>
+                    <div>
+                      <h3 class="tl-title">Sienna Investment Managers — Finance Team</h3>
+                      <p class="tl-role" data-i18n="exp.sienna.role">Account Payables Trainee</p>
+                    </div>
+                  </header>
+                  <ul class="tl-points" data-collapse="3">
+                    <li data-i18n-html="exp.sienna.li1"><strong>Treasury management &amp; reporting:</strong> executed daily treasury tasks, reconciled bank statements, and produced liquidity/cash reports; contributed to cash projections and month/year-end processes.</li>
+                    <li data-i18n-html="exp.sienna.li2"><strong>Management reporting &amp; analysis:</strong> supported reporting and performed financial analysis to help monitor portfolios and operational performance.</li>
+                    <li data-i18n-html="exp.sienna.li3"><strong>Accounting &amp; invoicing:</strong> processed and verified supplier invoices; managed sales invoices and maintained accounts payable/receivable; resolved discrepancies with vendors.</li>
+                    <li data-i18n-html="exp.sienna.li4"><strong>Regulatory compliance:</strong> supported VAT and Income Tax preparation and ensured adherence to internal policies and accounting standards.</li>
+                    <li data-i18n-html="exp.sienna.li5"><strong>Documentation &amp; payments:</strong> maintained audit-ready records and supported payment processing (checks, ACH, wire transfers); reconciled employee expense reports.</li>
+                  </ul>
+                  <ul class="tag-row">
+                    <li data-i18n="exp.tag.treasury">Treasury</li><li data-i18n="exp.tag.reporting">Financial reporting</li><li data-i18n="exp.tag.ap">Accounts payable</li><li data-i18n="exp.tag.vat">VAT</li>
+                  </ul>
+                  <p class="tl-manager" data-i18n="exp.sienna.manager">Manager: Ms. Aija Livca, Account Payable Manager</p>
+                </article>
+              </li>
+
+              <li class="tl-item" data-reveal>
+                <p class="tl-date" data-i18n="exp.easy.period">April – July 2023 · Issy-les-Moulineaux, France</p>
+                <span class="tl-node" aria-hidden="true"></span>
+                <article class="tl-card spot">
+                  <header class="tl-head">
+                    <span class="org-mark mark-easy" aria-hidden="true">EB</span>
+                    <div>
+                      <h3 class="tl-title">EasyBourse — Business Development Team</h3>
+                      <p class="tl-role" data-i18n="exp.easy.role">Support to the Business Development Manager</p>
+                    </div>
+                  </header>
+                  <ul class="tl-points">
+                    <li data-i18n="exp.easy.li1">Conducted market and sales performance analysis to identify trends and opportunities.</li>
+                    <li data-i18n="exp.easy.li2">Coordinated incentive programs, email campaigns, and digital advertising to support client engagement.</li>
+                    <li data-i18n="exp.easy.li3">Supported commercial activity by preparing quotations and assisting with business offers.</li>
+                  </ul>
+                  <ul class="tag-row">
+                    <li data-i18n="exp.tag.market">Market analysis</li><li data-i18n="exp.tag.campaigns">Email campaigns</li><li data-i18n="exp.tag.ads">Digital advertising</li>
+                  </ul>
+                </article>
+              </li>
+
+              <li class="tl-item" data-reveal>
+                <p class="tl-date" data-i18n="exp.army.period">Since December 2022 · Fontevraud L'Abbaye, France</p>
+                <span class="tl-node" aria-hidden="true"></span>
+                <article class="tl-card spot">
+                  <header class="tl-head">
+                    <span class="org-mark mark-army" aria-hidden="true">2RD</span>
+                    <div>
+                      <h3 class="tl-title">French Army Reserve — 2nd Dragoon Regiment, 6th Squadron <span class="badge-live badge-muted" data-i18n="exp.ongoing">Ongoing</span></h3>
+                      <p class="tl-role" data-i18n="exp.army.role">Reserve Soldier</p>
+                    </div>
+                  </header>
+                  <ul class="tl-points">
+                    <li data-i18n="exp.army.li1">Reserve soldier in the 6th squadron of a cavalry regiment specialized in NRBC.</li>
+                    <li data-i18n="exp.army.li2">Trained and equipped to operate in and respond to Nuclear, Radiological, Biological, and Chemical (NRBC) threat environments.</li>
+                    <li data-i18n="exp.army.li3">Experience in high-discipline operational settings, teamwork, and readiness for time-constrained missions.</li>
+                  </ul>
+                  <ul class="tag-row">
+                    <li>NRBC</li><li data-i18n="exp.tag.discipline">Discipline</li><li data-i18n="exp.tag.teamwork">Teamwork</li>
+                  </ul>
+                </article>
+              </li>
+
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03 PROJECTS -->
+      <section id="projects" class="section">
+        <div class="container">
+          <header class="section-head" data-reveal>
+            <p class="section-kicker"><span class="idx">03</span><span data-i18n="nav.projects">Projects</span></p>
+            <h2 class="section-title" data-i18n="projects.title">Selected projects</h2>
+          </header>
+
+          <div data-reveal>
+            <article class="project-feature spot">
+              <div class="pf-body">
+                <p class="pf-kicker"><svg class="ico" aria-hidden="true"><use href="#i-spark"/></svg><span data-i18n="projects.featured">Featured · MSc Thesis · EDHEC 2026</span></p>
+                <h3 class="pf-title">Sentiment Analysis &amp; Short-Term Return Predictability in Small-Cap Nuclear Equities</h3>
+                <p class="pf-desc" data-i18n-html="projects.thesis.desc">Does FinBERT-derived news sentiment improve short-term return prediction for small-cap nuclear equities? This MSc thesis builds a fully reproducible five-phase pipeline — feasibility audit, data engineering (3,992 ticker-days, 25,885 news articles covering SMR, LEU, NNE), FinBERT sentiment scoring, LSTM training with chronological hold-out, and SHAP explainability. Key finding: sentiment augmentation yields a statistically significant average MAE improvement of <strong>+5.18%</strong> at the 5-day horizon; no aggregate benefit at the 1-day horizon. Hypothesis testing via Diebold-Mariano tests.</p>
+                <ul class="tag-row">
+                  <li>Python</li><li>FinBERT / NLP</li><li>LSTM</li><li>SHAP</li><li>Diebold-Mariano</li>
+                </ul>
+                <div class="btn-row">
+                  <a href="Images/Bredillot_Thesis_EDHEC_v3.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener">
+                    <svg class="ico" aria-hidden="true"><use href="#i-file"/></svg>
+                    <span data-i18n="projects.thesis.btn_dl">Download Thesis (PDF)</span>
+                  </a>
+                  <a href="https://github.com/McJack3d/FIN_PP/tree/main/THES_SA" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">
+                    <svg class="ico" aria-hidden="true"><use href="#i-code"/></svg>
+                    <span data-i18n="projects.thesis.btn_code">Source Code</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="pf-visual">
+                <dl class="pf-stats">
+                  <div><dt data-i18n="projects.stat.mae">MAE gain at 5 days</dt><dd class="stat-num" data-count="5.18" data-decimals="2" data-prefix="+" data-suffix="%">+5.18%</dd></div>
+                  <div><dt data-i18n="projects.stat.articles">news articles</dt><dd class="stat-num" data-count="25885">25,885</dd></div>
+                  <div><dt data-i18n="projects.stat.days">ticker-days</dt><dd class="stat-num" data-count="3992">3,992</dd></div>
+                  <div><dt data-i18n="projects.stat.tickers">tickers · SMR, LEU, NNE</dt><dd class="stat-num" data-count="3">3</dd></div>
+                </dl>
+                <div class="pipeline">
+                  <p class="pipeline-title" data-i18n="projects.pipeline">Five-phase reproducible pipeline</p>
+                  <ol class="pipeline-steps">
+                    <li><span class="step-n">01</span><span data-i18n="projects.p1">Feasibility audit</span></li>
+                    <li><span class="step-n">02</span><span data-i18n="projects.p2">Data engineering</span></li>
+                    <li><span class="step-n">03</span><span data-i18n="projects.p3">FinBERT sentiment scoring</span></li>
+                    <li><span class="step-n">04</span><span data-i18n="projects.p4">LSTM · chronological hold-out</span></li>
+                    <li><span class="step-n">05</span><span data-i18n="projects.p5">SHAP explainability</span></li>
+                  </ol>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="project-grid">
+            <div data-reveal>
+              <article class="project-card spot tilt">
+                <div class="pc-art pc-art-trade" aria-hidden="true">
+                  <svg class="candles" id="art-candles" viewBox="0 0 400 160" preserveAspectRatio="none"></svg>
+                </div>
+                <div class="pc-body">
+                  <h3 class="pc-title" data-i18n="projects.tradbot.title">TRAD_BOT — Algorithmic Trading Suite (Binance + IBKR)</h3>
+                  <p class="pc-desc" data-i18n="projects.tradbot.desc">Two independent algorithmic trading bots in one repository. The Binance bot runs a delta-neutral cash-and-carry strategy (long spot + short perpetual) to harvest funding every 8 hours, with an event-driven backtester, walk-forward analysis, real-time WebSocket market data, risk kill-switches and Telegram/email monitoring. The IBKR bot trades US equities through a two-stage sentiment funnel (FinBERT → LLM gatekeeper) with a dollar-neutral portfolio overlay. Multiple execution modes: backtest, paper, dry-run and live.</p>
+                  <ul class="tag-row">
+                    <li>Python</li><li>Binance / IBKR</li><li>asyncio</li><li>SQLAlchemy</li><li>Streamlit</li>
+                  </ul>
+                  <div class="btn-row">
+                    <a href="https://github.com/McJack3d/TRAD_BOT" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">
+                      <svg class="ico" aria-hidden="true"><use href="#i-github"/></svg>
+                      <span data-i18n="projects.tradbot.btn_view">View on GitHub</span>
+                    </a>
+                  </div>
+                </div>
+              </article>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-              <a class="contact-card" href="https://www.linkedin.com/in/alexandre-bredillot" target="_blank" rel="noopener">
-                <span class="contact-card-icon"><i class="fab fa-linkedin-in" aria-hidden="true"></i></span>
-                <span class="contact-card-label" data-i18n="contact.linkedin">LinkedIn</span>
-                <span class="contact-card-value">alexandre-bredillot</span>
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-              <a class="contact-card" href="https://github.com/McJack3d" target="_blank" rel="noopener">
-                <span class="contact-card-icon"><i class="fab fa-github" aria-hidden="true"></i></span>
-                <span class="contact-card-label" data-i18n="contact.github_label">GitHub</span>
-                <span class="contact-card-value">McJack3d</span>
-              </a>
+
+            <div data-reveal>
+              <article class="project-card spot tilt">
+                <div class="pc-art pc-art-health" aria-hidden="true">
+                  <div class="bars">
+                    <span style="--w:.92"></span><span style="--w:.64"></span><span style="--w:.78"></span><span style="--w:.41"></span><span style="--w:.7"></span>
+                  </div>
+                </div>
+                <div class="pc-body">
+                  <h3 class="pc-title" data-i18n="projects.kleerer.title">kleerer — Open, Science-Based Health Data</h3>
+                  <p class="pc-desc" data-i18n="projects.kleerer.desc">An open-source project making health data available to people looking for evidence-based advice and recommendations, instead of ad-driven content. Ships as a small, fast static site (GitHub Pages) with a comparison tool as its first building block, plus a bot module handling data automation behind the scenes. Actively evolving — more science-based tools are on the way.</p>
+                  <ul class="tag-row">
+                    <li>HTML/CSS/JS</li><li>Open Source</li><li>GitHub Pages</li>
+                  </ul>
+                  <div class="btn-row">
+                    <a href="https://kleerer.com" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">
+                      <svg class="ico" aria-hidden="true"><use href="#i-arrow-ur"/></svg>
+                      <span data-i18n="projects.kleerer.btn_view">Visit website</span>
+                    </a>
+                    <a href="https://github.com/McJack3d/kleerer.io" class="btn btn-link btn-sm" target="_blank" rel="noopener">
+                      <svg class="ico" aria-hidden="true"><use href="#i-code"/></svg>
+                      <span data-i18n="projects.kleerer.btn_code">Source Code</span>
+                    </a>
+                  </div>
+                </div>
+              </article>
             </div>
           </div>
-          <div class="contact-banner">
-            <div class="contact-banner-text">
-              <h4 class="mb-1" data-i18n="contact.banner_title">Let's work together</h4>
-              <p class="mb-0" data-i18n="contact.banner_body">Send me a message — I usually reply within a day.</p>
+
+          <div class="project-more" data-reveal>
+            <div>
+              <p class="project-more-title" data-i18n="projects.more_title">More in the pipeline</p>
+              <p class="project-more-body" data-i18n="projects.future.desc">This space is reserved for upcoming work in data science, quantitative finance and AI. Stay tuned — new projects are on the way.</p>
             </div>
-            <div class="contact-banner-actions">
-              <a href="Images/CV_Alexandre_Bredillot.pdf" class="btn btn-light" target="_blank" rel="noopener" id="cv-download">
-                <i class="fas fa-download" aria-hidden="true"></i> <span data-i18n="contact.cv">Download CV</span>
-              </a>
-              <a href="mailto:alexandrebredillot@gmail.com" class="btn btn-outline-light">
-                <i class="fas fa-paper-plane" aria-hidden="true"></i> <span data-i18n="contact.btn_email">Email me</span>
-              </a>
-            </div>
+            <a href="https://github.com/McJack3d" class="btn btn-ghost magnetic" target="_blank" rel="noopener">
+              <svg class="ico" aria-hidden="true"><use href="#i-github"/></svg>
+              <span data-i18n="projects.github">View Projects on GitHub</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04 EDUCATION -->
+      <section id="education" class="section">
+        <div class="container">
+          <header class="section-head" data-reveal>
+            <p class="section-kicker"><span class="idx">04</span><span data-i18n="nav.education">Education</span></p>
+            <h2 class="section-title" data-i18n="edu.title">Education</h2>
+          </header>
+
+          <div class="edu-grid">
+            <article class="edu-card spot" data-reveal>
+              <div class="edu-top">
+                <span class="edu-icon" aria-hidden="true"><svg class="ico"><use href="#i-cap"/></svg></span>
+                <p class="edu-period" data-i18n="edu.edhec.period">Since 2025 — Lille, France</p>
+              </div>
+              <h3 class="edu-school">EDHEC Business School</h3>
+              <p class="edu-degree">MSc Data Science &amp; Artificial Intelligence</p>
+              <p class="edu-desc" data-i18n="edu.edhec.desc">Ranked #4 Business School in France. Focus on applied data science and AI for business.</p>
+              <ul class="edu-points">
+                <li data-i18n-html="edu.edhec.core"><strong>Core:</strong> Python for data analysis; statistical modeling &amp; inference; data mining &amp; machine learning (clustering/PCA, classification, ensembles), model validation &amp; interpretability.</li>
+                <li data-i18n-html="edu.edhec.advanced"><strong>Advanced:</strong> Deep learning (Keras), NLP (topic modeling, embeddings, sentiment + intro to LLMs), time series forecasting (ARIMA/SARIMA + ML), scalable data management &amp; analytics engineering (SQL/cloud pipelines, production considerations).</li>
+                <li data-i18n-html="edu.edhec.applied"><strong>Applied analytics:</strong> Web analytics stack (GA4/GTM, BigQuery SQL, Looker Studio) and business projects translating data into decision-ready dashboards and recommendations.</li>
+              </ul>
+            </article>
+
+            <article class="edu-card spot" data-reveal>
+              <div class="edu-top">
+                <span class="edu-icon" aria-hidden="true"><svg class="ico"><use href="#i-globe"/></svg></span>
+                <p class="edu-period" data-i18n="edu.essca.period">2022 — 2025 — Paris, France</p>
+              </div>
+              <h3 class="edu-school">ESSCA School of Management</h3>
+              <p class="edu-degree">Bachelor in International Management</p>
+              <p class="edu-desc" data-i18n="edu.essca.desc">Studied international management with coursework in finance and analytics.</p>
+              <ul class="edu-points">
+                <li data-i18n-html="edu.essca.business"><strong>Business, strategy &amp; project delivery:</strong> project management, strategy, organisational behaviour, cross-cultural management, business simulation.</li>
+                <li data-i18n-html="edu.essca.marketing"><strong>Marketing, negotiation &amp; communication:</strong> marketing project, negotiation, market research, multimedia communication (campaigns &amp; stakeholder comms).</li>
+                <li data-i18n-html="edu.essca.finance"><strong>Finance, economics &amp; governance:</strong> finance for managers, economics, political economy, international trade, intro to law &amp; international relations.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 05 SKILLS -->
+      <section id="skills" class="section">
+        <div class="container">
+          <header class="section-head" data-reveal>
+            <p class="section-kicker"><span class="idx">05</span><span data-i18n="nav.skills">Skills</span></p>
+            <h2 class="section-title" data-i18n="skills.title">Skills</h2>
+          </header>
+
+          <div class="skills-grid">
+            <article class="skill-card spot" data-reveal>
+              <h3 class="skill-title"><svg class="ico" aria-hidden="true"><use href="#i-code"/></svg><span data-i18n="skills.programming">Programming &amp; Data</span></h3>
+              <ul class="chip-row">
+                <li class="chip">Python</li><li class="chip">pandas</li><li class="chip">NumPy</li><li class="chip">scikit-learn</li><li class="chip">PyTorch</li><li class="chip">Keras</li><li class="chip">matplotlib</li><li class="chip">seaborn</li><li class="chip">SQL</li><li class="chip">PostgreSQL</li><li class="chip">VBA</li><li class="chip">HTML / CSS</li><li class="chip">React</li><li class="chip">Git / GitHub</li><li class="chip chip-dim">Java (basics)</li><li class="chip chip-dim">Docker (basics)</li>
+              </ul>
+            </article>
+            <article class="skill-card spot" data-reveal>
+              <h3 class="skill-title"><svg class="ico" aria-hidden="true"><use href="#i-chart"/></svg><span data-i18n="skills.analytics">Analytics &amp; BI Platforms</span></h3>
+              <ul class="chip-row">
+                <li class="chip">Dataiku</li><li class="chip">QlikSense</li><li class="chip">Tableau</li><li class="chip">Power BI</li><li class="chip">Looker Studio</li><li class="chip">BigQuery</li><li class="chip">Google Cloud (GCP)</li><li class="chip">GA4 / GTM</li><li class="chip">Excel (financial modelling)</li><li class="chip chip-dim">SAP ECC</li><li class="chip chip-dim">TIBCO EBX</li>
+              </ul>
+            </article>
+            <article class="skill-card spot" data-reveal>
+              <h3 class="skill-title"><svg class="ico" aria-hidden="true"><use href="#i-brain"/></svg><span data-i18n="skills.methods">Methods &amp; Soft Skills</span></h3>
+              <ul class="chip-row">
+                <li class="chip">Data governance</li><li class="chip">Data quality</li><li class="chip">Data contracts</li><li class="chip">Master Data Management</li><li class="chip">Personal data compliance</li><li class="chip">Run / incident management</li><li class="chip">Statistical analysis</li><li class="chip">Time-series forecasting</li><li class="chip">NLP / Sentiment analysis</li><li class="chip">Model interpretability (SHAP)</li><li class="chip">Product thinking</li><li class="chip">Cross-functional collaboration</li><li class="chip">Mentoring</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="skills-row">
+            <article class="skill-card lang-card spot" data-reveal>
+              <h3 class="skill-title"><svg class="ico" aria-hidden="true"><use href="#i-lang"/></svg><span data-i18n="skills.languages">Languages</span></h3>
+              <ul class="lang-list">
+                <li style="--lvl:1">
+                  <div class="lang-line"><span class="lang-name"><span class="lang-flag" aria-hidden="true">🇫🇷</span>French</span><span class="lang-level" data-i18n="skills.lang.fr">Native</span></div>
+                  <span class="meter" aria-hidden="true"><span></span></span>
+                </li>
+                <li style="--lvl:.86">
+                  <div class="lang-line"><span class="lang-name"><span class="lang-flag" aria-hidden="true">🇬🇧</span>English</span><span class="lang-level"><span data-i18n="skills.lang.en_level">Advanced (C1)</span></span></div>
+                  <span class="meter" aria-hidden="true"><span></span></span>
+                  <span class="lang-note">TOEIC 970 · TOEFL iBT 95</span>
+                </li>
+                <li style="--lvl:.66">
+                  <div class="lang-line"><span class="lang-name"><span class="lang-flag" aria-hidden="true">🇪🇸</span>Spanish</span><span class="lang-level" data-i18n="skills.lang.es">Intermediate (B2)</span></div>
+                  <span class="meter" aria-hidden="true"><span></span></span>
+                </li>
+                <li style="--lvl:.3">
+                  <div class="lang-line"><span class="lang-name"><span class="lang-flag" aria-hidden="true">🇷🇺</span>Russian</span><span class="lang-level" data-i18n="skills.lang.ru">Elementary (A2)</span></div>
+                  <span class="meter" aria-hidden="true"><span></span></span>
+                </li>
+              </ul>
+            </article>
+
+            <article class="skill-card cert-card spot" data-reveal>
+              <h3 class="skill-title"><svg class="ico" aria-hidden="true"><use href="#i-badge"/></svg><span data-i18n="skills.certs">Certifications</span></h3>
+              <div class="cert-list">
+                <details class="cert">
+                  <summary><span class="cert-issuer">Anthropic</span><span class="cert-count">8</span></summary>
+                  <ul>
+                    <li>AI Capabilities and Limitations</li>
+                    <li>Model Context Protocol: Advanced Topics</li>
+                    <li>Claude Code in Action</li>
+                    <li>Introduction to Claude Cowork</li>
+                    <li>Claude Code 101</li>
+                    <li>Claude 101</li>
+                    <li>Building with the Claude API</li>
+                    <li>Introduction to Model Context Protocol</li>
+                  </ul>
+                </details>
+                <details class="cert">
+                  <summary><span class="cert-issuer">IBM</span><span class="cert-count">11</span></summary>
+                  <ul>
+                    <li>What is Data Science?</li>
+                    <li>Tools for Data Science</li>
+                    <li>Python for Data Science, AI &amp; Development</li>
+                    <li>Machine Learning with Python</li>
+                    <li>Data Science Methodology</li>
+                    <li>Python Project for Data Science</li>
+                    <li>Databases and SQL for Data Science with Python</li>
+                    <li>Data Scientist Career Guide and Interview Preparation</li>
+                    <li>Data Visualization with Python</li>
+                    <li>Data Analysis with Python</li>
+                    <li>Generative AI: Elevate Your Data Science Career</li>
+                  </ul>
+                </details>
+                <div class="cert cert-single">
+                  <span class="cert-issuer">SAFe by Scaled Agile</span>
+                  <span class="cert-item">Certified SAFe® 6 Agilist <span class="cert-year">2026</span></span>
+                </div>
+                <div class="cert cert-single">
+                  <span class="cert-issuer">Bloomberg</span>
+                  <span class="cert-item">Bloomberg Market Concepts <span class="cert-year">2025</span></span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="interests" data-reveal>
+            <h3 class="skill-title"><svg class="ico" aria-hidden="true"><use href="#i-heart"/></svg><span data-i18n="skills.interests">Interests</span></h3>
+            <ul class="chip-row">
+              <li class="chip chip-soft" data-i18n="skills.interest.finance">Finance &amp; investing</li>
+              <li class="chip chip-soft" data-i18n="skills.interest.calisthenics">Calisthenics</li>
+              <li class="chip chip-soft" data-i18n="skills.interest.running">Running</li>
+              <li class="chip chip-soft" data-i18n="skills.interest.travel">Travelling</li>
+              <li class="chip chip-soft" data-i18n="skills.interest.motorsport">Motorsports</li>
+              <li class="chip chip-soft" data-i18n="skills.interest.games">Video games</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 06 CONTACT -->
+      <section id="contact" class="section contact">
+        <div class="container">
+          <header class="section-head" data-reveal>
+            <p class="section-kicker"><span class="idx">06</span><span data-i18n="nav.contact">Contact</span></p>
+          </header>
+          <h2 class="contact-title" data-reveal data-i18n="contact.banner_title">Let's work together</h2>
+          <p class="contact-lead" data-reveal data-i18n="contact.open">Open to opportunities in data science, AI strategy, and data governance roles. Feel free to reach out!</p>
+
+          <div class="email-row" data-reveal>
+            <a class="email-big" href="mailto:alexandrebredillot@gmail.com">alexandrebredillot@gmail.com</a>
+            <button class="copy-btn" type="button" data-copy="alexandrebredillot@gmail.com" aria-label="Copy email address" data-i18n-aria="contact.copy_label">
+              <svg class="ico ico-copy" aria-hidden="true"><use href="#i-copy"/></svg>
+              <svg class="ico ico-check" aria-hidden="true"><use href="#i-check"/></svg>
+              <span data-i18n="contact.copy">Copy</span>
+            </button>
+          </div>
+          <p class="contact-note" data-reveal data-i18n="contact.banner_body">Send me a message — I usually reply within a day.</p>
+
+          <div class="contact-links">
+            <a class="contact-link spot" data-reveal href="https://www.linkedin.com/in/alexandre-bredillot" target="_blank" rel="noopener">
+              <svg class="ico ico-lg" aria-hidden="true"><use href="#i-linkedin"/></svg>
+              <span class="cl-text"><span class="cl-label" data-i18n="contact.linkedin">LinkedIn</span><span class="cl-value">alexandre-bredillot</span></span>
+              <svg class="ico cl-arrow" aria-hidden="true"><use href="#i-arrow-ur"/></svg>
+            </a>
+            <a class="contact-link spot" data-reveal href="https://github.com/McJack3d" target="_blank" rel="noopener">
+              <svg class="ico ico-lg" aria-hidden="true"><use href="#i-github"/></svg>
+              <span class="cl-text"><span class="cl-label" data-i18n="contact.github_label">GitHub</span><span class="cl-value">McJack3d</span></span>
+              <svg class="ico cl-arrow" aria-hidden="true"><use href="#i-arrow-ur"/></svg>
+            </a>
+            <a class="contact-link spot" data-reveal href="Images/CV_Alexandre_Bredillot.pdf" target="_blank" rel="noopener" id="cv-download">
+              <svg class="ico ico-lg" aria-hidden="true"><use href="#i-download"/></svg>
+              <span class="cl-text"><span class="cl-label">PDF</span><span class="cl-value" data-i18n="contact.cv">Download CV</span></span>
+              <svg class="ico cl-arrow" aria-hidden="true"><use href="#i-arrow-ur"/></svg>
+            </a>
           </div>
         </div>
       </section>
@@ -542,91 +734,23 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="py-4 bg-primary text-white">
-      <div class="container text-center">
-        <div class="mb-2">
-          <a href="https://www.linkedin.com/in/alexandre-bredillot" target="_blank" rel="noopener" class="text-white mx-2" title="LinkedIn">
-            <i class="fab fa-linkedin fa-lg" style="color:#fff;"></i>
-          </a>
-          <a href="https://github.com/McJack3d" target="_blank" rel="noopener" class="text-white mx-2" title="GitHub">
-            <i class="fab fa-github fa-lg" style="color:#fff;"></i>
-          </a>
-          <a href="mailto:alexandrebredillot@gmail.com" class="text-white mx-2" title="Email">
-            <i class="fas fa-envelope fa-lg" style="color:#fff;"></i>
-          </a>
-        </div>
-        <p class="small mb-0">&copy; 2026 Alexandre BREDILLOT — <span data-i18n="footer.rights">All rights reserved.</span></p>
+    <footer class="site-footer">
+      <p class="footer-word" aria-hidden="true">BREDILLOT</p>
+      <div class="container footer-row">
+        <p class="footer-copy">&copy; <span data-year>2026</span> Alexandre BREDILLOT — <span data-i18n="footer.rights">All rights reserved.</span></p>
+        <nav class="footer-links" aria-label="Footer">
+          <a href="travel.html"><svg class="ico" aria-hidden="true"><use href="#i-globe"/></svg><span data-i18n="nav.travel">Travel</span></a>
+          <a href="https://www.linkedin.com/in/alexandre-bredillot" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ico" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+          <a href="https://github.com/McJack3d" target="_blank" rel="noopener" aria-label="GitHub"><svg class="ico" aria-hidden="true"><use href="#i-github"/></svg></a>
+          <a href="#home" class="to-top"><span data-i18n="footer.top">Back to top</span><svg class="ico" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
+        </nav>
       </div>
     </footer>
 
-    <!-- Scroll to Top Button -->
-    <button id="scrollToTop" class="scroll-to-top btn btn-primary" aria-label="Scroll to top">
-      <i class="fas fa-chevron-up"></i>
-    </button>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-    <!-- Scripts -->
-    <script src="Scripts/jquery-3.4.1.min.js"></script>
-    <script src="Scripts/bootstrap.bundle.min.js"></script>
-    <script src="Scripts/particles.js"></script>
     <script src="Scripts/i18n.js"></script>
-    <script>
-      particlesJS.load('particles-js', 'Scripts/particlesjs-config.json', function() {
-        console.log('particles config loaded');
-      });
-
-      // Smooth scrolling for anchor links
-      (function($){
-        $(document).on('click','a.nav-link[href^="#"], a.btn[href^="#"]', function(e){
-          e.preventDefault();
-          var target = $(this.hash);
-          if(target.length){ $('html,body').animate({scrollTop: target.offset().top - 70}, 400); }
-          $('#nav').removeClass('show'); // close the mobile menu after navigating
-        });
-
-        // Close the mobile menu when the Travel link (or any collapsed link) is tapped
-        $('#nav .nav-link').on('click', function(){ $('#nav').removeClass('show'); });
-
-        // Scroll to top button
-        $(window).scroll(function() {
-          $('#scrollToTop').toggleClass('show', $(this).scrollTop() > 300);
-        });
-
-        $('#scrollToTop').click(function() {
-          $('html, body').animate({scrollTop: 0}, 500);
-          return false;
-        });
-
-        // CV download button - open directly, browser handles 404
-        $('#cv-download').click(function(e) {
-          // Let the browser handle the download normally
-          // If file doesn't exist, browser will show 404
-        });
-
-        // Collapse the mobile menu after tapping a link
-        $('#nav').on('click', '.nav-link', function() {
-          $('#nav').collapse('hide');
-        });
-      })(jQuery);
-
-      // Reveal sections and cards as they scroll into view
-      (function() {
-        if (!('IntersectionObserver' in window)) return;
-        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-        var targets = document.querySelectorAll('#main > section, .timeline-item, .project-card, .edu-card, .skills-group, .contact-card, .contact-banner');
-        var io = new IntersectionObserver(function(entries) {
-          entries.forEach(function(entry) {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('in-view');
-              io.unobserve(entry.target);
-            }
-          });
-        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-        targets.forEach(function(el) {
-          el.classList.add('reveal');
-          io.observe(el);
-        });
-      })();
-    </script>
-
+    <script src="Scripts/hero-field.js" defer></script>
+    <script src="Scripts/home.js" defer></script>
   </body>
 </html>
