@@ -101,7 +101,8 @@
     // hover transitions apply again (keeps .is-in for child animations)
     setTimeout(function () { el.removeAttribute('data-reveal'); el.style.removeProperty('--d'); }, 1100 + delay * 1000);
   }
-  if (!('IntersectionObserver' in window) || reduceMotion) {
+  // with "Reduce motion" on, CSS turns these into plain fades (no slide)
+  if (!('IntersectionObserver' in window)) {
     revealEls.forEach(function (el) { el.classList.add('is-in'); });
   } else {
     var revealer = new IntersectionObserver(function (entries) {
@@ -147,7 +148,7 @@
       if (p < 1) requestAnimationFrame(step); else el._state = 'done';
     })(t0);
   }
-  if (!reduceMotion && 'IntersectionObserver' in window) {
+  if ('IntersectionObserver' in window) {
     var countIO = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
         if (!en.isIntersecting) return;
@@ -196,7 +197,7 @@
   }
   if (rotator) {
     loadPhrases();
-    if (!reduceMotion) {
+    {
       var heroEl = qs('#home');
       if (heroEl && 'IntersectionObserver' in window) {
         new IntersectionObserver(function (en) { heroVisible = en[0].isIntersecting; }).observe(heroEl);
@@ -222,6 +223,7 @@
     }, { passive: true });
   }
 
+  // large pointer-driven movement (tilt, magnetic pull) stays off with "Reduce motion"
   if (finePointer && !reduceMotion) {
     qsa('.tilt').forEach(function (el) {
       el.addEventListener('pointermove', function (e) {
@@ -242,7 +244,9 @@
       });
       el.addEventListener('pointerleave', function () { el.style.transform = ''; });
     });
+  }
 
+  if (finePointer) {
     var glow = qs('.cursor-glow');
     if (glow) {
       var gx = window.innerWidth / 2, gy = window.innerHeight / 2, tx = gx, ty = gy, glowRaf = 0;
