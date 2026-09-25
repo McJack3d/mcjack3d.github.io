@@ -1,7 +1,7 @@
 /* Hero "data terrain" — a perspective field of points rolling like a signal.
    Canvas 2D, no dependencies. The cursor lifts the surface; a click sends a
-   ripple. Pauses when off-screen / tab hidden; static frame for
-   prefers-reduced-motion. */
+   ripple. Pauses when off-screen / tab hidden; drifts at a calmer pace with
+   prefers-reduced-motion, and follows the light/dark system theme. */
 (function () {
   'use strict';
 
@@ -11,6 +11,8 @@
   var hero = canvas.parentElement;
 
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var SPEED = reduceMotion ? 0.45 : 1;
+  var lightQuery = window.matchMedia('(prefers-color-scheme: light)');
 
   var W = 0, H = 0, DPR = 1;
   var COLS = 0, ROWS = 0, XSPAN = 0;
@@ -27,13 +29,20 @@
   function mix(a, b, f) { return Math.round(a + (b - a) * f); }
 
   function buildPalette() {
-    // far: deep brand indigo, faint — near: pale lavender, bright
+    var light = lightQuery.matches;
     for (var i = 0; i < BUCKETS; i++) {
       var f = i / (BUCKETS - 1);
       var a = 0.05 + 0.85 * Math.pow(f, 1.6);
-      base[i] = 'rgba(' + mix(52, 205, f) + ',' + mix(40, 201, f) + ',255,' + a.toFixed(3) + ')';
-      // highlight under the cursor: towards ice-cyan
-      hot[i] = 'rgba(' + mix(120, 186, f) + ',' + mix(200, 240, f) + ',255,' + Math.min(1, a + 0.35).toFixed(3) + ')';
+      if (light) {
+        // light theme: brand indigo ink, deeper up close; cursor highlight in sky blue
+        base[i] = 'rgba(' + mix(120, 42, f) + ',' + mix(112, 31, f) + ',' + mix(255, 220, f) + ',' + (a * 0.9).toFixed(3) + ')';
+        hot[i] = 'rgba(' + mix(56, 2, f) + ',' + mix(189, 132, f) + ',' + mix(248, 199, f) + ',' + Math.min(1, a + 0.3).toFixed(3) + ')';
+      } else {
+        // dark theme: far = deep indigo, faint; near = pale lavender, bright
+        base[i] = 'rgba(' + mix(52, 205, f) + ',' + mix(40, 201, f) + ',255,' + a.toFixed(3) + ')';
+        // highlight under the cursor: towards ice-cyan
+        hot[i] = 'rgba(' + mix(120, 186, f) + ',' + mix(200, 240, f) + ',255,' + Math.min(1, a + 0.35).toFixed(3) + ')';
+      }
     }
   }
 
@@ -53,7 +62,7 @@
     HORIZON = H * (W < 640 ? 0.5 : 0.44);
     // world half-width so the far rows still reach the screen edges
     XSPAN = (W / 2) * FAR / FOCAL * 1.05;
-    if (reduceMotion) draw(performance.now());
+    if (!running) draw(performance.now());
   }
 
   function surface(x, z, t) {
@@ -64,7 +73,7 @@
   }
 
   function draw(now) {
-    var t = (now - start) / 1000;
+    var t = (now - start) / 1000 * SPEED;
     ctx.clearRect(0, 0, W, H);
 
     // ease the pointer and its presence
@@ -132,7 +141,7 @@
     rafId = requestAnimationFrame(loop);
   }
   function play() {
-    if (running || reduceMotion) return;
+    if (running) return;
     running = true;
     rafId = requestAnimationFrame(loop);
   }
@@ -161,12 +170,15 @@
   hero.addEventListener('pointerdown', function (e) {
     if (e.target.closest('a, button')) return;
     var p = local(e);
-    ripples.push({ x: p.x, y: p.y, t: (performance.now() - start) / 1000 });
+    ripples.push({ x: p.x, y: p.y, t: (performance.now() - start) / 1000 * SPEED });
     if (ripples.length > 4) ripples.shift();
   });
 
   /* --- lifecycle --- */
   buildPalette();
+  var onTheme = function () { buildPalette(); if (!running) draw(performance.now()); };
+  if (lightQuery.addEventListener) lightQuery.addEventListener('change', onTheme);
+  else if (lightQuery.addListener) lightQuery.addListener(onTheme);
   resize();
   var resizeTimer;
   window.addEventListener('resize', function () {
@@ -181,5 +193,5 @@
   }
   document.addEventListener('visibilitychange', sync);
 
-  if (reduceMotion) draw(start); else sync();
+  sync();
 })();
