@@ -37,6 +37,7 @@
   --inset: rgba(3, 4, 12, 0.35);
   --art: #07081a;
   --art-2: #061114;
+  --art-3: #120d05;
   --overlay: rgba(3, 4, 10, 0.6);
   --shadow: rgba(0, 0, 0, 0.8);
   --live-text: #a7f3d0;
@@ -74,6 +75,7 @@
     --inset: rgba(42, 31, 255, 0.025);
     --art: #f1f0ff;
     --art-2: #ecfbf7;
+    --art-3: #fff8ea;
     --overlay: rgba(20, 22, 50, 0.28);
     --shadow: rgba(20, 22, 60, 0.18);
     --live-text: #047857;
@@ -1243,8 +1245,12 @@ main { position: relative; z-index: 1; }
 .project-grid {
   margin-top: 16px;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
+}
+@media (max-width: 1100px) {
+  .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .project-grid > :last-child:nth-child(odd) { grid-column: 1 / -1; }
 }
 .project-grid > div { display: flex; }
 .project-card {
@@ -1274,6 +1280,29 @@ main { position: relative; z-index: 1; }
     radial-gradient(420px 200px at 20% 0%, rgba(45, 212, 191, 0.2), transparent 70%),
     var(--art-2);
 }
+.pc-art-folio {
+  background:
+    linear-gradient(rgba(var(--ink), 0.03) 1px, transparent 1px) 0 0 / 24px 24px,
+    linear-gradient(90deg, rgba(var(--ink), 0.03) 1px, transparent 1px) 0 0 / 24px 24px,
+    radial-gradient(420px 200px at 50% 0%, rgba(251, 191, 36, 0.18), transparent 70%),
+    var(--art-3);
+}
+.gauges { width: 100%; height: 100%; }
+.gauges .g-track { fill: none; stroke: rgba(var(--ink), 0.08); stroke-width: 9; stroke-linecap: round; }
+.gauges .g-arc { fill: none; stroke: url(#gauge-grad); stroke-width: 9; stroke-linecap: round; opacity: 0.85; }
+.gauges .needle {
+  stroke: var(--text);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+  transform: rotate(var(--a));
+}
+.gauges .g-hub { fill: var(--text); }
+.js .gauges .needle { transform: rotate(-90deg); transition: transform 1.8s var(--ease-out) 0.3s; }
+.js .is-in .gauges .needle { transform: rotate(var(--a)); }
+.js .is-in .gauges .gauge:nth-child(3) .needle { transition-delay: 0.45s; }
+.js .is-in .gauges .gauge:nth-child(4) .needle { transition-delay: 0.6s; }
 .candles { width: 100%; height: 100%; }
 .candles .wick { stroke-width: 1.2; }
 .candles .up { fill: #8c85ff; stroke: #8c85ff; }
