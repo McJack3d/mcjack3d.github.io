@@ -479,6 +479,36 @@
           <div class="project-grid">
             <div data-reveal>
               <article class="project-card spot tilt">
+                <div class="pc-art pc-art-folio" aria-hidden="true">
+                  <svg class="gauges" viewBox="0 0 400 160">
+                    <defs>
+                      <linearGradient id="gauge-grad" x1="0" y1="0" x2="1" y2="0">
+                        <stop offset="0" stop-color="#f87171"/><stop offset=".5" stop-color="#fbbf24"/><stop offset="1" stop-color="#34d399"/>
+                      </linearGradient>
+                    </defs>
+                    <g class="gauge" transform="translate(80 112)"><path class="g-track" d="M-44 0A44 44 0 0 1 44 0"/><path class="g-arc" d="M-44 0A44 44 0 0 1 44 0"/><line class="needle" style="--a:-28deg" x1="0" y1="-36" x2="0" y2="0"/><circle class="g-hub" r="4.5"/></g>
+                    <g class="gauge" transform="translate(200 112)"><path class="g-track" d="M-44 0A44 44 0 0 1 44 0"/><path class="g-arc" d="M-44 0A44 44 0 0 1 44 0"/><line class="needle" style="--a:52deg" x1="0" y1="-36" x2="0" y2="0"/><circle class="g-hub" r="4.5"/></g>
+                    <g class="gauge" transform="translate(320 112)"><path class="g-track" d="M-44 0A44 44 0 0 1 44 0"/><path class="g-arc" d="M-44 0A44 44 0 0 1 44 0"/><line class="needle" style="--a:24deg" x1="0" y1="-36" x2="0" y2="0"/><circle class="g-hub" r="4.5"/></g>
+                  </svg>
+                </div>
+                <div class="pc-body">
+                  <h3 class="pc-title" data-i18n="projects.folio.title">Folio — Nuclear Portfolio Dashboard</h3>
+                  <p class="pc-desc" data-i18n="projects.folio.desc">A personal Streamlit dashboard for a nuclear-heavy equity portfolio, built to check from a phone or laptop. It values positions in EUR (splitting stock moves from currency moves), scores the broad market, the nuclear sector and the portfolio on a −100 to +100 bearish-to-bullish scale (trend, momentum, RSI, CNN Fear &amp; Greed, VIX), and sets bull, base and bear 12-month scenarios with volatility cones and vol-implied odds. News tone (VADER), StockTwits and Reddit hype round it out; the app keeps working when a data source is down, and the calculation code is unit-tested.</p>
+                  <ul class="tag-row">
+                    <li>Python</li><li>Streamlit</li><li>Plotly</li><li>yfinance</li><li>VADER</li>
+                  </ul>
+                  <div class="btn-row">
+                    <a href="https://github.com/McJack3d/folio" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">
+                      <svg class="ico" aria-hidden="true"><use href="#i-github"/></svg>
+                      <span data-i18n="projects.folio.btn_view">View on GitHub</span>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div data-reveal>
+              <article class="project-card spot tilt">
                 <div class="pc-art pc-art-trade" aria-hidden="true">
                   <svg class="candles" id="art-candles" viewBox="0 0 400 160" preserveAspectRatio="none"></svg>
                 </div>
