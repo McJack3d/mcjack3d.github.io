@@ -29,7 +29,7 @@
       'about.body': 'Data & AI Professional with a proven track record in building scalable data products across the Beauty Tech and Financial sectors. Experienced in engineering robust data pipelines, enforcing strict data quality standards, and driving statistical analysis. Skilled in Python, SQL, and BI tools, with a strong passion for transforming complex data into actionable business insights.',
 
       'about.headline': 'From raw data to products, pipelines and decisions.',
-      'about.based': 'Based in Paris, France',
+      'about.based': 'Based in Paris, France — mobile and open to relocation',
       'about.now_label': 'Currently',
       'about.now_body': 'Data Analytics Engineer in the Global Commerce Data Domain — built <strong>“Find Your Customer”</strong>, a React app on GCP, and formalising data contracts for priority Commerce data flows.',
       'about.stat.customers': 'customers searchable in “Find Your Customer”, the web app I designed — 100+ daily active users',
@@ -254,7 +254,7 @@
       'about.body': 'Data & AI Professional démontrant une solide expérience dans la création de produits data scalables dans les secteurs de la Beauty Tech et de la Finance. Expérimenté dans la conception de pipelines de données robustes, le maintien de standards stricts de qualité des données et l\'analyse statistique. Maîtrisant Python, SQL et les outils de BI, avec une forte volonté de transformer des données complexes en insights actionnables.',
 
       'about.headline': 'De la donnée brute aux produits, pipelines et décisions.',
-      'about.based': 'Basé à Paris, France',
+      'about.based': 'Basé à Paris, France — mobile et ouvert à la relocalisation',
       'about.now_label': 'Actuellement',
       'about.now_body': 'Data Analytics Engineer au sein du Global Commerce Data Domain — j’ai développé <strong>« Find Your Customer »</strong>, une application React sur GCP, et formalise les data contracts des flux de données Commerce prioritaires.',
       'about.stat.customers': 'clients consultables dans « Find Your Customer », l’application web que j’ai conçue — plus de 100 utilisateurs actifs par jour',
