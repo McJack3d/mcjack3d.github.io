@@ -634,45 +634,6 @@ main { position: relative; z-index: 1; }
   .hero-name { font-size: 3rem; }
 }
 
-/* ---------- Marquee ---------- */
-.marquee {
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  padding: 1.15rem 0;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  background: rgba(var(--ink), 0.015);
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
-  mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
-}
-.marquee-track { display: flex; width: max-content; }
-.marquee-list { display: flex; flex: none; }
-.marquee-list li {
-  display: flex;
-  align-items: center;
-  gap: 2.4rem;
-  padding-right: 2.4rem;
-  font-family: var(--font-display);
-  font-size: clamp(1rem, 1.6vw, 1.25rem);
-  font-weight: 500;
-  color: var(--muted);
-  white-space: nowrap;
-}
-.marquee-list li::after {
-  content: "";
-  width: 6px; height: 6px;
-  border-radius: 2px;
-  background: var(--accent-2);
-  opacity: 0.6;
-  transform: rotate(45deg);
-}
-@media (prefers-reduced-motion: no-preference) {
-  .marquee-track { animation: marquee 48s linear infinite; }
-  .marquee:hover .marquee-track { animation-play-state: paused; }
-}
-@keyframes marquee { to { transform: translateX(-50%); } }
-
 /* ==========================================================================
    Sections
    ========================================================================== */
@@ -1245,13 +1206,10 @@ main { position: relative; z-index: 1; }
 .project-grid {
   margin-top: 16px;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
 }
-@media (max-width: 1100px) {
-  .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .project-grid > :last-child:nth-child(odd) { grid-column: 1 / -1; }
-}
+.project-grid > :last-child:nth-child(odd) { grid-column: 1 / -1; }
 .project-grid > div { display: flex; }
 .project-card {
   display: flex;
@@ -1287,6 +1245,23 @@ main { position: relative; z-index: 1; }
     radial-gradient(420px 200px at 50% 0%, rgba(251, 191, 36, 0.18), transparent 70%),
     var(--art-3);
 }
+.pc-art-news {
+  background:
+    linear-gradient(rgba(var(--ink), 0.03) 1px, transparent 1px) 0 0 / 24px 24px,
+    linear-gradient(90deg, rgba(var(--ink), 0.03) 1px, transparent 1px) 0 0 / 24px 24px,
+    radial-gradient(420px 200px at 80% 0%, rgba(244, 114, 182, 0.18), transparent 70%),
+    var(--art);
+}
+.paper { width: 100%; height: 100%; }
+.paper .pp-sheet { fill: rgba(var(--ink), 0.04); stroke: rgba(var(--ink), 0.14); }
+.paper .pp-mast { fill: rgba(var(--ink), 0.55); }
+.paper .pp-rule { stroke: rgba(var(--ink), 0.3); stroke-width: 1.2; }
+.paper .pp-img { fill: rgba(244, 114, 182, 0.35); }
+.paper .pp-lines { fill: none; stroke: rgba(var(--ink), 0.22); stroke-width: 3; stroke-linecap: round; }
+.js .paper .pp-sheet { transform: translateY(14px); opacity: 0; transition: transform 1s var(--ease-out), opacity 0.6s ease; }
+.js .is-in .paper .pp-sheet { transform: none; opacity: 1; }
+.js .paper .pp-lines path { stroke-dasharray: 600; stroke-dashoffset: 600; transition: stroke-dashoffset 1.8s var(--ease-out) 0.4s; }
+.js .is-in .paper .pp-lines path { stroke-dashoffset: 0; }
 .gauges { width: 100%; height: 100%; }
 .gauges .g-track { fill: none; stroke: rgba(var(--ink), 0.08); stroke-width: 9; stroke-linecap: round; }
 .gauges .g-arc { fill: none; stroke: url(#gauge-grad); stroke-width: 9; stroke-linecap: round; opacity: 0.85; }
@@ -1805,10 +1780,9 @@ html.cmd-lock { overflow: hidden; }
     box-shadow: 0 1px 2px rgba(16, 18, 48, 0.04), 0 10px 30px -18px rgba(16, 18, 48, 0.18);
   }
   .project-more { background: rgba(42, 31, 255, 0.03); }
-  .marquee { background: rgba(255, 255, 255, 0.6); }
 }
 
 @media print {
-  body::before, .cursor-glow, .scroll-progress, .site-nav, .hero-field, .marquee, .hero-scroll, .toast { display: none !important; }
+  body::before, .cursor-glow, .scroll-progress, .site-nav, .hero-field, .hero-scroll, .toast { display: none !important; }
   body, html { background: #fff; color: #000; }
 }
