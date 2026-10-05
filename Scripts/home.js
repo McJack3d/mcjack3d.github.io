@@ -391,7 +391,7 @@
   var COMMANDS = [
     { g: 'nav', icon: 'i-arrow', key: 'nav.about', kw: 'about summary profile a propos', run: function () { goTo('#about'); } },
     { g: 'nav', icon: 'i-arrow', key: 'nav.experience', kw: 'experience work jobs loreal banque postale sienna', run: function () { goTo('#experience'); } },
-    { g: 'nav', icon: 'i-arrow', key: 'nav.projects', kw: 'projects projets thesis trading bot kleerer folio dailynews kindle', run: function () { goTo('#projects'); } },
+    { g: 'nav', icon: 'i-arrow', key: 'nav.projects', kw: 'projects projets thesis trading bot n3gh folio dailynews kindle', run: function () { goTo('#projects'); } },
     { g: 'nav', icon: 'i-arrow', key: 'nav.education', kw: 'education formation edhec essca msc', run: function () { goTo('#education'); } },
     { g: 'nav', icon: 'i-arrow', key: 'nav.skills', kw: 'skills competences stack python sql certifications languages', run: function () { goTo('#skills'); } },
     { g: 'nav', icon: 'i-arrow', key: 'nav.contact', kw: 'contact email hire', run: function () { goTo('#contact'); } },
